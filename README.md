@@ -245,6 +245,36 @@ PY
 11. PRN/ambiguous/missing-duration medication instructions never create invented fixed alarms.
 12. The AI never resolves a disagreement between clinicians.
 
+## Security and privacy measures
+
+MediExplain+ includes several security and privacy controls appropriate for an academic healthcare AI prototype:
+
+- role-based access control for Doctor, Patient, Assistant, Cross-Check Doctor and Admin users;
+- backend-enforced object-level authorisation so users can only access consultations they are permitted to view;
+- Amazon Cognito integration for cloud authentication;
+- TOTP-based multi-factor authentication (MFA/2FA) support;
+- dual authentication support for local development and Cognito-based deployment;
+- password hashing for local authentication;
+- protected API routes using authenticated access tokens;
+- assignment-scoped access for assistants and cross-check doctors;
+- explicit patient consent records and consent withdrawal;
+- audit logging for important clinical, privacy and security actions;
+- signed and short-lived sharing links for released patient summaries;
+- patient-facing information is released only after the treating doctor's review and approval;
+- sensitive environment files, deployment credentials, runtime databases, patient uploads and generated clinical files are excluded from the public repository;
+- AWS deployment configuration includes restricted public-access controls and encrypted storage configuration.
+
+The system was designed using HIPAA-aligned technical safeguards and GDPR-informed privacy controls. However, MediExplain+ remains an academic research prototype and does not claim regulatory certification, penetration-test certification or production clinical compliance.
+
+### Authentication and access control
+
+- Amazon Cognito authentication support;
+- TOTP MFA/2FA;
+- local JWT authentication for development;
+- role-based and object-level permissions;
+- protected doctor, patient, assistant and cross-check workflows;
+- audit trail for security-sensitive actions.
+
 ## Database and storage
 
 The final build uses:
