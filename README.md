@@ -7,13 +7,22 @@ Project template: **Orchestrating AI Models to Achieve a Goal**
 
 > Academic research prototype. MediExplain+ does not diagnose, prescribe, or replace a clinician. Patient-facing content is released only through an explicit treating-doctor approval/release workflow.
 
+## Live deployment
+
+MediExplain+ has also been deployed to a cloud-hosted server for demonstration and assessment.
+
+- **Live application:** https://13.202.101.153/login
+- **Source repository:** https://github.com/zimmel-virk/MediExplain-
+
+The deployed instance is provided as an academic research prototype. Availability depends on the assessment server remaining active. The complete source code and local setup instructions are retained in this repository so the system can also be reproduced independently.
+
 I developed MediExplain+ as a multilingual healthcare AI prototype that combines several models rather than relying on one model for the whole task. The main aim was to help turn a recorded doctor-patient consultation into a reviewed clinical summary and a simpler patient explanation, while keeping the doctor in control of anything that is eventually shown to the patient. During development, I also added prescription OCR, medicine reconciliation, multilingual translation and audio, medication scheduling, and an optional second-doctor cross-check workflow.
 
 ## What this build includes
 
 The original React/FastAPI workflow has been retained and upgraded rather than replaced:
 
-- authenticated Doctor, Patient, Cross-Check Doctor and Admin roles;
+- - authenticated Doctor, Patient, Assistant, Cross-Check Doctor and Admin roles;
 - patient self-registration only (professional roles are admin-created/verified);
 - backend-enforced object-level permissions;
 - consent records and consent withdrawal;
