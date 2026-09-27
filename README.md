@@ -7,6 +7,8 @@ Project template: **Orchestrating AI Models to Achieve a Goal**
 
 > Academic research prototype. MediExplain+ does not diagnose, prescribe, or replace a clinician. Patient-facing content is released only through an explicit treating-doctor approval/release workflow.
 
+I developed MediExplain+ as a multilingual healthcare AI prototype that combines several models rather than relying on one model for the whole task. The main aim was to help turn a recorded doctor-patient consultation into a reviewed clinical summary and a simpler patient explanation, while keeping the doctor in control of anything that is eventually shown to the patient. During development, I also added prescription OCR, medicine reconciliation, multilingual translation and audio, medication scheduling, and an optional second-doctor cross-check workflow.
+
 ## What this build includes
 
 The original React/FastAPI workflow has been retained and upgraded rather than replaced:
@@ -378,14 +380,5 @@ mediexplain/
 
 ## Scope and regulatory wording
 
-This is an academic prototype designed around privacy/security principles and human clinical oversight. It should **not** be described as HIPAA-certified, GDPR-certified, or approved for clinical deployment. Formal organisational/legal controls such as Standard Contractual Clauses, hospital governance, production incident response and medical-device certification remain deployment concerns outside the academic software prototype.
+This is an academic prototype designed around privacy/security principles and human clinical oversight. It is **not** described as HIPAA-certified, GDPR-certified, or approved for clinical deployment. Formal organisational/legal controls such as Standard Contractual Clauses, hospital governance, production incident response and medical-device certification remain deployment concerns outside the academic software prototype.
 
-## Final limitations to report honestly
-
-- STT quality still requires measured WER on your final multilingual/code-switching recordings.
-- pyannote diarisation requires optional installation/model access.
-- handwriting OCR remains intrinsically difficult and must be manually reviewed.
-- RxNorm is a terminology source; Pakistan-specific product coverage can be enriched with a DRAP export.
-- translation/TTS quality must be validated with real bilingual/user evaluation.
-- the browser reminder interface is an academic prototype, not a production mobile push-notification service.
-- SQLite/local execution is appropriate for this FYP prototype, not a multi-hospital production deployment.
