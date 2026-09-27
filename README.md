@@ -22,7 +22,7 @@ I developed MediExplain+ as a multilingual healthcare AI prototype that combines
 
 The original React/FastAPI workflow has been retained and upgraded rather than replaced:
 
-- - authenticated Doctor, Patient, Assistant, Cross-Check Doctor and Admin roles;
+- authenticated Doctor, Patient, Assistant, Cross-Check Doctor and Admin roles;
 - patient self-registration only (professional roles are admin-created/verified);
 - backend-enforced object-level permissions;
 - consent records and consent withdrawal;
