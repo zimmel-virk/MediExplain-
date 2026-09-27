@@ -1,0 +1,47 @@
+==============================================================================
+E6B — CLINICALLY NORMALIZED TRANSLATION
+==============================================================================
+{
+  "evaluation": "MediExplain+ E6B Clinically Normalized Translation Analysis",
+  "analysis_type": "secondary_analysis_of_frozen_E6_outputs",
+  "primary_E6_modified": false,
+  "cases": 30,
+  "completion_percent": 100.0,
+  "script_valid_percent": 100.0,
+  "numeric_preservation": {
+    "primary_exact_percent": 83.333,
+    "normalized_clinical_percent": 100.0,
+    "method": "Unicode digit normalization plus expected-number matching in translated text and available English back-translations, including number-word equivalents."
+  },
+  "medication_identity": {
+    "primary_target_script_exact_percent": 30.0,
+    "roundtrip_verifiable_cases": 20,
+    "roundtrip_preserved_cases": 20,
+    "roundtrip_preservation_percent": 100.0,
+    "method": "Medication identity is checked in available English back-translations using exact/alias/fuzzy token matching. Punjabi Shahmukhi cases without back-translation remain manual-review cases rather than being assumed correct."
+  },
+  "semantic_safety": {
+    "verification_available_cases": 24,
+    "semantic_pass_cases": 23,
+    "semantic_pass_percent": 95.833,
+    "genuine_review_cases": [
+      "TX05_sd"
+    ]
+  },
+  "critical_verified_bundle": {
+    "available_cases": 20,
+    "pass_cases": 19,
+    "pass_percent": 95.0,
+    "requires": "normalized numbers + medication identity round-trip + script validity + semantic verification pass"
+  },
+  "conservative_production_gate": {
+    "production_integrity_pass_percent": 26.667,
+    "production_review_warning_percent": 73.333,
+    "interpretation": "A production review warning is a safety-routing outcome, not automatically a translation failure."
+  },
+  "important_limitations": [
+    "Punjabi Shahmukhi has no automatic back-translation semantic verification in this evaluation and therefore remains manual-review.",
+    "TX05_sd remains a genuine semantic safety concern and is not reclassified as correct by this secondary analysis.",
+    "The original conservative exact medication and production-integrity metrics remain reported alongside these normalized secondary metrics."
+  ]
+}

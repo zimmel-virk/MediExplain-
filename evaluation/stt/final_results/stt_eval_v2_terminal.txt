@@ -1,0 +1,649 @@
+==============================================================================
+MEDIEXPLAIN+ FINAL SPEECH RECOGNITION EVALUATION
+==============================================================================
+Dataset integrity: PASS
+Dataset cases: 36
+STT signature: (audio_path: 'str | Path', primary_language: 'Optional[str]' = None, secondary_language: 'Optional[str]' = None) -> 'dict'
+Whisper model: medium
+Whisper device: cpu
+Whisper compute: int8
+Whisper beam: 5
+
+[1/36] EN01
+
+==============================================================================
+CASE EN01
+Group: en
+Audio duration: 18.345333
+Running actual MediExplain+ STT...
+[0;93m2026-09-25 18:29:58.796523075 [W:onnxruntime:Default, device_discovery.cc:164 DiscoverDevicesForPlatform] GPU device discovery failed: device_discovery.cc:89 ReadFileContents Failed to open file: "/sys/class/drm/card0/device/vendor"[m
+Transcript: Good morning doctor. I have had a headache and mild fever for the last three days. The pain becomes worse in the evening but I have not had any vomiting or difficulty breathing. I took Panadol 500 mg twice yesterday which helped for a few hours. I am not taking any other medication and I do not have any known drug allergies.
+Normalized WER: 4.762%
+Normalized CER: 5.917%
+Detected languages: en
+Code-switch detected: False
+Processing: 37.685 sec
+RTF: 2.0542
+
+[2/36] EN02
+
+==============================================================================
+CASE EN02
+Group: en
+Audio duration: 50.622667
+Running actual MediExplain+ STT...
+Transcript: Good morning, doctor. I have had a sore throat fever and pain when swallowing for about three days I have not had any difficulty breathing, but I feel very tired Have you taken any medication so far and do you have any known drug allergies? I took paracetamol 500 milligrams twice yesterday. It helped with the fever. I did not have any known drug allergies Your symptoms are consistent with a throat infection. I am prescribing amoxicillin 500 milligrams three times a day for five days You may take paracetamol 500mg when needed for fever or pain but do not exceed the recommended daily dose. Okay, when should I come back? Drink plenty of fluids and rest. If you develop difficulty breathing, a severe rash or your symptoms become significantly worse, seek medical attention earlier. Otherwise, arrange a follow-up in 5 days if the symptoms have not improved.
+Normalized WER: 5.882%
+Normalized CER: 5.769%
+Detected languages: en
+Code-switch detected: False
+Processing: 48.314 sec
+RTF: 0.9544
+
+[3/36] EN03
+
+==============================================================================
+CASE EN03
+Group: en
+Audio duration: 47.316
+Running actual MediExplain+ STT...
+Transcript: Doctor, I have been feeling dizzy since Monday, particularly when I stand up quickly, sometimes I feel nauseous but I have not vomited. Have you had chest pain, shortness of breath, blurred vision, fainting or weakness in your arms or legs? No, I have not had any of these symptoms. I have been drinking less water than usual because I have been very busy. Are you currently taking any regular medication? No, I am not taking any regular medication. Your symptoms may be related to dehydration, although we should continue to monitor them, your fluid intake and stand up slowly rather than suddenly. I am not prescribing any new medication today. What should I do if the dizziness continues? Come back for review in 3 days if it has not improved. If you faint, develop chest pain, severe shortness of breath or new weakness seek urgent medical attention.
+Normalized WER: 4.73%
+Normalized CER: 4.072%
+Detected languages: en
+Code-switch detected: False
+Processing: 59.597 sec
+RTF: 1.2595
+
+[4/36] EN04
+
+==============================================================================
+CASE EN04
+Group: en
+Audio duration: 53.161333
+Running actual MediExplain+ STT...
+Transcript: My blood pressure was 150 over 95 yesterday evening. This morning it was 142 over 90. I have also had mild headaches during the last week. Have you experienced chest pain, palpitations, fainting or changes in your vision? No, I have not had any of these symptoms. How long have you had high blood pressure and what medications are you taking? I was diagnosed about 4 years ago. I currently take Amlodipine 500mg every morning. Continue taking Amlodipine 500mg once every morning. Do not increase the dose yourself. Please record your blood pressure once in the morning and once in the evening for the next 7 days. When should I see you again? Bring those readings to a follow-up appointment in one week. If you developed severe chest pain, fainting, significant shortness of breath or a very severe headache, seek urgent medical attention rather than waiting for the appointment.
+Normalized WER: 13.125%
+Normalized CER: 10.897%
+Detected languages: en
+Code-switch detected: False
+Processing: 50.993 sec
+RTF: 0.9592
+
+[5/36] EN05
+
+==============================================================================
+CASE EN05
+Group: en
+Audio duration: 46.228
+Running actual MediExplain+ STT...
+Transcript: I developed a dry cough about 6 days ago. For the first 2 days, I had a temperature of 38°C and felt very tired. Do you still have fever? Are you short of breath? The fever has settled. I do not have difficulty breathing while resting, but I sometimes feel slightly short of breath after climbing stairs. Do you smoke or do you have a history of asthma? No, I do not smoke and I have never been diagnosed with asthma. At the moment, continue resting and drink plenty of fluids. You may take paracetamol 500mg if the fever or body aches return. I am not prescribing antibiotics today. How long should I wait before coming back? If the cough is still present after another 5 days and you need a follow up appointment, come back earlier if the fever returns. Your breathing becomes difficult or your symptoms significantly worsen.
+Normalized WER: 9.74%
+Normalized CER: 8.285%
+Detected languages: en
+Code-switch detected: False
+Processing: 42.432 sec
+RTF: 0.9179
+
+[6/36] EN06
+
+==============================================================================
+CASE EN06
+Group: en
+Audio duration: 50.217333
+Running actual MediExplain+ STT...
+Transcript: Doctor, for about 2 weeks I have had a burning pain in the upper part of my stomach, especially after spicy food or coffee. Sometimes I feel acid coming into my throat when I lie down at night. Have you vomited blood, noticed black stools, lost weight, unexpectedly or had difficulty swallowing? No, I have not noticed blood in my vomitor stool, I have not lost weight and I am eating normally. Have you tried any medication for these symptoms? I tried Omiprazole 20mg once daily for 3 days, it helped a little. I would like you to take omeprazole 20mg once every morning before breakfast for 14 days. Avoid eating immediately before going to bed and try to reduce spicy food and coffee during this period. When should I return? I need a follow up in 2 weeks so we can review whether the treatment helped. Come back earlier if you develop severe abdominal pain, difficulty swallowing, vomiting blood, Black stool is an unexplained weight loss.
+Normalized WER: 13.529%
+Normalized CER: 10.601%
+Detected languages: en
+Code-switch detected: False
+Processing: 64.837 sec
+RTF: 1.2911
+
+[7/36] UR01
+
+==============================================================================
+CASE UR01
+Group: ur
+Audio duration: 16.318667
+Running actual MediExplain+ STT...
+Transcript: ڈاکٹر صاحب مجھے تین دن سے بخار اور گھلے میں درد ہے کوئی الرژی یا سانس لینے میں مشکل؟ نہیں اماکسی سلن 500 ملی گرام دن میں تین بار پانچ دن لیں بخار کے لیے پیرہ سٹر مول لے سکتے ہیں اگر پانچ دن میں بہتری نہ آئے تو فالو اپ کریں
+Normalized WER: 17.647%
+Normalized CER: 7.143%
+Detected languages: ur
+Code-switch detected: False
+Processing: 31.191 sec
+RTF: 1.9114
+
+[8/36] UR02
+
+==============================================================================
+CASE UR02
+Group: ur
+Audio duration: 14.974667
+Running actual MediExplain+ STT...
+Transcript: مجھے دو دن سے چکر آ رہے ہیں خاص طور پر کھڑے ہوتے وقت کیا آپ کو سینے میں درد یا بےہوشی ہوئی؟ نہیں پانی زیادہ پھییں اور آیستہ کھڑے ہوں اگر تین دن میں چکر بہتر نہ ہوں تو دوبارہ آئیں
+Normalized WER: 9.302%
+Normalized CER: 1.695%
+Detected languages: ur
+Code-switch detected: False
+Processing: 23.98 sec
+RTF: 1.6014
+
+[9/36] UR03
+
+==============================================================================
+CASE UR03
+Group: ur
+Audio duration: 15.038667
+Running actual MediExplain+ STT...
+Transcript: میرا بلد پریشر آج 150 بٹہ 95 تھا کیا آپ اپنی دوہ بکائیت کی سے لیتے ہیں؟ جی املاوڈی پین 5 ملی گرام روزانہ لیتا ہوں دوہ جاری رکھیں اور ایک ہفتے تک روزانہ بلد پریشر نوٹ کریں پھر فالو اپ کریں
+Normalized WER: 33.333%
+Normalized CER: 17.588%
+Detected languages: ur
+Code-switch detected: False
+Processing: 18.767 sec
+RTF: 1.2479
+
+[10/36] UR04
+
+==============================================================================
+CASE UR04
+Group: ur
+Audio duration: 18.878667
+Running actual MediExplain+ STT...
+Transcript: مجھے چھے دن سے خوش کھانسی اور شروع میں بخار تھا کیا ابھی سانس لینے میں مشکل ہے؟ نہیں، صرف سیڑیاں ٹرنیز پر تھوڑا سانس پھولتا ہے ارام کریں پانی زیادہ پھییں اور بخار ہو تو پیرہ سٹمول پانسو میلی گرام لیں پانچ دن بعد بھی کھانسی ہو تو فالو اپ کریں
+Normalized WER: 20.37%
+Normalized CER: 9.717%
+Detected languages: ur
+Code-switch detected: False
+Processing: 22.261 sec
+RTF: 1.1792
+
+[11/36] UR05
+
+==============================================================================
+CASE UR05
+Group: ur
+Audio duration: 12.777333
+Running actual MediExplain+ STT...
+Transcript: مجھے دو ہفتے سے میدے میں جلن ہے خاص طور پر کھانے کے بعد کوئی خون کی الٹی یا کالا پخانہ نہیں اومی پرزول 20 میلی گرام سباہ ناشتے سے پہلے 14 دن لیں دو ہفتے بعد فالو اپ کریں
+Normalized WER: 20.513%
+Normalized CER: 8.772%
+Detected languages: ur
+Code-switch detected: False
+Processing: 16.412 sec
+RTF: 1.2845
+
+[12/36] PA01
+
+==============================================================================
+CASE PA01
+Group: pa
+Audio duration: 18.750667
+Running actual MediExplain+ STT...
+Transcript: ڈاکٹر صاحب منہو تین دناتوں بخارے تے گھلے ویچھ دردے کوئی الرژی یا سانس لینوچ مشکل ہے؟ نہیں ایم اوکسی سلن 500 میڈی گرم 100mg thin whey a punch then low J punch then which دن ویچھ فرق نہ پائے تو فالو اپ کرو
+Normalized WER: 73.333%
+Normalized CER: 41.209%
+Detected languages: en|pa
+Code-switch detected: True
+Processing: 340.429 sec
+RTF: 18.1556
+
+[13/36] PA02
+
+==============================================================================
+CASE PA02
+Group: pa
+Audio duration: 15.956
+Running actual MediExplain+ STT...
+Transcript: منہوں دو دنوں سے چکر آ رہا ہے انہیں خاص طور پر کھڑے ہونے والے سینے وچ درد یا بہوشی ہوئی؟ نہیں پانی زیادہ پھی ہو تو ہولی ہولی کھڑے ہو جے تین دن وچ شکر ٹھیک نہ ہون تو واپس I'll see you in the next video. Bye bye.
+Normalized WER: 65.854%
+Normalized CER: 36.905%
+Detected languages: en|pa
+Code-switch detected: True
+Processing: 591.325 sec
+RTF: 37.0598
+
+[14/36] PA03
+
+==============================================================================
+CASE PA03
+Group: pa
+Audio duration: 14.953333
+Running actual MediExplain+ STT...
+Transcript: آج میرا بلد پریشر 150 بڑھا 95 سی تصدید بقوا بقائدگی نہ لینڈے ہو جی املوڈی پین پنٹ ملی گرام روزانہ لینڈا دوار جاری ٹکھو تے ایک ہفتے بلد پریشر نوٹ کرو پھر فالو اپ کرو
+Normalized WER: 60.526%
+Normalized CER: 26.316%
+Detected languages: pa
+Code-switch detected: False
+Processing: 112.97 sec
+RTF: 7.5549
+
+[15/36] PA04
+
+==============================================================================
+CASE PA04
+Group: pa
+Audio duration: 18.622667
+Running actual MediExplain+ STT...
+Transcript: مینو چھے دنوں تو خوش کھانسی ہے شروع بچ بخار بھی سی ہون سانس لینو بچ مشکل ہے نئی بس سیڑیاں چڑھان تو بعد تھوڑا سانس پھل دا ہے ارام کرو پانی زیادہ پیو تھوڑے بخار ہوئے تھوڑے پیراسیٹ مول پانسو میڈی گرام لو پنچ دن بعد بھی کھانسی ہوئے تھوڑے فالو اپ کرو
+Normalized WER: 56.604%
+Normalized CER: 17.094%
+Detected languages: pa
+Code-switch detected: False
+Processing: 324.03 sec
+RTF: 17.3998
+
+[16/36] PA05
+
+==============================================================================
+CASE PA05
+Group: pa
+Audio duration: 14.889333
+Running actual MediExplain+ STT...
+Transcript: مینو دو ہفتے ہیں تو میدے بڑھ جلنے خاص طور پر کھانا کھانتے بعد خونالی الٹی یا کلپ کھانا آئے ہیں؟ نہیں اومی پرزول 20 ملی گرام سباہ ناشتے تو پہلا چودہ دن لبو دو ہفتے ہیں بعد فالواپ کرو
+Normalized WER: 72.5%
+Normalized CER: 26.63%
+Detected languages: pa
+Code-switch detected: False
+Processing: 288.941 sec
+RTF: 19.4059
+
+[17/36] AR01
+
+==============================================================================
+CASE AR01
+Group: ar
+Audio duration: 18.921333
+Running actual MediExplain+ STT...
+Transcript: عندي حرارة ولم في الحلق من ثلاثة يام هل لديك حساسية تو صعوبة في التنفس؟ لا خد دوموكسي سيلين خمس ملا ملي غرام ثلاث مرات يومياً لمدة خمسة ديام لذا لم
+Normalized WER: 51.515%
+Normalized CER: 24.419%
+Detected languages: ar
+Code-switch detected: False
+Processing: 15.351 sec
+RTF: 0.8113
+
+[18/36] AR02
+
+==============================================================================
+CASE AR02
+Group: ar
+Audio duration: 18.430667
+Running actual MediExplain+ STT...
+Transcript: أشعر بالدوخة منذ يومين، خصوصا عندما كف بسرعة هل لدي كلم في الصدر، لو لا غماء لا أشرب كمية كبر من الماء وقف ببطء إذا استمرت الدوخة ثلاثة اليام عد
+Normalized WER: 30.0%
+Normalized CER: 11.921%
+Detected languages: ar
+Code-switch detected: False
+Processing: 14.996 sec
+RTF: 0.8137
+
+[19/36] AR03
+
+==============================================================================
+CASE AR03
+Group: ar
+Audio duration: 19.497333
+Running actual MediExplain+ STT...
+Transcript: كان ضقد دمي اليوم متمة وخمسين على حمسة وتسعين هل تأخذ دواءك بانتظام؟ نعم أخذ ملودي بين خمسة مليغرام يوميا استمر على الدواء وسجل ضغط الدم لمدة أسبوع
+Normalized WER: 26.667%
+Normalized CER: 14.815%
+Detected languages: ar
+Code-switch detected: False
+Processing: 15.366 sec
+RTF: 0.7881
+
+[20/36] AR04
+
+==============================================================================
+CASE AR04
+Group: ar
+Audio duration: 17.726667
+Running actual MediExplain+ STT...
+Transcript: عندي سعال جاف من ستة يام وكان عندي حمّة في البداية هل لديك صعوبة في التنفل؟ لا لكن أبضي بضيق وصصيت بعد صعود الدرج استرح وشر بالماء أذعبت
+Normalized WER: 54.762%
+Normalized CER: 44.091%
+Detected languages: ar
+Code-switch detected: False
+Processing: 14.67 sec
+RTF: 0.8276
+
+[21/36] AR05
+
+==============================================================================
+CASE AR05
+Group: ar
+Audio duration: 18.068
+Running actual MediExplain+ STT...
+Transcript: تشعر بحرقة في المعدة منذ كسبوعين خاصة بعد اللاكل هل يوجد قيء دموي أو برازو سود لاخدهم يبرازون 20 مليغرام صباحاً قبل الأفطار لمدة 14 يوم
+Normalized WER: 48.387%
+Normalized CER: 27.879%
+Detected languages: ar
+Code-switch detected: False
+Processing: 14.614 sec
+RTF: 0.8088
+
+[22/36] PS01
+
+==============================================================================
+CASE PS01
+Group: ps
+Audio duration: 23.614667
+Running actual MediExplain+ STT...
+Transcript: Xe le 3 werzo raxi se taba aw dastoni dard laram. Ia kong hassasiat ya da sa akhi stalustun za lari? Na, amuksi selin 500 mg pawers ki drezla da panzo werzo le para wakhla. Kepa panzo werzo ki khanashwi bi adam ayni le para rasha.
+Normalized WER: 100.0%
+Normalized CER: 92.093%
+Detected languages: en|ps
+Code-switch detected: True
+Processing: 16.566 sec
+RTF: 0.7015
+
+[23/36] PS02
+
+==============================================================================
+CASE PS02
+Group: ps
+Audio duration: 26.366667
+Running actual MediExplain+ STT...
+Transcript: زي لدو ورز وراحیسی سر گرزیدل احساسون پزانگری دول کلچی کجار ودریگر آیا دسین درد یا بیحوشی دری نه او بزیات ودسخ و ور ودریگر کسر گرزیدل دری ورز نور هم دوام وکری دتاقیبی معاينی لپارا راشا
+Normalized WER: 81.818%
+Normalized CER: 30.653%
+Detected languages: ps
+Code-switch detected: False
+Processing: 21.57 sec
+RTF: 0.8181
+
+[24/36] PS03
+
+==============================================================================
+CASE PS03
+Group: ps
+Audio duration: 29.438667
+Running actual MediExplain+ STT...
+Transcript: nɨn zama də winay fɨshar jəw səl pɨnzos pər pɨnza nəwi wa ja xəpala dwa pə mənazam do nə aqli ho, amlodipin pɨnza mili grama harav rəz aqlim dwa hamda sə dʒari wisate o də jewi awnay lə para xəpala də winay fɨshar sabat krə bja də taqibi muayyana lə para raʂə
+Normalized WER: 108.333%
+Normalized CER: 100.472%
+Detected languages: en|ps
+Code-switch detected: True
+Processing: 23.674 sec
+RTF: 0.8042
+
+[25/36] PS04
+
+==============================================================================
+CASE PS04
+Group: ps
+Audio duration: 31.998667
+Running actual MediExplain+ STT...
+Transcript: زي لپشتجو ورزو را حیسی وچا توخی لرم, آو پا پیل کیمی تبا هم لرلا. یا اوس بساح اخستلوستونزا لری؟ نا, خودسی نو نختلو وروستا لگ ساح لندیگی. استراحت واکرا, آبا زیاتی وچسا. آو کتبا بیرتر آغلا, پاراستمال پنزا سوا ملیگراما وخلا. کتوخی کنزا ورزی نور حم پاتیشی بیاراشا
+Normalized WER: 86.441%
+Normalized CER: 29.588%
+Detected languages: ps
+Code-switch detected: False
+Processing: 33.365 sec
+RTF: 1.0427
+
+[26/36] PS05
+
+==============================================================================
+CASE PS05
+Group: ps
+Audio duration: 26.729333
+Running actual MediExplain+ STT...
+Transcript: Zee le du awniew rahisi pamatdaki sosashtleram. Pe zangridol lexoravrusta. Ia dawine kange ya torfaita lari? Na. Omi prazol shilmili gramme har sahar de nashta namakke de tswar la sovrazu le para wakhla. Du awniew rusta de takibi mo aynay le para rasha.
+Normalized WER: 100.0%
+Normalized CER: 96.035%
+Detected languages: en|ps
+Code-switch detected: True
+Processing: 17.941 sec
+RTF: 0.6712
+
+[27/36] SD01
+
+==============================================================================
+CASE SD01
+Group: sd
+Audio duration: 22.441333
+Running actual MediExplain+ STT...
+Transcript: ខឋ ខ្ក កល្លើណ្ពើាៅបលនះឦះាូន់ ខ្ក្លជាលើ់ ខរស្ផបងوع�ងាបបជើឹសះាដ឴ិយ។ ងវាន់ ឋោើលើលលើី់ះាដ឴ឤំុង។ दीन में ते भेरा पंज दीन लाए वथो। जे करहें पंजन दीहू में बहतरी न अची ते फालो अपलाए अचो।
+Normalized WER: 100.0%
+Normalized CER: 86.139%
+Detected languages: sd
+Code-switch detected: False
+Processing: 248.615 sec
+RTF: 11.0784
+
+[28/36] SD02
+
+==============================================================================
+CASE SD02
+Group: sd
+Audio duration: 21.716
+Running actual MediExplain+ STT...
+Transcript: tasty delicious tasty shop tour Sis with your player to learn how you search with your TV Christian
+Normalized WER: 100.0%
+Normalized CER: 90.341%
+Detected languages: sd
+Code-switch detected: False
+Processing: 214.661 sec
+RTF: 9.8849
+
+[29/36] SD03
+
+==============================================================================
+CASE SD03
+Group: sd
+Audio duration: 25.748
+Running actual MediExplain+ STT...
+Transcript: अज मिन्होंजो ब्लॉड प्रेशर हिक सेू पंजाहा बाई पंजानोई हो चातवा पहंजी दवा बाकाईडी वथो था हाँ मा अमलॉडी तीन पंज मिली ग्राम रोजानो वथान थो दवा जारी रखो एह हिक हफते ताई रोजानो ब्लॉड प्रेशर नोट करेओ पोई फोलो अपला एज्यो।
+Normalized WER: 100.0%
+Normalized CER: 85.075%
+Detected languages: sd
+Code-switch detected: False
+Processing: 40.863 sec
+RTF: 1.587
+
+[30/36] SD04
+
+==============================================================================
+CASE SD04
+Group: sd
+Audio duration: 29.204
+Running actual MediExplain+ STT...
+Transcript: Señ diq incarn sipi khanghe ahe윈 sh Huruaen為 bhaghār bhõ. Tjhaa hānī sait khan pse tanleef ahe윈? Fi nyeh par dakahiyo chaghan acht yonn bonito saaha chaadheetyo. Ārā 있어서 vadik paani piyo. A jan bhaghārte, penisitio souffold kr Ka hoj ko paleoo. Jaee khe panj di solid er bhi ek af aliment asap aafkhan ahe ey.
+Normalized WER: 105.66%
+Normalized CER: 106.967%
+Detected languages: en|sd
+Code-switch detected: True
+Processing: 239.732 sec
+RTF: 8.2089
+
+[31/36] SD05
+
+==============================================================================
+CASE SD05
+Group: sd
+Audio duration: 21.545333
+Running actual MediExplain+ STT...
+Transcript: మాెకు BB Adm Arbeit మ predictive adhere ట్తంత్డి Aayner уда Ag Chaude in
+Normalized WER: 100.0%
+Normalized CER: 93.514%
+Detected languages: en|sd
+Code-switch detected: True
+Processing: 236.055 sec
+RTF: 10.9562
+
+[32/36] CS01
+
+==============================================================================
+CASE CS01
+Group: code_switch_ur_en
+Audio duration: 21.246667
+Running actual MediExplain+ STT...
+Transcript: مجھے تین دن سے فیور اور سورتھروٹ ہے کیا آپ کو میڈیسن ایلرژی یا بریدنگ میں کوئی پرابلم ہے؟ نہیں! ایموکسسلن پانچ سو میڈی گرامز دن میں تین بار پانچ دن میں اگر سمٹمز ایمپرویو نہ ہوں تو پانچ دن بعد فالو اپ کریں
+Normalized WER: 40.909%
+Normalized CER: 46.818%
+Detected languages: ur
+Code-switch detected: False
+Processing: 20.104 sec
+RTF: 0.9462
+
+[33/36] CS02
+
+==============================================================================
+CASE CS02
+Group: code_switch_ur_en
+Audio duration: 28.137333
+Running actual MediExplain+ STT...
+Transcript: مجھے دو دن سے جزی نیس ہے خاص طور پہ جب میں قوکلی کھڑا ہوتا ہوں کوئی فینٹنگ یا چسٹ پین ہے نہیں پانی زیادہ پھییں اور سلو لی کھڑے ہوں اگر تین دن میں جزی نیس بہتر نہ ہو تو دوبارہ چیک اپ کیلئے آئیں
+Normalized WER: 41.304%
+Normalized CER: 32.243%
+Detected languages: ur
+Code-switch detected: False
+Processing: 20.202 sec
+RTF: 0.718
+
+[34/36] CS03
+
+==============================================================================
+CASE CS03
+Group: code_switch_ur_en
+Audio duration: 15.444
+Running actual MediExplain+ STT...
+Transcript: آج میرا پلڈ پرشر 150 بڑھا 95 تھا کیا آپ اپنی میڈیکیشن رگلیلیلی لیتے ہیں؟ جی املوریپائن 5 میلی گرام روزانہ لیتا ہوں دعا کوانٹینیو رکھیں ایک ہفتے تک پلڈ پرشر ریکارڈ کریں پھر فالو اپ کریں
+Normalized WER: 52.632%
+Normalized CER: 52.336%
+Detected languages: ur
+Code-switch detected: False
+Processing: 19.718 sec
+RTF: 1.2767
+
+[35/36] CS04
+
+==============================================================================
+CASE CS04
+Group: code_switch_pa_en
+Audio duration: 18.708
+Running actual MediExplain+ STT...
+Transcript: میں نے چھے جنہاں تون ڈرائی کف ہے اور شروع بچ فیور بھی سی ہون بریدنگ بچ کوئی ڈفکلڈی ہے نہیں بس ٹیرز چڑھن تو بعد تھوڑا شارٹنیس و بریت ہوں دا ہے ریسٹ کرو پانی زیادہ پی ہو تے فیور ہوئے تے پریسٹر مول پنسو ملی گرام لو پنچ دن بعد بھی کف ہوئے تے فالو آب کرو
+Normalized WER: 76.364%
+Normalized CER: 49.064%
+Detected languages: pa
+Code-switch detected: False
+Processing: 328.74 sec
+RTF: 17.5722
+
+[36/36] CS05
+
+==============================================================================
+CASE CS05
+Group: code_switch_pa_en
+Audio duration: 14.484
+Running actual MediExplain+ STT...
+Transcript: میں نے دو ہفتے ہیں جو سٹمک کچھ بڑھنے گے خاص طور پر سپائسی فورٹ کے بعد کیب لڈ وامٹنگ یا بلاک سٹول آیا؟ نہیں امی پرزول 20 میلی گرام سووے رے بریکپس سے پہلے 14 دن لو دو ہفتے ہیں بعد فالو اپلے ہی واپس آو about this all.
+Normalized WER: 92.683%
+Normalized CER: 67.136%
+Detected languages: en|pa
+Code-switch detected: True
+Processing: 319.218 sec
+RTF: 22.0394
+
+==============================================================================
+FINAL STT EVALUATION SUMMARY
+==============================================================================
+Successful cases: 36/36
+Failed cases: 0
+Overall normalized micro WER: 43.533%
+Overall normalized micro CER: 29.668%
+Mean processing time: 109.727 sec
+Median processing time: 35.525 sec
+Mean RTF: 5.7387
+Expected-language detection: 88.889%
+Code-switch classification accuracy: 69.444%
+
+PER-LANGUAGE GROUPS
+
+AR
+  N: 5
+  Micro WER: 43.373%
+  Mean case WER: 42.266%
+  WER 95% CI: [32.344, 52.188]
+  Micro CER: 26.092%
+  Mean RTF: 0.8099
+  Language detected: 100.0%
+
+CODE_SWITCH_PA_EN
+  N: 2
+  Micro WER: 83.333%
+  Mean case WER: 84.524%
+  WER 95% CI: [76.364, 92.683]
+  Micro CER: 57.083%
+  Mean RTF: 19.8058
+  Language detected: 50.0%
+
+CODE_SWITCH_UR_EN
+  N: 3
+  Micro WER: 44.531%
+  Mean case WER: 44.948%
+  WER 95% CI: [40.909, 52.632]
+  Micro CER: 43.827%
+  Mean RTF: 0.9803
+  Language detected: 0.0%
+
+EN
+  N: 6
+  Micro WER: 9.198%
+  Mean case WER: 8.628%
+  WER 95% CI: [5.768, 11.793]
+  Micro CER: 7.907%
+  Mean RTF: 1.2394
+  Language detected: 100.0%
+
+PA
+  N: 5
+  Micro WER: 65.438%
+  Mean case WER: 65.763%
+  WER 95% CI: [60.023, 71.504]
+  Micro CER: 28.86%
+  Mean RTF: 19.9152
+  Language detected: 100.0%
+
+PS
+  N: 5
+  Micro WER: 95.161%
+  Mean case WER: 95.318%
+  WER 95% CI: [86.379, 103.333]
+  Micro CER: 68.661%
+  Mean RTF: 0.8075
+  Language detected: 100.0%
+
+SD
+  N: 5
+  Micro WER: 101.333%
+  Mean case WER: 101.132%
+  WER 95% CI: [100.0, 103.396]
+  Micro CER: 93.056%
+  Mean RTF: 8.3431
+  Language detected: 100.0%
+
+UR
+  N: 5
+  Micro WER: 20.087%
+  Mean case WER: 20.233%
+  WER 95% CI: [13.729, 27.603]
+  Micro CER: 9.136%
+  Mean RTF: 1.4449
+  Language detected: 100.0%
+
+Case CSV:
+/home/ubuntu/mediexplain/backend/evaluation/stt/results/stt_case_results_v2.csv
+Summary JSON:
+/home/ubuntu/mediexplain/backend/evaluation/stt/results/stt_summary_v2.json
+Environment JSON:
+/home/ubuntu/mediexplain/backend/evaluation/stt/results/stt_environment_v2.json
+
+==============================================================================
+STT EVALUATION COMPLETE: 36/36
+==============================================================================

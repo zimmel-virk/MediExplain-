@@ -1,0 +1,11 @@
+[1/10] SCH01 kind= daily_count events= 3 error= None
+[2/10] SCH02 kind= daily_count events= 4 error= None
+[3/10] SCH03 kind= daily_count events= 9 error= None
+[4/10] SCH04 kind= daily_count events= 4 error= None
+[5/10] SCH05 kind= prn events= 0 error= None
+[6/10] SCH06 kind= interval events= 6 error= None
+[7/10] SCH07 kind= named_times events= 4 error= None
+[8/10] SCH08 kind= None events= 0 error= Every 5 hours requires manual scheduling
+[9/10] SCH09 kind= daily_count events= 0 error= Duration/end date is required for automatic reminders
+[10/10] SCH10 kind= daily_count events= 3 error= None
+SCHEDULER INFERENCE COMPLETE

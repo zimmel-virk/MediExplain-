@@ -1,0 +1,3239 @@
+[
+  {
+    "case_id": "E3_01",
+    "category": "standard_prescription",
+    "transcript": "The patient has fever and a sore throat. The doctor said this is a throat infection. Take amoxicillin 500 mg three times daily for 5 days after food. Take paracetamol 500 mg as needed for fever. Drink plenty of water. Follow up in 5 days if symptoms are not improving. Seek urgent medical attention if breathing becomes difficult.",
+    "clinical_note": "**SOAP Draft:**\n\n**Subjective:**\nThe patient has fever and a sore throat. The doctor suspects a throat infection.\n\n**Objective:**\nNot mentioned in transcript.\n\n**Assessment:**\nThe patient has a confirmed diagnosis of a throat infection.\n\n**Plan:**\n1. Take amoxicillin 500 mg three times daily for 5 days after food.\n2. Take paracetamol 500 mg as needed for fever.\n3. Drink plenty of water.\n4. Follow up in 5 days if symptoms are not improving.\n5. Seek urgent medical attention if difficulty breathing occurs.\n\n**Structured JSON Output:**\n{\n  \"chief_complaint\": \"fever and sore throat\",\n  \"symptoms\": [\"fever\", \"sore throat\"],\n  \"relevant_history\": [],\n  \"diagnosis_discussed\": [\"throat infection\"],\n  \"diagnosis_status\": \"confirmed\",\n  \"medications\": [\n    {\n      \"name\": \"amoxicillin\",\n      \"name_as_heard\": \"amoxicillin\",\n      \"dose\": null,\n      \"strength\": \"500 mg\",\n      \"dose_unit\": null,\n      \"dosage_form\": null,\n      \"route\": null,\n      \"frequency\": \"three times daily\",\n      \"timing\": null,\n      \"food_instruction\": \"after food\",\n      \"duration\": \"5 days\",\n      \"as_needed\": false,\n      \"indication\": null,\n      \"notes\": null,\n      \"doctor_confirmed\": false,\n      \"suggestions\": []\n    },\n    {\n      \"name\": \"paracetamol\",\n      \"name_as_heard\": \"paracetamol\",\n      \"dose\": null,\n      \"strength\": \"500 mg\",\n      \"dose_unit\": null,\n      \"dosage_form\": null,\n      \"route\": null,\n      \"frequency\": null,\n      \"timing\": null,\n      \"food_instruction\": null,\n      \"duration\": null,\n      \"as_needed\": true,\n      \"indication\": \"fever\",\n      \"notes\": null,\n      \"doctor_confirmed\": false,\n      \"suggestions\": []\n    }\n  ],\n  \"tests\": [],\n  \"advice\": [\"drink plenty of water\"],\n  \"follow_up\": \"follow up in 5 days if symptoms are not improving\",\n  \"warning_signs\": [\"difficulty breathing\"],\n  \"glossary\": []\n}",
+    "patient_summary": "Here is the patient explanation:\n\nYou have a throat infection. The doctor said you have a throat infection.\n\nYou need to take two medicines:\n\n1. Amoxicillin: 500 mg, three times a day, for 5 days, after food.\n2. Paracetamol: 500 mg, only when you have a fever.\n\nDrink plenty of water.\n\nIf your symptoms don't get better in 5 days, come back to see the doctor. If you have trouble breathing, go to the hospital right away.",
+    "clinical_fact_scoring": {
+      "total": 16,
+      "covered": 16,
+      "coverage_percent": 100.0,
+      "critical_total": 12,
+      "critical_covered": 12,
+      "critical_coverage_percent": 100.0,
+      "items": [
+        {
+          "field": "chief_complaint",
+          "value": "fever and sore throat",
+          "critical": false,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "symptoms",
+          "value": "fever",
+          "critical": false,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "symptoms",
+          "value": "sore throat",
+          "critical": false,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "diagnosis",
+          "value": "throat infection",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "advice",
+          "value": "drink plenty of water",
+          "critical": false,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "follow_up",
+          "value": "follow up in 5 days if symptoms are not improving",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "warning_signs",
+          "value": "difficulty breathing",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.name",
+          "value": "amoxicillin",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.strength",
+          "value": "500 mg",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.frequency",
+          "value": "three times daily",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.food_instruction",
+          "value": "after food",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.duration",
+          "value": "5 days",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_2.name",
+          "value": "paracetamol",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_2.strength",
+          "value": "500 mg",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_2.indication",
+          "value": "fever",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_2.as_needed",
+          "value": "as needed",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        }
+      ]
+    },
+    "patient_fact_scoring": {
+      "total": 16,
+      "covered": 10,
+      "coverage_percent": 62.5,
+      "critical_total": 12,
+      "critical_covered": 8,
+      "critical_coverage_percent": 66.667,
+      "items": [
+        {
+          "field": "chief_complaint",
+          "value": "fever and sore throat",
+          "critical": false,
+          "present": false,
+          "similarity": 0.5
+        },
+        {
+          "field": "symptoms",
+          "value": "fever",
+          "critical": false,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "symptoms",
+          "value": "sore throat",
+          "critical": false,
+          "present": false,
+          "similarity": 0.5
+        },
+        {
+          "field": "diagnosis",
+          "value": "throat infection",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "advice",
+          "value": "drink plenty of water",
+          "critical": false,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "follow_up",
+          "value": "follow up in 5 days if symptoms are not improving",
+          "critical": true,
+          "present": false,
+          "similarity": 0.5
+        },
+        {
+          "field": "warning_signs",
+          "value": "difficulty breathing",
+          "critical": true,
+          "present": false,
+          "similarity": 0.5
+        },
+        {
+          "field": "medication_1.name",
+          "value": "amoxicillin",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.strength",
+          "value": "500 mg",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.frequency",
+          "value": "three times daily",
+          "critical": true,
+          "present": false,
+          "similarity": 0.6667
+        },
+        {
+          "field": "medication_1.food_instruction",
+          "value": "after food",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.duration",
+          "value": "5 days",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_2.name",
+          "value": "paracetamol",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_2.strength",
+          "value": "500 mg",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_2.indication",
+          "value": "fever",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_2.as_needed",
+          "value": "as needed",
+          "critical": true,
+          "present": false,
+          "similarity": 0.0
+        }
+      ]
+    },
+    "soap": {
+      "counts": {
+        "subjective": 1,
+        "objective": 1,
+        "assessment": 1,
+        "plan": 1
+      },
+      "all_four_exactly_once": true
+    },
+    "patient_readability": {
+      "sentences": 11,
+      "words": 72,
+      "mean_words_per_sentence": 6.545,
+      "flesch_reading_ease": 75.641,
+      "flesch_kincaid_grade": 4.335
+    },
+    "clinical_uncertainty_preserved": null,
+    "patient_uncertainty_preserved": null,
+    "clinical_unsupported_candidates": [
+      {
+        "statement": "**SOAP Draft:**",
+        "best_transcript_evidence": "Drink plenty of water.",
+        "lexical_similarity": 0.2581,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "**Subjective:**",
+        "best_transcript_evidence": "The patient has fever and a sore throat.",
+        "lexical_similarity": 0.2041,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "**Objective:**",
+        "best_transcript_evidence": "The patient has fever and a sore throat.",
+        "lexical_similarity": 0.2083,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "**Assessment:**",
+        "best_transcript_evidence": "Follow up in 5 days if symptoms are not improving.",
+        "lexical_similarity": 0.2034,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "**Plan:**",
+        "best_transcript_evidence": "Drink plenty of water.",
+        "lexical_similarity": 0.24,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "1.",
+        "best_transcript_evidence": "",
+        "lexical_similarity": 0.0,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "2.",
+        "best_transcript_evidence": "",
+        "lexical_similarity": 0.0,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "3.",
+        "best_transcript_evidence": "",
+        "lexical_similarity": 0.0,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "4.",
+        "best_transcript_evidence": "",
+        "lexical_similarity": 0.0,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "**Structured JSON Output:**",
+        "best_transcript_evidence": "Seek urgent medical attention if breathing becomes difficult.",
+        "lexical_similarity": 0.2927,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"medications\": [",
+        "best_transcript_evidence": "Seek urgent medical attention if breathing becomes difficult.",
+        "lexical_similarity": 0.3099,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"dose\": null,",
+        "best_transcript_evidence": "Follow up in 5 days if symptoms are not improving.",
+        "lexical_similarity": 0.2069,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"dose_unit\": null,",
+        "best_transcript_evidence": "The doctor said this is a throat infection.",
+        "lexical_similarity": 0.2857,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"dosage_form\": null,",
+        "best_transcript_evidence": "Follow up in 5 days if symptoms are not improving.",
+        "lexical_similarity": 0.2769,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"route\": null,",
+        "best_transcript_evidence": "Drink plenty of water.",
+        "lexical_similarity": 0.2581,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"timing\": null,",
+        "best_transcript_evidence": "Drink plenty of water.",
+        "lexical_similarity": 0.25,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"duration\": \"5 days\",",
+        "best_transcript_evidence": "Follow up in 5 days if symptoms are not improving.",
+        "lexical_similarity": 0.3125,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"notes\": null,",
+        "best_transcript_evidence": "Drink plenty of water.",
+        "lexical_similarity": 0.2581,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"doctor_confirmed\": false,",
+        "best_transcript_evidence": "The doctor said this is a throat infection.",
+        "lexical_similarity": 0.3125,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"suggestions\": []",
+        "best_transcript_evidence": "Seek urgent medical attention if breathing becomes difficult.",
+        "lexical_similarity": 0.2535,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"dose\": null,",
+        "best_transcript_evidence": "Follow up in 5 days if symptoms are not improving.",
+        "lexical_similarity": 0.2069,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"dose_unit\": null,",
+        "best_transcript_evidence": "The doctor said this is a throat infection.",
+        "lexical_similarity": 0.2857,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"dosage_form\": null,",
+        "best_transcript_evidence": "Follow up in 5 days if symptoms are not improving.",
+        "lexical_similarity": 0.2769,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"route\": null,",
+        "best_transcript_evidence": "Drink plenty of water.",
+        "lexical_similarity": 0.2581,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"frequency\": null,",
+        "best_transcript_evidence": "Drink plenty of water.",
+        "lexical_similarity": 0.2857,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"timing\": null,",
+        "best_transcript_evidence": "Drink plenty of water.",
+        "lexical_similarity": 0.25,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"duration\": null,",
+        "best_transcript_evidence": "Seek urgent medical attention if breathing becomes difficult.",
+        "lexical_similarity": 0.3014,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"notes\": null,",
+        "best_transcript_evidence": "Drink plenty of water.",
+        "lexical_similarity": 0.2581,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"doctor_confirmed\": false,",
+        "best_transcript_evidence": "The doctor said this is a throat infection.",
+        "lexical_similarity": 0.3125,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"suggestions\": []",
+        "best_transcript_evidence": "Seek urgent medical attention if breathing becomes difficult.",
+        "lexical_similarity": 0.2535,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"tests\": [],",
+        "best_transcript_evidence": "The doctor said this is a throat infection.",
+        "lexical_similarity": 0.2128,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"glossary\": []",
+        "best_transcript_evidence": "Drink plenty of water.",
+        "lexical_similarity": 0.2759,
+        "status": "manual_review_required"
+      }
+    ],
+    "patient_unsupported_candidates": [
+      {
+        "statement": "You need to take two medicines:",
+        "best_transcript_evidence": "The doctor said this is a throat infection.",
+        "lexical_similarity": 0.3333,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "1.",
+        "best_transcript_evidence": "",
+        "lexical_similarity": 0.0,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "2.",
+        "best_transcript_evidence": "",
+        "lexical_similarity": 0.0,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "If you have trouble breathing, go to the hospital right away.",
+        "best_transcript_evidence": "Follow up in 5 days if symptoms are not improving.",
+        "lexical_similarity": 0.2778,
+        "status": "manual_review_required"
+      }
+    ]
+  },
+  {
+    "case_id": "E3_02",
+    "category": "no_medication_suspected_condition",
+    "transcript": "The patient reports dizziness when standing quickly and has been drinking less water than usual. There has been no fainting or chest pain. The doctor said dehydration is possible but is not confirmed. No medication is being prescribed. Increase fluid intake and stand up slowly. Follow up in 3 days if the dizziness continues. Seek urgent help if fainting or chest pain occurs.",
+    "clinical_note": "Here is the doctor-facing SOAP draft:\n\n**Subjective**\nThe patient reports dizziness when standing quickly and has been drinking less water than usual. There has been no fainting or chest pain.\n\n**Objective**\nNot mentioned in transcript.\n\n**Assessment**\nThe doctor suspects dehydration is possible, but it is not confirmed.\n\n**Plan**\nIncrease fluid intake and stand up slowly. Follow up in 3 days if the dizziness continues. Seek urgent help if fainting or chest pain occurs.",
+    "patient_summary": "Here is the patient explanation:\n\nYou've been feeling dizzy when you stand up quickly. This might be because you haven't been drinking enough water. The doctor thinks it's possible that you're dehydrated, but we're not sure yet. \n\nTo feel better, try drinking more water and stand up slowly. If you keep feeling dizzy, come back to see us in 3 days. And if you start feeling faint or have chest pain, go to the hospital right away.",
+    "clinical_fact_scoring": {
+      "total": 11,
+      "covered": 11,
+      "coverage_percent": 100.0,
+      "critical_total": 4,
+      "critical_covered": 4,
+      "critical_coverage_percent": 100.0,
+      "items": [
+        {
+          "field": "chief_complaint",
+          "value": "dizziness when standing",
+          "critical": false,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "symptoms",
+          "value": "dizziness when standing",
+          "critical": false,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "history",
+          "value": "drinking less water than usual",
+          "critical": false,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "history",
+          "value": "no fainting",
+          "critical": false,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "history",
+          "value": "no chest pain",
+          "critical": false,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "diagnosis",
+          "value": "dehydration",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "advice",
+          "value": "increase fluid intake",
+          "critical": false,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "advice",
+          "value": "stand up slowly",
+          "critical": false,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "follow_up",
+          "value": "follow up in 3 days if dizziness continues",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "warning_signs",
+          "value": "fainting",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "warning_signs",
+          "value": "chest pain",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        }
+      ]
+    },
+    "patient_fact_scoring": {
+      "total": 11,
+      "covered": 2,
+      "coverage_percent": 18.182,
+      "critical_total": 4,
+      "critical_covered": 1,
+      "critical_coverage_percent": 25.0,
+      "items": [
+        {
+          "field": "chief_complaint",
+          "value": "dizziness when standing",
+          "critical": false,
+          "present": false,
+          "similarity": 0.3333
+        },
+        {
+          "field": "symptoms",
+          "value": "dizziness when standing",
+          "critical": false,
+          "present": false,
+          "similarity": 0.3333
+        },
+        {
+          "field": "history",
+          "value": "drinking less water than usual",
+          "critical": false,
+          "present": false,
+          "similarity": 0.4
+        },
+        {
+          "field": "history",
+          "value": "no fainting",
+          "critical": false,
+          "present": false,
+          "similarity": 0.0
+        },
+        {
+          "field": "history",
+          "value": "no chest pain",
+          "critical": false,
+          "present": false,
+          "similarity": 0.6667
+        },
+        {
+          "field": "diagnosis",
+          "value": "dehydration",
+          "critical": true,
+          "present": false,
+          "similarity": 0.0
+        },
+        {
+          "field": "advice",
+          "value": "increase fluid intake",
+          "critical": false,
+          "present": false,
+          "similarity": 0.0
+        },
+        {
+          "field": "advice",
+          "value": "stand up slowly",
+          "critical": false,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "follow_up",
+          "value": "follow up in 3 days if dizziness continues",
+          "critical": true,
+          "present": false,
+          "similarity": 0.625
+        },
+        {
+          "field": "warning_signs",
+          "value": "fainting",
+          "critical": true,
+          "present": false,
+          "similarity": 0.0
+        },
+        {
+          "field": "warning_signs",
+          "value": "chest pain",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        }
+      ]
+    },
+    "soap": {
+      "counts": {
+        "subjective": 1,
+        "objective": 1,
+        "assessment": 1,
+        "plan": 1
+      },
+      "all_four_exactly_once": true
+    },
+    "patient_readability": {
+      "sentences": 7,
+      "words": 81,
+      "mean_words_per_sentence": 11.571,
+      "flesch_reading_ease": 81.246,
+      "flesch_kincaid_grade": 4.802
+    },
+    "clinical_uncertainty_preserved": true,
+    "patient_uncertainty_preserved": false,
+    "clinical_unsupported_candidates": [
+      {
+        "statement": "**Subjective**",
+        "best_transcript_evidence": "There has been no fainting or chest pain.",
+        "lexical_similarity": 0.24,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "**Objective**",
+        "best_transcript_evidence": "No medication is being prescribed.",
+        "lexical_similarity": 0.2857,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "**Assessment**",
+        "best_transcript_evidence": "Follow up in 3 days if the dizziness continues.",
+        "lexical_similarity": 0.25,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "**Plan**",
+        "best_transcript_evidence": "There has been no fainting or chest pain.",
+        "lexical_similarity": 0.1364,
+        "status": "manual_review_required"
+      }
+    ],
+    "patient_unsupported_candidates": []
+  },
+  {
+    "case_id": "E3_03",
+    "category": "chronic_condition_monitoring",
+    "transcript": "The patient has had hypertension for four years and takes amlodipine 5 mg once daily every morning. Continue amlodipine 5 mg once daily every morning. Record blood pressure in the morning and evening for the next 7 days. Follow up in one week. Seek urgent medical attention for severe chest pain, fainting or severe shortness of breath.",
+    "clinical_note": "**SOAP Draft:**\n\n**Subjective:**\nNot mentioned in transcript.\n\n**Objective:**\nThe patient has hypertension for four years and takes amlodipine 5 mg once daily every morning. Blood pressure will be recorded in the morning and evening for the next 7 days.\n\n**Assessment:**\nThe doctor suspects hypertension, a confirmed diagnosis.\n\n**Plan:**\nContinue amlodipine 5 mg once daily every morning. Record blood pressure in the morning and evening for the next 7 days. Follow up in one week. Seek urgent medical attention for severe chest pain, fainting, or severe shortness of breath.\n\n**Medication Safety Rules:**\n\n* Medication name: amlodipine\n* Dose: 5 mg\n* Strength: 5 mg\n* Frequency: once daily\n* Timing: every morning\n* Duration: not mentioned\n* Negation: none\n* Date: not mentioned\n\n**Structured JSON:**\n{\n  \"medications\": [\n    {\n      \"name\": \"amlodipine\",\n      \"strength\": \"5 mg\",\n      \"frequency\": \"once daily\",\n      \"timing\": \"every morning\"\n    }\n  ],\n  \"advice\": [\n    \"record blood pressure in the morning and evening for 7 days\"\n  ],\n  \"follow_up\": \"follow up in one week\",\n  \"warning_signs\": [\n    \"severe chest pain\",\n    \"fainting\",\n    \"severe shortness of breath\"\n  ]\n}",
+    "patient_summary": "Here is the patient explanation:\n\nYou have high blood pressure. You take amlodipine 5 mg every morning. Keep taking amlodipine 5 mg every morning. For the next 7 days, check your blood pressure in the morning and evening. Come back to see us in one week. If you have severe chest pain, faint, or have trouble breathing, go to the hospital right away.",
+    "clinical_fact_scoring": {
+      "total": 11,
+      "covered": 11,
+      "coverage_percent": 100.0,
+      "critical_total": 9,
+      "critical_covered": 9,
+      "critical_coverage_percent": 100.0,
+      "items": [
+        {
+          "field": "history",
+          "value": "hypertension for four years",
+          "critical": false,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "diagnosis",
+          "value": "hypertension",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "advice",
+          "value": "record blood pressure in the morning and evening for 7 days",
+          "critical": false,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "follow_up",
+          "value": "follow up in one week",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "warning_signs",
+          "value": "severe chest pain",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "warning_signs",
+          "value": "fainting",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "warning_signs",
+          "value": "severe shortness of breath",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.name",
+          "value": "amlodipine",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.strength",
+          "value": "5 mg",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.frequency",
+          "value": "once daily",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.timing",
+          "value": "every morning",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        }
+      ]
+    },
+    "patient_fact_scoring": {
+      "total": 11,
+      "covered": 5,
+      "coverage_percent": 45.455,
+      "critical_total": 9,
+      "critical_covered": 4,
+      "critical_coverage_percent": 44.444,
+      "items": [
+        {
+          "field": "history",
+          "value": "hypertension for four years",
+          "critical": false,
+          "present": false,
+          "similarity": 0.25
+        },
+        {
+          "field": "diagnosis",
+          "value": "hypertension",
+          "critical": true,
+          "present": false,
+          "similarity": 0.0057
+        },
+        {
+          "field": "advice",
+          "value": "record blood pressure in the morning and evening for 7 days",
+          "critical": false,
+          "present": true,
+          "similarity": 0.9091
+        },
+        {
+          "field": "follow_up",
+          "value": "follow up in one week",
+          "critical": true,
+          "present": false,
+          "similarity": 0.6
+        },
+        {
+          "field": "warning_signs",
+          "value": "severe chest pain",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "warning_signs",
+          "value": "fainting",
+          "critical": true,
+          "present": false,
+          "similarity": 0.0058
+        },
+        {
+          "field": "warning_signs",
+          "value": "severe shortness of breath",
+          "critical": true,
+          "present": false,
+          "similarity": 0.25
+        },
+        {
+          "field": "medication_1.name",
+          "value": "amlodipine",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.strength",
+          "value": "5 mg",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.frequency",
+          "value": "once daily",
+          "critical": true,
+          "present": false,
+          "similarity": 0.0
+        },
+        {
+          "field": "medication_1.timing",
+          "value": "every morning",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        }
+      ]
+    },
+    "soap": {
+      "counts": {
+        "subjective": 1,
+        "objective": 1,
+        "assessment": 1,
+        "plan": 1
+      },
+      "all_four_exactly_once": true
+    },
+    "patient_readability": {
+      "sentences": 7,
+      "words": 60,
+      "mean_words_per_sentence": 8.571,
+      "flesch_reading_ease": 74.055,
+      "flesch_kincaid_grade": 5.06
+    },
+    "clinical_uncertainty_preserved": null,
+    "patient_uncertainty_preserved": null,
+    "clinical_unsupported_candidates": [
+      {
+        "statement": "**SOAP Draft:**",
+        "best_transcript_evidence": "Continue amlodipine 5 mg once daily every morning.",
+        "lexical_similarity": 0.2034,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "**Subjective:**",
+        "best_transcript_evidence": "Follow up in one week.",
+        "lexical_similarity": 0.1935,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "**Objective:**",
+        "best_transcript_evidence": "Follow up in one week.",
+        "lexical_similarity": 0.2,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "**Assessment:**",
+        "best_transcript_evidence": "Record blood pressure in the morning and evening for the next 7 days.",
+        "lexical_similarity": 0.1795,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "**Plan:**",
+        "best_transcript_evidence": "Follow up in one week.",
+        "lexical_similarity": 0.16,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "**Medication Safety Rules:**",
+        "best_transcript_evidence": "Continue amlodipine 5 mg once daily every morning.",
+        "lexical_similarity": 0.3056,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "* Dose: 5 mg",
+        "best_transcript_evidence": "Continue amlodipine 5 mg once daily every morning.",
+        "lexical_similarity": 0.2414,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "* Strength: 5 mg",
+        "best_transcript_evidence": "Continue amlodipine 5 mg once daily every morning.",
+        "lexical_similarity": 0.2581,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "* Duration: not mentioned",
+        "best_transcript_evidence": "Follow up in one week.",
+        "lexical_similarity": 0.3256,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "* Date: not mentioned",
+        "best_transcript_evidence": "Follow up in one week.",
+        "lexical_similarity": 0.3077,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "**Structured JSON:**",
+        "best_transcript_evidence": "Follow up in one week.",
+        "lexical_similarity": 0.2222,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"medications\": [",
+        "best_transcript_evidence": "Seek urgent medical attention for severe chest pain, fainting or severe shortness of breath.",
+        "lexical_similarity": 0.2178,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"strength\": \"5 mg\",",
+        "best_transcript_evidence": "Continue amlodipine 5 mg once daily every morning.",
+        "lexical_similarity": 0.2581,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"advice\": [",
+        "best_transcript_evidence": "Continue amlodipine 5 mg once daily every morning.",
+        "lexical_similarity": 0.1818,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"warning_signs\": [",
+        "best_transcript_evidence": "Follow up in one week.",
+        "lexical_similarity": 0.2941,
+        "status": "manual_review_required"
+      }
+    ],
+    "patient_unsupported_candidates": [
+      {
+        "statement": "Here is the patient explanation:",
+        "best_transcript_evidence": "Record blood pressure in the morning and evening for the next 7 days.",
+        "lexical_similarity": 0.3232,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "You have high blood pressure.",
+        "best_transcript_evidence": "Record blood pressure in the morning and evening for the next 7 days.",
+        "lexical_similarity": 0.3333,
+        "status": "manual_review_required"
+      }
+    ]
+  },
+  {
+    "case_id": "E3_04",
+    "category": "timing_and_food_instruction",
+    "transcript": "The patient reports burning in the upper stomach and acid coming into the throat after meals. The doctor said acid reflux is possible but has not been confirmed. Take omeprazole 20 mg once daily every morning before breakfast for 14 days. Reduce spicy food and coffee. Follow up in two weeks. Seek medical attention earlier for vomiting blood, black stools or difficulty swallowing.",
+    "clinical_note": "**SOAP Draft:**\n\n**Subjective:**\nThe patient reports burning in the upper stomach and acid coming into the throat after meals.\n\n**Objective:**\nNot mentioned in transcript.\n\n**Assessment:**\nThe doctor suspects acid reflux.\n\n**Plan:**\n1. Take omeprazole 20 mg once daily every morning before breakfast for 14 days.\n2. Reduce spicy food and coffee.\n3. Follow up in two weeks.\n4. Seek medical attention earlier for vomiting blood, black stools, or difficulty swallowing.\n\n**Note:** The doctor has not confirmed the diagnosis of acid reflux.",
+    "patient_summary": "Here is the patient explanation:\n\nYou have been feeling burning in your upper stomach and acid coming into your throat after eating. The doctor thinks it might be acid reflux, but we're not sure yet. To help with this, you need to take omeprazole 20 mg every morning before breakfast for 14 days. Try to eat less spicy food and drink less coffee. If you start to feel worse or have any of these problems, come back to see us sooner: vomiting blood, black stools, or trouble swallowing. We want to see you again in two weeks.",
+    "clinical_fact_scoring": {
+      "total": 16,
+      "covered": 16,
+      "coverage_percent": 100.0,
+      "critical_total": 11,
+      "critical_covered": 11,
+      "critical_coverage_percent": 100.0,
+      "items": [
+        {
+          "field": "chief_complaint",
+          "value": "burning in the upper stomach",
+          "critical": false,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "symptoms",
+          "value": "burning in the upper stomach",
+          "critical": false,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "symptoms",
+          "value": "acid coming into the throat after meals",
+          "critical": false,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "diagnosis",
+          "value": "acid reflux",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "advice",
+          "value": "reduce spicy food",
+          "critical": false,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "advice",
+          "value": "reduce coffee",
+          "critical": false,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "follow_up",
+          "value": "follow up in two weeks",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "warning_signs",
+          "value": "vomiting blood",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "warning_signs",
+          "value": "black stools",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "warning_signs",
+          "value": "difficulty swallowing",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.name",
+          "value": "omeprazole",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.strength",
+          "value": "20 mg",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.frequency",
+          "value": "once daily",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.timing",
+          "value": "every morning",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.food_instruction",
+          "value": "before breakfast",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.duration",
+          "value": "14 days",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        }
+      ]
+    },
+    "patient_fact_scoring": {
+      "total": 16,
+      "covered": 11,
+      "coverage_percent": 68.75,
+      "critical_total": 11,
+      "critical_covered": 8,
+      "critical_coverage_percent": 72.727,
+      "items": [
+        {
+          "field": "chief_complaint",
+          "value": "burning in the upper stomach",
+          "critical": false,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "symptoms",
+          "value": "burning in the upper stomach",
+          "critical": false,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "symptoms",
+          "value": "acid coming into the throat after meals",
+          "critical": false,
+          "present": true,
+          "similarity": 0.8571
+        },
+        {
+          "field": "diagnosis",
+          "value": "acid reflux",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "advice",
+          "value": "reduce spicy food",
+          "critical": false,
+          "present": false,
+          "similarity": 0.6667
+        },
+        {
+          "field": "advice",
+          "value": "reduce coffee",
+          "critical": false,
+          "present": false,
+          "similarity": 0.5
+        },
+        {
+          "field": "follow_up",
+          "value": "follow up in two weeks",
+          "critical": true,
+          "present": false,
+          "similarity": 0.6
+        },
+        {
+          "field": "warning_signs",
+          "value": "vomiting blood",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "warning_signs",
+          "value": "black stools",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "warning_signs",
+          "value": "difficulty swallowing",
+          "critical": true,
+          "present": false,
+          "similarity": 0.5
+        },
+        {
+          "field": "medication_1.name",
+          "value": "omeprazole",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.strength",
+          "value": "20 mg",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.frequency",
+          "value": "once daily",
+          "critical": true,
+          "present": false,
+          "similarity": 0.0
+        },
+        {
+          "field": "medication_1.timing",
+          "value": "every morning",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.food_instruction",
+          "value": "before breakfast",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.duration",
+          "value": "14 days",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        }
+      ]
+    },
+    "soap": {
+      "counts": {
+        "subjective": 1,
+        "objective": 1,
+        "assessment": 1,
+        "plan": 1
+      },
+      "all_four_exactly_once": true
+    },
+    "patient_readability": {
+      "sentences": 7,
+      "words": 96,
+      "mean_words_per_sentence": 13.714,
+      "flesch_reading_ease": 77.471,
+      "flesch_kincaid_grade": 5.861
+    },
+    "clinical_uncertainty_preserved": true,
+    "patient_uncertainty_preserved": true,
+    "clinical_unsupported_candidates": [
+      {
+        "statement": "**SOAP Draft:**",
+        "best_transcript_evidence": "Reduce spicy food and coffee.",
+        "lexical_similarity": 0.2632,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "**Subjective:**",
+        "best_transcript_evidence": "Reduce spicy food and coffee.",
+        "lexical_similarity": 0.1579,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "**Objective:**",
+        "best_transcript_evidence": "Follow up in two weeks.",
+        "lexical_similarity": 0.1935,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "**Assessment:**",
+        "best_transcript_evidence": "Reduce spicy food and coffee.",
+        "lexical_similarity": 0.1579,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "**Plan:**",
+        "best_transcript_evidence": "Reduce spicy food and coffee.",
+        "lexical_similarity": 0.1875,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "3.",
+        "best_transcript_evidence": "",
+        "lexical_similarity": 0.0,
+        "status": "manual_review_required"
+      }
+    ],
+    "patient_unsupported_candidates": []
+  },
+  {
+    "case_id": "E3_05",
+    "category": "frequency_duration_safety_trap",
+    "transcript": "For dental pain, take ibuprofen 400 mg every 8 hours for 3 days after food as needed for pain. The medicine is not to be taken every 3 days. Follow up with the dentist if the pain continues.",
+    "clinical_note": "**SOAP Draft:**\n\n**Subjective:**\nChief Complaint: Dental pain\nSymptoms: Dental pain\nRelevant History: Not mentioned in transcript\nDiagnosis Discussed: Not mentioned in transcript\nDiagnosis Status: Not mentioned in transcript\n\n**Objective:**\nMedications: Ibuprofen 400 mg, every 8 hours, after food, for 3 days, as needed for pain\n\n**Assessment:**\nThe doctor suspects dental pain.\nThe patient is to take ibuprofen 400 mg every 8 hours for 3 days after food as needed for pain.\n\n**Plan:**\nPlan: Follow up with the dentist if the pain continues.\nMedication: Ibuprofen 400 mg, every 8 hours, after food, for 3 days, as needed for pain.\n\nNote: The doctor confirmed the medication plan is not to be taken every 3 days.",
+    "patient_summary": "**You have dental pain.**\n\nThe doctor says to take ibuprofen for the pain.\n\n**Medicine:**\n- Medicine: ibuprofen\n- Strength: 400 mg\n- Frequency: every 8 hours\n- Duration: 3 days\n- Food instruction: after food\n- As needed: yes\n\n**Follow-up:**\nFollow up with the dentist if the pain continues.",
+    "clinical_fact_scoring": {
+      "total": 10,
+      "covered": 10,
+      "coverage_percent": 100.0,
+      "critical_total": 8,
+      "critical_covered": 8,
+      "critical_coverage_percent": 100.0,
+      "items": [
+        {
+          "field": "chief_complaint",
+          "value": "dental pain",
+          "critical": false,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "symptoms",
+          "value": "dental pain",
+          "critical": false,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "follow_up",
+          "value": "follow up with the dentist if pain continues",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.name",
+          "value": "ibuprofen",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.strength",
+          "value": "400 mg",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.frequency",
+          "value": "every 8 hours",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.food_instruction",
+          "value": "after food",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.duration",
+          "value": "3 days",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.indication",
+          "value": "pain",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.as_needed",
+          "value": "as needed",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        }
+      ]
+    },
+    "patient_fact_scoring": {
+      "total": 10,
+      "covered": 10,
+      "coverage_percent": 100.0,
+      "critical_total": 8,
+      "critical_covered": 8,
+      "critical_coverage_percent": 100.0,
+      "items": [
+        {
+          "field": "chief_complaint",
+          "value": "dental pain",
+          "critical": false,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "symptoms",
+          "value": "dental pain",
+          "critical": false,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "follow_up",
+          "value": "follow up with the dentist if pain continues",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.name",
+          "value": "ibuprofen",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.strength",
+          "value": "400 mg",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.frequency",
+          "value": "every 8 hours",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.food_instruction",
+          "value": "after food",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.duration",
+          "value": "3 days",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.indication",
+          "value": "pain",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.as_needed",
+          "value": "as needed",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        }
+      ]
+    },
+    "soap": {
+      "counts": {
+        "subjective": 1,
+        "objective": 1,
+        "assessment": 1,
+        "plan": 1
+      },
+      "all_four_exactly_once": true
+    },
+    "patient_readability": {
+      "sentences": 11,
+      "words": 41,
+      "mean_words_per_sentence": 3.727,
+      "flesch_reading_ease": 62.74,
+      "flesch_kincaid_grade": 5.434
+    },
+    "clinical_uncertainty_preserved": null,
+    "patient_uncertainty_preserved": null,
+    "clinical_unsupported_candidates": [
+      {
+        "statement": "**SOAP Draft:**",
+        "best_transcript_evidence": "The medicine is not to be taken every 3 days.",
+        "lexical_similarity": 0.2222,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "**Subjective:**",
+        "best_transcript_evidence": "The medicine is not to be taken every 3 days.",
+        "lexical_similarity": 0.2222,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "Chief Complaint: Dental pain",
+        "best_transcript_evidence": "Follow up with the dentist if the pain continues.",
+        "lexical_similarity": 0.32,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "**Objective:**",
+        "best_transcript_evidence": "The medicine is not to be taken every 3 days.",
+        "lexical_similarity": 0.2264,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "**Assessment:**",
+        "best_transcript_evidence": "The medicine is not to be taken every 3 days.",
+        "lexical_similarity": 0.1852,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "**Plan:**",
+        "best_transcript_evidence": "Follow up with the dentist if the pain continues.",
+        "lexical_similarity": 0.1154,
+        "status": "manual_review_required"
+      }
+    ],
+    "patient_unsupported_candidates": [
+      {
+        "statement": "- Strength: 400 mg",
+        "best_transcript_evidence": "For dental pain, take ibuprofen 400 mg every 8 hours for 3 days after food as needed for pain.",
+        "lexical_similarity": 0.2056,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "- Duration: 3 days",
+        "best_transcript_evidence": "The medicine is not to be taken every 3 days.",
+        "lexical_similarity": 0.3051,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "- As needed: yes",
+        "best_transcript_evidence": "The medicine is not to be taken every 3 days.",
+        "lexical_similarity": 0.2807,
+        "status": "manual_review_required"
+      }
+    ]
+  },
+  {
+    "case_id": "E3_06",
+    "category": "frequency_duration_food",
+    "transcript": "The doctor confirmed type 2 diabetes. Take metformin 500 mg twice daily with food for 30 days. Twice daily is the frequency and 30 days is the treatment duration. Follow up after 30 days.",
+    "clinical_note": "**SOAP Draft:**\n\n**Subjective:**\nNot mentioned in transcript.\n\n**Objective:**\nType 2 diabetes confirmed. Medication: metformin 500 mg, frequency: twice daily, timing: with food, duration: 30 days.\n\n**Assessment:**\nThe doctor suspects type 2 diabetes. The patient has been prescribed metformin 500 mg to be taken twice daily with food for 30 days.\n\n**Plan:**\nPrescribe metformin 500 mg twice daily with food for 30 days. Follow up after 30 days.\n\n**Structured JSON Output:**\n```\n{\n  \"chief_complaint\": null,\n  \"symptoms\": [],\n  \"relevant_history\": [],\n  \"diagnosis_discussed\": [\"type 2 diabetes\"],\n  \"diagnosis_status\": \"confirmed\",\n  \"medications\": [\n    {\n      \"name\": \"metformin\",\n      \"name_as_heard\": \"metformin\",\n      \"dose\": null,\n      \"strength\": \"500 mg\",\n      \"dose_unit\": null,\n      \"dosage_form\": null,\n      \"route\": null,\n      \"frequency\": \"twice daily\",\n      \"timing\": \"with food\",\n      \"food_instruction\": \"with food\",\n      \"duration\": \"30 days\",\n      \"as_needed\": false,\n      \"indication\": null,\n      \"notes\": null,\n      \"doctor_confirmed\": false,\n      \"suggestions\": []\n    }\n  ],\n  \"tests\": [],\n  \"advice\": [],\n  \"follow_up\": \"follow up after 30 days\",\n  \"warning_signs\": [],\n  \"glossary\": []\n}\n```",
+    "patient_summary": "You have type 2 diabetes. The doctor said it's confirmed.\n\nYou need to take metformin.\n\nMedicine: Metformin\nStrength: 500 mg\nFrequency: twice daily\nTiming: with food\nDuration: 30 days\n\nTake it with food, twice a day, for 30 days.\n\nYou need to follow up with the doctor after 30 days.",
+    "clinical_fact_scoring": {
+      "total": 7,
+      "covered": 7,
+      "coverage_percent": 100.0,
+      "critical_total": 7,
+      "critical_covered": 7,
+      "critical_coverage_percent": 100.0,
+      "items": [
+        {
+          "field": "diagnosis",
+          "value": "type 2 diabetes",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "follow_up",
+          "value": "follow up after 30 days",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.name",
+          "value": "metformin",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.strength",
+          "value": "500 mg",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.frequency",
+          "value": "twice daily",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.food_instruction",
+          "value": "with food",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.duration",
+          "value": "30 days",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        }
+      ]
+    },
+    "patient_fact_scoring": {
+      "total": 7,
+      "covered": 7,
+      "coverage_percent": 100.0,
+      "critical_total": 7,
+      "critical_covered": 7,
+      "critical_coverage_percent": 100.0,
+      "items": [
+        {
+          "field": "diagnosis",
+          "value": "type 2 diabetes",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "follow_up",
+          "value": "follow up after 30 days",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.name",
+          "value": "metformin",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.strength",
+          "value": "500 mg",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.frequency",
+          "value": "twice daily",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.food_instruction",
+          "value": "with food",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.duration",
+          "value": "30 days",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        }
+      ]
+    },
+    "soap": {
+      "counts": {
+        "subjective": 1,
+        "objective": 1,
+        "assessment": 1,
+        "plan": 1
+      },
+      "all_four_exactly_once": true
+    },
+    "patient_readability": {
+      "sentences": 10,
+      "words": 46,
+      "mean_words_per_sentence": 4.6,
+      "flesch_reading_ease": 80.783,
+      "flesch_kincaid_grade": 3.134
+    },
+    "clinical_uncertainty_preserved": null,
+    "patient_uncertainty_preserved": null,
+    "clinical_unsupported_candidates": [
+      {
+        "statement": "**Subjective:**",
+        "best_transcript_evidence": "The doctor confirmed type 2 diabetes.",
+        "lexical_similarity": 0.2174,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "**Objective:**",
+        "best_transcript_evidence": "The doctor confirmed type 2 diabetes.",
+        "lexical_similarity": 0.2222,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "**Assessment:**",
+        "best_transcript_evidence": "Twice daily is the frequency and 30 days is the treatment duration.",
+        "lexical_similarity": 0.2105,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "**Plan:**",
+        "best_transcript_evidence": "Follow up after 30 days.",
+        "lexical_similarity": 0.1481,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "**Structured JSON Output:**",
+        "best_transcript_evidence": "The doctor confirmed type 2 diabetes.",
+        "lexical_similarity": 0.2759,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"chief_complaint\": null,",
+        "best_transcript_evidence": "The doctor confirmed type 2 diabetes.",
+        "lexical_similarity": 0.2857,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"symptoms\": [],",
+        "best_transcript_evidence": "The doctor confirmed type 2 diabetes.",
+        "lexical_similarity": 0.1818,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"relevant_history\": [],",
+        "best_transcript_evidence": "The doctor confirmed type 2 diabetes.",
+        "lexical_similarity": 0.2308,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"medications\": [",
+        "best_transcript_evidence": "The doctor confirmed type 2 diabetes.",
+        "lexical_similarity": 0.2979,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"name_as_heard\": \"metformin\",",
+        "best_transcript_evidence": "Take metformin 500 mg twice daily with food for 30 days.",
+        "lexical_similarity": 0.3077,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"dose\": null,",
+        "best_transcript_evidence": "Follow up after 30 days.",
+        "lexical_similarity": 0.1875,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"strength\": \"500 mg\",",
+        "best_transcript_evidence": "Take metformin 500 mg twice daily with food for 30 days.",
+        "lexical_similarity": 0.2857,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"dose_unit\": null,",
+        "best_transcript_evidence": "Follow up after 30 days.",
+        "lexical_similarity": 0.2703,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"dosage_form\": null,",
+        "best_transcript_evidence": "Follow up after 30 days.",
+        "lexical_similarity": 0.2051,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"route\": null,",
+        "best_transcript_evidence": "Follow up after 30 days.",
+        "lexical_similarity": 0.303,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"as_needed\": false,",
+        "best_transcript_evidence": "Take metformin 500 mg twice daily with food for 30 days.",
+        "lexical_similarity": 0.2857,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"indication\": null,",
+        "best_transcript_evidence": "Take metformin 500 mg twice daily with food for 30 days.",
+        "lexical_similarity": 0.2286,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"notes\": null,",
+        "best_transcript_evidence": "Follow up after 30 days.",
+        "lexical_similarity": 0.2424,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"suggestions\": []",
+        "best_transcript_evidence": "Twice daily is the frequency and 30 days is the treatment duration.",
+        "lexical_similarity": 0.2078,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"tests\": [],",
+        "best_transcript_evidence": "Follow up after 30 days.",
+        "lexical_similarity": 0.2143,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"advice\": [],",
+        "best_transcript_evidence": "Follow up after 30 days.",
+        "lexical_similarity": 0.1379,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"warning_signs\": [],",
+        "best_transcript_evidence": "Follow up after 30 days.",
+        "lexical_similarity": 0.2778,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"glossary\": []",
+        "best_transcript_evidence": "Follow up after 30 days.",
+        "lexical_similarity": 0.1935,
+        "status": "manual_review_required"
+      }
+    ],
+    "patient_unsupported_candidates": [
+      {
+        "statement": "Medicine: Metformin",
+        "best_transcript_evidence": "Take metformin 500 mg twice daily with food for 30 days.",
+        "lexical_similarity": 0.3014,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "Strength: 500 mg",
+        "best_transcript_evidence": "Take metformin 500 mg twice daily with food for 30 days.",
+        "lexical_similarity": 0.2857,
+        "status": "manual_review_required"
+      }
+    ]
+  },
+  {
+    "case_id": "E3_07",
+    "category": "multiple_medications_routes",
+    "transcript": "The patient has wheezing. Use the salbutamol inhaler, two puffs by inhalation as needed for wheeze. Also take prednisolone 40 mg by mouth once daily for 5 days. Return for review in 5 days. Seek urgent medical attention if breathing becomes severely difficult.",
+    "clinical_note": "**SOAP Draft:**\n\n**Subjective:**\nChief Complaint: Wheezing\nSymptoms: Wheezing\n\n**Objective:**\nNot mentioned in transcript.\n\n**Assessment:**\nThe doctor suspects wheezing.\n\n**Plan:**\n1. Use salbutamol inhaler, two puffs by inhalation as needed for wheeze.\n2. Take prednisolone 40 mg by mouth once daily for 5 days.\n3. Return for review in 5 days.\n4. Seek urgent medical attention if breathing becomes severely difficult.\n\n**Structured JSON Output:**\n\n{\n  \"chief_complaint\": \"wheezing\",\n  \"symptoms\": [\"wheezing\"],\n  \"relevant_history\": [],\n  \"diagnosis_discussed\": [],\n  \"diagnosis_status\": null,\n  \"medications\": [\n    {\n      \"name\": \"salbutamol\",\n      \"name_as_heard\": \"salbutamol\",\n      \"dose\": \"two puffs\",\n      \"strength\": null,\n      \"dose_unit\": null,\n      \"dosage_form\": \"inhaler\",\n      \"route\": \"inhalation\",\n      \"frequency\": null,\n      \"timing\": null,\n      \"food_instruction\": null,\n      \"duration\": null,\n      \"as_needed\": true,\n      \"indication\": \"wheeze\",\n      \"notes\": null,\n      \"doctor_confirmed\": false,\n      \"suggestions\": []\n    },\n    {\n      \"name\": \"prednisolone\",\n      \"name_as_heard\": \"prednisolone\",\n      \"dose\": null,\n      \"strength\": \"40 mg\",\n      \"dose_unit\": null,\n      \"dosage_form\": null,\n      \"route\": \"oral\",\n      \"frequency\": \"once daily\",\n      \"timing\": null,\n      \"food_instruction\": null,\n      \"duration\": \"5 days\",\n      \"as_needed\": false,\n      \"indication\": null,\n      \"notes\": null,\n      \"doctor_confirmed\": false,\n      \"suggestions\": []\n    }\n  ],\n  \"tests\": [],\n  \"advice\": [],\n  \"follow_up\": \"return for review in 5 days\",\n  \"warning_signs\": [\"severe difficulty breathing\"],\n  \"glossary\": []\n}",
+    "patient_summary": "Here is the patient explanation:\n\nYou have wheezing. To help with this, you need to use a salbutamol inhaler. Take 2 puffs by inhalation whenever you feel wheezy.\n\nYou also need to take prednisolone. Take 40 mg by mouth every day for 5 days.\n\nIf your breathing gets very hard, you need to go to the hospital right away.\n\nYou need to come back to see the doctor in 5 days.",
+    "clinical_fact_scoring": {
+      "total": 12,
+      "covered": 12,
+      "coverage_percent": 100.0,
+      "critical_total": 10,
+      "critical_covered": 10,
+      "critical_coverage_percent": 100.0,
+      "items": [
+        {
+          "field": "chief_complaint",
+          "value": "wheezing",
+          "critical": false,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "symptoms",
+          "value": "wheezing",
+          "critical": false,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "follow_up",
+          "value": "return for review in 5 days",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "warning_signs",
+          "value": "severe difficulty breathing",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.name",
+          "value": "salbutamol",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.dose",
+          "value": "two puffs",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.indication",
+          "value": "wheeze",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.as_needed",
+          "value": "as needed",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_2.name",
+          "value": "prednisolone",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_2.strength",
+          "value": "40 mg",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_2.frequency",
+          "value": "once daily",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_2.duration",
+          "value": "5 days",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        }
+      ]
+    },
+    "patient_fact_scoring": {
+      "total": 12,
+      "covered": 6,
+      "coverage_percent": 50.0,
+      "critical_total": 10,
+      "critical_covered": 4,
+      "critical_coverage_percent": 40.0,
+      "items": [
+        {
+          "field": "chief_complaint",
+          "value": "wheezing",
+          "critical": false,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "symptoms",
+          "value": "wheezing",
+          "critical": false,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "follow_up",
+          "value": "return for review in 5 days",
+          "critical": true,
+          "present": false,
+          "similarity": 0.6667
+        },
+        {
+          "field": "warning_signs",
+          "value": "severe difficulty breathing",
+          "critical": true,
+          "present": false,
+          "similarity": 0.3333
+        },
+        {
+          "field": "medication_1.name",
+          "value": "salbutamol",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.dose",
+          "value": "two puffs",
+          "critical": true,
+          "present": false,
+          "similarity": 0.5
+        },
+        {
+          "field": "medication_1.indication",
+          "value": "wheeze",
+          "critical": true,
+          "present": false,
+          "similarity": 0.0275
+        },
+        {
+          "field": "medication_1.as_needed",
+          "value": "as needed",
+          "critical": true,
+          "present": false,
+          "similarity": 0.0
+        },
+        {
+          "field": "medication_2.name",
+          "value": "prednisolone",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_2.strength",
+          "value": "40 mg",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_2.frequency",
+          "value": "once daily",
+          "critical": true,
+          "present": false,
+          "similarity": 0.0054
+        },
+        {
+          "field": "medication_2.duration",
+          "value": "5 days",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        }
+      ]
+    },
+    "soap": {
+      "counts": {
+        "subjective": 1,
+        "objective": 1,
+        "assessment": 1,
+        "plan": 1
+      },
+      "all_four_exactly_once": true
+    },
+    "patient_readability": {
+      "sentences": 8,
+      "words": 67,
+      "mean_words_per_sentence": 8.375,
+      "flesch_reading_ease": 78.379,
+      "flesch_kincaid_grade": 4.408
+    },
+    "clinical_uncertainty_preserved": null,
+    "patient_uncertainty_preserved": null,
+    "clinical_unsupported_candidates": [
+      {
+        "statement": "**SOAP Draft:**",
+        "best_transcript_evidence": "Also take prednisolone 40 mg by mouth once daily for 5 days.",
+        "lexical_similarity": 0.2319,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "**Subjective:**",
+        "best_transcript_evidence": "The patient has wheezing.",
+        "lexical_similarity": 0.2353,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "**Objective:**",
+        "best_transcript_evidence": "The patient has wheezing.",
+        "lexical_similarity": 0.2424,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "**Assessment:**",
+        "best_transcript_evidence": "The patient has wheezing.",
+        "lexical_similarity": 0.2353,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "**Plan:**",
+        "best_transcript_evidence": "The patient has wheezing.",
+        "lexical_similarity": 0.2143,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "1.",
+        "best_transcript_evidence": "",
+        "lexical_similarity": 0.0,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "2.",
+        "best_transcript_evidence": "",
+        "lexical_similarity": 0.0,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "3.",
+        "best_transcript_evidence": "",
+        "lexical_similarity": 0.0,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "**Structured JSON Output:**",
+        "best_transcript_evidence": "Also take prednisolone 40 mg by mouth once daily for 5 days.",
+        "lexical_similarity": 0.2963,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"diagnosis_discussed\": [],",
+        "best_transcript_evidence": "Seek urgent medical attention if breathing becomes severely difficult.",
+        "lexical_similarity": 0.2727,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"diagnosis_status\": null,",
+        "best_transcript_evidence": "Seek urgent medical attention if breathing becomes severely difficult.",
+        "lexical_similarity": 0.2444,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"name\": \"salbutamol\",",
+        "best_transcript_evidence": "Use the salbutamol inhaler, two puffs by inhalation as needed for wheeze.",
+        "lexical_similarity": 0.2791,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"name_as_heard\": \"salbutamol\",",
+        "best_transcript_evidence": "Use the salbutamol inhaler, two puffs by inhalation as needed for wheeze.",
+        "lexical_similarity": 0.3158,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"dose\": \"two puffs\",",
+        "best_transcript_evidence": "Use the salbutamol inhaler, two puffs by inhalation as needed for wheeze.",
+        "lexical_similarity": 0.2824,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"strength\": null,",
+        "best_transcript_evidence": "Also take prednisolone 40 mg by mouth once daily for 5 days.",
+        "lexical_similarity": 0.3056,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"dose_unit\": null,",
+        "best_transcript_evidence": "The patient has wheezing.",
+        "lexical_similarity": 0.3158,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"frequency\": null,",
+        "best_transcript_evidence": "Return for review in 5 days.",
+        "lexical_similarity": 0.2927,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"timing\": null,",
+        "best_transcript_evidence": "The patient has wheezing.",
+        "lexical_similarity": 0.2857,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"food_instruction\": null,",
+        "best_transcript_evidence": "Return for review in 5 days.",
+        "lexical_similarity": 0.25,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"duration\": null,",
+        "best_transcript_evidence": "The patient has wheezing.",
+        "lexical_similarity": 0.3243,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"as_needed\": true,",
+        "best_transcript_evidence": "Use the salbutamol inhaler, two puffs by inhalation as needed for wheeze.",
+        "lexical_similarity": 0.2824,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"notes\": null,",
+        "best_transcript_evidence": "The patient has wheezing.",
+        "lexical_similarity": 0.2941,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"doctor_confirmed\": false,",
+        "best_transcript_evidence": "Return for review in 5 days.",
+        "lexical_similarity": 0.3265,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"suggestions\": []",
+        "best_transcript_evidence": "The patient has wheezing.",
+        "lexical_similarity": 0.2857,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"dose\": null,",
+        "best_transcript_evidence": "The patient has wheezing.",
+        "lexical_similarity": 0.1818,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"strength\": \"40 mg\",",
+        "best_transcript_evidence": "Also take prednisolone 40 mg by mouth once daily for 5 days.",
+        "lexical_similarity": 0.3014,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"dose_unit\": null,",
+        "best_transcript_evidence": "The patient has wheezing.",
+        "lexical_similarity": 0.3158,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"dosage_form\": null,",
+        "best_transcript_evidence": "Return for review in 5 days.",
+        "lexical_similarity": 0.3256,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"route\": \"oral\",",
+        "best_transcript_evidence": "Return for review in 5 days.",
+        "lexical_similarity": 0.3243,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"timing\": null,",
+        "best_transcript_evidence": "The patient has wheezing.",
+        "lexical_similarity": 0.2857,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"food_instruction\": null,",
+        "best_transcript_evidence": "Return for review in 5 days.",
+        "lexical_similarity": 0.25,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"as_needed\": false,",
+        "best_transcript_evidence": "Use the salbutamol inhaler, two puffs by inhalation as needed for wheeze.",
+        "lexical_similarity": 0.2791,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"indication\": null,",
+        "best_transcript_evidence": "Seek urgent medical attention if breathing becomes severely difficult.",
+        "lexical_similarity": 0.3095,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"notes\": null,",
+        "best_transcript_evidence": "The patient has wheezing.",
+        "lexical_similarity": 0.2941,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"doctor_confirmed\": false,",
+        "best_transcript_evidence": "Return for review in 5 days.",
+        "lexical_similarity": 0.3265,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"suggestions\": []",
+        "best_transcript_evidence": "The patient has wheezing.",
+        "lexical_similarity": 0.2857,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"tests\": [],",
+        "best_transcript_evidence": "The patient has wheezing.",
+        "lexical_similarity": 0.2069,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"advice\": [],",
+        "best_transcript_evidence": "The patient has wheezing.",
+        "lexical_similarity": 0.2,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"glossary\": []",
+        "best_transcript_evidence": "Seek urgent medical attention if breathing becomes severely difficult.",
+        "lexical_similarity": 0.1818,
+        "status": "manual_review_required"
+      }
+    ],
+    "patient_unsupported_candidates": [
+      {
+        "statement": "If your breathing gets very hard, you need to go to the hospital right away.",
+        "best_transcript_evidence": "Seek urgent medical attention if breathing becomes severely difficult.",
+        "lexical_similarity": 0.3357,
+        "status": "manual_review_required"
+      }
+    ]
+  },
+  {
+    "case_id": "E3_08",
+    "category": "tests_and_diagnostic_uncertainty",
+    "transcript": "The patient reports tiredness and looking pale. The doctor said iron deficiency anaemia is suspected but not confirmed. A full blood count and ferritin test were ordered. No medication was prescribed today. Follow up after the blood test results are available. Seek urgent help for severe shortness of breath or chest pain.",
+    "clinical_note": "Here is the concise doctor-facing SOAP draft:\n\n**Subjective**\nThe patient reports tiredness and looking pale.\n\n**Objective**\nNot mentioned in transcript.\n\n**Assessment**\nThe doctor suspects iron deficiency anaemia, but it has not been confirmed.\n\n**Plan**\nFollow up after the blood test results are available.",
+    "patient_summary": "The patient is feeling tired and looks pale. The doctor thinks it might be because of iron deficiency anaemia, but it's not sure yet. \n\nThe doctor wants to do some tests: a full blood count and a ferritin test. \n\nThe patient doesn't need to take any medicine right now. \n\nThe doctor wants to see the patient again after the test results come back. \n\nIf the patient feels very short of breath or has chest pain, they should go to the hospital right away.",
+    "clinical_fact_scoring": {
+      "total": 9,
+      "covered": 5,
+      "coverage_percent": 55.556,
+      "critical_total": 4,
+      "critical_covered": 2,
+      "critical_coverage_percent": 50.0,
+      "items": [
+        {
+          "field": "chief_complaint",
+          "value": "tiredness",
+          "critical": false,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "symptoms",
+          "value": "tiredness",
+          "critical": false,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "symptoms",
+          "value": "looking pale",
+          "critical": false,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "diagnosis",
+          "value": "iron deficiency anaemia",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "tests",
+          "value": "full blood count",
+          "critical": false,
+          "present": false,
+          "similarity": 0.3333
+        },
+        {
+          "field": "tests",
+          "value": "ferritin",
+          "critical": false,
+          "present": false,
+          "similarity": 0.0
+        },
+        {
+          "field": "follow_up",
+          "value": "follow up after blood test results are available",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "warning_signs",
+          "value": "severe shortness of breath",
+          "critical": true,
+          "present": false,
+          "similarity": 0.0129
+        },
+        {
+          "field": "warning_signs",
+          "value": "chest pain",
+          "critical": true,
+          "present": false,
+          "similarity": 0.0
+        }
+      ]
+    },
+    "patient_fact_scoring": {
+      "total": 9,
+      "covered": 4,
+      "coverage_percent": 44.444,
+      "critical_total": 4,
+      "critical_covered": 2,
+      "critical_coverage_percent": 50.0,
+      "items": [
+        {
+          "field": "chief_complaint",
+          "value": "tiredness",
+          "critical": false,
+          "present": false,
+          "similarity": 0.0045
+        },
+        {
+          "field": "symptoms",
+          "value": "tiredness",
+          "critical": false,
+          "present": false,
+          "similarity": 0.0045
+        },
+        {
+          "field": "symptoms",
+          "value": "looking pale",
+          "critical": false,
+          "present": false,
+          "similarity": 0.5
+        },
+        {
+          "field": "diagnosis",
+          "value": "iron deficiency anaemia",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "tests",
+          "value": "full blood count",
+          "critical": false,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "tests",
+          "value": "ferritin",
+          "critical": false,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "follow_up",
+          "value": "follow up after blood test results are available",
+          "critical": true,
+          "present": false,
+          "similarity": 0.5
+        },
+        {
+          "field": "warning_signs",
+          "value": "severe shortness of breath",
+          "critical": true,
+          "present": false,
+          "similarity": 0.5
+        },
+        {
+          "field": "warning_signs",
+          "value": "chest pain",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        }
+      ]
+    },
+    "soap": {
+      "counts": {
+        "subjective": 1,
+        "objective": 1,
+        "assessment": 1,
+        "plan": 1
+      },
+      "all_four_exactly_once": true
+    },
+    "patient_readability": {
+      "sentences": 6,
+      "words": 85,
+      "mean_words_per_sentence": 14.167,
+      "flesch_reading_ease": 78.992,
+      "flesch_kincaid_grade": 5.761
+    },
+    "clinical_uncertainty_preserved": true,
+    "patient_uncertainty_preserved": true,
+    "clinical_unsupported_candidates": [
+      {
+        "statement": "**Subjective**",
+        "best_transcript_evidence": "No medication was prescribed today.",
+        "lexical_similarity": 0.2273,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "**Objective**",
+        "best_transcript_evidence": "No medication was prescribed today.",
+        "lexical_similarity": 0.2791,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "**Assessment**",
+        "best_transcript_evidence": "No medication was prescribed today.",
+        "lexical_similarity": 0.2727,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "**Plan**",
+        "best_transcript_evidence": "The patient reports tiredness and looking pale.",
+        "lexical_similarity": 0.12,
+        "status": "manual_review_required"
+      }
+    ],
+    "patient_unsupported_candidates": []
+  },
+  {
+    "case_id": "E3_10",
+    "category": "negated_medication",
+    "transcript": "The patient has a dry cough and mild fever. No antibiotics are being prescribed today. Take paracetamol 500 mg as needed for fever. Rest and drink plenty of fluids. Follow up in 5 days if the cough has not improved.",
+    "clinical_note": "**SOAP Draft:**\n\n**Subjective:**\nThe patient has a dry cough and mild fever.\n\n**Objective:**\nNot mentioned in transcript.\n\n**Assessment:**\nThe doctor suspects the patient has a dry cough and mild fever.\n\n**Plan:**\n1. Paracetamol 500 mg as needed for fever.\n2. Rest.\n3. Drink plenty of fluids.\n4. Follow up in 5 days if the cough has not improved.\n\n**Structured JSON:**\n{\n  \"chief_complaint\": \"dry cough and mild fever\",\n  \"symptoms\": [\"dry cough\", \"mild fever\"],\n  \"relevant_history\": [],\n  \"diagnosis_discussed\": [],\n  \"diagnosis_status\": null,\n  \"medications\": [\n    {\n      \"name\": \"paracetamol\",\n      \"name_as_heard\": \"paracetamol\",\n      \"dose\": null,\n      \"strength\": \"500 mg\",\n      \"dose_unit\": null,\n      \"dosage_form\": null,\n      \"route\": null,\n      \"frequency\": null,\n      \"timing\": null,\n      \"food_instruction\": null,\n      \"duration\": null,\n      \"as_needed\": true,\n      \"indication\": \"fever\",\n      \"notes\": null,\n      \"doctor_confirmed\": false,\n      \"suggestions\": []\n    }\n  ],\n  \"tests\": [],\n  \"advice\": [\"rest\", \"drink plenty of fluids\"],\n  \"follow_up\": \"follow up in 5 days if cough has not improved\",\n  \"warning_signs\": [],\n  \"glossary\": []\n}",
+    "patient_summary": "Here is the patient explanation:\n\nYou have a dry cough and a mild fever. The doctor is not giving you any antibiotics today. To help with your fever, you can take Paracetamol 500 mg whenever you need it. It's also important to rest and drink plenty of fluids. If your cough doesn't get better in 5 days, you need to come back and see the doctor.",
+    "clinical_fact_scoring": {
+      "total": 10,
+      "covered": 10,
+      "coverage_percent": 100.0,
+      "critical_total": 5,
+      "critical_covered": 5,
+      "critical_coverage_percent": 100.0,
+      "items": [
+        {
+          "field": "chief_complaint",
+          "value": "dry cough and mild fever",
+          "critical": false,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "symptoms",
+          "value": "dry cough",
+          "critical": false,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "symptoms",
+          "value": "mild fever",
+          "critical": false,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "advice",
+          "value": "rest",
+          "critical": false,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "advice",
+          "value": "drink plenty of fluids",
+          "critical": false,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "follow_up",
+          "value": "follow up in 5 days if cough has not improved",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.name",
+          "value": "paracetamol",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.strength",
+          "value": "500 mg",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.indication",
+          "value": "fever",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.as_needed",
+          "value": "as needed",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        }
+      ]
+    },
+    "patient_fact_scoring": {
+      "total": 10,
+      "covered": 8,
+      "coverage_percent": 80.0,
+      "critical_total": 5,
+      "critical_covered": 3,
+      "critical_coverage_percent": 60.0,
+      "items": [
+        {
+          "field": "chief_complaint",
+          "value": "dry cough and mild fever",
+          "critical": false,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "symptoms",
+          "value": "dry cough",
+          "critical": false,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "symptoms",
+          "value": "mild fever",
+          "critical": false,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "advice",
+          "value": "rest",
+          "critical": false,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "advice",
+          "value": "drink plenty of fluids",
+          "critical": false,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "follow_up",
+          "value": "follow up in 5 days if cough has not improved",
+          "critical": true,
+          "present": false,
+          "similarity": 0.6
+        },
+        {
+          "field": "medication_1.name",
+          "value": "paracetamol",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.strength",
+          "value": "500 mg",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.indication",
+          "value": "fever",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.as_needed",
+          "value": "as needed",
+          "critical": true,
+          "present": false,
+          "similarity": 0.0
+        }
+      ]
+    },
+    "soap": {
+      "counts": {
+        "subjective": 1,
+        "objective": 1,
+        "assessment": 1,
+        "plan": 1
+      },
+      "all_four_exactly_once": true
+    },
+    "patient_readability": {
+      "sentences": 6,
+      "words": 66,
+      "mean_words_per_sentence": 11.0,
+      "flesch_reading_ease": 79.025,
+      "flesch_kincaid_grade": 4.97
+    },
+    "clinical_uncertainty_preserved": null,
+    "patient_uncertainty_preserved": null,
+    "clinical_unsupported_candidates": [
+      {
+        "statement": "**SOAP Draft:**",
+        "best_transcript_evidence": "Rest and drink plenty of fluids.",
+        "lexical_similarity": 0.2927,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "**Subjective:**",
+        "best_transcript_evidence": "Follow up in 5 days if the cough has not improved.",
+        "lexical_similarity": 0.2034,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "**Objective:**",
+        "best_transcript_evidence": "Follow up in 5 days if the cough has not improved.",
+        "lexical_similarity": 0.2414,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "**Assessment:**",
+        "best_transcript_evidence": "Rest and drink plenty of fluids.",
+        "lexical_similarity": 0.2439,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "**Plan:**",
+        "best_transcript_evidence": "Rest and drink plenty of fluids.",
+        "lexical_similarity": 0.1714,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "1.",
+        "best_transcript_evidence": "",
+        "lexical_similarity": 0.0,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "2.",
+        "best_transcript_evidence": "",
+        "lexical_similarity": 0.0,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "3.",
+        "best_transcript_evidence": "",
+        "lexical_similarity": 0.0,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "4.",
+        "best_transcript_evidence": "",
+        "lexical_similarity": 0.0,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "**Structured JSON:**",
+        "best_transcript_evidence": "No antibiotics are being prescribed today.",
+        "lexical_similarity": 0.2857,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"diagnosis_discussed\": [],",
+        "best_transcript_evidence": "No antibiotics are being prescribed today.",
+        "lexical_similarity": 0.3333,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"diagnosis_status\": null,",
+        "best_transcript_evidence": "The patient has a dry cough and mild fever.",
+        "lexical_similarity": 0.2857,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"medications\": [",
+        "best_transcript_evidence": "Rest and drink plenty of fluids.",
+        "lexical_similarity": 0.2857,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"dose\": null,",
+        "best_transcript_evidence": "No antibiotics are being prescribed today.",
+        "lexical_similarity": 0.2,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"dose_unit\": null,",
+        "best_transcript_evidence": "No antibiotics are being prescribed today.",
+        "lexical_similarity": 0.2545,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"dosage_form\": null,",
+        "best_transcript_evidence": "Take paracetamol 500 mg as needed for fever.",
+        "lexical_similarity": 0.2373,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"route\": null,",
+        "best_transcript_evidence": "No antibiotics are being prescribed today.",
+        "lexical_similarity": 0.1569,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"frequency\": null,",
+        "best_transcript_evidence": "Rest and drink plenty of fluids.",
+        "lexical_similarity": 0.3111,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"timing\": null,",
+        "best_transcript_evidence": "Rest and drink plenty of fluids.",
+        "lexical_similarity": 0.2857,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"food_instruction\": null,",
+        "best_transcript_evidence": "Follow up in 5 days if the cough has not improved.",
+        "lexical_similarity": 0.3143,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"duration\": null,",
+        "best_transcript_evidence": "The patient has a dry cough and mild fever.",
+        "lexical_similarity": 0.2545,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"notes\": null,",
+        "best_transcript_evidence": "Rest and drink plenty of fluids.",
+        "lexical_similarity": 0.2439,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"suggestions\": []",
+        "best_transcript_evidence": "Rest and drink plenty of fluids.",
+        "lexical_similarity": 0.2857,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"tests\": [],",
+        "best_transcript_evidence": "Rest and drink plenty of fluids.",
+        "lexical_similarity": 0.2222,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"warning_signs\": [],",
+        "best_transcript_evidence": "No antibiotics are being prescribed today.",
+        "lexical_similarity": 0.2963,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"glossary\": []",
+        "best_transcript_evidence": "No antibiotics are being prescribed today.",
+        "lexical_similarity": 0.2041,
+        "status": "manual_review_required"
+      }
+    ],
+    "patient_unsupported_candidates": [
+      {
+        "statement": "If your cough doesn't get better in 5 days, you need to come back and see the doctor.",
+        "best_transcript_evidence": "Take paracetamol 500 mg as needed for fever.",
+        "lexical_similarity": 0.3175,
+        "status": "manual_review_required"
+      }
+    ]
+  },
+  {
+    "case_id": "E3_11",
+    "category": "hallucination_control",
+    "transcript": "Good morning. Thank you for seeing me today. No symptoms, diagnosis, medicines, tests, treatment advice, follow-up plan or warning signs were discussed in this recording.",
+    "clinical_note": "Based on the source transcript and the structured extraction, here is the concise doctor-facing SOAP draft:\n\n**Subjective**\nNot mentioned in transcript.\n\n**Objective**\nNot mentioned in transcript.\n\n**Assessment**\nNot mentioned in transcript.\n\n**Plan**\nNot mentioned in transcript.\n\nNote: Since no information was discussed in the transcript, the SOAP draft is empty.",
+    "patient_summary": "There is no information to report.",
+    "clinical_fact_scoring": {
+      "total": 0,
+      "covered": 0,
+      "coverage_percent": 100.0,
+      "critical_total": 0,
+      "critical_covered": 0,
+      "critical_coverage_percent": 100.0,
+      "items": []
+    },
+    "patient_fact_scoring": {
+      "total": 0,
+      "covered": 0,
+      "coverage_percent": 100.0,
+      "critical_total": 0,
+      "critical_covered": 0,
+      "critical_coverage_percent": 100.0,
+      "items": []
+    },
+    "soap": {
+      "counts": {
+        "subjective": 1,
+        "objective": 1,
+        "assessment": 1,
+        "plan": 1
+      },
+      "all_four_exactly_once": true
+    },
+    "patient_readability": {
+      "sentences": 1,
+      "words": 6,
+      "mean_words_per_sentence": 6.0,
+      "flesch_reading_ease": 59.745,
+      "flesch_kincaid_grade": 6.417
+    },
+    "clinical_uncertainty_preserved": null,
+    "patient_uncertainty_preserved": null,
+    "clinical_unsupported_candidates": [
+      {
+        "statement": "Based on the source transcript and the structured extraction, here is the concise doctor-facing SOAP draft:",
+        "best_transcript_evidence": "No symptoms, diagnosis, medicines, tests, treatment advice, follow-up plan or warning signs were discussed in this recording.",
+        "lexical_similarity": 0.25,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "**Subjective**",
+        "best_transcript_evidence": "Thank you for seeing me today.",
+        "lexical_similarity": 0.1538,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "**Objective**",
+        "best_transcript_evidence": "Good morning.",
+        "lexical_similarity": 0.1905,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "**Assessment**",
+        "best_transcript_evidence": "Thank you for seeing me today.",
+        "lexical_similarity": 0.3077,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "Note: Since no information was discussed in the transcript, the SOAP draft is empty.",
+        "best_transcript_evidence": "Thank you for seeing me today.",
+        "lexical_similarity": 0.3091,
+        "status": "manual_review_required"
+      }
+    ],
+    "patient_unsupported_candidates": []
+  },
+  {
+    "case_id": "E3_12",
+    "category": "allergy_test_medication",
+    "transcript": "The patient is allergic to penicillin. A urinary tract infection is suspected but has not been confirmed. Take nitrofurantoin 100 mg twice daily for 5 days with food. A urine test has been sent. Follow up in 3 days. Seek earlier medical attention if fever or back pain develops.",
+    "clinical_note": "**SOAP Draft:**\n\n**Subjective:**\nNot mentioned in transcript.\n\n**Objective:**\nThe patient has a suspected urinary tract infection. A urine test has been sent. The patient is allergic to penicillin.\n\n**Assessment:**\nThe patient has a suspected urinary tract infection, which has not been confirmed. The patient is allergic to penicillin.\n\n**Plan:**\nPrescribe nitrofurantoin 100 mg twice daily for 5 days with food. Follow up in 3 days. Seek earlier medical attention if fever or back pain develops.\n\n**Medication Safety:**\n\n* Medication: nitrofurantoin\n* Dose: 100 mg\n* Strength: 100 mg\n* Frequency: twice daily\n* Timing: with food\n* Duration: 5 days\n\n**Structured JSON:**\n\n```\n{\n  \"medications\": [\n    {\n      \"name\": \"nitrofurantoin\",\n      \"strength\": \"100 mg\",\n      \"frequency\": \"twice daily\",\n      \"timing\": \"with food\",\n      \"duration\": \"5 days\"\n    }\n  ],\n  \"tests\": [\n    \"urine test\"\n  ],\n  \"advice\": [\n    \"Follow up in 3 days\",\n    \"Seek earlier medical attention if fever or back pain develops\"\n  ]\n}\n```",
+    "patient_summary": "The patient has a penicillin allergy. They might have a urinary tract infection, but it's not confirmed yet. \n\nThe patient needs to take nitrofurantoin:\n\n* Medicine: nitrofurantoin\n* Strength: 100 mg\n* Frequency: twice daily\n* Duration: 5 days\n* Food instruction: with food\n\nA urine test has been sent to the lab. \n\nThe patient should come back in 3 days. If they have fever or back pain, they should see a doctor sooner.",
+    "clinical_fact_scoring": {
+      "total": 11,
+      "covered": 10,
+      "coverage_percent": 90.909,
+      "critical_total": 9,
+      "critical_covered": 9,
+      "critical_coverage_percent": 100.0,
+      "items": [
+        {
+          "field": "history",
+          "value": "penicillin allergy",
+          "critical": false,
+          "present": false,
+          "similarity": 0.5
+        },
+        {
+          "field": "diagnosis",
+          "value": "urinary tract infection",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "tests",
+          "value": "urine test",
+          "critical": false,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "follow_up",
+          "value": "follow up in 3 days",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "warning_signs",
+          "value": "fever",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "warning_signs",
+          "value": "back pain",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.name",
+          "value": "nitrofurantoin",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.strength",
+          "value": "100 mg",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.frequency",
+          "value": "twice daily",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.food_instruction",
+          "value": "with food",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.duration",
+          "value": "5 days",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        }
+      ]
+    },
+    "patient_fact_scoring": {
+      "total": 11,
+      "covered": 10,
+      "coverage_percent": 90.909,
+      "critical_total": 9,
+      "critical_covered": 8,
+      "critical_coverage_percent": 88.889,
+      "items": [
+        {
+          "field": "history",
+          "value": "penicillin allergy",
+          "critical": false,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "diagnosis",
+          "value": "urinary tract infection",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "tests",
+          "value": "urine test",
+          "critical": false,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "follow_up",
+          "value": "follow up in 3 days",
+          "critical": true,
+          "present": false,
+          "similarity": 0.6
+        },
+        {
+          "field": "warning_signs",
+          "value": "fever",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "warning_signs",
+          "value": "back pain",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.name",
+          "value": "nitrofurantoin",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.strength",
+          "value": "100 mg",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.frequency",
+          "value": "twice daily",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.food_instruction",
+          "value": "with food",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        },
+        {
+          "field": "medication_1.duration",
+          "value": "5 days",
+          "critical": true,
+          "present": true,
+          "similarity": 1.0
+        }
+      ]
+    },
+    "soap": {
+      "counts": {
+        "subjective": 1,
+        "objective": 1,
+        "assessment": 1,
+        "plan": 1
+      },
+      "all_four_exactly_once": true
+    },
+    "patient_readability": {
+      "sentences": 11,
+      "words": 67,
+      "mean_words_per_sentence": 6.091,
+      "flesch_reading_ease": 70.596,
+      "flesch_kincaid_grade": 4.926
+    },
+    "clinical_uncertainty_preserved": true,
+    "patient_uncertainty_preserved": true,
+    "clinical_unsupported_candidates": [
+      {
+        "statement": "**Subjective:**",
+        "best_transcript_evidence": "A urine test has been sent.",
+        "lexical_similarity": 0.2222,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "**Objective:**",
+        "best_transcript_evidence": "The patient is allergic to penicillin.",
+        "lexical_similarity": 0.1739,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "**Assessment:**",
+        "best_transcript_evidence": "A urine test has been sent.",
+        "lexical_similarity": 0.3333,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "**Plan:**",
+        "best_transcript_evidence": "Follow up in 3 days.",
+        "lexical_similarity": 0.1739,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "**Medication Safety:**",
+        "best_transcript_evidence": "Seek earlier medical attention if fever or back pain develops.",
+        "lexical_similarity": 0.3333,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "* Dose: 100 mg",
+        "best_transcript_evidence": "Take nitrofurantoin 100 mg twice daily for 5 days with food.",
+        "lexical_similarity": 0.2286,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "* Strength: 100 mg",
+        "best_transcript_evidence": "Take nitrofurantoin 100 mg twice daily for 5 days with food.",
+        "lexical_similarity": 0.2973,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "**Structured JSON:**",
+        "best_transcript_evidence": "A urinary tract infection is suspected but has not been confirmed.",
+        "lexical_similarity": 0.275,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"medications\": [",
+        "best_transcript_evidence": "Seek earlier medical attention if fever or back pain develops.",
+        "lexical_similarity": 0.3056,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"strength\": \"100 mg\",",
+        "best_transcript_evidence": "Take nitrofurantoin 100 mg twice daily for 5 days with food.",
+        "lexical_similarity": 0.2973,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"tests\": [",
+        "best_transcript_evidence": "A urine test has been sent.",
+        "lexical_similarity": 0.3226,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "\"advice\": [",
+        "best_transcript_evidence": "A urine test has been sent.",
+        "lexical_similarity": 0.1875,
+        "status": "manual_review_required"
+      }
+    ],
+    "patient_unsupported_candidates": [
+      {
+        "statement": "* Strength: 100 mg",
+        "best_transcript_evidence": "Take nitrofurantoin 100 mg twice daily for 5 days with food.",
+        "lexical_similarity": 0.2973,
+        "status": "manual_review_required"
+      },
+      {
+        "statement": "* Food instruction: with food",
+        "best_transcript_evidence": "A urinary tract infection is suspected but has not been confirmed.",
+        "lexical_similarity": 0.3297,
+        "status": "manual_review_required"
+      }
+    ]
+  }
+]

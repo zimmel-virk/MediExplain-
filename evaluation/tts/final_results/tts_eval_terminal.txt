@@ -1,0 +1,281 @@
+==============================================================================
+EVALUATION 08 — TTS INFERENCE
+==============================================================================
+==============================================================================
+MEDIEXPLAIN+ EVALUATION 08
+TTS OPERATIONAL + ROUTE SAFETY
+==============================================================================
+Cases: 14
+
+[1/14] TTS_EN_01
+Language: English
+Expected audio: True
+Generated: True
+Valid audio: True
+Backend: edge_neural
+Route compliant: True
+Cache hit: False
+Duration: 4.392
+Seconds: 1.9845
+
+[2/14] TTS_EN_02
+Language: English
+Expected audio: True
+Generated: True
+Valid audio: True
+Backend: edge_neural
+Route compliant: True
+Cache hit: False
+Duration: 4.296
+Seconds: 2.0919
+
+[3/14] TTS_UR_01
+Language: Urdu
+Expected audio: True
+Generated: True
+Valid audio: True
+Backend: edge_neural
+Route compliant: True
+Cache hit: False
+Duration: 5.112
+Seconds: 1.3367
+
+[4/14] TTS_UR_02
+Language: Urdu
+Expected audio: True
+Generated: True
+Valid audio: True
+Backend: edge_neural
+Route compliant: True
+Cache hit: False
+Duration: 5.664
+Seconds: 1.669
+
+[5/14] TTS_AR_01
+Language: Arabic
+Expected audio: True
+Generated: True
+Valid audio: True
+Backend: edge_neural
+Route compliant: True
+Cache hit: False
+Duration: 5.928
+Seconds: 1.6842
+
+[6/14] TTS_AR_02
+Language: Arabic
+Expected audio: True
+Generated: True
+Valid audio: True
+Backend: edge_neural
+Route compliant: True
+Cache hit: False
+Duration: 6.768
+Seconds: 1.9431
+Edge TTS unavailable for pa_shah: No audio was received. Please verify that your parameters are correct.
+
+[7/14] TTS_PA_01
+Language: Punjabi Shahmukhi
+Expected audio: True
+Generated: True
+Valid audio: True
+Backend: gtts_punjabi
+Route compliant: True
+Cache hit: False
+Duration: 4.728
+Seconds: 1.0883
+Edge TTS unavailable for pa_shah: No audio was received. Please verify that your parameters are correct.
+
+[8/14] TTS_PA_02
+Language: Punjabi Shahmukhi
+Expected audio: True
+Generated: True
+Valid audio: True
+Backend: gtts_punjabi
+Route compliant: True
+Cache hit: False
+Duration: 5.256
+Seconds: 1.2096
+
+[9/14] TTS_PS_01
+Language: Pashto
+Expected audio: True
+Generated: True
+Valid audio: True
+Backend: edge_neural_pashto
+Route compliant: True
+Cache hit: False
+Duration: 5.304
+Seconds: 2.8032
+
+[10/14] TTS_PS_02
+Language: Pashto
+Expected audio: True
+Generated: True
+Valid audio: True
+Backend: edge_neural_pashto
+Route compliant: True
+Cache hit: False
+Duration: 5.784
+Seconds: 1.4923
+
+[11/14] TTS_SD_01
+Language: Sindhi
+Expected audio: True
+Generated: True
+Valid audio: True
+Backend: indic_mio_sindhi
+Route compliant: True
+Cache hit: False
+Duration: 5.52
+Seconds: 55.6791
+
+[12/14] TTS_SD_02
+Language: Sindhi
+Expected audio: True
+Generated: True
+Valid audio: True
+Backend: indic_mio_sindhi
+Route compliant: True
+Cache hit: False
+Duration: 7.0
+Seconds: 47.1106
+Punjabi TTS blocked: Punjabi internal rendering is missing.
+
+[13/14] TTS_SAFE_01
+Language: Punjabi Shahmukhi
+Expected audio: False
+Generated: False
+Valid audio: False
+Backend: none
+Route compliant: True
+Cache hit: False
+Duration: None
+Seconds: 0.0
+Punjabi TTS blocked: internal speech text is not Punjabi.
+
+[14/14] TTS_SAFE_02
+Language: Punjabi Shahmukhi
+Expected audio: False
+Generated: False
+Valid audio: False
+Backend: none
+Route compliant: True
+Cache hit: False
+Duration: None
+Seconds: 0.0
+
+==============================================================================
+SUCCESSFUL CASE EXECUTIONS: 14/14
+TTS EVALUATION INFERENCE COMPLETE
+==============================================================================
+
+==============================================================================
+EVALUATION 08 — TTS SCORING
+==============================================================================
+==============================================================================
+MEDIEXPLAIN+ EVALUATION 08 SCORING
+==============================================================================
+Synthesis success: 100.0 %
+Audio validity: 100.0 %
+Route compliance: 100.0 %
+Negative safety block: 100.0 %
+Overall operational pass: 100.0 %
+
+PER LANGUAGE
+ar {'n': 2, 'positive_cases': 2, 'synthesis_success_percent': 100.0, 'audio_valid_percent': 100.0, 'route_compliance_percent': 100.0, 'case_pass_percent': 100.0, 'mean_processing_seconds': 1.814, 'median_processing_seconds': 1.814, 'mean_audio_duration_seconds': 6.348}
+en {'n': 2, 'positive_cases': 2, 'synthesis_success_percent': 100.0, 'audio_valid_percent': 100.0, 'route_compliance_percent': 100.0, 'case_pass_percent': 100.0, 'mean_processing_seconds': 2.038, 'median_processing_seconds': 2.038, 'mean_audio_duration_seconds': 4.344}
+pa_shah {'n': 4, 'positive_cases': 2, 'synthesis_success_percent': 100.0, 'audio_valid_percent': 100.0, 'route_compliance_percent': 100.0, 'case_pass_percent': 100.0, 'mean_processing_seconds': 1.149, 'median_processing_seconds': 1.149, 'mean_audio_duration_seconds': 4.992}
+ps {'n': 2, 'positive_cases': 2, 'synthesis_success_percent': 100.0, 'audio_valid_percent': 100.0, 'route_compliance_percent': 100.0, 'case_pass_percent': 100.0, 'mean_processing_seconds': 2.148, 'median_processing_seconds': 2.148, 'mean_audio_duration_seconds': 5.544}
+sd {'n': 2, 'positive_cases': 2, 'synthesis_success_percent': 100.0, 'audio_valid_percent': 100.0, 'route_compliance_percent': 100.0, 'case_pass_percent': 100.0, 'mean_processing_seconds': 51.395, 'median_processing_seconds': 51.395, 'mean_audio_duration_seconds': 6.26}
+ur {'n': 2, 'positive_cases': 2, 'synthesis_success_percent': 100.0, 'audio_valid_percent': 100.0, 'route_compliance_percent': 100.0, 'case_pass_percent': 100.0, 'mean_processing_seconds': 1.503, 'median_processing_seconds': 1.503, 'mean_audio_duration_seconds': 5.388}
+
+Summary: /home/ubuntu/mediexplain/backend/evaluation/tts/results/summary.json
+Case scores: /home/ubuntu/mediexplain/backend/evaluation/tts/results/case_scores.csv
+Errors: /home/ubuntu/mediexplain/backend/evaluation/tts/results/error_analysis.json
+Human review template: /home/ubuntu/mediexplain/backend/evaluation/tts/results/human_listening_review.csv
+
+==============================================================================
+EVALUATION 08 COMPLETE
+==============================================================================
+{
+  "evaluation": "MediExplain+ Evaluation 08 TTS Operational and Route Safety",
+  "cases": 14,
+  "positive_cases": 12,
+  "negative_safety_cases": 2,
+  "expected_audio_synthesis_success_percent": 100.0,
+  "audio_file_validity_percent": 100.0,
+  "same_language_route_compliance_percent": 100.0,
+  "negative_safety_block_success_percent": 100.0,
+  "overall_operational_pass_percent": 100.0,
+  "cache_hit_percent": 0.0,
+  "per_language": {
+    "ar": {
+      "n": 2,
+      "positive_cases": 2,
+      "synthesis_success_percent": 100.0,
+      "audio_valid_percent": 100.0,
+      "route_compliance_percent": 100.0,
+      "case_pass_percent": 100.0,
+      "mean_processing_seconds": 1.814,
+      "median_processing_seconds": 1.814,
+      "mean_audio_duration_seconds": 6.348
+    },
+    "en": {
+      "n": 2,
+      "positive_cases": 2,
+      "synthesis_success_percent": 100.0,
+      "audio_valid_percent": 100.0,
+      "route_compliance_percent": 100.0,
+      "case_pass_percent": 100.0,
+      "mean_processing_seconds": 2.038,
+      "median_processing_seconds": 2.038,
+      "mean_audio_duration_seconds": 4.344
+    },
+    "pa_shah": {
+      "n": 4,
+      "positive_cases": 2,
+      "synthesis_success_percent": 100.0,
+      "audio_valid_percent": 100.0,
+      "route_compliance_percent": 100.0,
+      "case_pass_percent": 100.0,
+      "mean_processing_seconds": 1.149,
+      "median_processing_seconds": 1.149,
+      "mean_audio_duration_seconds": 4.992
+    },
+    "ps": {
+      "n": 2,
+      "positive_cases": 2,
+      "synthesis_success_percent": 100.0,
+      "audio_valid_percent": 100.0,
+      "route_compliance_percent": 100.0,
+      "case_pass_percent": 100.0,
+      "mean_processing_seconds": 2.148,
+      "median_processing_seconds": 2.148,
+      "mean_audio_duration_seconds": 5.544
+    },
+    "sd": {
+      "n": 2,
+      "positive_cases": 2,
+      "synthesis_success_percent": 100.0,
+      "audio_valid_percent": 100.0,
+      "route_compliance_percent": 100.0,
+      "case_pass_percent": 100.0,
+      "mean_processing_seconds": 51.395,
+      "median_processing_seconds": 51.395,
+      "mean_audio_duration_seconds": 6.26
+    },
+    "ur": {
+      "n": 2,
+      "positive_cases": 2,
+      "synthesis_success_percent": 100.0,
+      "audio_valid_percent": 100.0,
+      "route_compliance_percent": 100.0,
+      "case_pass_percent": 100.0,
+      "mean_processing_seconds": 1.503,
+      "median_processing_seconds": 1.503,
+      "mean_audio_duration_seconds": 5.388
+    }
+  },
+  "interpretation_warning": "Automatic results assess synthesis, route safety and audio-file validity. Pronunciation, intelligibility and clinical speech accuracy require separate human listening review."
+}

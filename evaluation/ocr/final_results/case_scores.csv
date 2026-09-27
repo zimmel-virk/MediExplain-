@@ -1,0 +1,7 @@
+case_id,category,engine,confidence,available,wer_percent,cer_percent,medication_names_preserved,numbers_preserved,processing_seconds,warning
+OCR01,clean_single_medication,tesseract,0.957,True,0.0,0.0,True,True,0.7042,
+OCR02,clean_antibiotic,tesseract,0.956,True,0.0,0.0,True,True,0.6683,
+OCR03,low_contrast,tesseract,0.955,True,0.0,0.0,True,True,0.5894,
+OCR04,slight_rotation,tesseract,0.952,True,0.0,0.0,True,True,0.5374,
+OCR05,blurred,tesseract,0.957,True,0.0,0.0,True,True,0.6216,
+OCR06,multiple_medications,tesseract,0.948,True,0.0,0.0,True,True,0.7192,

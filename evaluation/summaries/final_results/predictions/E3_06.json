@@ -1,0 +1,12 @@
+{
+  "case_id": "E3_06",
+  "category": "frequency_duration_food",
+  "clinical_note": "**SOAP Draft:**\n\n**Subjective:**\nNot mentioned in transcript.\n\n**Objective:**\nType 2 diabetes confirmed. Medication: metformin 500 mg, frequency: twice daily, timing: with food, duration: 30 days.\n\n**Assessment:**\nThe doctor suspects type 2 diabetes. The patient has been prescribed metformin 500 mg to be taken twice daily with food for 30 days.\n\n**Plan:**\nPrescribe metformin 500 mg twice daily with food for 30 days. Follow up after 30 days.\n\n**Structured JSON Output:**\n```\n{\n  \"chief_complaint\": null,\n  \"symptoms\": [],\n  \"relevant_history\": [],\n  \"diagnosis_discussed\": [\"type 2 diabetes\"],\n  \"diagnosis_status\": \"confirmed\",\n  \"medications\": [\n    {\n      \"name\": \"metformin\",\n      \"name_as_heard\": \"metformin\",\n      \"dose\": null,\n      \"strength\": \"500 mg\",\n      \"dose_unit\": null,\n      \"dosage_form\": null,\n      \"route\": null,\n      \"frequency\": \"twice daily\",\n      \"timing\": \"with food\",\n      \"food_instruction\": \"with food\",\n      \"duration\": \"30 days\",\n      \"as_needed\": false,\n      \"indication\": null,\n      \"notes\": null,\n      \"doctor_confirmed\": false,\n      \"suggestions\": []\n    }\n  ],\n  \"tests\": [],\n  \"advice\": [],\n  \"follow_up\": \"follow up after 30 days\",\n  \"warning_signs\": [],\n  \"glossary\": []\n}\n```",
+  "patient_summary": "You have type 2 diabetes. The doctor said it's confirmed.\n\nYou need to take metformin.\n\nMedicine: Metformin\nStrength: 500 mg\nFrequency: twice daily\nTiming: with food\nDuration: 30 days\n\nTake it with food, twice a day, for 30 days.\n\nYou need to follow up with the doctor after 30 days.",
+  "clinical_seconds": 228.103,
+  "patient_seconds": 64.693,
+  "total_generation_seconds": 292.797,
+  "clinical_empty": false,
+  "patient_empty": false,
+  "error": ""
+}

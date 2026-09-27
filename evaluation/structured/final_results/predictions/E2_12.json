@@ -1,0 +1,55 @@
+{
+  "case_id": "E2_12",
+  "category": "allergy_test_medication",
+  "transcript": "The patient is allergic to penicillin. A urinary tract infection is suspected but has not been confirmed. Take nitrofurantoin 100 mg twice daily for 5 days with food. A urine test has been sent. Follow up in 3 days. Seek earlier medical attention if fever or back pain develops.",
+  "prediction": {
+    "chief_complaint": null,
+    "symptoms": [
+      "urinary tract infection suspected"
+    ],
+    "relevant_history": [
+      "allergic to penicillin"
+    ],
+    "diagnosis_discussed": [
+      "urinary tract infection"
+    ],
+    "diagnosis_status": "suspected",
+    "medications": [
+      {
+        "name": "nitrofurantoin",
+        "name_as_heard": "nitrofurantoin",
+        "confidence": 1.0,
+        "dose": "100 mg",
+        "strength": null,
+        "dose_unit": null,
+        "dosage_form": null,
+        "route": null,
+        "frequency": "twice daily",
+        "timing": "with food",
+        "food_instruction": "with food",
+        "duration": "5 days",
+        "as_needed": false,
+        "indication": null,
+        "notes": null,
+        "doctor_confirmed": false,
+        "suggestions": []
+      }
+    ],
+    "tests": [
+      "urine test"
+    ],
+    "advice": [
+      "seek earlier medical attention if fever or back pain develops"
+    ],
+    "follow_up": "3 days",
+    "warning_signs": [
+      "fever",
+      "back pain"
+    ],
+    "glossary": []
+  },
+  "processing_seconds": 169.149,
+  "fallback_empty_output": false,
+  "schema_valid": true,
+  "error": ""
+}

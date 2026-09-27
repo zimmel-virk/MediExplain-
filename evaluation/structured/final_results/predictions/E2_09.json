@@ -1,0 +1,22 @@
+{
+  "case_id": "E2_09",
+  "category": "uncertain_medication_name",
+  "transcript": "The patient reports that the medicine name sounded like Metfornin, but the exact medicine name is uncertain. The patient heard the dose as 500 mg twice daily. Do not guess the medicine identity. The doctor will verify the medicine before it is confirmed.",
+  "prediction": {
+    "chief_complaint": null,
+    "symptoms": [],
+    "relevant_history": [],
+    "diagnosis_discussed": [],
+    "diagnosis_status": null,
+    "medications": [],
+    "tests": [],
+    "advice": [],
+    "follow_up": null,
+    "warning_signs": [],
+    "glossary": []
+  },
+  "processing_seconds": 66.624,
+  "fallback_empty_output": true,
+  "schema_valid": true,
+  "error": ""
+}

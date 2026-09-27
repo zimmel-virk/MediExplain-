@@ -1,0 +1,4 @@
+# Optional research extensions used by the original project when available.
+pyannote.audio>=3.1,<4
+paddleocr>=2.8,<3
+paddlepaddle>=2.6,<3

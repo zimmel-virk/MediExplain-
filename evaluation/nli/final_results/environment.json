@@ -1,0 +1,14 @@
+{
+  "evaluation": "MediExplain+ DeBERTa-v3 NLI Safety Evaluation",
+  "dataset_sha256": "a86bdd7245ab048bc91bb4d1fb423b33791afe59399f5eca20055d4e1de73a04",
+  "nli_model": "cross-encoder/nli-deberta-v3-base",
+  "entailment_threshold": 0.55,
+  "contradiction_threshold": 0.45,
+  "nli_enabled": true,
+  "check_pair_signature": "(premise: 'str', hypothesis: 'str') -> 'dict'",
+  "python_version": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "platform": "Linux-6.8.0-1063-aws-x86_64-with-glibc2.35",
+  "machine": "x86_64",
+  "nli_module": "/home/ubuntu/mediexplain/backend/app/services/nli.py",
+  "nli_module_sha256": "fdd721a96ab92b412f1b6d4b771d99dd1d281f114162a59cea6e86d9c98b4b85"
+}

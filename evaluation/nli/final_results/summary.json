@@ -1,0 +1,138 @@
+{
+  "evaluation": "MediExplain+ DeBERTa-v3 NLI Safety Evaluation",
+  "dataset_sha256": "a86bdd7245ab048bc91bb4d1fb423b33791afe59399f5eca20055d4e1de73a04",
+  "total_pairs": 30,
+  "available_pairs": 30,
+  "unavailable_pairs": 0,
+  "three_class": {
+    "accuracy_percent": 83.333,
+    "macro_f1_percent": 82.222,
+    "per_class": {
+      "entailed": {
+        "tp": 10,
+        "fp": 0,
+        "fn": 0,
+        "precision_percent": 100.0,
+        "recall_percent": 100.0,
+        "f1_percent": 100.0
+      },
+      "contradiction": {
+        "tp": 10,
+        "fp": 5,
+        "fn": 0,
+        "precision_percent": 66.667,
+        "recall_percent": 100.0,
+        "f1_percent": 80.0
+      },
+      "unsupported": {
+        "tp": 5,
+        "fp": 0,
+        "fn": 5,
+        "precision_percent": 100.0,
+        "recall_percent": 50.0,
+        "f1_percent": 66.667
+      }
+    },
+    "confusion_matrix": {
+      "entailed": {
+        "entailed": 10,
+        "contradiction": 0,
+        "unsupported": 0
+      },
+      "contradiction": {
+        "entailed": 0,
+        "contradiction": 10,
+        "unsupported": 0
+      },
+      "unsupported": {
+        "entailed": 0,
+        "contradiction": 5,
+        "unsupported": 5
+      }
+    }
+  },
+  "binary_safety": {
+    "unsafe_cases": 20,
+    "grounded_cases": 10,
+    "unsafe_detected": 20,
+    "unsafe_false_negatives": 0,
+    "unsafe_claim_sensitivity_percent": 100.0,
+    "unsafe_false_negative_rate_percent": 0.0,
+    "grounded_claim_specificity_percent": 100.0,
+    "false_warning_rate_percent": 0.0
+  },
+  "probabilities_by_gold_class": {
+    "entailed": {
+      "mean_entailment": 0.9926,
+      "mean_contradiction": 0.0001,
+      "mean_neutral": 0.0073
+    },
+    "contradiction": {
+      "mean_entailment": 0.0002,
+      "mean_contradiction": 0.9991,
+      "mean_neutral": 0.0007
+    },
+    "unsupported": {
+      "mean_entailment": 0.0052,
+      "mean_contradiction": 0.5088,
+      "mean_neutral": 0.486
+    }
+  },
+  "per_category": {
+    "diagnosis_uncertainty": {
+      "n": 3,
+      "accuracy_percent": 100.0,
+      "unsafe_false_negatives": 0
+    },
+    "duration": {
+      "n": 3,
+      "accuracy_percent": 100.0,
+      "unsafe_false_negatives": 0
+    },
+    "follow_up": {
+      "n": 3,
+      "accuracy_percent": 66.667,
+      "unsafe_false_negatives": 0
+    },
+    "frequency": {
+      "n": 3,
+      "accuracy_percent": 66.667,
+      "unsafe_false_negatives": 0
+    },
+    "medication_name": {
+      "n": 3,
+      "accuracy_percent": 66.667,
+      "unsafe_false_negatives": 0
+    },
+    "medication_strength": {
+      "n": 3,
+      "accuracy_percent": 100.0,
+      "unsafe_false_negatives": 0
+    },
+    "negation": {
+      "n": 3,
+      "accuracy_percent": 100.0,
+      "unsafe_false_negatives": 0
+    },
+    "symptom": {
+      "n": 3,
+      "accuracy_percent": 100.0,
+      "unsafe_false_negatives": 0
+    },
+    "tests": {
+      "n": 3,
+      "accuracy_percent": 66.667,
+      "unsafe_false_negatives": 0
+    },
+    "warning_sign": {
+      "n": 3,
+      "accuracy_percent": 66.667,
+      "unsafe_false_negatives": 0
+    }
+  },
+  "latency": {
+    "mean_seconds": 0.4263,
+    "median_seconds": 0.1802
+  },
+  "misclassified_cases": 5
+}

@@ -1,0 +1,12 @@
+{
+  "case_id": "E3_10",
+  "category": "negated_medication",
+  "clinical_note": "**SOAP Draft:**\n\n**Subjective:**\nThe patient has a dry cough and mild fever.\n\n**Objective:**\nNot mentioned in transcript.\n\n**Assessment:**\nThe doctor suspects the patient has a dry cough and mild fever.\n\n**Plan:**\n1. Paracetamol 500 mg as needed for fever.\n2. Rest.\n3. Drink plenty of fluids.\n4. Follow up in 5 days if the cough has not improved.\n\n**Structured JSON:**\n{\n  \"chief_complaint\": \"dry cough and mild fever\",\n  \"symptoms\": [\"dry cough\", \"mild fever\"],\n  \"relevant_history\": [],\n  \"diagnosis_discussed\": [],\n  \"diagnosis_status\": null,\n  \"medications\": [\n    {\n      \"name\": \"paracetamol\",\n      \"name_as_heard\": \"paracetamol\",\n      \"dose\": null,\n      \"strength\": \"500 mg\",\n      \"dose_unit\": null,\n      \"dosage_form\": null,\n      \"route\": null,\n      \"frequency\": null,\n      \"timing\": null,\n      \"food_instruction\": null,\n      \"duration\": null,\n      \"as_needed\": true,\n      \"indication\": \"fever\",\n      \"notes\": null,\n      \"doctor_confirmed\": false,\n      \"suggestions\": []\n    }\n  ],\n  \"tests\": [],\n  \"advice\": [\"rest\", \"drink plenty of fluids\"],\n  \"follow_up\": \"follow up in 5 days if cough has not improved\",\n  \"warning_signs\": [],\n  \"glossary\": []\n}",
+  "patient_summary": "Here is the patient explanation:\n\nYou have a dry cough and a mild fever. The doctor is not giving you any antibiotics today. To help with your fever, you can take Paracetamol 500 mg whenever you need it. It's also important to rest and drink plenty of fluids. If your cough doesn't get better in 5 days, you need to come back and see the doctor.",
+  "clinical_seconds": 222.239,
+  "patient_seconds": 68.458,
+  "total_generation_seconds": 290.697,
+  "clinical_empty": false,
+  "patient_empty": false,
+  "error": ""
+}

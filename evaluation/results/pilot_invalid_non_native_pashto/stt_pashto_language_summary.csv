@@ -1,0 +1,2 @@
+group,language,samples,reference_words,mean_wer,median_wer,mean_cer,medicine_retention,number_retention,code_switch_retention
+ps,Pashto,5,200,1.0,1.0,0.9609,0.0,0.0,

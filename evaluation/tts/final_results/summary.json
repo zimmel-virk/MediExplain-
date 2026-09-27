@@ -1,0 +1,81 @@
+{
+  "evaluation": "MediExplain+ Evaluation 08 TTS Operational and Route Safety",
+  "cases": 14,
+  "positive_cases": 12,
+  "negative_safety_cases": 2,
+  "expected_audio_synthesis_success_percent": 100.0,
+  "audio_file_validity_percent": 100.0,
+  "same_language_route_compliance_percent": 100.0,
+  "negative_safety_block_success_percent": 100.0,
+  "overall_operational_pass_percent": 100.0,
+  "cache_hit_percent": 0.0,
+  "per_language": {
+    "ar": {
+      "n": 2,
+      "positive_cases": 2,
+      "synthesis_success_percent": 100.0,
+      "audio_valid_percent": 100.0,
+      "route_compliance_percent": 100.0,
+      "case_pass_percent": 100.0,
+      "mean_processing_seconds": 1.814,
+      "median_processing_seconds": 1.814,
+      "mean_audio_duration_seconds": 6.348
+    },
+    "en": {
+      "n": 2,
+      "positive_cases": 2,
+      "synthesis_success_percent": 100.0,
+      "audio_valid_percent": 100.0,
+      "route_compliance_percent": 100.0,
+      "case_pass_percent": 100.0,
+      "mean_processing_seconds": 2.038,
+      "median_processing_seconds": 2.038,
+      "mean_audio_duration_seconds": 4.344
+    },
+    "pa_shah": {
+      "n": 4,
+      "positive_cases": 2,
+      "synthesis_success_percent": 100.0,
+      "audio_valid_percent": 100.0,
+      "route_compliance_percent": 100.0,
+      "case_pass_percent": 100.0,
+      "mean_processing_seconds": 1.149,
+      "median_processing_seconds": 1.149,
+      "mean_audio_duration_seconds": 4.992
+    },
+    "ps": {
+      "n": 2,
+      "positive_cases": 2,
+      "synthesis_success_percent": 100.0,
+      "audio_valid_percent": 100.0,
+      "route_compliance_percent": 100.0,
+      "case_pass_percent": 100.0,
+      "mean_processing_seconds": 2.148,
+      "median_processing_seconds": 2.148,
+      "mean_audio_duration_seconds": 5.544
+    },
+    "sd": {
+      "n": 2,
+      "positive_cases": 2,
+      "synthesis_success_percent": 100.0,
+      "audio_valid_percent": 100.0,
+      "route_compliance_percent": 100.0,
+      "case_pass_percent": 100.0,
+      "mean_processing_seconds": 51.395,
+      "median_processing_seconds": 51.395,
+      "mean_audio_duration_seconds": 6.26
+    },
+    "ur": {
+      "n": 2,
+      "positive_cases": 2,
+      "synthesis_success_percent": 100.0,
+      "audio_valid_percent": 100.0,
+      "route_compliance_percent": 100.0,
+      "case_pass_percent": 100.0,
+      "mean_processing_seconds": 1.503,
+      "median_processing_seconds": 1.503,
+      "mean_audio_duration_seconds": 5.388
+    }
+  },
+  "interpretation_warning": "Automatic results assess synthesis, route safety and audio-file validity. Pronunciation, intelligibility and clinical speech accuracy require separate human listening review."
+}

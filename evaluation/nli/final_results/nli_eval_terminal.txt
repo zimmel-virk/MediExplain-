@@ -1,0 +1,254 @@
+==============================================================================
+MEDIEXPLAIN+ EVALUATION 04
+DEBERTA-V3 NLI SAFETY
+==============================================================================
+Dataset integrity: PASS
+Pairs: 30
+Model: cross-encoder/nli-deberta-v3-base
+Entailment threshold: 0.55
+Contradiction threshold: 0.45
+
+[1/30] NLI_01
+Gold: entailed
+Prediction: entailed
+Entailment: 0.9963
+Contradiction: 0.0001
+Neutral: 0.0036
+Seconds: 7.5589
+
+[2/30] NLI_02
+Gold: contradiction
+Prediction: contradiction
+Entailment: 0.0
+Contradiction: 1.0
+Neutral: 0.0
+Seconds: 0.1821
+
+[3/30] NLI_03
+Gold: unsupported
+Prediction: unsupported
+Entailment: 0.0014
+Contradiction: 0.0087
+Neutral: 0.9899
+Seconds: 0.1838
+
+[4/30] NLI_04
+Gold: entailed
+Prediction: entailed
+Entailment: 0.9976
+Contradiction: 0.0001
+Neutral: 0.0023
+Seconds: 0.1801
+
+[5/30] NLI_05
+Gold: contradiction
+Prediction: contradiction
+Entailment: 0.0001
+Contradiction: 0.9995
+Neutral: 0.0004
+Seconds: 0.1736
+
+[6/30] NLI_06
+Gold: unsupported
+Prediction: unsupported
+Entailment: 0.0002
+Contradiction: 0.0476
+Neutral: 0.9522
+Seconds: 0.1779
+
+[7/30] NLI_07
+Gold: entailed
+Prediction: entailed
+Entailment: 0.9642
+Contradiction: 0.0002
+Neutral: 0.0356
+Seconds: 0.1818
+
+[8/30] NLI_08
+Gold: contradiction
+Prediction: contradiction
+Entailment: 0.0
+Contradiction: 0.9997
+Neutral: 0.0003
+Seconds: 0.1763
+
+[9/30] NLI_09
+Gold: unsupported
+Prediction: unsupported
+Entailment: 0.0003
+Contradiction: 0.0185
+Neutral: 0.9812
+Seconds: 0.1766
+
+[10/30] NLI_10
+Gold: entailed
+Prediction: entailed
+Entailment: 0.9978
+Contradiction: 0.0001
+Neutral: 0.0021
+Seconds: 0.1842
+
+[11/30] NLI_11
+Gold: contradiction
+Prediction: contradiction
+Entailment: 0.0002
+Contradiction: 0.9997
+Neutral: 0.0002
+Seconds: 0.173
+
+[12/30] NLI_12
+Gold: unsupported
+Prediction: contradiction
+Entailment: 0.0
+Contradiction: 1.0
+Neutral: 0.0
+Seconds: 0.1765
+
+[13/30] NLI_13
+Gold: entailed
+Prediction: entailed
+Entailment: 0.9949
+Contradiction: 0.0001
+Neutral: 0.005
+Seconds: 0.1809
+
+[14/30] NLI_14
+Gold: contradiction
+Prediction: contradiction
+Entailment: 0.0001
+Contradiction: 0.9994
+Neutral: 0.0005
+Seconds: 0.1744
+
+[15/30] NLI_15
+Gold: unsupported
+Prediction: unsupported
+Entailment: 0.0491
+Contradiction: 0.0205
+Neutral: 0.9304
+Seconds: 0.1758
+
+[16/30] NLI_16
+Gold: entailed
+Prediction: entailed
+Entailment: 0.9913
+Contradiction: 0.0002
+Neutral: 0.0086
+Seconds: 0.1854
+
+[17/30] NLI_17
+Gold: contradiction
+Prediction: contradiction
+Entailment: 0.0004
+Contradiction: 0.9987
+Neutral: 0.001
+Seconds: 0.1762
+
+[18/30] NLI_18
+Gold: unsupported
+Prediction: contradiction
+Entailment: 0.0001
+Contradiction: 0.9992
+Neutral: 0.0007
+Seconds: 0.1774
+
+[19/30] NLI_19
+Gold: entailed
+Prediction: entailed
+Entailment: 0.9965
+Contradiction: 0.0001
+Neutral: 0.0034
+Seconds: 0.1891
+
+[20/30] NLI_20
+Gold: contradiction
+Prediction: contradiction
+Entailment: 0.0013
+Contradiction: 0.9948
+Neutral: 0.004
+Seconds: 0.1823
+
+[21/30] NLI_21
+Gold: unsupported
+Prediction: unsupported
+Entailment: 0.0002
+Contradiction: 0.0005
+Neutral: 0.9993
+Seconds: 0.1851
+
+[22/30] NLI_22
+Gold: entailed
+Prediction: entailed
+Entailment: 0.9973
+Contradiction: 0.0001
+Neutral: 0.0026
+Seconds: 0.1832
+
+[23/30] NLI_23
+Gold: contradiction
+Prediction: contradiction
+Entailment: 0.0
+Contradiction: 1.0
+Neutral: 0.0
+Seconds: 0.1771
+
+[24/30] NLI_24
+Gold: unsupported
+Prediction: contradiction
+Entailment: 0.0001
+Contradiction: 0.9981
+Neutral: 0.0018
+Seconds: 0.1772
+
+[25/30] NLI_25
+Gold: entailed
+Prediction: entailed
+Entailment: 0.9935
+Contradiction: 0.0002
+Neutral: 0.0064
+Seconds: 0.1814
+
+[26/30] NLI_26
+Gold: contradiction
+Prediction: contradiction
+Entailment: 0.0001
+Contradiction: 0.9998
+Neutral: 0.0002
+Seconds: 0.1779
+
+[27/30] NLI_27
+Gold: unsupported
+Prediction: contradiction
+Entailment: 0.0001
+Contradiction: 0.9966
+Neutral: 0.0033
+Seconds: 0.1779
+
+[28/30] NLI_28
+Gold: entailed
+Prediction: entailed
+Entailment: 0.9967
+Contradiction: 0.0001
+Neutral: 0.0032
+Seconds: 0.1967
+
+[29/30] NLI_29
+Gold: contradiction
+Prediction: contradiction
+Entailment: 0.0
+Contradiction: 0.9997
+Neutral: 0.0002
+Seconds: 0.1802
+
+[30/30] NLI_30
+Gold: unsupported
+Prediction: contradiction
+Entailment: 0.0
+Contradiction: 0.9985
+Neutral: 0.0015
+Seconds: 0.1867
+
+==============================================================================
+SUCCESSFUL: 30/30
+NLI INFERENCE COMPLETE
+==============================================================================

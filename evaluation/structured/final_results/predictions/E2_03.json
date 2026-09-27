@@ -1,0 +1,55 @@
+{
+  "case_id": "E2_03",
+  "category": "chronic_condition_monitoring",
+  "transcript": "The patient has had hypertension for four years and takes amlodipine 5 mg once daily every morning. Continue amlodipine 5 mg once daily every morning. Record blood pressure in the morning and evening for the next 7 days. Follow up in one week. Seek urgent medical attention for severe chest pain, fainting or severe shortness of breath.",
+  "prediction": {
+    "chief_complaint": null,
+    "symptoms": [],
+    "relevant_history": [
+      "hypertension for four years"
+    ],
+    "diagnosis_discussed": [
+      "hypertension"
+    ],
+    "diagnosis_status": "discussed",
+    "medications": [
+      {
+        "name": "amlodipine",
+        "name_as_heard": "amlodipine",
+        "confidence": 1.0,
+        "dose": "5 mg",
+        "strength": null,
+        "dose_unit": null,
+        "dosage_form": null,
+        "route": null,
+        "frequency": "once daily",
+        "timing": "morning",
+        "food_instruction": null,
+        "duration": null,
+        "as_needed": false,
+        "indication": null,
+        "notes": null,
+        "doctor_confirmed": true,
+        "suggestions": []
+      }
+    ],
+    "tests": [
+      "blood pressure"
+    ],
+    "advice": [
+      "record blood pressure in the morning and evening for the next 7 days",
+      "follow up in one week"
+    ],
+    "follow_up": "one week",
+    "warning_signs": [
+      "severe chest pain",
+      "fainting",
+      "severe shortness of breath"
+    ],
+    "glossary": []
+  },
+  "processing_seconds": 173.821,
+  "fallback_empty_output": false,
+  "schema_valid": true,
+  "error": ""
+}

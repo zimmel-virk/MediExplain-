@@ -1,0 +1,288 @@
+{
+  "system": "MediExplain+ final STT",
+  "normalisation": "Unicode NFKC, punctuation removed, Arabic-script digits normalised; no transliteration or translation.",
+  "per_file": [
+    {
+      "file": "ps_01.m4a",
+      "group": "ps",
+      "condition": "unspecified",
+      "expected_language": "ps",
+      "detected_language": "ps",
+      "language_confidence": 1,
+      "languages_detected": [
+        "ps"
+      ],
+      "code_switched": false,
+      "duration_seconds": 7.444,
+      "reference_words": 38,
+      "hypothesis_words": 11,
+      "wer": 1.0,
+      "cer": 0.9408,
+      "medicine_terms_expected": 1,
+      "medicine_terms_retained": 0,
+      "medicine_retention": 0.0,
+      "missing_medicine_terms": [
+        "پاراسټامول"
+      ],
+      "numbers_expected": 1,
+      "numbers_retained": 0,
+      "number_retention": 0.0,
+      "missing_numbers": [
+        "500"
+      ],
+      "english_tokens_expected": 0,
+      "english_tokens_retained": 0,
+      "code_switch_retention": null,
+      "missing_english_tokens": [],
+      "script_valid": false,
+      "forbidden_scripts": [],
+      "arabic_script_present": false,
+      "latin_present": false,
+      "segments_total": 1,
+      "low_confidence_segments": 1,
+      "low_confidence_flagged_for_review": 1,
+      "low_confidence_review_recall": 1.0,
+      "review_gate_pass": true,
+      "segments_requiring_review": 1,
+      "reference": "زه له دوو ورځو راهیسې تبه او د ستوني درد لرم. پاراسټامول 500 ملي ګرامه په ورځ کې دوه ځله د خوړو وروسته د دوو ورځو لپاره واخلئ. که نښې خرابې شي، بیا له ډاکټر سره اړیکه ونیسئ.",
+      "hypothesis": "ఫలాసలు టామనాల నుం వారు మువికాపాల ధరు సంది కందునుడ అదివావ ధరు నాన�",
+      "error": null
+    },
+    {
+      "file": "ps_02.m4a",
+      "group": "ps",
+      "condition": "unspecified",
+      "expected_language": "ps",
+      "detected_language": "ps",
+      "language_confidence": 1,
+      "languages_detected": [
+        "ps"
+      ],
+      "code_switched": false,
+      "duration_seconds": 10.132,
+      "reference_words": 42,
+      "hypothesis_words": 0,
+      "wer": 1.0,
+      "cer": 1.0,
+      "medicine_terms_expected": 1,
+      "medicine_terms_retained": 0,
+      "medicine_retention": 0.0,
+      "missing_medicine_terms": [
+        "اموکسیسلین"
+      ],
+      "numbers_expected": 1,
+      "numbers_retained": 0,
+      "number_retention": 0.0,
+      "missing_numbers": [
+        "500"
+      ],
+      "english_tokens_expected": 0,
+      "english_tokens_retained": 0,
+      "code_switch_retention": null,
+      "missing_english_tokens": [],
+      "script_valid": false,
+      "forbidden_scripts": [],
+      "arabic_script_present": false,
+      "latin_present": false,
+      "segments_total": 0,
+      "low_confidence_segments": 0,
+      "low_confidence_flagged_for_review": 0,
+      "low_confidence_review_recall": null,
+      "review_gate_pass": true,
+      "segments_requiring_review": 0,
+      "reference": "ناروغ له درې ورځو راهیسې ټوخی، تبه او د سینې درد لري. اموکسیسلین 500 ملي ګرامه په ورځ کې درې ځله د پنځو ورځو لپاره د خوړو وروسته واخلئ. د درملو کورس بشپړ کړئ او که حالت خراب شي ډاکټر ته ورشئ.",
+      "hypothesis": "",
+      "error": null
+    },
+    {
+      "file": "ps_03.m4a",
+      "group": "ps",
+      "condition": "unspecified",
+      "expected_language": "ps",
+      "detected_language": "ps",
+      "language_confidence": 1,
+      "languages_detected": [
+        "ps"
+      ],
+      "code_switched": false,
+      "duration_seconds": 11.8386875,
+      "reference_words": 39,
+      "hypothesis_words": 24,
+      "wer": 1.0,
+      "cer": 0.8693,
+      "medicine_terms_expected": 1,
+      "medicine_terms_retained": 0,
+      "medicine_retention": 0.0,
+      "missing_medicine_terms": [
+        "میټفارمین"
+      ],
+      "numbers_expected": 1,
+      "numbers_retained": 0,
+      "number_retention": 0.0,
+      "missing_numbers": [
+        "500"
+      ],
+      "english_tokens_expected": 0,
+      "english_tokens_retained": 0,
+      "code_switch_retention": null,
+      "missing_english_tokens": [],
+      "script_valid": false,
+      "forbidden_scripts": [],
+      "arabic_script_present": false,
+      "latin_present": false,
+      "segments_total": 1,
+      "low_confidence_segments": 1,
+      "low_confidence_flagged_for_review": 1,
+      "low_confidence_review_recall": 1.0,
+      "review_gate_pass": true,
+      "segments_requiring_review": 1,
+      "reference": "ستاسو د وینې شکر له معمول څخه لوړ دی. میټفارمین 500 ملي ګرامه په ورځ کې دوه ځله له خوړو سره د دېرشو ورځو لپاره واخلئ. خپل شکر په منظم ډول وګورئ او دوه اونۍ وروسته بیا معاینه وکړئ.",
+      "hypothesis": "మాటర్ నిటాసాల 5 మిటాబి తఇ భావరస కితా సంల దలా ధరాక నాబ సంపాసి వాం వాం కాకాక కకాకి సంపాకి ఇం మాసల పితాశ వాడి మాడి సంపాడి సంపా�",
+      "error": null
+    },
+    {
+      "file": "ps_04.m4a",
+      "group": "ps",
+      "condition": "unspecified",
+      "expected_language": "ps",
+      "detected_language": "ps",
+      "language_confidence": 1,
+      "languages_detected": [
+        "ps"
+      ],
+      "code_switched": false,
+      "duration_seconds": 14.676,
+      "reference_words": 39,
+      "hypothesis_words": 0,
+      "wer": 1.0,
+      "cer": 1.0,
+      "medicine_terms_expected": 1,
+      "medicine_terms_retained": 0,
+      "medicine_retention": 0.0,
+      "missing_medicine_terms": [
+        "اومیپرازول"
+      ],
+      "numbers_expected": 1,
+      "numbers_retained": 0,
+      "number_retention": 0.0,
+      "missing_numbers": [
+        "20"
+      ],
+      "english_tokens_expected": 0,
+      "english_tokens_retained": 0,
+      "code_switch_retention": null,
+      "missing_english_tokens": [],
+      "script_valid": false,
+      "forbidden_scripts": [],
+      "arabic_script_present": false,
+      "latin_present": false,
+      "segments_total": 0,
+      "low_confidence_segments": 0,
+      "low_confidence_flagged_for_review": 0,
+      "low_confidence_review_recall": null,
+      "review_gate_pass": true,
+      "segments_requiring_review": 0,
+      "reference": "تاسو په ځانګړي ډول له خوړو وروسته د معدې سوځښت او درد لرئ. اومیپرازول 20 ملي ګرامه هره ورځ یو ځل د ناشتې څخه مخکې د څوارلسو ورځو لپاره واخلئ. که درد شدید شي له ډاکټر سره اړیکه ونیسئ.",
+      "hypothesis": "",
+      "error": null
+    },
+    {
+      "file": "ps_05.m4a",
+      "group": "ps",
+      "condition": "unspecified",
+      "expected_language": "ps",
+      "detected_language": "ps",
+      "language_confidence": 1,
+      "languages_detected": [
+        "ps"
+      ],
+      "code_switched": false,
+      "duration_seconds": 11.3266875,
+      "reference_words": 42,
+      "hypothesis_words": 2,
+      "wer": 1.0,
+      "cer": 0.9946,
+      "medicine_terms_expected": 1,
+      "medicine_terms_retained": 0,
+      "medicine_retention": 0.0,
+      "missing_medicine_terms": [
+        "سیټیریزین"
+      ],
+      "numbers_expected": 1,
+      "numbers_retained": 0,
+      "number_retention": 0.0,
+      "missing_numbers": [
+        "10"
+      ],
+      "english_tokens_expected": 0,
+      "english_tokens_retained": 0,
+      "code_switch_retention": null,
+      "missing_english_tokens": [],
+      "script_valid": false,
+      "forbidden_scripts": [],
+      "arabic_script_present": false,
+      "latin_present": false,
+      "segments_total": 1,
+      "low_confidence_segments": 1,
+      "low_confidence_flagged_for_review": 1,
+      "low_confidence_review_recall": 1.0,
+      "review_gate_pass": true,
+      "segments_requiring_review": 1,
+      "reference": "تاسو د حساسیت نښې لرئ چې پرنجې او د پوزې خارښت پکې شامل دي. سیټیریزین 10 ملي ګرامه هره شپه یو ځل د اوو ورځو لپاره واخلئ. که په ساه اخیستلو کې ستونزه پیدا شي، ژر تر ژره طبي مرسته ترلاسه کړئ.",
+      "hypothesis": "6 మా�",
+      "error": null
+    }
+  ],
+  "per_language": {
+    "ps": {
+      "label": "Pashto",
+      "samples": 5,
+      "reference_words": 200,
+      "wer": {
+        "n": 5,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "cer": {
+        "n": 5,
+        "mean": 0.9609,
+        "median": 0.9946,
+        "min": 0.8693,
+        "max": 1.0
+      },
+      "medicine_retention": 0.0,
+      "number_retention": 0.0,
+      "code_switch_retention": null
+    }
+  },
+  "overall": {
+    "samples": 5,
+    "reference_words": 200,
+    "wer": {
+      "n": 5,
+      "mean": 1.0,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "cer": {
+      "n": 5,
+      "mean": 0.9609,
+      "median": 0.9946,
+      "min": 0.8693,
+      "max": 1.0
+    }
+  },
+  "safety_metrics": {
+    "script_correct_samples": 0,
+    "script_scored_samples": 5,
+    "script_correctness_rate": 0.0,
+    "low_confidence_threshold": 0.7,
+    "low_confidence_segments": 3,
+    "low_confidence_segments_flagged_for_review": 3,
+    "low_confidence_review_recall": 1.0,
+    "review_gate_failures": []
+  }
+}

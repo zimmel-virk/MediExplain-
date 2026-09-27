@@ -1,0 +1,12 @@
+{
+  "evaluation": "MediExplain+ Multilingual Translation Safety",
+  "dataset_sha256": "f9fdaca1504e8a46b55cc65d64d3610ce9b68653c0319e52bca1119135af59e9",
+  "nllb_model": "facebook/nllb-200-distilled-600M",
+  "semantic_threshold": 0.55,
+  "translation_signature": "(text: 'str', source: 'str' = 'en', target: 'str' = 'ur', structured: 'dict | None' = None) -> 'dict'",
+  "python_version": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "platform": "Linux-6.8.0-1063-aws-x86_64-with-glibc2.35",
+  "machine": "x86_64",
+  "translation_module": "/home/ubuntu/mediexplain/backend/app/services/translation.py",
+  "translation_module_sha256": "7f6ce126cf264fd048f87f13c196b0025a076e34a020ab346ee7fd36d54f1171"
+}

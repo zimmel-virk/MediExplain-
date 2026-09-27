@@ -1,0 +1,22 @@
+{
+  "case_id": "E2_11",
+  "category": "hallucination_control",
+  "transcript": "Good morning. Thank you for seeing me today. No symptoms, diagnosis, medicines, tests, treatment advice, follow-up plan or warning signs were discussed in this recording.",
+  "prediction": {
+    "chief_complaint": null,
+    "symptoms": [],
+    "relevant_history": [],
+    "diagnosis_discussed": [],
+    "diagnosis_status": null,
+    "medications": [],
+    "tests": [],
+    "advice": [],
+    "follow_up": null,
+    "warning_signs": [],
+    "glossary": []
+  },
+  "processing_seconds": 51.074,
+  "fallback_empty_output": true,
+  "schema_valid": true,
+  "error": ""
+}

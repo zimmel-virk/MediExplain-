@@ -1,0 +1,12 @@
+{
+  "case_id": "E3_04",
+  "category": "timing_and_food_instruction",
+  "clinical_note": "**SOAP Draft:**\n\n**Subjective:**\nThe patient reports burning in the upper stomach and acid coming into the throat after meals.\n\n**Objective:**\nNot mentioned in transcript.\n\n**Assessment:**\nThe doctor suspects acid reflux.\n\n**Plan:**\n1. Take omeprazole 20 mg once daily every morning before breakfast for 14 days.\n2. Reduce spicy food and coffee.\n3. Follow up in two weeks.\n4. Seek medical attention earlier for vomiting blood, black stools, or difficulty swallowing.\n\n**Note:** The doctor has not confirmed the diagnosis of acid reflux.",
+  "patient_summary": "Here is the patient explanation:\n\nYou have been feeling burning in your upper stomach and acid coming into your throat after eating. The doctor thinks it might be acid reflux, but we're not sure yet. To help with this, you need to take omeprazole 20 mg every morning before breakfast for 14 days. Try to eat less spicy food and drink less coffee. If you start to feel worse or have any of these problems, come back to see us sooner: vomiting blood, black stools, or trouble swallowing. We want to see you again in two weeks.",
+  "clinical_seconds": 93.751,
+  "patient_seconds": 93.686,
+  "total_generation_seconds": 187.437,
+  "clinical_empty": false,
+  "patient_empty": false,
+  "error": ""
+}

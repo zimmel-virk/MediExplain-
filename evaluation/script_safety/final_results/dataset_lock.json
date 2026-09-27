@@ -1,0 +1,10 @@
+{
+  "evaluation": "MediExplain+ Evaluation 07 Script Safety",
+  "status": "FROZEN_BEFORE_INFERENCE",
+  "files": {
+    "gold_cases.json": "d2784748bf918b5a09c394b2479fa66b5cde04591c9fdf18a8f159747bf7e5cb",
+    "evaluation_protocol.json": "9d0d7a024bc31fdedf34b9b4097d7c3f3909c3e43908bbcf24bc2369e086b138",
+    "run_script_safety_eval.py": "4ff812b4d3cbc38e7ab7d105f8353d6112444df40d236cd0d492f9cdec4f2db8",
+    "score_script_safety_eval.py": "95c1cc65f03b1643588fc8ab2363c2ac3a183742e03ff7dae987337c63299b13"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "evaluation": "MediExplain+ Speech Recognition Evaluation",
+  "dataset_version": "1.0",
+  "total_expected_cases": 36,
+  "manifest_sha256": "011491ad5d5a47acf1ddb67088fcbd6c30d866614026c24edf675517d3fe5273",
+  "python_version": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "platform": "Linux-6.8.0-1063-aws-x86_64-with-glibc2.35",
+  "machine": "x86_64",
+  "processor": "x86_64",
+  "stt_module": "/home/ubuntu/mediexplain/backend/app/services/stt.py",
+  "stt_module_sha256": "6994229ea4043525aa43f336cf26d1862ca666c69aff3d3f8ab7f82002f99c47",
+  "stt_signature": "(audio_path: 'str | Path', primary_language: 'Optional[str]' = None, secondary_language: 'Optional[str]' = None) -> 'dict'",
+  "whisper_model": "medium",
+  "whisper_device": "cpu",
+  "whisper_compute_type": "int8",
+  "whisper_beam_size": 5,
+  "omp_num_threads": null,
+  "mkl_num_threads": null,
+  "openblas_num_threads": null
+}

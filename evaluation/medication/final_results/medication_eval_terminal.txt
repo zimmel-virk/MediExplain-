@@ -1,0 +1,165 @@
+==============================================================================
+MEDIEXPLAIN+ EVALUATION 05
+MEDICATION TERMINOLOGY MATCHING
+==============================================================================
+
+[1/19] MED01: metformin
+Candidates: 10
+Top 1: metformin
+Concept: 569
+Score: 1.0
+Strength exact: False
+Form exact: False
+Seconds: 1.879086
+
+[2/19] MED02: amoxicillin
+Candidates: 10
+Top 1: amoxicillin
+Concept: 60
+Score: 1.0
+Strength exact: False
+Form exact: False
+Seconds: 0.078528
+
+[3/19] MED03: omeprazole
+Candidates: 10
+Top 1: omeprazole
+Concept: 647
+Score: 1.0
+Strength exact: False
+Form exact: False
+Seconds: 0.076804
+
+[4/19] MED04: amlodipine
+Candidates: 10
+Top 1: amlodipine
+Concept: 1003
+Score: 1.0
+Strength exact: False
+Form exact: False
+Seconds: 0.097258
+
+[5/19] MED05: ibuprofen
+Candidates: 10
+Top 1: ibuprofen
+Concept: 466
+Score: 1.0
+Strength exact: False
+Form exact: False
+Seconds: 0.117862
+
+[6/19] MED06: metfornin
+Candidates: 1
+Top 1: metformin
+Concept: 569
+Score: 0.889
+Strength exact: False
+Form exact: False
+Seconds: 0.071929
+
+[7/19] MED07: amoxycillin
+Candidates: 9
+Top 1: amoxicillin
+Concept: 60
+Score: 0.909
+Strength exact: False
+Form exact: False
+Seconds: 0.059774
+
+[8/19] MED08: omeprazol
+Candidates: 5
+Top 1: omeprazole
+Concept: 647
+Score: 0.947
+Strength exact: False
+Form exact: False
+Seconds: 0.060163
+
+[9/19] MED09: paracetamol
+Candidates: 10
+Top 1: acetaminophen
+Concept: 13
+Score: 1.0
+Strength exact: False
+Form exact: False
+Seconds: 0.147309
+
+[10/19] MED10: salbutamol
+Candidates: 10
+Top 1: albuterol
+Concept: 33
+Score: 1.0
+Strength exact: False
+Form exact: False
+Seconds: 0.103519
+
+[11/19] MED11: metformin 500 mg tablet
+Candidates: 10
+Top 1: 24 HR metformin hydrochloride 500 MG Extended Release Oral Tablet
+Concept: 23249
+Score: 1.0
+Strength exact: True
+Form exact: True
+Seconds: 0.071089
+
+[12/19] MED12: amoxicillin 500 mg capsule
+Candidates: 10
+Top 1: amoxicillin 500 MG Oral Capsule
+Concept: 6094
+Score: 1.0
+Strength exact: True
+Form exact: True
+Seconds: 0.060619
+
+[13/19] MEDB1: A+D Diaper Rash
+Candidates: 4
+Top 1: A+D Diaper Rash
+Concept: 31267
+Score: 1.0
+Strength exact: False
+Form exact: False
+Seconds: 0.089861
+
+[14/19] MEDB2: A+D Original
+Candidates: 3
+Top 1: A+D Original
+Concept: 17905
+Score: 1.0
+Strength exact: False
+Form exact: False
+Seconds: 0.064357
+
+[15/19] MEDB3: A.E.R. Witch Hazel
+Candidates: 5
+Top 1: A.E.R. Witch Hazel
+Concept: 16385
+Score: 1.0
+Strength exact: False
+Form exact: False
+Seconds: 0.100258
+
+[16/19] MEDN01: fever
+Candidates: 0
+Seconds: 0.059592
+
+[17/19] MEDN02: headache
+Candidates: 0
+Seconds: 0.060512
+
+[18/19] MEDN03: zimmelcillin
+Candidates: 0
+Seconds: 0.054764
+
+[19/19] MEDN04: ibuprofen 999 mg
+Candidates: 10
+Top 1: ibuprofen
+Concept: 466
+Score: 1.0
+Strength exact: False
+Form exact: False
+Seconds: 0.061737
+
+==============================================================================
+SUCCESSFUL: 19/19
+MEDICATION MATCHING COMPLETE
+==============================================================================

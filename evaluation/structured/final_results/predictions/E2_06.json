@@ -1,0 +1,46 @@
+{
+  "case_id": "E2_06",
+  "category": "frequency_duration_food",
+  "transcript": "The doctor confirmed type 2 diabetes. Take metformin 500 mg twice daily with food for 30 days. Twice daily is the frequency and 30 days is the treatment duration. Follow up after 30 days.",
+  "prediction": {
+    "chief_complaint": null,
+    "symptoms": [],
+    "relevant_history": [],
+    "diagnosis_discussed": [
+      "type 2 diabetes"
+    ],
+    "diagnosis_status": "confirmed",
+    "medications": [
+      {
+        "name": "metformin",
+        "name_as_heard": "metformin",
+        "confidence": 1.0,
+        "dose": "500 mg",
+        "strength": null,
+        "dose_unit": null,
+        "dosage_form": null,
+        "route": null,
+        "frequency": "twice daily",
+        "timing": "with food",
+        "food_instruction": "with food",
+        "duration": "30 days",
+        "as_needed": false,
+        "indication": null,
+        "notes": null,
+        "doctor_confirmed": true,
+        "suggestions": []
+      }
+    ],
+    "tests": [],
+    "advice": [
+      "Follow up after 30 days"
+    ],
+    "follow_up": "after 30 days",
+    "warning_signs": [],
+    "glossary": []
+  },
+  "processing_seconds": 149.375,
+  "fallback_empty_output": false,
+  "schema_valid": true,
+  "error": ""
+}

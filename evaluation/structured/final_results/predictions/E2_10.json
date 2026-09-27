@@ -1,0 +1,48 @@
+{
+  "case_id": "E2_10",
+  "category": "negated_medication",
+  "transcript": "The patient has a dry cough and mild fever. No antibiotics are being prescribed today. Take paracetamol 500 mg as needed for fever. Rest and drink plenty of fluids. Follow up in 5 days if the cough has not improved.",
+  "prediction": {
+    "chief_complaint": "dry cough and mild fever",
+    "symptoms": [
+      "dry cough",
+      "mild fever"
+    ],
+    "relevant_history": [],
+    "diagnosis_discussed": [],
+    "diagnosis_status": "discussed",
+    "medications": [
+      {
+        "name": "paracetamol",
+        "name_as_heard": "paracetamol",
+        "confidence": 1.0,
+        "dose": "500 mg",
+        "strength": "500 mg",
+        "dose_unit": "mg",
+        "dosage_form": null,
+        "route": null,
+        "frequency": "as needed",
+        "timing": null,
+        "food_instruction": null,
+        "duration": null,
+        "as_needed": true,
+        "indication": "fever",
+        "notes": null,
+        "doctor_confirmed": false,
+        "suggestions": []
+      }
+    ],
+    "tests": [],
+    "advice": [
+      "rest",
+      "drink plenty of fluids"
+    ],
+    "follow_up": "in 5 days if the cough has not improved",
+    "warning_signs": [],
+    "glossary": []
+  },
+  "processing_seconds": 159.811,
+  "fallback_empty_output": false,
+  "schema_valid": true,
+  "error": ""
+}

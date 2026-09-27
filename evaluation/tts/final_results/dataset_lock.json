@@ -1,0 +1,12 @@
+{
+  "evaluation": "MediExplain+ Evaluation 08 TTS",
+  "status": "FROZEN_BEFORE_INFERENCE",
+  "files": {
+    "gold_cases.json": "fe48c9970ed9f83499c2b8cff79738590f58834871cc62e7faa2464a4e126445",
+    "evaluation_protocol.json": "7d8419506a26021c5050fad8abd42a966daa0cefff758944bb85e773ac34af63",
+    "run_tts_eval.py": "08c45a59899eb8e57ceb3a4aa0c19fb20ba7916c39b7d60f401c641fb3d15f38",
+    "score_tts_eval.py": "d384fdc33e47410cfdb57836fe9ff804c96185ad8e4444e76fc1e342deed2591",
+    "app/services/tts.py": "301c936c843058dca873e4e0857d10f22d2001c70a10704af91448fab1d0bdff",
+    "app/services/neural_voice.py": "5aa660b1d039cc1399ff7a97ee7682e5852d23438697002baa6242e541554d05"
+  }
+}

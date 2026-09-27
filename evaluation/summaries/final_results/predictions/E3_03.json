@@ -1,0 +1,12 @@
+{
+  "case_id": "E3_03",
+  "category": "chronic_condition_monitoring",
+  "clinical_note": "**SOAP Draft:**\n\n**Subjective:**\nNot mentioned in transcript.\n\n**Objective:**\nThe patient has hypertension for four years and takes amlodipine 5 mg once daily every morning. Blood pressure will be recorded in the morning and evening for the next 7 days.\n\n**Assessment:**\nThe doctor suspects hypertension, a confirmed diagnosis.\n\n**Plan:**\nContinue amlodipine 5 mg once daily every morning. Record blood pressure in the morning and evening for the next 7 days. Follow up in one week. Seek urgent medical attention for severe chest pain, fainting, or severe shortness of breath.\n\n**Medication Safety Rules:**\n\n* Medication name: amlodipine\n* Dose: 5 mg\n* Strength: 5 mg\n* Frequency: once daily\n* Timing: every morning\n* Duration: not mentioned\n* Negation: none\n* Date: not mentioned\n\n**Structured JSON:**\n{\n  \"medications\": [\n    {\n      \"name\": \"amlodipine\",\n      \"strength\": \"5 mg\",\n      \"frequency\": \"once daily\",\n      \"timing\": \"every morning\"\n    }\n  ],\n  \"advice\": [\n    \"record blood pressure in the morning and evening for 7 days\"\n  ],\n  \"follow_up\": \"follow up in one week\",\n  \"warning_signs\": [\n    \"severe chest pain\",\n    \"fainting\",\n    \"severe shortness of breath\"\n  ]\n}",
+  "patient_summary": "Here is the patient explanation:\n\nYou have high blood pressure. You take amlodipine 5 mg every morning. Keep taking amlodipine 5 mg every morning. For the next 7 days, check your blood pressure in the morning and evening. Come back to see us in one week. If you have severe chest pain, faint, or have trouble breathing, go to the hospital right away.",
+  "clinical_seconds": 215.127,
+  "patient_seconds": 73.867,
+  "total_generation_seconds": 288.993,
+  "clinical_empty": false,
+  "patient_empty": false,
+  "error": ""
+}

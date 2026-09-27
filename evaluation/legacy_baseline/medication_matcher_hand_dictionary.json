@@ -1,0 +1,587 @@
+{
+  "n_positive_cases": 43,
+  "n_negative_cases": 8,
+  "overall": {
+    "top_1_accuracy": 0.977,
+    "top_3_accuracy": 1.0,
+    "mean_reciprocal_rank": 0.988,
+    "hard_negative_false_positive_rate": 0.25
+  },
+  "by_category": {
+    "common_misspelling": {
+      "n": 12,
+      "top_1": 1.0,
+      "top_3": 1.0,
+      "mrr": 1.0
+    },
+    "phonetic": {
+      "n": 9,
+      "top_1": 0.889,
+      "top_3": 1.0,
+      "mrr": 0.944
+    },
+    "brand_name": {
+      "n": 10,
+      "top_1": 1.0,
+      "top_3": 1.0,
+      "mrr": 1.0
+    },
+    "urdu_script": {
+      "n": 4,
+      "top_1": 1.0,
+      "top_3": 1.0,
+      "mrr": 1.0
+    },
+    "short_form": {
+      "n": 4,
+      "top_1": 1.0,
+      "top_3": 1.0,
+      "mrr": 1.0
+    },
+    "exact_generic": {
+      "n": 4,
+      "top_1": 1.0,
+      "top_3": 1.0,
+      "mrr": 1.0
+    }
+  },
+  "per_case": [
+    {
+      "query": "paracitamol",
+      "expected": "paracetamol",
+      "category": "common_misspelling",
+      "top_suggestion": "paracetamol",
+      "top_score": 1.0,
+      "rank_of_expected": 1,
+      "in_top_1": true,
+      "in_top_3": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query": "paracetomol",
+      "expected": "paracetamol",
+      "category": "common_misspelling",
+      "top_suggestion": "paracetamol",
+      "top_score": 1.0,
+      "rank_of_expected": 1,
+      "in_top_1": true,
+      "in_top_3": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query": "paracetamole",
+      "expected": "paracetamol",
+      "category": "common_misspelling",
+      "top_suggestion": "paracetamol",
+      "top_score": 1.0,
+      "rank_of_expected": 1,
+      "in_top_1": true,
+      "in_top_3": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query": "azithromicin",
+      "expected": "azithromycin",
+      "category": "common_misspelling",
+      "top_suggestion": "azithromycin",
+      "top_score": 1.0,
+      "rank_of_expected": 1,
+      "in_top_1": true,
+      "in_top_3": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query": "metformine",
+      "expected": "metformin",
+      "category": "common_misspelling",
+      "top_suggestion": "metformin",
+      "top_score": 1.0,
+      "rank_of_expected": 1,
+      "in_top_1": true,
+      "in_top_3": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query": "ibubrofen",
+      "expected": "ibuprofen",
+      "category": "common_misspelling",
+      "top_suggestion": "ibuprofen",
+      "top_score": 1.0,
+      "rank_of_expected": 1,
+      "in_top_1": true,
+      "in_top_3": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query": "asprin",
+      "expected": "aspirin",
+      "category": "common_misspelling",
+      "top_suggestion": "aspirin",
+      "top_score": 1.0,
+      "rank_of_expected": 1,
+      "in_top_1": true,
+      "in_top_3": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query": "omiprazole",
+      "expected": "omeprazole",
+      "category": "common_misspelling",
+      "top_suggestion": "omeprazole",
+      "top_score": 1.0,
+      "rank_of_expected": 1,
+      "in_top_1": true,
+      "in_top_3": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query": "atorvastatine",
+      "expected": "atorvastatin",
+      "category": "common_misspelling",
+      "top_suggestion": "atorvastatin",
+      "top_score": 1.0,
+      "rank_of_expected": 1,
+      "in_top_1": true,
+      "in_top_3": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query": "siprofloxacin",
+      "expected": "ciprofloxacin",
+      "category": "common_misspelling",
+      "top_suggestion": "ciprofloxacin",
+      "top_score": 1.0,
+      "rank_of_expected": 1,
+      "in_top_1": true,
+      "in_top_3": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query": "amlodipin",
+      "expected": "amlodipine",
+      "category": "common_misspelling",
+      "top_suggestion": "amlodipine",
+      "top_score": 1.0,
+      "rank_of_expected": 1,
+      "in_top_1": true,
+      "in_top_3": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query": "diclofenak",
+      "expected": "diclofenac",
+      "category": "common_misspelling",
+      "top_suggestion": "diclofenac",
+      "top_score": 1.0,
+      "rank_of_expected": 1,
+      "in_top_1": true,
+      "in_top_3": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query": "panadole",
+      "expected": "paracetamol",
+      "category": "phonetic",
+      "top_suggestion": "paracetamol",
+      "top_score": 1.0,
+      "rank_of_expected": 1,
+      "in_top_1": true,
+      "in_top_3": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query": "panadol",
+      "expected": "paracetamol",
+      "category": "phonetic",
+      "top_suggestion": "paracetamol",
+      "top_score": 1.0,
+      "rank_of_expected": 1,
+      "in_top_1": true,
+      "in_top_3": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query": "brufeen",
+      "expected": "ibuprofen",
+      "category": "phonetic",
+      "top_suggestion": "ibuprofen",
+      "top_score": 1.0,
+      "rank_of_expected": 1,
+      "in_top_1": true,
+      "in_top_3": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query": "augmentine",
+      "expected": "co-amoxiclav",
+      "category": "phonetic",
+      "top_suggestion": "co-amoxiclav",
+      "top_score": 1.0,
+      "rank_of_expected": 1,
+      "in_top_1": true,
+      "in_top_3": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query": "augmentin",
+      "expected": "co-amoxiclav",
+      "category": "phonetic",
+      "top_suggestion": "amoxicillin",
+      "top_score": 1.0,
+      "rank_of_expected": 2,
+      "in_top_1": false,
+      "in_top_3": true,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "query": "alprozolm",
+      "expected": "alprazolam",
+      "category": "phonetic",
+      "top_suggestion": "alprazolam",
+      "top_score": 1.0,
+      "rank_of_expected": 1,
+      "in_top_1": true,
+      "in_top_3": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query": "flagyl",
+      "expected": "metronidazole",
+      "category": "phonetic",
+      "top_suggestion": "metronidazole",
+      "top_score": 1.0,
+      "rank_of_expected": 1,
+      "in_top_1": true,
+      "in_top_3": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query": "frusemide",
+      "expected": "furosemide",
+      "category": "phonetic",
+      "top_suggestion": "furosemide",
+      "top_score": 1.0,
+      "rank_of_expected": 1,
+      "in_top_1": true,
+      "in_top_3": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query": "voltaren",
+      "expected": "diclofenac",
+      "category": "phonetic",
+      "top_suggestion": "diclofenac",
+      "top_score": 1.0,
+      "rank_of_expected": 1,
+      "in_top_1": true,
+      "in_top_3": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query": "Norvasc",
+      "expected": "amlodipine",
+      "category": "brand_name",
+      "top_suggestion": "amlodipine",
+      "top_score": 1.0,
+      "rank_of_expected": 1,
+      "in_top_1": true,
+      "in_top_3": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query": "Lipitor",
+      "expected": "atorvastatin",
+      "category": "brand_name",
+      "top_suggestion": "atorvastatin",
+      "top_score": 1.0,
+      "rank_of_expected": 1,
+      "in_top_1": true,
+      "in_top_3": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query": "Glucophage",
+      "expected": "metformin",
+      "category": "brand_name",
+      "top_suggestion": "metformin",
+      "top_score": 1.0,
+      "rank_of_expected": 1,
+      "in_top_1": true,
+      "in_top_3": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query": "Zoloft",
+      "expected": "sertraline",
+      "category": "brand_name",
+      "top_suggestion": "sertraline",
+      "top_score": 1.0,
+      "rank_of_expected": 1,
+      "in_top_1": true,
+      "in_top_3": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query": "Ventolin",
+      "expected": "salbutamol",
+      "category": "brand_name",
+      "top_suggestion": "salbutamol",
+      "top_score": 1.0,
+      "rank_of_expected": 1,
+      "in_top_1": true,
+      "in_top_3": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query": "Plavix",
+      "expected": "clopidogrel",
+      "category": "brand_name",
+      "top_suggestion": "clopidogrel",
+      "top_score": 1.0,
+      "rank_of_expected": 1,
+      "in_top_1": true,
+      "in_top_3": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query": "Zantac",
+      "expected": "ranitidine",
+      "category": "brand_name",
+      "top_suggestion": "ranitidine",
+      "top_score": 1.0,
+      "rank_of_expected": 1,
+      "in_top_1": true,
+      "in_top_3": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query": "Lasix",
+      "expected": "furosemide",
+      "category": "brand_name",
+      "top_suggestion": "furosemide",
+      "top_score": 1.0,
+      "rank_of_expected": 1,
+      "in_top_1": true,
+      "in_top_3": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query": "Imodium",
+      "expected": "loperamide",
+      "category": "brand_name",
+      "top_suggestion": "loperamide",
+      "top_score": 1.0,
+      "rank_of_expected": 1,
+      "in_top_1": true,
+      "in_top_3": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query": "Risek",
+      "expected": "omeprazole",
+      "category": "brand_name",
+      "top_suggestion": "omeprazole",
+      "top_score": 1.0,
+      "rank_of_expected": 1,
+      "in_top_1": true,
+      "in_top_3": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query": "پیناڈول",
+      "expected": "paracetamol",
+      "category": "urdu_script",
+      "top_suggestion": "paracetamol",
+      "top_score": 0.679,
+      "rank_of_expected": 1,
+      "in_top_1": true,
+      "in_top_3": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query": "بروفین",
+      "expected": "ibuprofen",
+      "category": "urdu_script",
+      "top_suggestion": "ibuprofen",
+      "top_score": 0.633,
+      "rank_of_expected": 1,
+      "in_top_1": true,
+      "in_top_3": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query": "پیراسیٹامول",
+      "expected": "paracetamol",
+      "category": "urdu_script",
+      "top_suggestion": "paracetamol",
+      "top_score": 0.605,
+      "rank_of_expected": 1,
+      "in_top_1": true,
+      "in_top_3": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query": "ایزتھرومائسن",
+      "expected": "azithromycin",
+      "category": "urdu_script",
+      "top_suggestion": "azithromycin",
+      "top_score": 0.578,
+      "rank_of_expected": 1,
+      "in_top_1": true,
+      "in_top_3": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query": "cipro",
+      "expected": "ciprofloxacin",
+      "category": "short_form",
+      "top_suggestion": "ciprofloxacin",
+      "top_score": 0.92,
+      "rank_of_expected": 1,
+      "in_top_1": true,
+      "in_top_3": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query": "metro",
+      "expected": "metronidazole",
+      "category": "short_form",
+      "top_suggestion": "metronidazole",
+      "top_score": 1.0,
+      "rank_of_expected": 1,
+      "in_top_1": true,
+      "in_top_3": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query": "amox",
+      "expected": "amoxicillin",
+      "category": "short_form",
+      "top_suggestion": "amoxicillin",
+      "top_score": 1.0,
+      "rank_of_expected": 1,
+      "in_top_1": true,
+      "in_top_3": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query": "doxy",
+      "expected": "doxycycline",
+      "category": "short_form",
+      "top_suggestion": "doxycycline",
+      "top_score": 0.92,
+      "rank_of_expected": 1,
+      "in_top_1": true,
+      "in_top_3": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query": "paracetamol",
+      "expected": "paracetamol",
+      "category": "exact_generic",
+      "top_suggestion": "paracetamol",
+      "top_score": 1.0,
+      "rank_of_expected": 1,
+      "in_top_1": true,
+      "in_top_3": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query": "amoxicillin",
+      "expected": "amoxicillin",
+      "category": "exact_generic",
+      "top_suggestion": "amoxicillin",
+      "top_score": 1.0,
+      "rank_of_expected": 1,
+      "in_top_1": true,
+      "in_top_3": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query": "insulin",
+      "expected": "insulin",
+      "category": "exact_generic",
+      "top_suggestion": "insulin",
+      "top_score": 1.0,
+      "rank_of_expected": 1,
+      "in_top_1": true,
+      "in_top_3": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query": "warfarin",
+      "expected": "warfarin",
+      "category": "exact_generic",
+      "top_suggestion": "warfarin",
+      "top_score": 1.0,
+      "rank_of_expected": 1,
+      "in_top_1": true,
+      "in_top_3": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query": "headache",
+      "expected": null,
+      "category": "hard_negative",
+      "top_suggestion": "metronidazole",
+      "top_score": 0.452,
+      "false_positive": false
+    },
+    {
+      "query": "painkiller",
+      "expected": null,
+      "category": "hard_negative",
+      "top_suggestion": "paracetamol",
+      "top_score": 0.528,
+      "false_positive": false
+    },
+    {
+      "query": "tablet",
+      "expected": null,
+      "category": "hard_negative",
+      "top_suggestion": "ferrous sulfate",
+      "top_score": 0.85,
+      "false_positive": true
+    },
+    {
+      "query": "antibiotic",
+      "expected": null,
+      "category": "hard_negative",
+      "top_suggestion": "ranitidine",
+      "top_score": 0.5,
+      "false_positive": false
+    },
+    {
+      "query": "fever",
+      "expected": null,
+      "category": "hard_negative",
+      "top_suggestion": "ibuprofen",
+      "top_score": 0.475,
+      "false_positive": false
+    },
+    {
+      "query": "syrup",
+      "expected": null,
+      "category": "hard_negative",
+      "top_suggestion": "ibuprofen",
+      "top_score": 0.38,
+      "false_positive": false
+    },
+    {
+      "query": "vitamin",
+      "expected": null,
+      "category": "hard_negative",
+      "top_suggestion": "vitamin d3",
+      "top_score": 0.92,
+      "false_positive": true
+    },
+    {
+      "query": "asdfghjkl",
+      "expected": null,
+      "category": "hard_negative",
+      "top_suggestion": "salbutamol",
+      "top_score": 0.447,
+      "false_positive": false
+    }
+  ]
+}

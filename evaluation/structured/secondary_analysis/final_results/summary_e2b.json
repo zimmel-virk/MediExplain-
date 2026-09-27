@@ -1,0 +1,66 @@
+{
+  "evaluation": "MediExplain+ E2B Clinical Semantic Extraction Analysis",
+  "analysis_type": "secondary_analysis_of_frozen_E2_outputs",
+  "primary_E2_modified": false,
+  "cases": 12,
+  "schema_valid_percent": 100.0,
+  "standard_medication_detection": {
+    "gold_medications": 10,
+    "detected_medications": 10,
+    "recall_percent": 100.0,
+    "scope": "Excludes the dedicated uncertain-medication abstention challenge E2_09."
+  },
+  "semantic_core_instruction_preservation": {
+    "correct_components": 28,
+    "total_components": 28,
+    "accuracy_percent": 100.0,
+    "components": {
+      "amount_or_strength": {
+        "correct": 10,
+        "total": 10,
+        "accuracy_percent": 100.0
+      },
+      "frequency_or_prn": {
+        "correct": 10,
+        "total": 10,
+        "accuracy_percent": 100.0
+      },
+      "duration": {
+        "correct": 6,
+        "total": 6,
+        "accuracy_percent": 100.0
+      },
+      "route": {
+        "correct": 2,
+        "total": 2,
+        "accuracy_percent": 100.0
+      }
+    }
+  },
+  "dose_interpretation": {
+    "strict_primary_dose_field_accuracy_percent": 0.0,
+    "gold_cases_with_explicit_dose": 1,
+    "semantically_preserved_explicit_dose": 1,
+    "semantic_explicit_dose_accuracy_percent": 100.0,
+    "strict_dose_errors_caused_by_strength_duplicated_into_dose": 9,
+    "interpretation": "The primary dose metric is a strict schema-placement metric. This secondary metric checks whether the actual quantity information was retained across dose/strength."
+  },
+  "diagnosis": {
+    "diagnosis_concept_recall_percent": 100.0,
+    "diagnosis_concept_f1_percent": 87.5,
+    "diagnosis_status_exact_accuracy_percent": 50.0
+  },
+  "uncertain_medication_case_E2_09": {
+    "safe_identity_abstention": true,
+    "information_omission_present": true,
+    "interpretation": "The system avoided inventing the uncertain medication identity, but omitted the heard medication details; therefore this is not counted as successful full extraction."
+  },
+  "hallucination_control_E2_11": {
+    "correct_empty_output": true
+  },
+  "primary_results_retained": {
+    "medication_detection_f1_percent": 95.238,
+    "follow_up_accuracy_percent": 100.0,
+    "llm_invented_suggestions": 0
+  }
+}

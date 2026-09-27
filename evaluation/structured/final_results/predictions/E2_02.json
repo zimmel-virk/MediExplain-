@@ -1,0 +1,36 @@
+{
+  "case_id": "E2_02",
+  "category": "no_medication_suspected_condition",
+  "transcript": "The patient reports dizziness when standing quickly and has been drinking less water than usual. There has been no fainting or chest pain. The doctor said dehydration is possible but is not confirmed. No medication is being prescribed. Increase fluid intake and stand up slowly. Follow up in 3 days if the dizziness continues. Seek urgent help if fainting or chest pain occurs.",
+  "prediction": {
+    "chief_complaint": "dizziness when standing quickly",
+    "symptoms": [
+      "dizziness",
+      "decreased water intake"
+    ],
+    "relevant_history": [
+      "no fainting",
+      "no chest pain"
+    ],
+    "diagnosis_discussed": [
+      "dehydration"
+    ],
+    "diagnosis_status": "suspected",
+    "medications": [],
+    "tests": [],
+    "advice": [
+      "increase fluid intake",
+      "stand up slowly"
+    ],
+    "follow_up": "3 days",
+    "warning_signs": [
+      "fainting",
+      "chest pain"
+    ],
+    "glossary": []
+  },
+  "processing_seconds": 83.923,
+  "fallback_empty_output": false,
+  "schema_valid": true,
+  "error": ""
+}

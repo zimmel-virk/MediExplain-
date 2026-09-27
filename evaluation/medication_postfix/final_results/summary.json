@@ -1,0 +1,70 @@
+{
+  "evaluation": "MediExplain+ Medication Terminology Matching",
+  "dataset_sha256": "17c54270de7b078fee1562965c80ad21bcee649b2ac1c210160aca40c2fe59c4",
+  "total_cases": 19,
+  "successful_cases": 19,
+  "known_medication_cases": 15,
+  "negative_safety_cases": 4,
+  "known_medications": {
+    "top1_accuracy_percent": 100.0,
+    "top5_recall_percent": 100.0,
+    "top10_recall_percent": 100.0
+  },
+  "negative_safety": {
+    "safe_rejection_percent": 100.0,
+    "high_confidence_false_reassurance_count": 0
+  },
+  "all_cases": {
+    "high_confidence_false_reassurance_count": 0
+  },
+  "per_category": {
+    "exact_brand": {
+      "n": 3,
+      "top1_accuracy_percent": 100.0,
+      "top5_recall_percent": 100.0,
+      "false_reassurance_cases": 0
+    },
+    "exact_name": {
+      "n": 5,
+      "top1_accuracy_percent": 100.0,
+      "top5_recall_percent": 100.0,
+      "false_reassurance_cases": 0
+    },
+    "international_equivalent": {
+      "n": 2,
+      "top1_accuracy_percent": 100.0,
+      "top5_recall_percent": 100.0,
+      "false_reassurance_cases": 0
+    },
+    "misspelling": {
+      "n": 3,
+      "top1_accuracy_percent": 100.0,
+      "top5_recall_percent": 100.0,
+      "false_reassurance_cases": 0
+    },
+    "strength_and_form": {
+      "n": 2,
+      "top1_accuracy_percent": 100.0,
+      "top5_recall_percent": 100.0,
+      "false_reassurance_cases": 0
+    },
+    "strength_mismatch": {
+      "n": 1,
+      "top1_accuracy_percent": null,
+      "top5_recall_percent": null,
+      "false_reassurance_cases": 0
+    },
+    "unknown_or_non_medication": {
+      "n": 3,
+      "top1_accuracy_percent": null,
+      "top5_recall_percent": null,
+      "false_reassurance_cases": 0
+    }
+  },
+  "latency": {
+    "mean_seconds": 0.073873,
+    "median_seconds": 0.063386,
+    "max_seconds": 0.135228
+  },
+  "important_safety_note": "High-confidence terminology matching does not doctor-confirm a medication. Clinician confirmation remains required."
+}

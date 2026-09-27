@@ -1,0 +1,233 @@
+{
+  "dataset_name": "MediExplain+ STT Evaluation Dataset",
+  "dataset_version": "1.0",
+  "total_cases": 36,
+  "group_counts": {
+    "en": 6,
+    "ur": 5,
+    "pa": 5,
+    "ar": 5,
+    "ps": 5,
+    "sd": 5,
+    "code_switch_ur_en": 3,
+    "code_switch_pa_en": 2
+  },
+  "files": [
+    {
+      "case_id": "EN01",
+      "filename": "EN01.m4a",
+      "bytes": 568536,
+      "sha256": "8e0b8fa53ea79f73703cbf5f2fecd5b629d43dbfed3d1ceb66ed9245c7098737"
+    },
+    {
+      "case_id": "EN02",
+      "filename": "EN02.m4a",
+      "bytes": 1568646,
+      "sha256": "9121ea28787c0083b270e989a0998f4feac06dd1c848addc0202fa57c7c34d24"
+    },
+    {
+      "case_id": "EN03",
+      "filename": "EN03.m4a",
+      "bytes": 1467916,
+      "sha256": "e76ecaa41dbab5377cba37e1a8a45d5b146cec07a5f6514d0533bf92bc86a90a"
+    },
+    {
+      "case_id": "EN04",
+      "filename": "EN04.m4a",
+      "bytes": 1645480,
+      "sha256": "38c8bb21cb98bd20f2664c75000778457bb844d1c964b5dabc55f412a4343a14"
+    },
+    {
+      "case_id": "EN05",
+      "filename": "EN05.m4a",
+      "bytes": 1432323,
+      "sha256": "a377f1def0c85a799a6207b0db7a3628b75807fae9410bd4b8e2876b07bc79ab"
+    },
+    {
+      "case_id": "EN06",
+      "filename": "EN06.m4a",
+      "bytes": 1555810,
+      "sha256": "fc9c719afb650991c6a4325c5e685d92216ed34e6fff63a09d6f750a671418a4"
+    },
+    {
+      "case_id": "UR01",
+      "filename": "UR01.m4a",
+      "bytes": 507106,
+      "sha256": "f77970d7d41a0d72fea15203085151a789d0f2233c73b887b96e3156eed9a3c0"
+    },
+    {
+      "case_id": "UR02",
+      "filename": "UR02.m4a",
+      "bytes": 465339,
+      "sha256": "dbee2e9f20acafd6230bb50cd121d7db290bc721d7c1baa42765ba624b333758"
+    },
+    {
+      "case_id": "UR03",
+      "filename": "UR03.m4a",
+      "bytes": 464373,
+      "sha256": "114500a84aa2ede36e0a265e5e5c68fdc4783186538ccc6f5e72b8ff79a8d5b7"
+    },
+    {
+      "case_id": "UR04",
+      "filename": "UR04.m4a",
+      "bytes": 585009,
+      "sha256": "9ac591f332c1303ab7b0284d4e51765336318f3ed2ae9b3308afe49c4f6296c3"
+    },
+    {
+      "case_id": "UR05",
+      "filename": "UR05.m4a",
+      "bytes": 395481,
+      "sha256": "37995800600c1a2438005b679bbef0cffa5df4ea90c1b78a032f6ab3a89c1835"
+    },
+    {
+      "case_id": "PA01",
+      "filename": "PA01.m4a",
+      "bytes": 581204,
+      "sha256": "29b50fd3c29eaf2b27ad2975c5e38768616ca5db41294b535df50afaeaf932ed"
+    },
+    {
+      "case_id": "PA02",
+      "filename": "PA02.m4a",
+      "bytes": 495807,
+      "sha256": "bfac4b60c21b35521406c8964b875087989c3c577f724d0295d10362eac5e7e4"
+    },
+    {
+      "case_id": "PA03",
+      "filename": "PA03.m4a",
+      "bytes": 463365,
+      "sha256": "6a625d0f9442f88ef05cb9aa6c676ceb94449a13f572585560d9087d18d1c076"
+    },
+    {
+      "case_id": "PA04",
+      "filename": "PA04.m4a",
+      "bytes": 576761,
+      "sha256": "41815a4d1fc820104460909f730515221e7223d7b0f54932dca7a714165b091f"
+    },
+    {
+      "case_id": "PA05",
+      "filename": "PA05.m4a",
+      "bytes": 461899,
+      "sha256": "f4af167c356f0172e1f1f8fe169a514b4aa1f43a13f600846d914164ca769c30"
+    },
+    {
+      "case_id": "AR01",
+      "filename": "AR01.m4a",
+      "bytes": 582697,
+      "sha256": "f381eee751f996f3de935411ec58e7f0e0c06972a614b5b5faaf826d71560f86"
+    },
+    {
+      "case_id": "AR02",
+      "filename": "AR02.m4a",
+      "bytes": 566618,
+      "sha256": "15e9929511bc88bd946e02fbc87ac0f857c17e4a233402732fb0a5d1ea123920"
+    },
+    {
+      "case_id": "AR03",
+      "filename": "AR03.m4a",
+      "bytes": 600825,
+      "sha256": "f8ba3cfd148121f1e3f804b6a0fe584bf5707798ba15855e62ca9db6603f118c"
+    },
+    {
+      "case_id": "AR04",
+      "filename": "AR04.m4a",
+      "bytes": 547275,
+      "sha256": "465b21a38f03438b66ca7417b9f0361858248a57229b6c35eecca820a943a8aa"
+    },
+    {
+      "case_id": "AR05",
+      "filename": "AR05.m4a",
+      "bytes": 556259,
+      "sha256": "3a76f246568893bdb0a30f98a7b1721b881ad0b280c955ee31640e880d936a72"
+    },
+    {
+      "case_id": "PS01",
+      "filename": "PS01.m4a",
+      "bytes": 727310,
+      "sha256": "13588c3db6c7e830e685c2c7508ca45242bf3caa84ecef24c83cd8ddb5246e15"
+    },
+    {
+      "case_id": "PS02",
+      "filename": "PS02.m4a",
+      "bytes": 817110,
+      "sha256": "da61b23dc294fe9d11f20310cfe5635227f8fb0e0689b300c19c7a8b4a771edd"
+    },
+    {
+      "case_id": "PS03",
+      "filename": "PS03.m4a",
+      "bytes": 914112,
+      "sha256": "009a9e51b0682d852adaaa3b34c3cbdec42bc374d54c2c82318528ce67d1fccd"
+    },
+    {
+      "case_id": "PS04",
+      "filename": "PS04.m4a",
+      "bytes": 990024,
+      "sha256": "7e6979c373a8a40f835a93ba5fafbd40e1ab3c6c97070fad59f363eb7c0037d7"
+    },
+    {
+      "case_id": "PS05",
+      "filename": "PS05.m4a",
+      "bytes": 826613,
+      "sha256": "e48340dd022d4c5a1454a25baa89e1bc7b08836f1be17478484225d3ee114d4d"
+    },
+    {
+      "case_id": "SD01",
+      "filename": "SD01.m4a",
+      "bytes": 696627,
+      "sha256": "3b46d1b609a1cfb7ec5317015ce83e963e6444c3ea8265c924b6d99a68b97682"
+    },
+    {
+      "case_id": "SD02",
+      "filename": "SD02.m4a",
+      "bytes": 673230,
+      "sha256": "4f801146cb64316305a4138021a3f93b32fa4ceed6dda010657cf630575f1b8e"
+    },
+    {
+      "case_id": "SD03",
+      "filename": "SD03.m4a",
+      "bytes": 796984,
+      "sha256": "d934a5c7ff318d141738d6326e2abfb10f7b3a22166cb4b5913207802fb4215e"
+    },
+    {
+      "case_id": "SD04",
+      "filename": "SD04.m4a",
+      "bytes": 904270,
+      "sha256": "610a43d6131f4eb6a89f246f74d848fa21c52c7fcacb83d309c972cdbcd823bc"
+    },
+    {
+      "case_id": "SD05",
+      "filename": "SD05.m4a",
+      "bytes": 669079,
+      "sha256": "ad22d813cc02d0af10cf50e507c9afa0d21297fabb49f1fc895dd15f8ecf6b5c"
+    },
+    {
+      "case_id": "CS01",
+      "filename": "CS01.m4a",
+      "bytes": 659362,
+      "sha256": "8af1c606a039654843443c93e0a2f96461b97b56c5db4c377b701d7f50894fad"
+    },
+    {
+      "case_id": "CS02",
+      "filename": "CS02.m4a",
+      "bytes": 875360,
+      "sha256": "07240e06dc083cb248c304b9eda073f5ab5f887c97e9525735adb5cf438ff5e5"
+    },
+    {
+      "case_id": "CS03",
+      "filename": "CS03.m4a",
+      "bytes": 479447,
+      "sha256": "72aedd84a0cbec6436dce29f66a988915d7eebb39237074b3a8b4350fa752ecb"
+    },
+    {
+      "case_id": "CS04",
+      "filename": "CS04.m4a",
+      "bytes": 580159,
+      "sha256": "9a81bbb66a5b507e756f64f589edf827255dbddf88dd0d61d46cd35c0f52185e"
+    },
+    {
+      "case_id": "CS05",
+      "filename": "CS05.m4a",
+      "bytes": 450805,
+      "sha256": "99ffda5bb64eb43170ee8f53ff741f69096c0f626014366eadb603c830ad35b4"
+    }
+  ]
+}

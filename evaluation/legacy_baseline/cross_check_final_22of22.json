@@ -1,0 +1,168 @@
+{
+  "evaluation": "doctor_cross_check_workflow",
+  "passed": 22,
+  "total": 22,
+  "accuracy": 1.0,
+  "all_pass": true,
+  "per_category": {
+    "authorization": {
+      "passed": 5,
+      "total": 5,
+      "accuracy": 1.0
+    },
+    "workflow": {
+      "passed": 11,
+      "total": 11,
+      "accuracy": 1.0
+    },
+    "safety": {
+      "passed": 2,
+      "total": 2,
+      "accuracy": 1.0
+    },
+    "audit": {
+      "passed": 3,
+      "total": 3,
+      "accuracy": 1.0
+    },
+    "cleanup": {
+      "passed": 1,
+      "total": 1,
+      "accuracy": 1.0
+    }
+  },
+  "checks": [
+    {
+      "name": "Treating doctor cannot assign self as reviewer",
+      "category": "authorization",
+      "pass": true,
+      "detail": "400"
+    },
+    {
+      "name": "Treating doctor can create explicit reviewer assignment",
+      "category": "workflow",
+      "pass": true,
+      "detail": "201"
+    },
+    {
+      "name": "New cross-check starts pending",
+      "category": "workflow",
+      "pass": true,
+      "detail": "pending"
+    },
+    {
+      "name": "Duplicate active reviewer assignment rejected",
+      "category": "safety",
+      "pass": true,
+      "detail": "409"
+    },
+    {
+      "name": "Unassigned reviewer cannot access consultation",
+      "category": "authorization",
+      "pass": true,
+      "detail": "403"
+    },
+    {
+      "name": "Assigned reviewer can access consultation",
+      "category": "authorization",
+      "pass": true,
+      "detail": "200"
+    },
+    {
+      "name": "Unassigned reviewer cannot submit review",
+      "category": "authorization",
+      "pass": true,
+      "detail": "403"
+    },
+    {
+      "name": "Assigned review appears in reviewer pending list",
+      "category": "workflow",
+      "pass": true,
+      "detail": "status=200, found=True"
+    },
+    {
+      "name": "Assigned reviewer can submit cross-check",
+      "category": "workflow",
+      "pass": true,
+      "detail": "200"
+    },
+    {
+      "name": "Submitted review becomes completed",
+      "category": "workflow",
+      "pass": true,
+      "detail": "completed"
+    },
+    {
+      "name": "Submitted verdict persists in API response",
+      "category": "workflow",
+      "pass": true,
+      "detail": "agree"
+    },
+    {
+      "name": "Submitted comments persist in API response",
+      "category": "workflow",
+      "pass": true,
+      "detail": "Clinical information reviewed. No discrepancy identified."
+    },
+    {
+      "name": "Completed review records completion time",
+      "category": "workflow",
+      "pass": true,
+      "detail": "2026-08-13T18:17:34.297860"
+    },
+    {
+      "name": "Completed review cannot be submitted twice",
+      "category": "safety",
+      "pass": true,
+      "detail": "409"
+    },
+    {
+      "name": "Completed review removed from pending list",
+      "category": "workflow",
+      "pass": true,
+      "detail": "status=200, still_pending=False"
+    },
+    {
+      "name": "Treating doctor can view completed review outcome",
+      "category": "workflow",
+      "pass": true,
+      "detail": "200"
+    },
+    {
+      "name": "Completed outcome preserves reviewer verdict",
+      "category": "workflow",
+      "pass": true,
+      "detail": "agree"
+    },
+    {
+      "name": "Unassigned reviewer cannot read cross-check outcome",
+      "category": "authorization",
+      "pass": true,
+      "detail": "403"
+    },
+    {
+      "name": "Cross-check request creates audit record",
+      "category": "audit",
+      "pass": true,
+      "detail": "['cross_check.requested', 'cross_check.requested', 'cross_check.requested', 'cross_check.submitted']"
+    },
+    {
+      "name": "Cross-check submission creates audit record",
+      "category": "audit",
+      "pass": true,
+      "detail": "['cross_check.requested', 'cross_check.requested', 'cross_check.requested', 'cross_check.submitted']"
+    },
+    {
+      "name": "Cross-check audit records avoid full clinical payloads",
+      "category": "audit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Temporary evaluation consultation cleaned up",
+      "category": "cleanup",
+      "pass": true,
+      "detail": "204"
+    }
+  ]
+}

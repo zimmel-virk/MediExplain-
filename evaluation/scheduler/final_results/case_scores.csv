@@ -1,0 +1,11 @@
+case_id,frequency,kind_ok,count_ok,event_count_ok,times_ok,error_ok,event_count,error,case_pass
+SCH01,once daily,True,True,True,True,True,3,,True
+SCH02,twice daily,True,True,True,True,True,4,,True
+SCH03,روزانہ تین بار,True,True,True,True,True,9,,True
+SCH04,دن وچ دو واری,True,True,True,True,True,4,,True
+SCH05,as needed,True,True,True,True,True,0,,True
+SCH06,every 8 hours,True,True,True,True,True,6,,True
+SCH07,morning and night,True,True,True,True,True,4,,True
+SCH08,every 5 hours,True,True,True,True,True,0,Every 5 hours requires manual scheduling,True
+SCH09,twice daily,True,True,True,True,True,0,Duration/end date is required for automatic reminders,True
+SCH10,روزانہ ایک بار,True,True,True,True,True,3,,True

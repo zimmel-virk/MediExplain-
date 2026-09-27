@@ -1,0 +1,9 @@
+{
+  "status": "FROZEN_BEFORE_INFERENCE",
+  "files": {
+    "evaluation/ocr/gold_cases.json": "91becf79c60d0323ac36bfd821565665544d94aed0d941e87d741a12d17109f9",
+    "evaluation/ocr/evaluation_protocol.json": "60e785a1e2adfdd7929ca31c2b3aaa92d913e73835ad1410f106500334c849c5",
+    "evaluation/ocr/run_ocr_eval.py": "2c398208fbb0c27d8250e418e6f5f72da9cbfc8b89d07362b539d1f6ec3c373f",
+    "evaluation/ocr/score_ocr_eval.py": "4209c943253c23978b59997c0e907ee6fd7817bae7e66c33606ed873ea8d88a7"
+  }
+}

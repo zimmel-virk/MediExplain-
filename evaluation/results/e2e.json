@@ -1,0 +1,202 @@
+{
+  "evaluation": "MediExplain+ Phase 17 End-to-End",
+  "consultation_id": 40,
+  "evaluated_at": "2026-08-14T02:48:54.635220",
+  "passed": 30,
+  "total": 30,
+  "accuracy_percent": 100.0,
+  "overall_status": "PASS",
+  "checks": [
+    {
+      "name": "Consent recorded",
+      "category": "auth_consent",
+      "passed": true,
+      "evidence": "consent.granted audit event"
+    },
+    {
+      "name": "Consultation created",
+      "category": "auth_consent",
+      "passed": true,
+      "evidence": "consultation_id=40"
+    },
+    {
+      "name": "Audio uploaded",
+      "category": "stt",
+      "passed": true,
+      "evidence": "consultation.audio_uploaded audit event"
+    },
+    {
+      "name": "Whisper Medium used",
+      "category": "stt",
+      "passed": true,
+      "evidence": "model=medium"
+    },
+    {
+      "name": "English and Urdu detected",
+      "category": "stt",
+      "passed": true,
+      "evidence": "languages=['en', 'ur']"
+    },
+    {
+      "name": "Code-switch detected",
+      "category": "stt",
+      "passed": true,
+      "evidence": "code_switched=1"
+    },
+    {
+      "name": "No transcript segment remains pending review",
+      "category": "stt",
+      "passed": true,
+      "evidence": "3 segments; pending=0"
+    },
+    {
+      "name": "Clinical patient explanation generated",
+      "category": "clinical_summary",
+      "passed": true,
+      "evidence": "English patient explanation present"
+    },
+    {
+      "name": "No unresolved warning/fail safety checks",
+      "category": "safety",
+      "passed": true,
+      "evidence": "unresolved=0"
+    },
+    {
+      "name": "Doctor approval recorded",
+      "category": "safety",
+      "passed": true,
+      "evidence": "approved_at=2026-08-13 20:59:16.092815"
+    },
+    {
+      "name": "Medication confirmed by doctor",
+      "category": "medication",
+      "passed": true,
+      "evidence": "raw_name=paracetamol; confirmed=1"
+    },
+    {
+      "name": "Medication instructions preserved",
+      "category": "medication",
+      "passed": true,
+      "evidence": "strength=500mg; frequency=twice daily; duration=2 days; food=after food"
+    },
+    {
+      "name": "Urdu translation generated",
+      "category": "translation",
+      "passed": true,
+      "evidence": "language=ur"
+    },
+    {
+      "name": "Translation numeric preservation passed",
+      "category": "translation",
+      "passed": true,
+      "evidence": "numeric_preserved=1"
+    },
+    {
+      "name": "Translation script validation passed",
+      "category": "translation",
+      "passed": true,
+      "evidence": "script_valid=1"
+    },
+    {
+      "name": "Translation semantic check or clinician verification passed",
+      "category": "translation",
+      "passed": true,
+      "evidence": "semantic_status=pass; semantic_score=0.9982; clinician_verified=True"
+    },
+    {
+      "name": "TTS generated",
+      "category": "patient_delivery",
+      "passed": true,
+      "evidence": "tts_backend=mms_local"
+    },
+    {
+      "name": "Consultation released",
+      "category": "patient_delivery",
+      "passed": true,
+      "evidence": "status=CROSS_CHECKED; released_at=2026-08-13 20:59:57.409119; release_audit=True"
+    },
+    {
+      "name": "Patient portal released summary visible",
+      "category": "patient_delivery",
+      "passed": true,
+      "evidence": "manual patient-side validation"
+    },
+    {
+      "name": "Internal clinical data hidden from patient view",
+      "category": "patient_delivery",
+      "passed": true,
+      "evidence": "manual patient-side validation"
+    },
+    {
+      "name": "Urdu summary audio playback works",
+      "category": "patient_delivery",
+      "passed": true,
+      "evidence": "manual patient-side validation"
+    },
+    {
+      "name": "Medication schedule generated",
+      "category": "scheduler_alarm",
+      "passed": true,
+      "evidence": "schedules=1"
+    },
+    {
+      "name": "Exactly four medication events generated",
+      "category": "scheduler_alarm",
+      "passed": true,
+      "evidence": "events=4"
+    },
+    {
+      "name": "Alarm sound test works",
+      "category": "scheduler_alarm",
+      "passed": true,
+      "evidence": "manual patient-side validation"
+    },
+    {
+      "name": "Voice reminder test works",
+      "category": "scheduler_alarm",
+      "passed": true,
+      "evidence": "manual patient-side validation"
+    },
+    {
+      "name": "Second-opinion request completed",
+      "category": "cross_check",
+      "passed": true,
+      "evidence": "completed=2"
+    },
+    {
+      "name": "No pending cross-check remains",
+      "category": "cross_check",
+      "passed": true,
+      "evidence": "pending=0"
+    },
+    {
+      "name": "Cross-check verdict persisted",
+      "category": "cross_check",
+      "passed": true,
+      "evidence": "agree=2"
+    },
+    {
+      "name": "Cross-check audit trail recorded",
+      "category": "cross_check",
+      "passed": true,
+      "evidence": "request and submission audit actions present"
+    },
+    {
+      "name": "Core end-to-end audit trail complete",
+      "category": "audit",
+      "passed": true,
+      "evidence": "missing=none"
+    }
+  ],
+  "failed_checks": [],
+  "advisories": [
+    {
+      "name": "Medication terminology concept not demonstrated in consultation 40",
+      "detail": "raw_name is preserved safely, but canonical_name/concept_id were blank in this E2E case. Terminology matching is evaluated separately in Phase 16E."
+    },
+    {
+      "name": "70% STT clinician-review threshold was added after consultation 40",
+      "detail": "Consultation 40 remains the principal integrated workflow case. The later confidence-gate hardening is validated through code regression rather than retroactively changing this historical run."
+    }
+  ]
+}

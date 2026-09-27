@@ -1,0 +1,260 @@
+==============================================================================
+MEDIEXPLAIN+ EVALUATION 07
+SCRIPT SAFETY
+==============================================================================
+Cases: 25
+
+[1/25] SCR01
+Category: valid_native_script
+Target: ur
+Expected: allow
+Production: allow
+Arabic-script present: True
+Authoritative valid: True
+Secondary valid: True
+Issues: []
+
+[2/25] SCR02
+Category: valid_native_script
+Target: ar
+Expected: allow
+Production: allow
+Arabic-script present: True
+Authoritative valid: True
+Secondary valid: True
+Issues: []
+
+[3/25] SCR03
+Category: valid_native_script
+Target: ps
+Expected: allow
+Production: allow
+Arabic-script present: True
+Authoritative valid: True
+Secondary valid: True
+Issues: []
+
+[4/25] SCR04
+Category: valid_native_script
+Target: sd
+Expected: allow
+Production: allow
+Arabic-script present: True
+Authoritative valid: True
+Secondary valid: True
+Issues: []
+
+[5/25] SCR05
+Category: valid_native_script
+Target: pa_shah
+Expected: allow
+Production: allow
+Arabic-script present: True
+Authoritative valid: True
+Secondary valid: True
+Issues: []
+
+[6/25] SCR06
+Category: valid_mixed_medication_latin
+Target: ur
+Expected: allow
+Production: allow
+Arabic-script present: True
+Authoritative valid: True
+Secondary valid: True
+Issues: []
+
+[7/25] SCR07
+Category: valid_mixed_medication_latin
+Target: ar
+Expected: allow
+Production: allow
+Arabic-script present: True
+Authoritative valid: True
+Secondary valid: True
+Issues: []
+
+[8/25] SCR08
+Category: valid_mixed_medication_latin
+Target: ps
+Expected: allow
+Production: allow
+Arabic-script present: True
+Authoritative valid: True
+Secondary valid: True
+Issues: []
+
+[9/25] SCR09
+Category: valid_mixed_medication_latin
+Target: sd
+Expected: allow
+Production: allow
+Arabic-script present: True
+Authoritative valid: True
+Secondary valid: True
+Issues: []
+
+[10/25] SCR10
+Category: valid_mixed_medication_latin
+Target: pa_shah
+Expected: allow
+Production: allow
+Arabic-script present: True
+Authoritative valid: True
+Secondary valid: True
+Issues: []
+
+[11/25] SCR11
+Category: gurmukhi_leak
+Target: pa_shah
+Expected: block
+Production: block
+Arabic-script present: False
+Authoritative valid: False
+Secondary valid: False
+Issues: ['Expected Arabic-derived script not detected', 'Devanagari/Hindi script detected', 'Gurmukhi script detected']
+
+[12/25] SCR12
+Category: gurmukhi_leak
+Target: ur
+Expected: block
+Production: block
+Arabic-script present: True
+Authoritative valid: False
+Secondary valid: False
+Issues: ['Gurmukhi script detected']
+
+[13/25] SCR13
+Category: devanagari_leak
+Target: ur
+Expected: block
+Production: block
+Arabic-script present: True
+Authoritative valid: False
+Secondary valid: False
+Issues: ['Devanagari/Hindi script detected']
+
+[14/25] SCR14
+Category: devanagari_leak
+Target: ar
+Expected: block
+Production: block
+Arabic-script present: True
+Authoritative valid: False
+Secondary valid: False
+Issues: ['Devanagari/Hindi script detected']
+
+[15/25] SCR15
+Category: unexpected_cyrillic
+Target: ur
+Expected: block
+Production: block
+Arabic-script present: True
+Authoritative valid: False
+Secondary valid: True
+Issues: ['Unexpected alphabetic script(s): Cyrillic']
+
+[16/25] SCR16
+Category: unexpected_greek
+Target: ar
+Expected: block
+Production: block
+Arabic-script present: True
+Authoritative valid: False
+Secondary valid: True
+Issues: ['Unexpected alphabetic script(s): Greek']
+
+[17/25] SCR17
+Category: unexpected_hebrew
+Target: ps
+Expected: block
+Production: block
+Arabic-script present: True
+Authoritative valid: False
+Secondary valid: True
+Issues: ['Unexpected alphabetic script(s): Hebrew']
+
+[18/25] SCR18
+Category: unexpected_cjk
+Target: sd
+Expected: block
+Production: block
+Arabic-script present: True
+Authoritative valid: False
+Secondary valid: True
+Issues: ['Unexpected alphabetic script(s): Chinese/CJK']
+
+[19/25] SCR19
+Category: latin_only_wrong_script
+Target: ur
+Expected: block
+Production: block
+Arabic-script present: False
+Authoritative valid: False
+Secondary valid: False
+Issues: ['Expected Arabic-derived script not detected']
+
+[20/25] SCR20
+Category: latin_only_wrong_script
+Target: ar
+Expected: block
+Production: block
+Arabic-script present: False
+Authoritative valid: False
+Secondary valid: False
+Issues: ['Expected Arabic-derived script not detected']
+
+[21/25] SCR21
+Category: latin_only_wrong_script
+Target: ps
+Expected: block
+Production: block
+Arabic-script present: False
+Authoritative valid: False
+Secondary valid: False
+Issues: ['Expected Arabic-derived script not detected']
+
+[22/25] SCR22
+Category: latin_only_wrong_script
+Target: sd
+Expected: block
+Production: block
+Arabic-script present: False
+Authoritative valid: False
+Secondary valid: False
+Issues: ['Expected Arabic-derived script not detected']
+
+[23/25] SCR23
+Category: latin_only_wrong_script
+Target: pa_shah
+Expected: block
+Production: block
+Arabic-script present: False
+Authoritative valid: False
+Secondary valid: False
+Issues: ['Expected Arabic-derived script not detected']
+
+[24/25] SCR24
+Category: digits_only_wrong_script
+Target: ur
+Expected: block
+Production: block
+Arabic-script present: False
+Authoritative valid: False
+Secondary valid: False
+Issues: ['Expected Arabic-derived script not detected']
+
+[25/25] SCR25
+Category: digits_only_wrong_script
+Target: pa_shah
+Expected: block
+Production: block
+Arabic-script present: False
+Authoritative valid: False
+Secondary valid: False
+Issues: ['Expected Arabic-derived script not detected']
+
+==============================================================================
+SUCCESSFUL: 25/25
+SCRIPT SAFETY INFERENCE COMPLETE
+==============================================================================

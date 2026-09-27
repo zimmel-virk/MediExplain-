@@ -1,0 +1,158 @@
+{
+  "evaluation": "MediExplain+ Structured Clinical Extraction",
+  "dataset_sha256": "35ce455cfd2ca6b6235576fab5d26d004ce7700bbf9c825fb9754bd0a67e84d5",
+  "cases": 12,
+  "schema_valid_percent": 100.0,
+  "fallback_empty_output_percent": 16.667,
+  "chief_complaint_accuracy_percent": 100.0,
+  "diagnosis_status_accuracy_percent": 50.0,
+  "follow_up_accuracy_percent": 100.0,
+  "list_fields_micro": {
+    "precision_percent": 76.271,
+    "recall_percent": 93.75,
+    "f1_percent": 84.112
+  },
+  "list_fields_by_field": {
+    "symptoms": {
+      "tp": 11,
+      "fp": 2,
+      "fn": 0,
+      "precision_percent": 84.615,
+      "recall_percent": 100.0,
+      "f1_percent": 91.667
+    },
+    "relevant_history": {
+      "tp": 3,
+      "fp": 1,
+      "fn": 2,
+      "precision_percent": 75.0,
+      "recall_percent": 60.0,
+      "f1_percent": 66.667
+    },
+    "diagnosis_discussed": {
+      "tp": 7,
+      "fp": 2,
+      "fn": 0,
+      "precision_percent": 77.778,
+      "recall_percent": 100.0,
+      "f1_percent": 87.5
+    },
+    "tests": {
+      "tp": 3,
+      "fp": 1,
+      "fn": 0,
+      "precision_percent": 75.0,
+      "recall_percent": 100.0,
+      "f1_percent": 85.714
+    },
+    "advice": {
+      "tp": 8,
+      "fp": 7,
+      "fn": 0,
+      "precision_percent": 53.333,
+      "recall_percent": 100.0,
+      "f1_percent": 69.565
+    },
+    "warning_signs": {
+      "tp": 13,
+      "fp": 1,
+      "fn": 1,
+      "precision_percent": 92.857,
+      "recall_percent": 92.857,
+      "f1_percent": 92.857
+    }
+  },
+  "medication_detection": {
+    "tp": 10,
+    "fp": 0,
+    "fn": 1,
+    "precision_percent": 100.0,
+    "recall_percent": 90.909,
+    "f1_percent": 95.238
+  },
+  "medication_field_accuracy": {
+    "name": {
+      "correct": 10,
+      "total": 10,
+      "accuracy_percent": 100.0
+    },
+    "name_as_heard": {
+      "correct": 10,
+      "total": 10,
+      "accuracy_percent": 100.0
+    },
+    "dose": {
+      "correct": 0,
+      "total": 10,
+      "accuracy_percent": 0.0
+    },
+    "strength": {
+      "correct": 7,
+      "total": 10,
+      "accuracy_percent": 70.0
+    },
+    "dose_unit": {
+      "correct": 4,
+      "total": 10,
+      "accuracy_percent": 40.0
+    },
+    "dosage_form": {
+      "correct": 9,
+      "total": 10,
+      "accuracy_percent": 90.0
+    },
+    "route": {
+      "correct": 10,
+      "total": 10,
+      "accuracy_percent": 100.0
+    },
+    "frequency": {
+      "correct": 7,
+      "total": 10,
+      "accuracy_percent": 70.0
+    },
+    "timing": {
+      "correct": 6,
+      "total": 10,
+      "accuracy_percent": 60.0
+    },
+    "food_instruction": {
+      "correct": 9,
+      "total": 10,
+      "accuracy_percent": 90.0
+    },
+    "duration": {
+      "correct": 10,
+      "total": 10,
+      "accuracy_percent": 100.0
+    },
+    "as_needed": {
+      "correct": 9,
+      "total": 10,
+      "accuracy_percent": 90.0
+    },
+    "indication": {
+      "correct": 10,
+      "total": 10,
+      "accuracy_percent": 100.0
+    },
+    "notes": {
+      "correct": 9,
+      "total": 10,
+      "accuracy_percent": 90.0
+    }
+  },
+  "safety_rule_violations": {
+    "doctor_confirmed_true_before_review": 2,
+    "llm_invented_suggestions": 0,
+    "frequency_duration_swap": 0
+  },
+  "processing_seconds": {
+    "mean": 150.042,
+    "median": 161.447,
+    "min": 51.074,
+    "max": 336.441
+  },
+  "manual_review_candidates": 2,
+  "automatic_scoring_note": "Borderline semantic matches are preserved for manual adjudication rather than automatically counted as correct."
+}

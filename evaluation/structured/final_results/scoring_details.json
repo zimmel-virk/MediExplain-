@@ -1,0 +1,3211 @@
+[
+  {
+    "case_id": "E2_01",
+    "category": "standard_prescription",
+    "gold": {
+      "chief_complaint": "fever and sore throat",
+      "symptoms": [
+        "fever",
+        "sore throat"
+      ],
+      "relevant_history": [],
+      "diagnosis_discussed": [
+        "throat infection"
+      ],
+      "diagnosis_status": "confirmed",
+      "medications": [
+        {
+          "name": "amoxicillin",
+          "name_as_heard": "amoxicillin",
+          "dose": null,
+          "strength": "500 mg",
+          "dose_unit": null,
+          "dosage_form": null,
+          "route": null,
+          "frequency": "three times daily",
+          "timing": null,
+          "food_instruction": "after food",
+          "duration": "5 days",
+          "as_needed": false,
+          "indication": null,
+          "notes": null,
+          "doctor_confirmed": false,
+          "suggestions": []
+        },
+        {
+          "name": "paracetamol",
+          "name_as_heard": "paracetamol",
+          "dose": null,
+          "strength": "500 mg",
+          "dose_unit": null,
+          "dosage_form": null,
+          "route": null,
+          "frequency": null,
+          "timing": null,
+          "food_instruction": null,
+          "duration": null,
+          "as_needed": true,
+          "indication": "fever",
+          "notes": null,
+          "doctor_confirmed": false,
+          "suggestions": []
+        }
+      ],
+      "tests": [],
+      "advice": [
+        "drink plenty of water"
+      ],
+      "follow_up": "follow up in 5 days if symptoms are not improving",
+      "warning_signs": [
+        "difficulty breathing"
+      ],
+      "glossary": []
+    },
+    "prediction": {
+      "chief_complaint": "fever and a sore throat",
+      "symptoms": [
+        "fever",
+        "sore throat"
+      ],
+      "relevant_history": [],
+      "diagnosis_discussed": [
+        "throat infection"
+      ],
+      "diagnosis_status": "discussed",
+      "medications": [
+        {
+          "name": "amoxicillin",
+          "name_as_heard": "amoxicillin",
+          "confidence": 1.0,
+          "dose": "500 mg",
+          "strength": "500 mg",
+          "dose_unit": "mg",
+          "dosage_form": null,
+          "route": null,
+          "frequency": "three times daily",
+          "timing": "after food",
+          "food_instruction": "after food",
+          "duration": "5 days",
+          "as_needed": false,
+          "indication": null,
+          "notes": null,
+          "doctor_confirmed": false,
+          "suggestions": []
+        },
+        {
+          "name": "paracetamol",
+          "name_as_heard": "paracetamol",
+          "confidence": 1.0,
+          "dose": "500 mg",
+          "strength": "500 mg",
+          "dose_unit": "mg",
+          "dosage_form": null,
+          "route": null,
+          "frequency": "as needed",
+          "timing": null,
+          "food_instruction": null,
+          "duration": null,
+          "as_needed": true,
+          "indication": "fever",
+          "notes": null,
+          "doctor_confirmed": false,
+          "suggestions": []
+        }
+      ],
+      "tests": [],
+      "advice": [
+        "Drink plenty of water"
+      ],
+      "follow_up": "5 days",
+      "warning_signs": [
+        "breathing becomes difficult"
+      ],
+      "glossary": []
+    },
+    "list_scoring": {
+      "symptoms": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [
+          {
+            "gold": "fever",
+            "prediction": "fever",
+            "similarity": 1.0
+          },
+          {
+            "gold": "sore throat",
+            "prediction": "sore throat",
+            "similarity": 1.0
+          }
+        ],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "relevant_history": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "diagnosis_discussed": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [
+          {
+            "gold": "throat infection",
+            "prediction": "throat infection",
+            "similarity": 1.0
+          }
+        ],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "tests": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "advice": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [
+          {
+            "gold": "drink plenty of water",
+            "prediction": "Drink plenty of water",
+            "similarity": 1.0
+          }
+        ],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "warning_signs": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "false_positives": [
+          "breathing becomes difficult"
+        ],
+        "false_negatives": [
+          "difficulty breathing"
+        ],
+        "borderline": []
+      }
+    },
+    "medication_scoring": [
+      {
+        "gold_name": "paracetamol",
+        "prediction_name": "paracetamol",
+        "name_similarity": 1.0,
+        "frequency_duration_swap": false,
+        "field_results": {
+          "name": {
+            "gold": "paracetamol",
+            "prediction": "paracetamol",
+            "correct": true,
+            "similarity": 1.0
+          },
+          "name_as_heard": {
+            "gold": "paracetamol",
+            "prediction": "paracetamol",
+            "correct": true,
+            "similarity": 1.0
+          },
+          "dose": {
+            "gold": null,
+            "prediction": "500 mg",
+            "correct": false,
+            "similarity": 0.0
+          },
+          "strength": {
+            "gold": "500 mg",
+            "prediction": "500 mg",
+            "correct": true,
+            "similarity": 1.0
+          },
+          "dose_unit": {
+            "gold": null,
+            "prediction": "mg",
+            "correct": false,
+            "similarity": 0.0
+          },
+          "dosage_form": {
+            "gold": null,
+            "prediction": null,
+            "correct": true,
+            "similarity": 1.0
+          },
+          "route": {
+            "gold": null,
+            "prediction": null,
+            "correct": true,
+            "similarity": 1.0
+          },
+          "frequency": {
+            "gold": null,
+            "prediction": "as needed",
+            "correct": false,
+            "similarity": 0.0
+          },
+          "timing": {
+            "gold": null,
+            "prediction": null,
+            "correct": true,
+            "similarity": 1.0
+          },
+          "food_instruction": {
+            "gold": null,
+            "prediction": null,
+            "correct": true,
+            "similarity": 1.0
+          },
+          "duration": {
+            "gold": null,
+            "prediction": null,
+            "correct": true,
+            "similarity": 1.0
+          },
+          "as_needed": {
+            "gold": true,
+            "prediction": true,
+            "correct": true,
+            "similarity": 1.0
+          },
+          "indication": {
+            "gold": "fever",
+            "prediction": "fever",
+            "correct": true,
+            "similarity": 1.0
+          },
+          "notes": {
+            "gold": null,
+            "prediction": null,
+            "correct": true,
+            "similarity": 1.0
+          }
+        }
+      },
+      {
+        "gold_name": "amoxicillin",
+        "prediction_name": "amoxicillin",
+        "name_similarity": 1.0,
+        "frequency_duration_swap": false,
+        "field_results": {
+          "name": {
+            "gold": "amoxicillin",
+            "prediction": "amoxicillin",
+            "correct": true,
+            "similarity": 1.0
+          },
+          "name_as_heard": {
+            "gold": "amoxicillin",
+            "prediction": "amoxicillin",
+            "correct": true,
+            "similarity": 1.0
+          },
+          "dose": {
+            "gold": null,
+            "prediction": "500 mg",
+            "correct": false,
+            "similarity": 0.0
+          },
+          "strength": {
+            "gold": "500 mg",
+            "prediction": "500 mg",
+            "correct": true,
+            "similarity": 1.0
+          },
+          "dose_unit": {
+            "gold": null,
+            "prediction": "mg",
+            "correct": false,
+            "similarity": 0.0
+          },
+          "dosage_form": {
+            "gold": null,
+            "prediction": null,
+            "correct": true,
+            "similarity": 1.0
+          },
+          "route": {
+            "gold": null,
+            "prediction": null,
+            "correct": true,
+            "similarity": 1.0
+          },
+          "frequency": {
+            "gold": "three times daily",
+            "prediction": "three times daily",
+            "correct": true,
+            "similarity": 1.0
+          },
+          "timing": {
+            "gold": null,
+            "prediction": "after food",
+            "correct": false,
+            "similarity": 0.0
+          },
+          "food_instruction": {
+            "gold": "after food",
+            "prediction": "after food",
+            "correct": true,
+            "similarity": 1.0
+          },
+          "duration": {
+            "gold": "5 days",
+            "prediction": "5 days",
+            "correct": true,
+            "similarity": 1.0
+          },
+          "as_needed": {
+            "gold": false,
+            "prediction": false,
+            "correct": true,
+            "similarity": 1.0
+          },
+          "indication": {
+            "gold": null,
+            "prediction": null,
+            "correct": true,
+            "similarity": 1.0
+          },
+          "notes": {
+            "gold": null,
+            "prediction": null,
+            "correct": true,
+            "similarity": 1.0
+          }
+        }
+      }
+    ],
+    "unmatched_gold_medications": [],
+    "unmatched_predicted_medications": [],
+    "unsupported_fact_candidates": [
+      {
+        "field": "warning_signs",
+        "value": "breathing becomes difficult"
+      }
+    ],
+    "omission_candidates": [
+      {
+        "field": "warning_signs",
+        "value": "difficulty breathing"
+      }
+    ]
+  },
+  {
+    "case_id": "E2_02",
+    "category": "no_medication_suspected_condition",
+    "gold": {
+      "chief_complaint": "dizziness when standing",
+      "symptoms": [
+        "dizziness when standing"
+      ],
+      "relevant_history": [
+        "drinking less water than usual",
+        "no fainting",
+        "no chest pain"
+      ],
+      "diagnosis_discussed": [
+        "dehydration"
+      ],
+      "diagnosis_status": "suspected",
+      "medications": [],
+      "tests": [],
+      "advice": [
+        "increase fluid intake",
+        "stand up slowly"
+      ],
+      "follow_up": "follow up in 3 days if dizziness continues",
+      "warning_signs": [
+        "fainting",
+        "chest pain"
+      ],
+      "glossary": []
+    },
+    "prediction": {
+      "chief_complaint": "dizziness when standing quickly",
+      "symptoms": [
+        "dizziness",
+        "decreased water intake"
+      ],
+      "relevant_history": [
+        "no fainting",
+        "no chest pain"
+      ],
+      "diagnosis_discussed": [
+        "dehydration"
+      ],
+      "diagnosis_status": "suspected",
+      "medications": [],
+      "tests": [],
+      "advice": [
+        "increase fluid intake",
+        "stand up slowly"
+      ],
+      "follow_up": "3 days",
+      "warning_signs": [
+        "fainting",
+        "chest pain"
+      ],
+      "glossary": []
+    },
+    "list_scoring": {
+      "symptoms": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6666666666666666,
+        "matches": [
+          {
+            "gold": "dizziness when standing",
+            "prediction": "dizziness",
+            "similarity": 0.85
+          }
+        ],
+        "false_positives": [
+          "decreased water intake"
+        ],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "relevant_history": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 1,
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "f1": 0.8,
+        "matches": [
+          {
+            "gold": "no fainting",
+            "prediction": "no fainting",
+            "similarity": 1.0
+          },
+          {
+            "gold": "no chest pain",
+            "prediction": "no chest pain",
+            "similarity": 1.0
+          }
+        ],
+        "false_positives": [],
+        "false_negatives": [
+          "drinking less water than usual"
+        ],
+        "borderline": []
+      },
+      "diagnosis_discussed": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [
+          {
+            "gold": "dehydration",
+            "prediction": "dehydration",
+            "similarity": 1.0
+          }
+        ],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "tests": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "advice": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [
+          {
+            "gold": "increase fluid intake",
+            "prediction": "increase fluid intake",
+            "similarity": 1.0
+          },
+          {
+            "gold": "stand up slowly",
+            "prediction": "stand up slowly",
+            "similarity": 1.0
+          }
+        ],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "warning_signs": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [
+          {
+            "gold": "fainting",
+            "prediction": "fainting",
+            "similarity": 1.0
+          },
+          {
+            "gold": "chest pain",
+            "prediction": "chest pain",
+            "similarity": 1.0
+          }
+        ],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      }
+    },
+    "medication_scoring": [],
+    "unmatched_gold_medications": [],
+    "unmatched_predicted_medications": [],
+    "unsupported_fact_candidates": [
+      {
+        "field": "symptoms",
+        "value": "decreased water intake"
+      }
+    ],
+    "omission_candidates": [
+      {
+        "field": "relevant_history",
+        "value": "drinking less water than usual"
+      }
+    ]
+  },
+  {
+    "case_id": "E2_03",
+    "category": "chronic_condition_monitoring",
+    "gold": {
+      "chief_complaint": null,
+      "symptoms": [],
+      "relevant_history": [
+        "hypertension for four years"
+      ],
+      "diagnosis_discussed": [
+        "hypertension"
+      ],
+      "diagnosis_status": "confirmed",
+      "medications": [
+        {
+          "name": "amlodipine",
+          "name_as_heard": "amlodipine",
+          "dose": null,
+          "strength": "5 mg",
+          "dose_unit": null,
+          "dosage_form": null,
+          "route": null,
+          "frequency": "once daily",
+          "timing": "every morning",
+          "food_instruction": null,
+          "duration": null,
+          "as_needed": false,
+          "indication": null,
+          "notes": null,
+          "doctor_confirmed": false,
+          "suggestions": []
+        }
+      ],
+      "tests": [],
+      "advice": [
+        "record blood pressure in the morning and evening for 7 days"
+      ],
+      "follow_up": "follow up in one week",
+      "warning_signs": [
+        "severe chest pain",
+        "fainting",
+        "severe shortness of breath"
+      ],
+      "glossary": []
+    },
+    "prediction": {
+      "chief_complaint": null,
+      "symptoms": [],
+      "relevant_history": [
+        "hypertension for four years"
+      ],
+      "diagnosis_discussed": [
+        "hypertension"
+      ],
+      "diagnosis_status": "discussed",
+      "medications": [
+        {
+          "name": "amlodipine",
+          "name_as_heard": "amlodipine",
+          "confidence": 1.0,
+          "dose": "5 mg",
+          "strength": null,
+          "dose_unit": null,
+          "dosage_form": null,
+          "route": null,
+          "frequency": "once daily",
+          "timing": "morning",
+          "food_instruction": null,
+          "duration": null,
+          "as_needed": false,
+          "indication": null,
+          "notes": null,
+          "doctor_confirmed": true,
+          "suggestions": []
+        }
+      ],
+      "tests": [
+        "blood pressure"
+      ],
+      "advice": [
+        "record blood pressure in the morning and evening for the next 7 days",
+        "follow up in one week"
+      ],
+      "follow_up": "one week",
+      "warning_signs": [
+        "severe chest pain",
+        "fainting",
+        "severe shortness of breath"
+      ],
+      "glossary": []
+    },
+    "list_scoring": {
+      "symptoms": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "relevant_history": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [
+          {
+            "gold": "hypertension for four years",
+            "prediction": "hypertension for four years",
+            "similarity": 1.0
+          }
+        ],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "diagnosis_discussed": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [
+          {
+            "gold": "hypertension",
+            "prediction": "hypertension",
+            "similarity": 1.0
+          }
+        ],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "tests": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "false_positives": [
+          "blood pressure"
+        ],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "advice": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6666666666666666,
+        "matches": [
+          {
+            "gold": "record blood pressure in the morning and evening for 7 days",
+            "prediction": "record blood pressure in the morning and evening for the next 7 days",
+            "similarity": 0.9204
+          }
+        ],
+        "false_positives": [
+          "follow up in one week"
+        ],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "warning_signs": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [
+          {
+            "gold": "severe chest pain",
+            "prediction": "severe chest pain",
+            "similarity": 1.0
+          },
+          {
+            "gold": "fainting",
+            "prediction": "fainting",
+            "similarity": 1.0
+          },
+          {
+            "gold": "severe shortness of breath",
+            "prediction": "severe shortness of breath",
+            "similarity": 1.0
+          }
+        ],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      }
+    },
+    "medication_scoring": [
+      {
+        "gold_name": "amlodipine",
+        "prediction_name": "amlodipine",
+        "name_similarity": 1.0,
+        "frequency_duration_swap": false,
+        "field_results": {
+          "name": {
+            "gold": "amlodipine",
+            "prediction": "amlodipine",
+            "correct": true,
+            "similarity": 1.0
+          },
+          "name_as_heard": {
+            "gold": "amlodipine",
+            "prediction": "amlodipine",
+            "correct": true,
+            "similarity": 1.0
+          },
+          "dose": {
+            "gold": null,
+            "prediction": "5 mg",
+            "correct": false,
+            "similarity": 0.0
+          },
+          "strength": {
+            "gold": "5 mg",
+            "prediction": null,
+            "correct": false,
+            "similarity": 0.0
+          },
+          "dose_unit": {
+            "gold": null,
+            "prediction": null,
+            "correct": true,
+            "similarity": 1.0
+          },
+          "dosage_form": {
+            "gold": null,
+            "prediction": null,
+            "correct": true,
+            "similarity": 1.0
+          },
+          "route": {
+            "gold": null,
+            "prediction": null,
+            "correct": true,
+            "similarity": 1.0
+          },
+          "frequency": {
+            "gold": "once daily",
+            "prediction": "once daily",
+            "correct": true,
+            "similarity": 1.0
+          },
+          "timing": {
+            "gold": "every morning",
+            "prediction": "morning",
+            "correct": true,
+            "similarity": 1.0
+          },
+          "food_instruction": {
+            "gold": null,
+            "prediction": null,
+            "correct": true,
+            "similarity": 1.0
+          },
+          "duration": {
+            "gold": null,
+            "prediction": null,
+            "correct": true,
+            "similarity": 1.0
+          },
+          "as_needed": {
+            "gold": false,
+            "prediction": false,
+            "correct": true,
+            "similarity": 1.0
+          },
+          "indication": {
+            "gold": null,
+            "prediction": null,
+            "correct": true,
+            "similarity": 1.0
+          },
+          "notes": {
+            "gold": null,
+            "prediction": null,
+            "correct": true,
+            "similarity": 1.0
+          }
+        }
+      }
+    ],
+    "unmatched_gold_medications": [],
+    "unmatched_predicted_medications": [],
+    "unsupported_fact_candidates": [
+      {
+        "field": "tests",
+        "value": "blood pressure"
+      },
+      {
+        "field": "advice",
+        "value": "follow up in one week"
+      }
+    ],
+    "omission_candidates": []
+  },
+  {
+    "case_id": "E2_04",
+    "category": "timing_and_food_instruction",
+    "gold": {
+      "chief_complaint": "burning in the upper stomach",
+      "symptoms": [
+        "burning in the upper stomach",
+        "acid coming into the throat after meals"
+      ],
+      "relevant_history": [],
+      "diagnosis_discussed": [
+        "acid reflux"
+      ],
+      "diagnosis_status": "suspected",
+      "medications": [
+        {
+          "name": "omeprazole",
+          "name_as_heard": "omeprazole",
+          "dose": null,
+          "strength": "20 mg",
+          "dose_unit": null,
+          "dosage_form": null,
+          "route": null,
+          "frequency": "once daily",
+          "timing": "every morning",
+          "food_instruction": "before breakfast",
+          "duration": "14 days",
+          "as_needed": false,
+          "indication": null,
+          "notes": null,
+          "doctor_confirmed": false,
+          "suggestions": []
+        }
+      ],
+      "tests": [],
+      "advice": [
+        "reduce spicy food",
+        "reduce coffee"
+      ],
+      "follow_up": "follow up in two weeks",
+      "warning_signs": [
+        "vomiting blood",
+        "black stools",
+        "difficulty swallowing"
+      ],
+      "glossary": []
+    },
+    "prediction": {
+      "chief_complaint": "burning in the upper stomach and acid coming into the throat after meals",
+      "symptoms": [
+        "burning in the upper stomach",
+        "acid coming into the throat after meals"
+      ],
+      "relevant_history": [],
+      "diagnosis_discussed": [
+        "acid reflux"
+      ],
+      "diagnosis_status": "discussed",
+      "medications": [
+        {
+          "name": "omeprazole",
+          "name_as_heard": "omeprazole",
+          "confidence": 1.0,
+          "dose": "20 mg",
+          "strength": "20 mg",
+          "dose_unit": "mg",
+          "dosage_form": null,
+          "route": null,
+          "frequency": "once daily",
+          "timing": "morning before breakfast",
+          "food_instruction": "before food",
+          "duration": "14 days",
+          "as_needed": false,
+          "indication": null,
+          "notes": null,
+          "doctor_confirmed": false,
+          "suggestions": []
+        }
+      ],
+      "tests": [],
+      "advice": [
+        "reduce spicy food",
+        "reduce coffee"
+      ],
+      "follow_up": "two weeks",
+      "warning_signs": [
+        "vomiting blood",
+        "black stools",
+        "difficulty swallowing"
+      ],
+      "glossary": []
+    },
+    "list_scoring": {
+      "symptoms": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [
+          {
+            "gold": "burning in the upper stomach",
+            "prediction": "burning in the upper stomach",
+            "similarity": 1.0
+          },
+          {
+            "gold": "acid coming into the throat after meals",
+            "prediction": "acid coming into the throat after meals",
+            "similarity": 1.0
+          }
+        ],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "relevant_history": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "diagnosis_discussed": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [
+          {
+            "gold": "acid reflux",
+            "prediction": "acid reflux",
+            "similarity": 1.0
+          }
+        ],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "tests": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "advice": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [
+          {
+            "gold": "reduce spicy food",
+            "prediction": "reduce spicy food",
+            "similarity": 1.0
+          },
+          {
+            "gold": "reduce coffee",
+            "prediction": "reduce coffee",
+            "similarity": 1.0
+          }
+        ],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "warning_signs": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [
+          {
+            "gold": "vomiting blood",
+            "prediction": "vomiting blood",
+            "similarity": 1.0
+          },
+          {
+            "gold": "black stools",
+            "prediction": "black stools",
+            "similarity": 1.0
+          },
+          {
+            "gold": "difficulty swallowing",
+            "prediction": "difficulty swallowing",
+            "similarity": 1.0
+          }
+        ],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      }
+    },
+    "medication_scoring": [
+      {
+        "gold_name": "omeprazole",
+        "prediction_name": "omeprazole",
+        "name_similarity": 1.0,
+        "frequency_duration_swap": false,
+        "field_results": {
+          "name": {
+            "gold": "omeprazole",
+            "prediction": "omeprazole",
+            "correct": true,
+            "similarity": 1.0
+          },
+          "name_as_heard": {
+            "gold": "omeprazole",
+            "prediction": "omeprazole",
+            "correct": true,
+            "similarity": 1.0
+          },
+          "dose": {
+            "gold": null,
+            "prediction": "20 mg",
+            "correct": false,
+            "similarity": 0.0
+          },
+          "strength": {
+            "gold": "20 mg",
+            "prediction": "20 mg",
+            "correct": true,
+            "similarity": 1.0
+          },
+          "dose_unit": {
+            "gold": null,
+            "prediction": "mg",
+            "correct": false,
+            "similarity": 0.0
+          },
+          "dosage_form": {
+            "gold": null,
+            "prediction": null,
+            "correct": true,
+            "similarity": 1.0
+          },
+          "route": {
+            "gold": null,
+            "prediction": null,
+            "correct": true,
+            "similarity": 1.0
+          },
+          "frequency": {
+            "gold": "once daily",
+            "prediction": "once daily",
+            "correct": true,
+            "similarity": 1.0
+          },
+          "timing": {
+            "gold": "every morning",
+            "prediction": "morning before breakfast",
+            "correct": true,
+            "similarity": 0.85
+          },
+          "food_instruction": {
+            "gold": "before breakfast",
+            "prediction": "before food",
+            "correct": false,
+            "similarity": 0.5926
+          },
+          "duration": {
+            "gold": "14 days",
+            "prediction": "14 days",
+            "correct": true,
+            "similarity": 1.0
+          },
+          "as_needed": {
+            "gold": false,
+            "prediction": false,
+            "correct": true,
+            "similarity": 1.0
+          },
+          "indication": {
+            "gold": null,
+            "prediction": null,
+            "correct": true,
+            "similarity": 1.0
+          },
+          "notes": {
+            "gold": null,
+            "prediction": null,
+            "correct": true,
+            "similarity": 1.0
+          }
+        }
+      }
+    ],
+    "unmatched_gold_medications": [],
+    "unmatched_predicted_medications": [],
+    "unsupported_fact_candidates": [],
+    "omission_candidates": []
+  },
+  {
+    "case_id": "E2_05",
+    "category": "frequency_duration_safety_trap",
+    "gold": {
+      "chief_complaint": "dental pain",
+      "symptoms": [
+        "dental pain"
+      ],
+      "relevant_history": [],
+      "diagnosis_discussed": [],
+      "diagnosis_status": null,
+      "medications": [
+        {
+          "name": "ibuprofen",
+          "name_as_heard": "ibuprofen",
+          "dose": null,
+          "strength": "400 mg",
+          "dose_unit": null,
+          "dosage_form": null,
+          "route": null,
+          "frequency": "every 8 hours",
+          "timing": null,
+          "food_instruction": "after food",
+          "duration": "3 days",
+          "as_needed": true,
+          "indication": "pain",
+          "notes": null,
+          "doctor_confirmed": false,
+          "suggestions": []
+        }
+      ],
+      "tests": [],
+      "advice": [],
+      "follow_up": "follow up with the dentist if pain continues",
+      "warning_signs": [],
+      "glossary": []
+    },
+    "prediction": {
+      "chief_complaint": "dental pain",
+      "symptoms": [
+        "dental pain"
+      ],
+      "relevant_history": [],
+      "diagnosis_discussed": [
+        "dental pain"
+      ],
+      "diagnosis_status": "discussed",
+      "medications": [
+        {
+          "name": "ibuprofen",
+          "name_as_heard": "ibuprofen",
+          "confidence": 1.0,
+          "dose": "400 mg",
+          "strength": "400 mg",
+          "dose_unit": "mg",
+          "dosage_form": null,
+          "route": null,
+          "frequency": "every 8 hours",
+          "timing": "after food",
+          "food_instruction": "after food",
+          "duration": "3 days",
+          "as_needed": true,
+          "indication": "pain",
+          "notes": "not to be taken every 3 days",
+          "doctor_confirmed": false,
+          "suggestions": []
+        }
+      ],
+      "tests": [],
+      "advice": [
+        "Follow up with the dentist if the pain continues."
+      ],
+      "follow_up": "dentist",
+      "warning_signs": [],
+      "glossary": []
+    },
+    "list_scoring": {
+      "symptoms": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [
+          {
+            "gold": "dental pain",
+            "prediction": "dental pain",
+            "similarity": 1.0
+          }
+        ],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "relevant_history": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "diagnosis_discussed": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "false_positives": [
+          "dental pain"
+        ],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "tests": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "advice": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "false_positives": [
+          "Follow up with the dentist if the pain continues."
+        ],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "warning_signs": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      }
+    },
+    "medication_scoring": [
+      {
+        "gold_name": "ibuprofen",
+        "prediction_name": "ibuprofen",
+        "name_similarity": 1.0,
+        "frequency_duration_swap": false,
+        "field_results": {
+          "name": {
+            "gold": "ibuprofen",
+            "prediction": "ibuprofen",
+            "correct": true,
+            "similarity": 1.0
+          },
+          "name_as_heard": {
+            "gold": "ibuprofen",
+            "prediction": "ibuprofen",
+            "correct": true,
+            "similarity": 1.0
+          },
+          "dose": {
+            "gold": null,
+            "prediction": "400 mg",
+            "correct": false,
+            "similarity": 0.0
+          },
+          "strength": {
+            "gold": "400 mg",
+            "prediction": "400 mg",
+            "correct": true,
+            "similarity": 1.0
+          },
+          "dose_unit": {
+            "gold": null,
+            "prediction": "mg",
+            "correct": false,
+            "similarity": 0.0
+          },
+          "dosage_form": {
+            "gold": null,
+            "prediction": null,
+            "correct": true,
+            "similarity": 1.0
+          },
+          "route": {
+            "gold": null,
+            "prediction": null,
+            "correct": true,
+            "similarity": 1.0
+          },
+          "frequency": {
+            "gold": "every 8 hours",
+            "prediction": "every 8 hours",
+            "correct": true,
+            "similarity": 1.0
+          },
+          "timing": {
+            "gold": null,
+            "prediction": "after food",
+            "correct": false,
+            "similarity": 0.0
+          },
+          "food_instruction": {
+            "gold": "after food",
+            "prediction": "after food",
+            "correct": true,
+            "similarity": 1.0
+          },
+          "duration": {
+            "gold": "3 days",
+            "prediction": "3 days",
+            "correct": true,
+            "similarity": 1.0
+          },
+          "as_needed": {
+            "gold": true,
+            "prediction": true,
+            "correct": true,
+            "similarity": 1.0
+          },
+          "indication": {
+            "gold": "pain",
+            "prediction": "pain",
+            "correct": true,
+            "similarity": 1.0
+          },
+          "notes": {
+            "gold": null,
+            "prediction": "not to be taken every 3 days",
+            "correct": false,
+            "similarity": 0.0
+          }
+        }
+      }
+    ],
+    "unmatched_gold_medications": [],
+    "unmatched_predicted_medications": [],
+    "unsupported_fact_candidates": [
+      {
+        "field": "diagnosis_discussed",
+        "value": "dental pain"
+      },
+      {
+        "field": "advice",
+        "value": "Follow up with the dentist if the pain continues."
+      }
+    ],
+    "omission_candidates": []
+  },
+  {
+    "case_id": "E2_06",
+    "category": "frequency_duration_food",
+    "gold": {
+      "chief_complaint": null,
+      "symptoms": [],
+      "relevant_history": [],
+      "diagnosis_discussed": [
+        "type 2 diabetes"
+      ],
+      "diagnosis_status": "confirmed",
+      "medications": [
+        {
+          "name": "metformin",
+          "name_as_heard": "metformin",
+          "dose": null,
+          "strength": "500 mg",
+          "dose_unit": null,
+          "dosage_form": null,
+          "route": null,
+          "frequency": "twice daily",
+          "timing": null,
+          "food_instruction": "with food",
+          "duration": "30 days",
+          "as_needed": false,
+          "indication": null,
+          "notes": null,
+          "doctor_confirmed": false,
+          "suggestions": []
+        }
+      ],
+      "tests": [],
+      "advice": [],
+      "follow_up": "follow up after 30 days",
+      "warning_signs": [],
+      "glossary": []
+    },
+    "prediction": {
+      "chief_complaint": null,
+      "symptoms": [],
+      "relevant_history": [],
+      "diagnosis_discussed": [
+        "type 2 diabetes"
+      ],
+      "diagnosis_status": "confirmed",
+      "medications": [
+        {
+          "name": "metformin",
+          "name_as_heard": "metformin",
+          "confidence": 1.0,
+          "dose": "500 mg",
+          "strength": null,
+          "dose_unit": null,
+          "dosage_form": null,
+          "route": null,
+          "frequency": "twice daily",
+          "timing": "with food",
+          "food_instruction": "with food",
+          "duration": "30 days",
+          "as_needed": false,
+          "indication": null,
+          "notes": null,
+          "doctor_confirmed": true,
+          "suggestions": []
+        }
+      ],
+      "tests": [],
+      "advice": [
+        "Follow up after 30 days"
+      ],
+      "follow_up": "after 30 days",
+      "warning_signs": [],
+      "glossary": []
+    },
+    "list_scoring": {
+      "symptoms": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "relevant_history": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "diagnosis_discussed": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [
+          {
+            "gold": "type 2 diabetes",
+            "prediction": "type 2 diabetes",
+            "similarity": 1.0
+          }
+        ],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "tests": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "advice": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "false_positives": [
+          "Follow up after 30 days"
+        ],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "warning_signs": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      }
+    },
+    "medication_scoring": [
+      {
+        "gold_name": "metformin",
+        "prediction_name": "metformin",
+        "name_similarity": 1.0,
+        "frequency_duration_swap": false,
+        "field_results": {
+          "name": {
+            "gold": "metformin",
+            "prediction": "metformin",
+            "correct": true,
+            "similarity": 1.0
+          },
+          "name_as_heard": {
+            "gold": "metformin",
+            "prediction": "metformin",
+            "correct": true,
+            "similarity": 1.0
+          },
+          "dose": {
+            "gold": null,
+            "prediction": "500 mg",
+            "correct": false,
+            "similarity": 0.0
+          },
+          "strength": {
+            "gold": "500 mg",
+            "prediction": null,
+            "correct": false,
+            "similarity": 0.0
+          },
+          "dose_unit": {
+            "gold": null,
+            "prediction": null,
+            "correct": true,
+            "similarity": 1.0
+          },
+          "dosage_form": {
+            "gold": null,
+            "prediction": null,
+            "correct": true,
+            "similarity": 1.0
+          },
+          "route": {
+            "gold": null,
+            "prediction": null,
+            "correct": true,
+            "similarity": 1.0
+          },
+          "frequency": {
+            "gold": "twice daily",
+            "prediction": "twice daily",
+            "correct": true,
+            "similarity": 1.0
+          },
+          "timing": {
+            "gold": null,
+            "prediction": "with food",
+            "correct": false,
+            "similarity": 0.0
+          },
+          "food_instruction": {
+            "gold": "with food",
+            "prediction": "with food",
+            "correct": true,
+            "similarity": 1.0
+          },
+          "duration": {
+            "gold": "30 days",
+            "prediction": "30 days",
+            "correct": true,
+            "similarity": 1.0
+          },
+          "as_needed": {
+            "gold": false,
+            "prediction": false,
+            "correct": true,
+            "similarity": 1.0
+          },
+          "indication": {
+            "gold": null,
+            "prediction": null,
+            "correct": true,
+            "similarity": 1.0
+          },
+          "notes": {
+            "gold": null,
+            "prediction": null,
+            "correct": true,
+            "similarity": 1.0
+          }
+        }
+      }
+    ],
+    "unmatched_gold_medications": [],
+    "unmatched_predicted_medications": [],
+    "unsupported_fact_candidates": [
+      {
+        "field": "advice",
+        "value": "Follow up after 30 days"
+      }
+    ],
+    "omission_candidates": []
+  },
+  {
+    "case_id": "E2_07",
+    "category": "multiple_medications_routes",
+    "gold": {
+      "chief_complaint": "wheezing",
+      "symptoms": [
+        "wheezing"
+      ],
+      "relevant_history": [],
+      "diagnosis_discussed": [],
+      "diagnosis_status": null,
+      "medications": [
+        {
+          "name": "salbutamol",
+          "name_as_heard": "salbutamol",
+          "dose": "two puffs",
+          "strength": null,
+          "dose_unit": null,
+          "dosage_form": "inhaler",
+          "route": "inhalation",
+          "frequency": null,
+          "timing": null,
+          "food_instruction": null,
+          "duration": null,
+          "as_needed": true,
+          "indication": "wheeze",
+          "notes": null,
+          "doctor_confirmed": false,
+          "suggestions": []
+        },
+        {
+          "name": "prednisolone",
+          "name_as_heard": "prednisolone",
+          "dose": null,
+          "strength": "40 mg",
+          "dose_unit": null,
+          "dosage_form": null,
+          "route": "oral",
+          "frequency": "once daily",
+          "timing": null,
+          "food_instruction": null,
+          "duration": "5 days",
+          "as_needed": false,
+          "indication": null,
+          "notes": null,
+          "doctor_confirmed": false,
+          "suggestions": []
+        }
+      ],
+      "tests": [],
+      "advice": [],
+      "follow_up": "return for review in 5 days",
+      "warning_signs": [
+        "severe difficulty breathing"
+      ],
+      "glossary": []
+    },
+    "prediction": {
+      "chief_complaint": "wheezing",
+      "symptoms": [
+        "wheezing"
+      ],
+      "relevant_history": [],
+      "diagnosis_discussed": [
+        "wheeze"
+      ],
+      "diagnosis_status": "discussed",
+      "medications": [
+        {
+          "name": "salbutamol",
+          "name_as_heard": "salbutamol",
+          "confidence": 1.0,
+          "dose": "2 puffs",
+          "strength": null,
+          "dose_unit": null,
+          "dosage_form": null,
+          "route": "inhalation",
+          "frequency": "as needed",
+          "timing": null,
+          "food_instruction": null,
+          "duration": null,
+          "as_needed": false,
+          "indication": "wheeze",
+          "notes": null,
+          "doctor_confirmed": false,
+          "suggestions": []
+        },
+        {
+          "name": "prednisolone",
+          "name_as_heard": "prednisolone",
+          "confidence": 1.0,
+          "dose": "40 mg",
+          "strength": "40 mg",
+          "dose_unit": "mg",
+          "dosage_form": null,
+          "route": "by mouth",
+          "frequency": "once daily",
+          "timing": null,
+          "food_instruction": null,
+          "duration": "5 days",
+          "as_needed": false,
+          "indication": null,
+          "notes": null,
+          "doctor_confirmed": false,
+          "suggestions": []
+        }
+      ],
+      "tests": [],
+      "advice": [
+        "seek urgent medical attention if breathing becomes severely difficult"
+      ],
+      "follow_up": "5 days",
+      "warning_signs": [
+        "severely difficult breathing"
+      ],
+      "glossary": []
+    },
+    "list_scoring": {
+      "symptoms": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [
+          {
+            "gold": "wheezing",
+            "prediction": "wheezing",
+            "similarity": 1.0
+          }
+        ],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "relevant_history": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "diagnosis_discussed": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "false_positives": [
+          "wheeze"
+        ],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "tests": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "advice": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "false_positives": [
+          "seek urgent medical attention if breathing becomes severely difficult"
+        ],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "warning_signs": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [
+          {
+            "gold": "severe difficulty breathing",
+            "prediction": "severely difficult breathing",
+            "similarity": 1.0
+          }
+        ],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      }
+    },
+    "medication_scoring": [
+      {
+        "gold_name": "prednisolone",
+        "prediction_name": "prednisolone",
+        "name_similarity": 1.0,
+        "frequency_duration_swap": false,
+        "field_results": {
+          "name": {
+            "gold": "prednisolone",
+            "prediction": "prednisolone",
+            "correct": true,
+            "similarity": 1.0
+          },
+          "name_as_heard": {
+            "gold": "prednisolone",
+            "prediction": "prednisolone",
+            "correct": true,
+            "similarity": 1.0
+          },
+          "dose": {
+            "gold": null,
+            "prediction": "40 mg",
+            "correct": false,
+            "similarity": 0.0
+          },
+          "strength": {
+            "gold": "40 mg",
+            "prediction": "40 mg",
+            "correct": true,
+            "similarity": 1.0
+          },
+          "dose_unit": {
+            "gold": null,
+            "prediction": "mg",
+            "correct": false,
+            "similarity": 0.0
+          },
+          "dosage_form": {
+            "gold": null,
+            "prediction": null,
+            "correct": true,
+            "similarity": 1.0
+          },
+          "route": {
+            "gold": "oral",
+            "prediction": "by mouth",
+            "correct": true,
+            "similarity": 1.0
+          },
+          "frequency": {
+            "gold": "once daily",
+            "prediction": "once daily",
+            "correct": true,
+            "similarity": 1.0
+          },
+          "timing": {
+            "gold": null,
+            "prediction": null,
+            "correct": true,
+            "similarity": 1.0
+          },
+          "food_instruction": {
+            "gold": null,
+            "prediction": null,
+            "correct": true,
+            "similarity": 1.0
+          },
+          "duration": {
+            "gold": "5 days",
+            "prediction": "5 days",
+            "correct": true,
+            "similarity": 1.0
+          },
+          "as_needed": {
+            "gold": false,
+            "prediction": false,
+            "correct": true,
+            "similarity": 1.0
+          },
+          "indication": {
+            "gold": null,
+            "prediction": null,
+            "correct": true,
+            "similarity": 1.0
+          },
+          "notes": {
+            "gold": null,
+            "prediction": null,
+            "correct": true,
+            "similarity": 1.0
+          }
+        }
+      },
+      {
+        "gold_name": "salbutamol",
+        "prediction_name": "salbutamol",
+        "name_similarity": 1.0,
+        "frequency_duration_swap": false,
+        "field_results": {
+          "name": {
+            "gold": "salbutamol",
+            "prediction": "salbutamol",
+            "correct": true,
+            "similarity": 1.0
+          },
+          "name_as_heard": {
+            "gold": "salbutamol",
+            "prediction": "salbutamol",
+            "correct": true,
+            "similarity": 1.0
+          },
+          "dose": {
+            "gold": "two puffs",
+            "prediction": "2 puffs",
+            "correct": false,
+            "similarity": 0.75
+          },
+          "strength": {
+            "gold": null,
+            "prediction": null,
+            "correct": true,
+            "similarity": 1.0
+          },
+          "dose_unit": {
+            "gold": null,
+            "prediction": null,
+            "correct": true,
+            "similarity": 1.0
+          },
+          "dosage_form": {
+            "gold": "inhaler",
+            "prediction": null,
+            "correct": false,
+            "similarity": 0.0
+          },
+          "route": {
+            "gold": "inhalation",
+            "prediction": "inhalation",
+            "correct": true,
+            "similarity": 1.0
+          },
+          "frequency": {
+            "gold": null,
+            "prediction": "as needed",
+            "correct": false,
+            "similarity": 0.0
+          },
+          "timing": {
+            "gold": null,
+            "prediction": null,
+            "correct": true,
+            "similarity": 1.0
+          },
+          "food_instruction": {
+            "gold": null,
+            "prediction": null,
+            "correct": true,
+            "similarity": 1.0
+          },
+          "duration": {
+            "gold": null,
+            "prediction": null,
+            "correct": true,
+            "similarity": 1.0
+          },
+          "as_needed": {
+            "gold": true,
+            "prediction": false,
+            "correct": false,
+            "similarity": 0.0
+          },
+          "indication": {
+            "gold": "wheeze",
+            "prediction": "wheeze",
+            "correct": true,
+            "similarity": 1.0
+          },
+          "notes": {
+            "gold": null,
+            "prediction": null,
+            "correct": true,
+            "similarity": 1.0
+          }
+        }
+      }
+    ],
+    "unmatched_gold_medications": [],
+    "unmatched_predicted_medications": [],
+    "unsupported_fact_candidates": [
+      {
+        "field": "diagnosis_discussed",
+        "value": "wheeze"
+      },
+      {
+        "field": "advice",
+        "value": "seek urgent medical attention if breathing becomes severely difficult"
+      }
+    ],
+    "omission_candidates": []
+  },
+  {
+    "case_id": "E2_08",
+    "category": "tests_and_diagnostic_uncertainty",
+    "gold": {
+      "chief_complaint": "tiredness",
+      "symptoms": [
+        "tiredness",
+        "looking pale"
+      ],
+      "relevant_history": [],
+      "diagnosis_discussed": [
+        "iron deficiency anaemia"
+      ],
+      "diagnosis_status": "suspected",
+      "medications": [],
+      "tests": [
+        "full blood count",
+        "ferritin"
+      ],
+      "advice": [],
+      "follow_up": "follow up after blood test results are available",
+      "warning_signs": [
+        "severe shortness of breath",
+        "chest pain"
+      ],
+      "glossary": []
+    },
+    "prediction": {
+      "chief_complaint": "tiredness and looking pale",
+      "symptoms": [
+        "tiredness",
+        "looking pale"
+      ],
+      "relevant_history": [],
+      "diagnosis_discussed": [
+        "iron deficiency anaemia"
+      ],
+      "diagnosis_status": "suspected",
+      "medications": [],
+      "tests": [
+        "full blood count",
+        "ferritin test"
+      ],
+      "advice": [
+        "follow up after the blood test results are available",
+        "seek urgent help for severe shortness of breath or chest pain"
+      ],
+      "follow_up": "after the blood test results are available",
+      "warning_signs": [
+        "severe shortness of breath",
+        "chest pain"
+      ],
+      "glossary": []
+    },
+    "list_scoring": {
+      "symptoms": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [
+          {
+            "gold": "tiredness",
+            "prediction": "tiredness",
+            "similarity": 1.0
+          },
+          {
+            "gold": "looking pale",
+            "prediction": "looking pale",
+            "similarity": 1.0
+          }
+        ],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "relevant_history": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "diagnosis_discussed": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [
+          {
+            "gold": "iron deficiency anaemia",
+            "prediction": "iron deficiency anaemia",
+            "similarity": 1.0
+          }
+        ],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "tests": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [
+          {
+            "gold": "full blood count",
+            "prediction": "full blood count",
+            "similarity": 1.0
+          },
+          {
+            "gold": "ferritin",
+            "prediction": "ferritin test",
+            "similarity": 0.85
+          }
+        ],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "advice": {
+        "tp": 0,
+        "fp": 2,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "false_positives": [
+          "follow up after the blood test results are available",
+          "seek urgent help for severe shortness of breath or chest pain"
+        ],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "warning_signs": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [
+          {
+            "gold": "severe shortness of breath",
+            "prediction": "severe shortness of breath",
+            "similarity": 1.0
+          },
+          {
+            "gold": "chest pain",
+            "prediction": "chest pain",
+            "similarity": 1.0
+          }
+        ],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      }
+    },
+    "medication_scoring": [],
+    "unmatched_gold_medications": [],
+    "unmatched_predicted_medications": [],
+    "unsupported_fact_candidates": [
+      {
+        "field": "advice",
+        "value": "follow up after the blood test results are available"
+      },
+      {
+        "field": "advice",
+        "value": "seek urgent help for severe shortness of breath or chest pain"
+      }
+    ],
+    "omission_candidates": []
+  },
+  {
+    "case_id": "E2_09",
+    "category": "uncertain_medication_name",
+    "gold": {
+      "chief_complaint": null,
+      "symptoms": [],
+      "relevant_history": [],
+      "diagnosis_discussed": [],
+      "diagnosis_status": null,
+      "medications": [
+        {
+          "name": "Metfornin",
+          "name_as_heard": "Metfornin",
+          "dose": null,
+          "strength": "500 mg",
+          "dose_unit": null,
+          "dosage_form": null,
+          "route": null,
+          "frequency": "twice daily",
+          "timing": null,
+          "food_instruction": null,
+          "duration": null,
+          "as_needed": false,
+          "indication": null,
+          "notes": "medicine identity uncertain",
+          "doctor_confirmed": false,
+          "suggestions": []
+        }
+      ],
+      "tests": [],
+      "advice": [],
+      "follow_up": null,
+      "warning_signs": [],
+      "glossary": []
+    },
+    "prediction": {
+      "chief_complaint": null,
+      "symptoms": [],
+      "relevant_history": [],
+      "diagnosis_discussed": [],
+      "diagnosis_status": null,
+      "medications": [],
+      "tests": [],
+      "advice": [],
+      "follow_up": null,
+      "warning_signs": [],
+      "glossary": []
+    },
+    "list_scoring": {
+      "symptoms": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "relevant_history": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "diagnosis_discussed": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "tests": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "advice": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "warning_signs": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      }
+    },
+    "medication_scoring": [],
+    "unmatched_gold_medications": [
+      {
+        "name": "Metfornin",
+        "name_as_heard": "Metfornin",
+        "dose": null,
+        "strength": "500 mg",
+        "dose_unit": null,
+        "dosage_form": null,
+        "route": null,
+        "frequency": "twice daily",
+        "timing": null,
+        "food_instruction": null,
+        "duration": null,
+        "as_needed": false,
+        "indication": null,
+        "notes": "medicine identity uncertain",
+        "doctor_confirmed": false,
+        "suggestions": []
+      }
+    ],
+    "unmatched_predicted_medications": [],
+    "unsupported_fact_candidates": [],
+    "omission_candidates": [
+      {
+        "field": "medications",
+        "value": "Metfornin"
+      }
+    ]
+  },
+  {
+    "case_id": "E2_10",
+    "category": "negated_medication",
+    "gold": {
+      "chief_complaint": "dry cough and mild fever",
+      "symptoms": [
+        "dry cough",
+        "mild fever"
+      ],
+      "relevant_history": [],
+      "diagnosis_discussed": [],
+      "diagnosis_status": null,
+      "medications": [
+        {
+          "name": "paracetamol",
+          "name_as_heard": "paracetamol",
+          "dose": null,
+          "strength": "500 mg",
+          "dose_unit": null,
+          "dosage_form": null,
+          "route": null,
+          "frequency": null,
+          "timing": null,
+          "food_instruction": null,
+          "duration": null,
+          "as_needed": true,
+          "indication": "fever",
+          "notes": null,
+          "doctor_confirmed": false,
+          "suggestions": []
+        }
+      ],
+      "tests": [],
+      "advice": [
+        "rest",
+        "drink plenty of fluids"
+      ],
+      "follow_up": "follow up in 5 days if cough has not improved",
+      "warning_signs": [],
+      "glossary": []
+    },
+    "prediction": {
+      "chief_complaint": "dry cough and mild fever",
+      "symptoms": [
+        "dry cough",
+        "mild fever"
+      ],
+      "relevant_history": [],
+      "diagnosis_discussed": [],
+      "diagnosis_status": "discussed",
+      "medications": [
+        {
+          "name": "paracetamol",
+          "name_as_heard": "paracetamol",
+          "confidence": 1.0,
+          "dose": "500 mg",
+          "strength": "500 mg",
+          "dose_unit": "mg",
+          "dosage_form": null,
+          "route": null,
+          "frequency": "as needed",
+          "timing": null,
+          "food_instruction": null,
+          "duration": null,
+          "as_needed": true,
+          "indication": "fever",
+          "notes": null,
+          "doctor_confirmed": false,
+          "suggestions": []
+        }
+      ],
+      "tests": [],
+      "advice": [
+        "rest",
+        "drink plenty of fluids"
+      ],
+      "follow_up": "in 5 days if the cough has not improved",
+      "warning_signs": [],
+      "glossary": []
+    },
+    "list_scoring": {
+      "symptoms": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [
+          {
+            "gold": "dry cough",
+            "prediction": "dry cough",
+            "similarity": 1.0
+          },
+          {
+            "gold": "mild fever",
+            "prediction": "mild fever",
+            "similarity": 1.0
+          }
+        ],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "relevant_history": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "diagnosis_discussed": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "tests": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "advice": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [
+          {
+            "gold": "rest",
+            "prediction": "rest",
+            "similarity": 1.0
+          },
+          {
+            "gold": "drink plenty of fluids",
+            "prediction": "drink plenty of fluids",
+            "similarity": 1.0
+          }
+        ],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "warning_signs": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      }
+    },
+    "medication_scoring": [
+      {
+        "gold_name": "paracetamol",
+        "prediction_name": "paracetamol",
+        "name_similarity": 1.0,
+        "frequency_duration_swap": false,
+        "field_results": {
+          "name": {
+            "gold": "paracetamol",
+            "prediction": "paracetamol",
+            "correct": true,
+            "similarity": 1.0
+          },
+          "name_as_heard": {
+            "gold": "paracetamol",
+            "prediction": "paracetamol",
+            "correct": true,
+            "similarity": 1.0
+          },
+          "dose": {
+            "gold": null,
+            "prediction": "500 mg",
+            "correct": false,
+            "similarity": 0.0
+          },
+          "strength": {
+            "gold": "500 mg",
+            "prediction": "500 mg",
+            "correct": true,
+            "similarity": 1.0
+          },
+          "dose_unit": {
+            "gold": null,
+            "prediction": "mg",
+            "correct": false,
+            "similarity": 0.0
+          },
+          "dosage_form": {
+            "gold": null,
+            "prediction": null,
+            "correct": true,
+            "similarity": 1.0
+          },
+          "route": {
+            "gold": null,
+            "prediction": null,
+            "correct": true,
+            "similarity": 1.0
+          },
+          "frequency": {
+            "gold": null,
+            "prediction": "as needed",
+            "correct": false,
+            "similarity": 0.0
+          },
+          "timing": {
+            "gold": null,
+            "prediction": null,
+            "correct": true,
+            "similarity": 1.0
+          },
+          "food_instruction": {
+            "gold": null,
+            "prediction": null,
+            "correct": true,
+            "similarity": 1.0
+          },
+          "duration": {
+            "gold": null,
+            "prediction": null,
+            "correct": true,
+            "similarity": 1.0
+          },
+          "as_needed": {
+            "gold": true,
+            "prediction": true,
+            "correct": true,
+            "similarity": 1.0
+          },
+          "indication": {
+            "gold": "fever",
+            "prediction": "fever",
+            "correct": true,
+            "similarity": 1.0
+          },
+          "notes": {
+            "gold": null,
+            "prediction": null,
+            "correct": true,
+            "similarity": 1.0
+          }
+        }
+      }
+    ],
+    "unmatched_gold_medications": [],
+    "unmatched_predicted_medications": [],
+    "unsupported_fact_candidates": [],
+    "omission_candidates": []
+  },
+  {
+    "case_id": "E2_11",
+    "category": "hallucination_control",
+    "gold": {
+      "chief_complaint": null,
+      "symptoms": [],
+      "relevant_history": [],
+      "diagnosis_discussed": [],
+      "diagnosis_status": null,
+      "medications": [],
+      "tests": [],
+      "advice": [],
+      "follow_up": null,
+      "warning_signs": [],
+      "glossary": []
+    },
+    "prediction": {
+      "chief_complaint": null,
+      "symptoms": [],
+      "relevant_history": [],
+      "diagnosis_discussed": [],
+      "diagnosis_status": null,
+      "medications": [],
+      "tests": [],
+      "advice": [],
+      "follow_up": null,
+      "warning_signs": [],
+      "glossary": []
+    },
+    "list_scoring": {
+      "symptoms": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "relevant_history": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "diagnosis_discussed": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "tests": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "advice": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "warning_signs": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      }
+    },
+    "medication_scoring": [],
+    "unmatched_gold_medications": [],
+    "unmatched_predicted_medications": [],
+    "unsupported_fact_candidates": [],
+    "omission_candidates": []
+  },
+  {
+    "case_id": "E2_12",
+    "category": "allergy_test_medication",
+    "gold": {
+      "chief_complaint": null,
+      "symptoms": [],
+      "relevant_history": [
+        "penicillin allergy"
+      ],
+      "diagnosis_discussed": [
+        "urinary tract infection"
+      ],
+      "diagnosis_status": "suspected",
+      "medications": [
+        {
+          "name": "nitrofurantoin",
+          "name_as_heard": "nitrofurantoin",
+          "dose": null,
+          "strength": "100 mg",
+          "dose_unit": null,
+          "dosage_form": null,
+          "route": null,
+          "frequency": "twice daily",
+          "timing": null,
+          "food_instruction": "with food",
+          "duration": "5 days",
+          "as_needed": false,
+          "indication": null,
+          "notes": null,
+          "doctor_confirmed": false,
+          "suggestions": []
+        }
+      ],
+      "tests": [
+        "urine test"
+      ],
+      "advice": [],
+      "follow_up": "follow up in 3 days",
+      "warning_signs": [
+        "fever",
+        "back pain"
+      ],
+      "glossary": []
+    },
+    "prediction": {
+      "chief_complaint": null,
+      "symptoms": [
+        "urinary tract infection suspected"
+      ],
+      "relevant_history": [
+        "allergic to penicillin"
+      ],
+      "diagnosis_discussed": [
+        "urinary tract infection"
+      ],
+      "diagnosis_status": "suspected",
+      "medications": [
+        {
+          "name": "nitrofurantoin",
+          "name_as_heard": "nitrofurantoin",
+          "confidence": 1.0,
+          "dose": "100 mg",
+          "strength": null,
+          "dose_unit": null,
+          "dosage_form": null,
+          "route": null,
+          "frequency": "twice daily",
+          "timing": "with food",
+          "food_instruction": "with food",
+          "duration": "5 days",
+          "as_needed": false,
+          "indication": null,
+          "notes": null,
+          "doctor_confirmed": false,
+          "suggestions": []
+        }
+      ],
+      "tests": [
+        "urine test"
+      ],
+      "advice": [
+        "seek earlier medical attention if fever or back pain develops"
+      ],
+      "follow_up": "3 days",
+      "warning_signs": [
+        "fever",
+        "back pain"
+      ],
+      "glossary": []
+    },
+    "list_scoring": {
+      "symptoms": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "false_positives": [
+          "urinary tract infection suspected"
+        ],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "relevant_history": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "false_positives": [
+          "allergic to penicillin"
+        ],
+        "false_negatives": [
+          "penicillin allergy"
+        ],
+        "borderline": []
+      },
+      "diagnosis_discussed": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [
+          {
+            "gold": "urinary tract infection",
+            "prediction": "urinary tract infection",
+            "similarity": 1.0
+          }
+        ],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "tests": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [
+          {
+            "gold": "urine test",
+            "prediction": "urine test",
+            "similarity": 1.0
+          }
+        ],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "advice": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "false_positives": [
+          "seek earlier medical attention if fever or back pain develops"
+        ],
+        "false_negatives": [],
+        "borderline": []
+      },
+      "warning_signs": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [
+          {
+            "gold": "fever",
+            "prediction": "fever",
+            "similarity": 1.0
+          },
+          {
+            "gold": "back pain",
+            "prediction": "back pain",
+            "similarity": 1.0
+          }
+        ],
+        "false_positives": [],
+        "false_negatives": [],
+        "borderline": []
+      }
+    },
+    "medication_scoring": [
+      {
+        "gold_name": "nitrofurantoin",
+        "prediction_name": "nitrofurantoin",
+        "name_similarity": 1.0,
+        "frequency_duration_swap": false,
+        "field_results": {
+          "name": {
+            "gold": "nitrofurantoin",
+            "prediction": "nitrofurantoin",
+            "correct": true,
+            "similarity": 1.0
+          },
+          "name_as_heard": {
+            "gold": "nitrofurantoin",
+            "prediction": "nitrofurantoin",
+            "correct": true,
+            "similarity": 1.0
+          },
+          "dose": {
+            "gold": null,
+            "prediction": "100 mg",
+            "correct": false,
+            "similarity": 0.0
+          },
+          "strength": {
+            "gold": "100 mg",
+            "prediction": null,
+            "correct": false,
+            "similarity": 0.0
+          },
+          "dose_unit": {
+            "gold": null,
+            "prediction": null,
+            "correct": true,
+            "similarity": 1.0
+          },
+          "dosage_form": {
+            "gold": null,
+            "prediction": null,
+            "correct": true,
+            "similarity": 1.0
+          },
+          "route": {
+            "gold": null,
+            "prediction": null,
+            "correct": true,
+            "similarity": 1.0
+          },
+          "frequency": {
+            "gold": "twice daily",
+            "prediction": "twice daily",
+            "correct": true,
+            "similarity": 1.0
+          },
+          "timing": {
+            "gold": null,
+            "prediction": "with food",
+            "correct": false,
+            "similarity": 0.0
+          },
+          "food_instruction": {
+            "gold": "with food",
+            "prediction": "with food",
+            "correct": true,
+            "similarity": 1.0
+          },
+          "duration": {
+            "gold": "5 days",
+            "prediction": "5 days",
+            "correct": true,
+            "similarity": 1.0
+          },
+          "as_needed": {
+            "gold": false,
+            "prediction": false,
+            "correct": true,
+            "similarity": 1.0
+          },
+          "indication": {
+            "gold": null,
+            "prediction": null,
+            "correct": true,
+            "similarity": 1.0
+          },
+          "notes": {
+            "gold": null,
+            "prediction": null,
+            "correct": true,
+            "similarity": 1.0
+          }
+        }
+      }
+    ],
+    "unmatched_gold_medications": [],
+    "unmatched_predicted_medications": [],
+    "unsupported_fact_candidates": [
+      {
+        "field": "symptoms",
+        "value": "urinary tract infection suspected"
+      },
+      {
+        "field": "relevant_history",
+        "value": "allergic to penicillin"
+      },
+      {
+        "field": "advice",
+        "value": "seek earlier medical attention if fever or back pain develops"
+      }
+    ],
+    "omission_candidates": [
+      {
+        "field": "relevant_history",
+        "value": "penicillin allergy"
+      }
+    ]
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "dataset_sha256": "17c54270de7b078fee1562965c80ad21bcee649b2ac1c210160aca40c2fe59c4",
+  "database_stats": {
+    "concepts": 81380,
+    "aliases": 119451,
+    "sources": [
+      "rxnorm"
+    ]
+  },
+  "candidate_threshold": 0.72,
+  "high_confidence_threshold": 0.96,
+  "top_k": 10
+}

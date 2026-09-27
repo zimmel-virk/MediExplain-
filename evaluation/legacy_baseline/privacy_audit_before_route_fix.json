@@ -1,0 +1,107 @@
+{
+  "passed": 19,
+  "total": 20,
+  "all_pass": false,
+  "checks": [
+    {
+      "name": "Unauthenticated consultation list blocked",
+      "pass": true,
+      "detail": "401"
+    },
+    {
+      "name": "Consent cannot be bypassed",
+      "pass": true,
+      "detail": "400"
+    },
+    {
+      "name": "Other patient object access blocked",
+      "pass": true,
+      "detail": "403"
+    },
+    {
+      "name": "Unassigned doctor object access blocked",
+      "pass": true,
+      "detail": "403"
+    },
+    {
+      "name": "Unassigned cross-check reviewer blocked",
+      "pass": true,
+      "detail": "403"
+    },
+    {
+      "name": "Patient cannot read unreleased case",
+      "pass": true,
+      "detail": "403"
+    },
+    {
+      "name": "Other doctor cannot retranslate case",
+      "pass": false,
+      "detail": "404"
+    },
+    {
+      "name": "Other patient cannot fetch case audio",
+      "pass": true,
+      "detail": "403"
+    },
+    {
+      "name": "Other patient cannot fetch case PDF",
+      "pass": true,
+      "detail": "403"
+    },
+    {
+      "name": "Share link blocked before release",
+      "pass": true,
+      "detail": "409"
+    },
+    {
+      "name": "Public registration cannot self-assign admin/doctor",
+      "pass": true,
+      "detail": "status=201, role=patient"
+    },
+    {
+      "name": "Owner can create explicit reviewer assignment",
+      "pass": true,
+      "detail": "201"
+    },
+    {
+      "name": "Assigned reviewer can read assigned case",
+      "pass": true,
+      "detail": "200"
+    },
+    {
+      "name": "Different reviewer remains blocked",
+      "pass": true,
+      "detail": "403"
+    },
+    {
+      "name": "Password stored as bcrypt hash",
+      "pass": true,
+      "detail": "$2b$"
+    },
+    {
+      "name": "Stored clinical file references are portable",
+      "pass": true,
+      "detail": "absolute=0"
+    },
+    {
+      "name": "Authorized erasure endpoint deletes case",
+      "pass": true,
+      "detail": "204"
+    },
+    {
+      "name": "Deleted case no longer retrievable",
+      "pass": true,
+      "detail": "404"
+    },
+    {
+      "name": "Deletion audit evidence retained",
+      "pass": true,
+      "detail": "['consent.granted', 'consultation.created', 'cross_check.requested', 'consultation.viewed', 'consultation.deleted']"
+    },
+    {
+      "name": "Invalid share token rejected",
+      "pass": true,
+      "detail": "401"
+    }
+  ]
+}

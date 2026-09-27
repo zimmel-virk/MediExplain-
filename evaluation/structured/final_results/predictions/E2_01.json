@@ -1,0 +1,70 @@
+{
+  "case_id": "E2_01",
+  "category": "standard_prescription",
+  "transcript": "The patient has fever and a sore throat. The doctor said this is a throat infection. Take amoxicillin 500 mg three times daily for 5 days after food. Take paracetamol 500 mg as needed for fever. Drink plenty of water. Follow up in 5 days if symptoms are not improving. Seek urgent medical attention if breathing becomes difficult.",
+  "prediction": {
+    "chief_complaint": "fever and a sore throat",
+    "symptoms": [
+      "fever",
+      "sore throat"
+    ],
+    "relevant_history": [],
+    "diagnosis_discussed": [
+      "throat infection"
+    ],
+    "diagnosis_status": "discussed",
+    "medications": [
+      {
+        "name": "amoxicillin",
+        "name_as_heard": "amoxicillin",
+        "confidence": 1.0,
+        "dose": "500 mg",
+        "strength": "500 mg",
+        "dose_unit": "mg",
+        "dosage_form": null,
+        "route": null,
+        "frequency": "three times daily",
+        "timing": "after food",
+        "food_instruction": "after food",
+        "duration": "5 days",
+        "as_needed": false,
+        "indication": null,
+        "notes": null,
+        "doctor_confirmed": false,
+        "suggestions": []
+      },
+      {
+        "name": "paracetamol",
+        "name_as_heard": "paracetamol",
+        "confidence": 1.0,
+        "dose": "500 mg",
+        "strength": "500 mg",
+        "dose_unit": "mg",
+        "dosage_form": null,
+        "route": null,
+        "frequency": "as needed",
+        "timing": null,
+        "food_instruction": null,
+        "duration": null,
+        "as_needed": true,
+        "indication": "fever",
+        "notes": null,
+        "doctor_confirmed": false,
+        "suggestions": []
+      }
+    ],
+    "tests": [],
+    "advice": [
+      "Drink plenty of water"
+    ],
+    "follow_up": "5 days",
+    "warning_signs": [
+      "breathing becomes difficult"
+    ],
+    "glossary": []
+  },
+  "processing_seconds": 336.441,
+  "fallback_empty_output": false,
+  "schema_valid": true,
+  "error": ""
+}

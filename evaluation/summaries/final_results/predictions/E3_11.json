@@ -1,0 +1,12 @@
+{
+  "case_id": "E3_11",
+  "category": "hallucination_control",
+  "clinical_note": "Based on the source transcript and the structured extraction, here is the concise doctor-facing SOAP draft:\n\n**Subjective**\nNot mentioned in transcript.\n\n**Objective**\nNot mentioned in transcript.\n\n**Assessment**\nNot mentioned in transcript.\n\n**Plan**\nNot mentioned in transcript.\n\nNote: Since no information was discussed in the transcript, the SOAP draft is empty.",
+  "patient_summary": "There is no information to report.",
+  "clinical_seconds": 49.301,
+  "patient_seconds": 11.863,
+  "total_generation_seconds": 61.164,
+  "clinical_empty": false,
+  "patient_empty": false,
+  "error": ""
+}

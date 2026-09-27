@@ -1,0 +1,69 @@
+{
+  "case_id": "E2_07",
+  "category": "multiple_medications_routes",
+  "transcript": "The patient has wheezing. Use the salbutamol inhaler, two puffs by inhalation as needed for wheeze. Also take prednisolone 40 mg by mouth once daily for 5 days. Return for review in 5 days. Seek urgent medical attention if breathing becomes severely difficult.",
+  "prediction": {
+    "chief_complaint": "wheezing",
+    "symptoms": [
+      "wheezing"
+    ],
+    "relevant_history": [],
+    "diagnosis_discussed": [
+      "wheeze"
+    ],
+    "diagnosis_status": "discussed",
+    "medications": [
+      {
+        "name": "salbutamol",
+        "name_as_heard": "salbutamol",
+        "confidence": 1.0,
+        "dose": "2 puffs",
+        "strength": null,
+        "dose_unit": null,
+        "dosage_form": null,
+        "route": "inhalation",
+        "frequency": "as needed",
+        "timing": null,
+        "food_instruction": null,
+        "duration": null,
+        "as_needed": false,
+        "indication": "wheeze",
+        "notes": null,
+        "doctor_confirmed": false,
+        "suggestions": []
+      },
+      {
+        "name": "prednisolone",
+        "name_as_heard": "prednisolone",
+        "confidence": 1.0,
+        "dose": "40 mg",
+        "strength": "40 mg",
+        "dose_unit": "mg",
+        "dosage_form": null,
+        "route": "by mouth",
+        "frequency": "once daily",
+        "timing": null,
+        "food_instruction": null,
+        "duration": "5 days",
+        "as_needed": false,
+        "indication": null,
+        "notes": null,
+        "doctor_confirmed": false,
+        "suggestions": []
+      }
+    ],
+    "tests": [],
+    "advice": [
+      "seek urgent medical attention if breathing becomes severely difficult"
+    ],
+    "follow_up": "5 days",
+    "warning_signs": [
+      "severely difficult breathing"
+    ],
+    "glossary": []
+  },
+  "processing_seconds": 171.296,
+  "fallback_empty_output": false,
+  "schema_valid": true,
+  "error": ""
+}

@@ -1,0 +1,19 @@
+query,category,case_type,expected,candidate_count,rank,top1,top3,top5,false_positive,query_strength,matched_strength_compatible,matched_score,top_score,top_display_name,top_generic_name,top_brand_name,top_source,top_matched_via,top_strength_compatible
+metfornin 500 mg,misspelling,positive,metformin,1,1,True,True,True,,500mg,True,0.889,0.889,metformin,metformin,,rxnorm,metformin,True
+paracitamol 500mg,misspelling,positive,paracetamol | acetaminophen,5,1,True,True,True,,500mg,True,1.0,1.0,acetaminophen 500 MG Oral Capsule,,,rxnorm,acetaminophen 500 MG Oral Capsule,True
+amoxycillin 500 mg capsule,misspelling,positive,amoxicillin,5,1,True,True,True,,500mg,True,0.949,0.949,amoxicillin 500 MG,,,rxnorm,amoxicillin 500 MG,True
+azithromicin 500mg,misspelling,positive,azithromycin,5,1,True,True,True,,500mg,True,0.957,0.957,azithromycin 500 MG,,,rxnorm,azithromycin 500 MG,True
+omeprazol 20 mg,misspelling,positive,omeprazole,5,1,True,True,True,,20mg,True,0.987,0.987,omeprazole 20 MG,,,rxnorm,omeprazole 20 MG,True
+atorvastin 20 mg,misspelling,positive,atorvastatin,5,1,True,True,True,,20mg,True,0.949,0.949,atorvastatin 20 MG,,,rxnorm,atorvastatin 20 MG,True
+amlodipin 5 mg,misspelling,positive,amlodipine,5,1,True,True,True,,5mg,True,0.987,0.987,amlodipine 5 MG,,,rxnorm,amlodipine 5 MG,True
+ciprofloxasin 500mg,misspelling,positive,ciprofloxacin,5,1,True,True,True,,500mg,True,0.963,0.963,ciprofloxacin 500 MG,,,rxnorm,ciprofloxacin 500 MG,True
+doxycyclin 100 mg,misspelling,positive,doxycycline,2,1,True,True,True,,100mg,True,0.952,0.952,doxycycline,doxycycline,,rxnorm,doxycycline,True
+clopidogel 75mg,misspelling,positive,clopidogrel,3,1,True,True,True,,75mg,True,0.992,0.992,clopidogrel 75 MG,,,rxnorm,clopidogrel 75 MG,True
+tablet,hard_negative,hard_negative,,0,,,,,False,,,,,,,,,,
+after food,hard_negative,hard_negative,,0,,,,,False,,,,,,,,,,
+twice daily,hard_negative,hard_negative,,0,,,,,False,,,,,,,,,,
+breakfast,hard_negative,hard_negative,,0,,,,,False,,,,,,,,,,
+fever,hard_negative,hard_negative,,0,,,,,False,,,,,,,,,,
+water,hard_negative,hard_negative,,0,,,,,False,,,,,,,,,,
+doctor,hard_negative,hard_negative,,0,,,,,False,,,,,,,,,,
+500 mg,hard_negative,hard_negative,,0,,,,,False,500mg,,,,,,,,,

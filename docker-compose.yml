@@ -1,0 +1,30 @@
+services:
+  backend:
+    build: ./backend
+    env_file: .env
+    volumes:
+      - mediexplain_data:/app/data
+      - mediexplain_audio:/app/audio_cache
+    restart: unless-stopped
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/api/health')"]
+      interval: 30s
+      timeout: 5s
+      retries: 5
+
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    depends_on:
+      backend:
+        condition: service_healthy
+    ports:
+      - "80:80"
+    restart: unless-stopped
+
+volumes:
+  mediexplain_data:
+  mediexplain_audio:

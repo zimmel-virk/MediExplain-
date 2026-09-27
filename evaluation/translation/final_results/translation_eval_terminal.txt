@@ -1,0 +1,342 @@
+==============================================================================
+MEDIEXPLAIN+ EVALUATION 06
+MULTILINGUAL TRANSLATION SAFETY
+==============================================================================
+Dataset integrity: PASS
+Cases: 30
+Model: facebook/nllb-200-distilled-600M
+
+[1/30] TX01_ur
+Translation: کھانے کے بعد 5 دن تک روزانہ تین بار 500 ملی گرام اموکسیکلین لیں۔
+Quality: verified
+Numeric preserved: True
+Medication preserved: False
+Medication review: True
+Script valid: True
+Semantic status: pass
+Semantic score: 0.9978
+Seconds: 36.7139
+
+[2/30] TX01_pa_shah
+Translation: کھانے توں بااد 5 دناں لای روجانا تںن وار 500 ملیگرام اےموکسسلن لاو۔
+Quality: review_required
+Numeric preserved: True
+Medication preserved: False
+Medication review: True
+Script valid: True
+Semantic status: unavailable
+Semantic score: None
+Seconds: 9.2169
+
+[3/30] TX01_ar
+Translation: خذ أموكسيسيلين 500 ملغ ثلاث مرات يوميًا لمدة 5 أيام بعد تناول الطعام.
+Quality: verified
+Numeric preserved: True
+Medication preserved: False
+Medication review: True
+Script valid: True
+Semantic status: pass
+Semantic score: 0.9978
+Seconds: 15.316
+
+[4/30] TX01_ps
+Translation: د ډوډۍ وروسته د 5 ورځو لپاره هره ورځ درې ځله 500 mg amoxicillin واخلئ.
+Quality: verified
+Numeric preserved: True
+Medication preserved: True
+Medication review: False
+Script valid: True
+Semantic status: pass
+Semantic score: 0.9971
+Seconds: 16.4064
+
+[5/30] TX01_sd
+Translation: کاڌي کان پوءِ 5 ڏينهن تائين روزانو ٽي دفعا 500 ميگاواٽ ايموڪسيسيلين وٺو.
+Quality: verified
+Numeric preserved: True
+Medication preserved: False
+Medication review: True
+Script valid: True
+Semantic status: pass
+Semantic score: 0.9979
+Seconds: 17.3492
+
+[6/30] TX02_ur
+Translation: ہر صبح روزانہ ایک بار 5 ملی گرام املوڈیپین لیں۔ سات دن میں پیروی کریں.
+Quality: review_required
+Numeric preserved: False
+Medication preserved: False
+Medication review: True
+Script valid: True
+Semantic status: pass
+Semantic score: 0.9979
+Seconds: 17.7689
+
+[7/30] TX02_pa_shah
+Translation: ہر سوےرے روجانا اک وار 5 ملیگرام اےملوڈیپن لاو۔ 7 دناں وچ پھالو-اپ کرو.
+Quality: review_required
+Numeric preserved: True
+Medication preserved: False
+Medication review: True
+Script valid: True
+Semantic status: unavailable
+Semantic score: None
+Seconds: 12.124
+
+[8/30] TX02_ar
+Translation: خذ أمlodipine 5 ملغ مرة يوميا كل صباح. اتبع في سبعة أيام.
+Quality: review_required
+Numeric preserved: False
+Medication preserved: False
+Medication review: True
+Script valid: True
+Semantic status: pass
+Semantic score: 0.9975
+Seconds: 17.9655
+
+[9/30] TX02_ps
+Translation: هر سهار په ورځ کې یو ځل د املوډیپین 5 mg واخلئ. په اوو ورځو کې تعقیب کړئ.
+Quality: review_required
+Numeric preserved: False
+Medication preserved: False
+Medication review: True
+Script valid: True
+Semantic status: pass
+Semantic score: 0.9974
+Seconds: 20.3222
+
+[10/30] TX02_sd
+Translation: Amlodipine 5 mg هر صبح هڪ ڀيرو روزانو وٺو. 7 ڏينهن ۾ پيروي ڪريو.
+Quality: verified
+Numeric preserved: True
+Medication preserved: True
+Medication review: False
+Script valid: True
+Semantic status: pass
+Semantic score: 0.9971
+Seconds: 17.6277
+
+[11/30] TX03_ur
+Translation: 14 دن تک ناشتہ سے پہلے 20 ملی گرام اومیپرازول لے لو۔ اضافی خوراک نہ لیں۔
+Quality: verified
+Numeric preserved: True
+Medication preserved: False
+Medication review: True
+Script valid: True
+Semantic status: pass
+Semantic score: 0.9973
+Seconds: 17.5491
+
+[12/30] TX03_pa_shah
+Translation: سوےر دے کھانے توں پہلاں 14 دناں لای اومےپراجول 20 ملیگرام لاو۔ وادھو کھراک نا لاو۔
+Quality: review_required
+Numeric preserved: True
+Medication preserved: False
+Medication review: True
+Script valid: True
+Semantic status: unavailable
+Semantic score: None
+Seconds: 11.6304
+
+[13/30] TX03_ar
+Translation: خذ أوميبرازول 20 ملغ قبل الإفطار لمدة 14 يوماً. لا تأخذ جرعة إضافية.
+Quality: verified
+Numeric preserved: True
+Medication preserved: False
+Medication review: True
+Script valid: True
+Semantic status: pass
+Semantic score: 0.9974
+Seconds: 19.7592
+
+[14/30] TX03_ps
+Translation: د 14 ورځو لپاره د ډوډۍ دمخه 20 mg omeprazole واخلئ. اضافي خوراک مه اخلئ.
+Quality: verified
+Numeric preserved: True
+Medication preserved: True
+Medication review: False
+Script valid: True
+Semantic status: pass
+Semantic score: 0.9782
+Seconds: 19.5311
+
+[15/30] TX03_sd
+Translation: صبح جو کاڌو کائڻ کان اڳ 14 ڏينهن تائين 20 mg omeprazole وٺو. اضافي دوا نه وٺو.
+Quality: verified
+Numeric preserved: True
+Medication preserved: True
+Medication review: False
+Script valid: True
+Semantic status: pass
+Semantic score: 0.9794
+Seconds: 19.0884
+
+[16/30] TX04_ur
+Translation: اینٹی بائیوٹک نہ لیں۔ اگر آپ کے سینے میں شدید درد ہو تو فوری طور پر طبی امداد طلب کریں۔
+Quality: verified
+Numeric preserved: True
+Medication preserved: True
+Medication review: False
+Script valid: True
+Semantic status: pass
+Semantic score: 0.9984
+Seconds: 18.3414
+
+[17/30] TX04_pa_shah
+Translation: اےںٹیباااوٹکس نا لاو۔ جے تہانوں گںبھیر چھاتی دا درد ہںدا ہے تاں ترںت ڈاکٹری سہااتا لاو۔
+Quality: review_required
+Numeric preserved: True
+Medication preserved: True
+Medication review: False
+Script valid: True
+Semantic status: unavailable
+Semantic score: None
+Seconds: 11.5145
+
+[18/30] TX04_ar
+Translation: لا تتناول المضادات الحيوية. اتصل بالرعاية الطبية على وجه السرعة إذا أصبت بألم شديد في الصدر.
+Quality: verified
+Numeric preserved: True
+Medication preserved: True
+Medication review: False
+Script valid: True
+Semantic status: pass
+Semantic score: 0.9981
+Seconds: 21.1037
+
+[19/30] TX04_ps
+Translation: انټي بیوتیکونه مه اخلئ. بېړنۍ طبي پاملرنه وکړئ که تاسو د سینې سخت درد ولرئ.
+Quality: verified
+Numeric preserved: True
+Medication preserved: True
+Medication review: False
+Script valid: True
+Semantic status: pass
+Semantic score: 0.9979
+Seconds: 21.2255
+
+[20/30] TX04_sd
+Translation: اينٽي بايوٽيڪ نه وٺو. جيڪڏهن توهان کي سخت سينو درد محسوس ٿئي ته فوري طور تي طبي مدد طلب ڪريو.
+Quality: verified
+Numeric preserved: True
+Medication preserved: True
+Medication review: False
+Script valid: True
+Semantic status: pass
+Semantic score: 0.9984
+Seconds: 20.6443
+
+[21/30] TX05_ur
+Translation: بخار کے لیے 500 ملیگرام پیراسیٹامول لیں۔ کافی مقدار میں پانی پینا اور 3 دن میں پیروی کرنا۔
+Quality: verified
+Numeric preserved: True
+Medication preserved: False
+Medication review: True
+Script valid: True
+Semantic status: pass
+Semantic score: 0.9974
+Seconds: 21.1861
+
+[22/30] TX05_pa_shah
+Translation: تاپمان لای 500 ملیگرام پےراسیٹامول لاو۔ بہت سارا پانی پیاو اتے 3 دناں وچ پھالو-اپ کرو۔
+Quality: review_required
+Numeric preserved: True
+Medication preserved: False
+Medication review: True
+Script valid: True
+Semantic status: unavailable
+Semantic score: None
+Seconds: 13.9694
+
+[23/30] TX05_ar
+Translation: خذ باراسيتامول 500 ملغ حسب الحاجة للحمى. اشرب الكثير من المياه واصلي في 3 ايام
+Quality: verified
+Numeric preserved: True
+Medication preserved: False
+Medication review: True
+Script valid: True
+Semantic status: pass
+Semantic score: 0.9943
+Seconds: 22.5346
+
+[24/30] TX05_ps
+Translation: د باراسټامول 500 mg واخلئ لکه څنګه چې د تبه لپاره اړین وي. ډیر اوبه وڅښئ او په 3 ورځو کې تعقیب کړئ.
+Quality: verified
+Numeric preserved: True
+Medication preserved: False
+Medication review: True
+Script valid: True
+Semantic status: pass
+Semantic score: 0.9858
+Seconds: 24.681
+
+[25/30] TX05_sd
+Translation: بخار لاءِ 500 ميگاواٽ پيراسيٽامول وٺو. گھڻو پاڻي پيئو ۽ 3 ڏينهن ۾ عمل ڪريو.
+Quality: review_required
+Numeric preserved: True
+Medication preserved: False
+Medication review: True
+Script valid: True
+Semantic status: review
+Semantic score: 0.0045
+Seconds: 20.9763
+
+[26/30] TX06_ur
+Translation: سلبوتامول انہالر کا استعمال کریں، ضرورت کے مطابق 2 سانسیں لیں۔ 5 دن تک روزانہ ایک بار 40 ملی گرام پرڈنیزولون لیں۔
+Quality: verified
+Numeric preserved: True
+Medication preserved: False
+Medication review: True
+Script valid: True
+Semantic status: pass
+Semantic score: 0.9962
+Seconds: 25.9366
+
+[27/30] TX06_pa_shah
+Translation: سےلبٹامول انہےلےٹر دی ورتوں کرو, لوڑ پےن 'تے 2 ساہ لاو۔ 5 دناں لای روجانا اک وار 40 ملیگرام پریڈنیسولون لاو۔
+Quality: review_required
+Numeric preserved: True
+Medication preserved: False
+Medication review: True
+Script valid: True
+Semantic status: unavailable
+Semantic score: None
+Seconds: 16.4794
+
+[28/30] TX06_ar
+Translation: استخدم جهاز استنشاق السالبوتامول، 2 نفاخ حسب الحاجة للتنفس. خذ بريدنيزولون 40 ملغ مرة يوميا لمدة 5 أيام.
+Quality: verified
+Numeric preserved: True
+Medication preserved: False
+Medication review: True
+Script valid: True
+Semantic status: pass
+Semantic score: 0.9932
+Seconds: 28.6453
+
+[29/30] TX06_ps
+Translation: د سالبوتامول انلاټر وکاروئ، د اړتیا په صورت کې 2 تنفسونه وکړئ. د 5 ورځو لپاره په ورځ کې یوځل 40mg prednisolone واخلئ.
+Quality: review_required
+Numeric preserved: False
+Medication preserved: False
+Medication review: True
+Script valid: True
+Semantic status: pass
+Semantic score: 0.997
+Seconds: 30.1057
+
+[30/30] TX06_sd
+Translation: salbutamol inhaler استعمال ڪريو، 2 puffs جي ضرورت آهي ته wheeze لاء. 5 ڏينهن لاءِ روزانو هڪ ڀيرو 40mg پريڊنيزولون وٺو.
+Quality: review_required
+Numeric preserved: False
+Medication preserved: False
+Medication review: True
+Script valid: True
+Semantic status: pass
+Semantic score: 0.9974
+Seconds: 28.4878
+
+==============================================================================
+SUCCESSFUL: 30/30
+TRANSLATION INFERENCE COMPLETE
+==============================================================================

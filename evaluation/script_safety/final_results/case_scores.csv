@@ -1,0 +1,26 @@
+case_id,category,target_language,expected_action,production_action,correct,production_blocked,policy_valid,contains_arabic_script,secondary_script_valid,authoritative_secondary_agree,unsafe_false_negative,false_block,processing_seconds,policy_error
+SCR01,valid_native_script,ur,allow,allow,True,False,True,True,True,True,False,False,7.8e-05,
+SCR02,valid_native_script,ar,allow,allow,True,False,True,True,True,True,False,False,3.2e-05,
+SCR03,valid_native_script,ps,allow,allow,True,False,True,True,True,True,False,False,2.8e-05,
+SCR04,valid_native_script,sd,allow,allow,True,False,True,True,True,True,False,False,2.7e-05,
+SCR05,valid_native_script,pa_shah,allow,allow,True,False,True,True,True,True,False,False,2.3e-05,
+SCR06,valid_mixed_medication_latin,ur,allow,allow,True,False,True,True,True,True,False,False,5.6e-05,
+SCR07,valid_mixed_medication_latin,ar,allow,allow,True,False,True,True,True,True,False,False,3.2e-05,
+SCR08,valid_mixed_medication_latin,ps,allow,allow,True,False,True,True,True,True,False,False,2.4e-05,
+SCR09,valid_mixed_medication_latin,sd,allow,allow,True,False,True,True,True,True,False,False,2.4e-05,
+SCR10,valid_mixed_medication_latin,pa_shah,allow,allow,True,False,True,True,True,True,False,False,2.4e-05,
+SCR11,gurmukhi_leak,pa_shah,block,block,True,True,False,False,False,True,False,False,2.7e-05,pa_shah: Devanagari/Hindi script detected; Gurmukhi script detected
+SCR12,gurmukhi_leak,ur,block,block,True,True,False,True,False,True,False,False,1.9e-05,ur: Gurmukhi script detected
+SCR13,devanagari_leak,ur,block,block,True,True,False,True,False,True,False,False,1.4e-05,ur: Devanagari/Hindi script detected
+SCR14,devanagari_leak,ar,block,block,True,True,False,True,False,True,False,False,1.3e-05,ar: Devanagari/Hindi script detected
+SCR15,unexpected_cyrillic,ur,block,block,True,True,False,True,True,False,False,False,2.6e-05,ur: Unexpected alphabetic script(s): Cyrillic
+SCR16,unexpected_greek,ar,block,block,True,True,False,True,True,False,False,False,2.6e-05,ar: Unexpected alphabetic script(s): Greek
+SCR17,unexpected_hebrew,ps,block,block,True,True,False,True,True,False,False,False,1.9e-05,ps: Unexpected alphabetic script(s): Hebrew
+SCR18,unexpected_cjk,sd,block,block,True,True,False,True,True,False,False,False,1.6e-05,sd: Unexpected alphabetic script(s): Chinese/CJK
+SCR19,latin_only_wrong_script,ur,block,allow,False,False,True,False,False,False,True,False,2.4e-05,
+SCR20,latin_only_wrong_script,ar,block,allow,False,False,True,False,False,False,True,False,1.9e-05,
+SCR21,latin_only_wrong_script,ps,block,allow,False,False,True,False,False,False,True,False,1.6e-05,
+SCR22,latin_only_wrong_script,sd,block,allow,False,False,True,False,False,False,True,False,1.5e-05,
+SCR23,latin_only_wrong_script,pa_shah,block,allow,False,False,True,False,False,False,True,False,1.5e-05,
+SCR24,digits_only_wrong_script,ur,block,allow,False,False,True,False,False,False,True,False,1e-05,
+SCR25,digits_only_wrong_script,pa_shah,block,allow,False,False,True,False,False,False,True,False,9e-06,

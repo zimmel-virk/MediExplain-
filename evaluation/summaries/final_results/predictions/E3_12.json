@@ -1,0 +1,12 @@
+{
+  "case_id": "E3_12",
+  "category": "allergy_test_medication",
+  "clinical_note": "**SOAP Draft:**\n\n**Subjective:**\nNot mentioned in transcript.\n\n**Objective:**\nThe patient has a suspected urinary tract infection. A urine test has been sent. The patient is allergic to penicillin.\n\n**Assessment:**\nThe patient has a suspected urinary tract infection, which has not been confirmed. The patient is allergic to penicillin.\n\n**Plan:**\nPrescribe nitrofurantoin 100 mg twice daily for 5 days with food. Follow up in 3 days. Seek earlier medical attention if fever or back pain develops.\n\n**Medication Safety:**\n\n* Medication: nitrofurantoin\n* Dose: 100 mg\n* Strength: 100 mg\n* Frequency: twice daily\n* Timing: with food\n* Duration: 5 days\n\n**Structured JSON:**\n\n```\n{\n  \"medications\": [\n    {\n      \"name\": \"nitrofurantoin\",\n      \"strength\": \"100 mg\",\n      \"frequency\": \"twice daily\",\n      \"timing\": \"with food\",\n      \"duration\": \"5 days\"\n    }\n  ],\n  \"tests\": [\n    \"urine test\"\n  ],\n  \"advice\": [\n    \"Follow up in 3 days\",\n    \"Seek earlier medical attention if fever or back pain develops\"\n  ]\n}\n```",
+  "patient_summary": "The patient has a penicillin allergy. They might have a urinary tract infection, but it's not confirmed yet. \n\nThe patient needs to take nitrofurantoin:\n\n* Medicine: nitrofurantoin\n* Strength: 100 mg\n* Frequency: twice daily\n* Duration: 5 days\n* Food instruction: with food\n\nA urine test has been sent to the lab. \n\nThe patient should come back in 3 days. If they have fever or back pain, they should see a doctor sooner.",
+  "clinical_seconds": 186.613,
+  "patient_seconds": 86.384,
+  "total_generation_seconds": 272.997,
+  "clinical_empty": false,
+  "patient_empty": false,
+  "error": ""
+}

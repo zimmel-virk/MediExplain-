@@ -1,0 +1,16 @@
+[
+  {
+    "case_id": "E2_04",
+    "field": "medication.food_instruction",
+    "gold": "before breakfast",
+    "prediction": "before food",
+    "similarity": 0.5926
+  },
+  {
+    "case_id": "E2_07",
+    "field": "medication.dose",
+    "gold": "two puffs",
+    "prediction": "2 puffs",
+    "similarity": 0.75
+  }
+]

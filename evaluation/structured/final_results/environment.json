@@ -1,0 +1,18 @@
+{
+  "evaluation": "MediExplain+ Structured Clinical Extraction",
+  "dataset_sha256": "35ce455cfd2ca6b6235576fab5d26d004ce7700bbf9c825fb9754bd0a67e84d5",
+  "model": "llama3.1:8b",
+  "ollama_host": "http://localhost:11434",
+  "ollama_num_ctx": 4096,
+  "ollama_timeout_seconds": 900,
+  "temperature": 0.1,
+  "json_mode": true,
+  "python_version": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "platform": "Linux-6.8.0-1063-aws-x86_64-with-glibc2.35",
+  "machine": "x86_64",
+  "llm_module": "/home/ubuntu/mediexplain/backend/app/services/llm.py",
+  "llm_module_sha256": "af771f25e75e63a819c167f49d24d79945b1ccdeba14c67291da460f9b14ce7c",
+  "extract_signature": "(transcript: 'str') -> 'dict'",
+  "omp_num_threads": null,
+  "mkl_num_threads": null
+}

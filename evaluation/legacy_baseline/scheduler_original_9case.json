@@ -1,0 +1,79 @@
+{
+  "passed": 9,
+  "total": 9,
+  "accuracy": 1.0,
+  "cases": [
+    {
+      "frequency": "once daily",
+      "duration": "7 days",
+      "expected_events": 7,
+      "actual_events": 7,
+      "error": null,
+      "pass": true
+    },
+    {
+      "frequency": "twice daily",
+      "duration": "7 days",
+      "expected_events": 14,
+      "actual_events": 14,
+      "error": null,
+      "pass": true
+    },
+    {
+      "frequency": "three times a day",
+      "duration": "5 days",
+      "expected_events": 15,
+      "actual_events": 15,
+      "error": null,
+      "pass": true
+    },
+    {
+      "frequency": "four times per day",
+      "duration": "3 days",
+      "expected_events": 12,
+      "actual_events": 12,
+      "error": null,
+      "pass": true
+    },
+    {
+      "frequency": "every 12 hours",
+      "duration": "2 days",
+      "expected_events": 4,
+      "actual_events": 4,
+      "error": null,
+      "pass": true
+    },
+    {
+      "frequency": "morning and night",
+      "duration": "7 days",
+      "expected_events": 14,
+      "actual_events": 14,
+      "error": null,
+      "pass": true
+    },
+    {
+      "frequency": "twice daily",
+      "duration": null,
+      "expected_events": 0,
+      "actual_events": 0,
+      "error": "Duration/end date is required for automatic reminders",
+      "pass": true
+    },
+    {
+      "frequency": "every 5 hours",
+      "duration": "2 days",
+      "expected_events": 0,
+      "actual_events": 0,
+      "error": "Every 5 hours requires manual scheduling",
+      "pass": true
+    },
+    {
+      "frequency": "as needed",
+      "duration": null,
+      "expected_events": 0,
+      "actual_events": 0,
+      "error": null,
+      "pass": true
+    }
+  ]
+}

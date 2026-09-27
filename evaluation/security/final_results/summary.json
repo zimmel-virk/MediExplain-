@@ -1,0 +1,17 @@
+{
+  "evaluation": "MediExplain+ Evaluation 14 Security and RBAC",
+  "tests": 11,
+  "passed": 11,
+  "failed": 0,
+  "pass_percent": 100.0,
+  "coverage": [
+    "authentication required",
+    "valid local JWT authentication",
+    "invalid JWT rejection",
+    "invalid password rejection",
+    "authenticated patient access",
+    "authenticated doctor access",
+    "authenticated admin access",
+    "admin-only endpoint isolation"
+  ]
+}

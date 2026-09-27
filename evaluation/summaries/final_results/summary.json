@@ -1,0 +1,28 @@
+{
+  "evaluation": "MediExplain+ Clinical Note and Patient Explanation Quality",
+  "dataset_sha256": "57bbab39d4168c348ca47b22cf6248f2e296872a8e9001aa7325753c95ee8e7e",
+  "cases": 11,
+  "successful_cases": 11,
+  "failed_cases": 0,
+  "clinical_note": {
+    "mean_fact_coverage_percent": 95.133,
+    "mean_critical_fact_coverage_percent": 95.455,
+    "soap_compliance_percent": 100.0,
+    "suspected_diagnosis_uncertainty_preserved_percent": 100.0,
+    "unsupported_sentence_candidates": 172,
+    "mean_generation_seconds": 180.721
+  },
+  "patient_summary": {
+    "mean_fact_coverage_percent": 69.113,
+    "mean_critical_fact_coverage_percent": 67.975,
+    "soap_heading_leak_percent": 0.0,
+    "suspected_diagnosis_uncertainty_preserved_percent": 75.0,
+    "mean_flesch_kincaid_grade": 5.01,
+    "mean_flesch_reading_ease": 74.425,
+    "mean_words_per_sentence": 8.578,
+    "unsupported_sentence_candidates": 15,
+    "mean_generation_seconds": 139.593
+  },
+  "manual_review_candidates": 187,
+  "interpretation_warning": "Unsupported-sentence candidates are lexical screening flags only. They are not counted as confirmed hallucinations until NLI and/or human adjudication."
+}

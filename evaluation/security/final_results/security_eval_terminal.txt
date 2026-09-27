@@ -1,0 +1,32 @@
+SEC01 expected= 401 actual= 401 PASS
+SEC02 expected= 200 actual= 200 PASS
+SEC03 expected= 200 actual= 200 PASS
+SEC04 expected= 200 actual= 200 PASS
+SEC05 expected= 401 actual= 401 PASS
+SEC06 expected= 401 actual= 401 PASS
+
+all_tickets: GET /support/all all_tickets_api_support_all_get
+my_tickets: GET /support/mine my_tickets_api_support_mine_get
+SEC07 expected= 401 actual= 401 PASS
+SEC08 expected= 200 actual= 200 PASS
+SEC09 expected= 403 actual= 403 PASS
+SEC10 expected= 403 actual= 403 PASS
+SEC11 expected= 200 actual= 200 PASS
+
+{
+  "evaluation": "MediExplain+ Evaluation 14 Security and RBAC",
+  "tests": 11,
+  "passed": 11,
+  "failed": 0,
+  "pass_percent": 100.0,
+  "coverage": [
+    "authentication required",
+    "valid local JWT authentication",
+    "invalid JWT rejection",
+    "invalid password rejection",
+    "authenticated patient access",
+    "authenticated doctor access",
+    "authenticated admin access",
+    "admin-only endpoint isolation"
+  ]
+}

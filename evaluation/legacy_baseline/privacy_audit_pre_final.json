@@ -1,0 +1,79 @@
+{
+  "passed": 11,
+  "total": 12,
+  "all_pass": false,
+  "checks": [
+    {
+      "id": 1,
+      "name": "Consent gate cannot be bypassed",
+      "pass": true,
+      "detail": "status=400"
+    },
+    {
+      "id": 2,
+      "name": "Patient cannot read other patients' data",
+      "pass": true,
+      "detail": "status=403"
+    },
+    {
+      "id": 3,
+      "name": "Doctor cannot read another doctor's case",
+      "pass": true,
+      "detail": "status=403"
+    },
+    {
+      "id": 4,
+      "name": "Patient list excludes draft/approved cases",
+      "pass": true,
+      "detail": "bad statuses: []"
+    },
+    {
+      "id": 5,
+      "name": "Passwords stored as bcrypt hashes",
+      "pass": true,
+      "detail": "prefix: $2b$"
+    },
+    {
+      "id": 6,
+      "name": "Share link requires approval",
+      "pass": true,
+      "detail": "status=409"
+    },
+    {
+      "id": 7,
+      "name": "Invalid share token rejected",
+      "pass": true,
+      "detail": "status=401"
+    },
+    {
+      "id": 8,
+      "name": "Cross-check by non-owner blocked",
+      "pass": true,
+      "detail": "status=403"
+    },
+    {
+      "id": 9,
+      "name": "DELETE removes consultation row",
+      "pass": true,
+      "detail": "delete=204, follow-up GET=404"
+    },
+    {
+      "id": 10,
+      "name": "Audit log preserves deletion record",
+      "pass": false,
+      "detail": "actions: []"
+    },
+    {
+      "id": 11,
+      "name": "Anonymisation strips phones/emails/CNICs",
+      "pass": true,
+      "detail": "output: 'Call Ahmed on [PHONE] or [EMAIL]. CNIC [PHONE]-1.'"
+    },
+    {
+      "id": 12,
+      "name": "Patient list scoped to own consultations only",
+      "pass": true,
+      "detail": "n=0"
+    }
+  ]
+}

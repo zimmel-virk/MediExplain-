@@ -1,0 +1,158 @@
+============================================================
+MEDIEXPLAIN+ PHASE 17 PRE-FLIGHT
+Date: Thu Aug 13 23:36:07 PKT 2026
+============================================================
+
+========== BACKEND UNIT TESTS ==========
+test_obvious_identifiers_removed (test_anonymise.AnonymiseTests.test_obvious_identifiers_removed) ... ok
+test_form_word_is_not_a_drug (test_medication_index.MedicationIndexTests.test_form_word_is_not_a_drug) ... ok
+test_typo_recovers_candidate (test_medication_index.MedicationIndexTests.test_typo_recovers_candidate) ... ok
+test_unrelated_word_not_forced (test_medication_index.MedicationIndexTests.test_unrelated_word_not_forced) ... ok
+test_missing_duration_never_invents_schedule (test_scheduler.SchedulerTests.test_missing_duration_never_invents_schedule) ... ok
+test_named_morning_and_night (test_scheduler.SchedulerTests.test_named_morning_and_night) ... ok
+test_prn_has_no_fixed_events (test_scheduler.SchedulerTests.test_prn_has_no_fixed_events) ... ok
+test_three_times_daily_five_days_is_fifteen (test_scheduler.SchedulerTests.test_three_times_daily_five_days_is_fifteen) ... ok
+test_twice_daily_seven_days_is_fourteen (test_scheduler.SchedulerTests.test_twice_daily_seven_days_is_fourteen) ... ok
+test_unsupported_interval_requires_review (test_scheduler.SchedulerTests.test_unsupported_interval_requires_review) ... ok
+test_outside_absolute_path_is_rejected_for_new_storage (test_storage.StorageTests.test_outside_absolute_path_is_rejected_for_new_storage) ... ok
+test_roundtrip (test_storage.StorageTests.test_roundtrip) ... ok
+test_traversal_is_rejected (test_storage.StorageTests.test_traversal_is_rejected) ... ok
+test_devanagari_is_invalid_for_urdu (test_translation_safety.TranslationSafetyTests.test_devanagari_is_invalid_for_urdu) ... ok
+test_english_source_is_not_required_to_be_arabic (test_translation_safety.TranslationSafetyTests.test_english_source_is_not_required_to_be_arabic) ... ok
+test_missing_dose_number_is_flagged (test_translation_safety.TranslationSafetyTests.test_missing_dose_number_is_flagged) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.007s
+
+OK
+
+========== SCHEDULER ==========
+
+============================================================================
+MediExplain+ Scheduler Evaluation
+============================================================================
+
+PASS  en_once                'once daily'
+PASS  en_twice               'twice daily'
+PASS  en_three               'three times a day'
+PASS  en_four                'four times per day'
+PASS  every_12               'every 12 hours'
+PASS  every_8                'every 8 hours'
+PASS  every_6                'every 6 hours'
+PASS  every_4                'every 4 hours'
+PASS  q8h                    'q8h'
+PASS  morning_night          'morning and night'
+PASS  ur_once                'دن میں ایک دفعہ'
+PASS  ur_twice               'دن میں دو دفعہ'
+PASS  ur_three               'روزانہ تین بار'
+PASS  ur_four                'دن میں چار بار'
+PASS  ur_named               'صبح اور رات'
+PASS  ur_interval            'ہر 8 گھنٹے'
+PASS  pa_once                'دن وچ اک واری'
+PASS  pa_twice               'دن وچ دو واری'
+PASS  mixed_twice            'twice daily - دن میں دو دفعہ'
+PASS  two_weeks              'once daily'
+PASS  ur_two_weeks           'دن میں ایک بار'
+PASS  missing_duration       'twice daily'
+PASS  unsupported_interval   'every 5 hours'
+PASS  unknown_instruction    'after food'
+PASS  missing_frequency      ''
+PASS  prn_en                 'as needed'
+PASS  prn_abbreviation       'PRN'
+PASS  prn_ur                 'ضرورت کے مطابق'
+
+----------------------------------------------------------------------------
+Passed:    28/28
+Accuracy:  100.0%
+
+Per language:
+  English              10/10 (100.0%)
+  Clinical abbreviation1/1 (100.0%)
+  Urdu                 7/7 (100.0%)
+  Punjabi Shahmukhi    2/2 (100.0%)
+  Mixed                1/1 (100.0%)
+
+Saved:
+  evaluation/results/scheduler.json
+
+========== CROSS-CHECK ==========
+
+============================================================================
+MediExplain+ Cross-Check Workflow Evaluation
+============================================================================
+
+✓ Treating doctor cannot assign self as reviewer 400
+✓ Treating doctor can create explicit reviewer assignment 201
+✓ New cross-check starts pending pending
+✓ Duplicate active reviewer assignment rejected 409
+✓ Unassigned reviewer cannot access consultation 403
+✓ Assigned reviewer can access consultation 200
+✓ Unassigned reviewer cannot submit review 403
+✓ Assigned review appears in reviewer pending list status=200, found=True
+✓ Assigned reviewer can submit cross-check 200
+✓ Submitted review becomes completed completed
+✓ Submitted verdict persists in API response agree
+✓ Submitted comments persist in API response Clinical information reviewed. No discrepancy identified.
+✓ Completed review records completion time 2026-08-13T18:36:09.071246
+✓ Completed review cannot be submitted twice 409
+✓ Completed review removed from pending list status=200, still_pending=False
+✓ Treating doctor can view completed review outcome 200
+✓ Completed outcome preserves reviewer verdict agree
+✓ Unassigned reviewer cannot read cross-check outcome 403
+✓ Cross-check request creates audit record ['cross_check.requested', 'cross_check.requested', 'cross_check.requested', 'cross_check.submitted', 'cross_check.requested', 'cross_check.requested', 'cross_check.submitted']
+✓ Cross-check submission creates audit record ['cross_check.requested', 'cross_check.requested', 'cross_check.requested', 'cross_check.submitted', 'cross_check.requested', 'cross_check.requested', 'cross_check.submitted']
+✓ Cross-check audit records avoid full clinical payloads 
+✓ Temporary evaluation consultation cleaned up 204
+
+----------------------------------------------------------------------------
+Passed:   22/22
+Accuracy: 100.0%
+
+Per category:
+  authorization   5/5 (100.0%)
+  workflow        11/11 (100.0%)
+  safety          2/2 (100.0%)
+  audit           3/3 (100.0%)
+  cleanup         1/1 (100.0%)
+
+Saved:
+  evaluation/results/cross_check.json
+
+========== PRIVACY / SECURITY ==========
+✓ Unauthenticated consultation list blocked 401
+✓ Consent cannot be bypassed 400
+✓ Other patient object access blocked 403
+✓ Unassigned doctor object access blocked 403
+✓ Unassigned cross-check reviewer blocked 403
+✓ Patient cannot read unreleased case 403
+✓ Other doctor cannot delete another doctor's consultation 403
+✓ Other patient cannot fetch case audio 403
+✓ Other patient cannot fetch case PDF 403
+✓ Share link blocked before release 409
+✓ Public registration cannot self-assign admin/doctor status=201, role=patient
+✓ Owner can create explicit reviewer assignment 201
+✓ Assigned reviewer can read assigned case 200
+✓ Different reviewer remains blocked 403
+✓ Password stored as bcrypt hash $2b$
+✓ Stored clinical file references are portable absolute=0
+✓ Authorized erasure endpoint deletes case 204
+✓ Deleted case no longer retrievable 404
+✓ Deletion audit evidence retained ['consultation.deleted', 'consent.granted', 'consultation.created', 'cross_check.requested', 'consultation.viewed', 'consultation.deleted']
+✓ Invalid share token rejected 401
+
+20/20 checks passed. Results: /Users/zimmeljavedvirk/Desktop/MediExplain_Final_Integrated_FYP/evaluation/results/privacy_audit_final.json
+
+========== FRONTEND BUILD ==========
+
+> mediexplain-frontend@1.0.0 build
+> vite build
+
+vite v5.4.21 building for production...
+transforming...
+✓ 56 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.40 kB │ gzip:  0.27 kB
+dist/assets/index-DzC9HXpp.css    6.49 kB │ gzip:  1.97 kB
+dist/assets/index-CrpTDpjF.js   232.07 kB │ gzip: 71.87 kB
+✓ built in 366ms

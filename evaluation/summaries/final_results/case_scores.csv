@@ -1,0 +1,12 @@
+case_id,category,clinical_seconds,patient_seconds,clinical_fact_coverage_percent,clinical_critical_coverage_percent,patient_fact_coverage_percent,patient_critical_coverage_percent,soap_compliant,patient_soap_heading_leak,clinical_uncertainty_preserved,patient_uncertainty_preserved,patient_fk_grade,patient_flesch_reading_ease,patient_mean_words_per_sentence,clinical_unsupported_candidates,patient_unsupported_candidates,error
+E3_01,standard_prescription,412.398,833.837,100.0,100.0,62.5,66.667,True,False,,,4.335,75.641,6.545,32,4,
+E3_02,no_medication_suspected_condition,73.35,73.985,100.0,100.0,18.182,25.0,True,False,True,False,4.802,81.246,11.571,4,0,
+E3_03,chronic_condition_monitoring,215.127,73.867,100.0,100.0,45.455,44.444,True,False,,,5.06,74.055,8.571,15,2,
+E3_04,timing_and_food_instruction,93.751,93.686,100.0,100.0,68.75,72.727,True,False,True,True,5.861,77.471,13.714,6,0,
+E3_05,frequency_duration_safety_trap,126.4,67.795,100.0,100.0,100.0,100.0,True,False,,,5.434,62.74,3.727,6,3,
+E3_06,frequency_duration_food,228.103,64.693,100.0,100.0,100.0,100.0,True,False,,,3.134,80.783,4.6,23,2,
+E3_07,multiple_medications_routes,331.311,87.482,100.0,100.0,50.0,40.0,True,False,,,4.408,78.379,8.375,39,1,
+E3_08,tests_and_diagnostic_uncertainty,49.34,73.476,55.556,50.0,44.444,50.0,True,False,True,True,5.761,78.992,14.167,4,0,
+E3_10,negated_medication,222.239,68.458,100.0,100.0,80.0,60.0,True,False,,,4.97,79.025,11.0,26,1,
+E3_11,hallucination_control,49.301,11.863,100.0,100.0,100.0,100.0,True,False,,,6.417,59.745,6.0,5,0,
+E3_12,allergy_test_medication,186.613,86.384,90.909,100.0,90.909,88.889,True,False,True,True,4.926,70.596,6.091,12,2,

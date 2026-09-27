@@ -1,0 +1,12 @@
+{
+  "case_id": "E3_07",
+  "category": "multiple_medications_routes",
+  "clinical_note": "**SOAP Draft:**\n\n**Subjective:**\nChief Complaint: Wheezing\nSymptoms: Wheezing\n\n**Objective:**\nNot mentioned in transcript.\n\n**Assessment:**\nThe doctor suspects wheezing.\n\n**Plan:**\n1. Use salbutamol inhaler, two puffs by inhalation as needed for wheeze.\n2. Take prednisolone 40 mg by mouth once daily for 5 days.\n3. Return for review in 5 days.\n4. Seek urgent medical attention if breathing becomes severely difficult.\n\n**Structured JSON Output:**\n\n{\n  \"chief_complaint\": \"wheezing\",\n  \"symptoms\": [\"wheezing\"],\n  \"relevant_history\": [],\n  \"diagnosis_discussed\": [],\n  \"diagnosis_status\": null,\n  \"medications\": [\n    {\n      \"name\": \"salbutamol\",\n      \"name_as_heard\": \"salbutamol\",\n      \"dose\": \"two puffs\",\n      \"strength\": null,\n      \"dose_unit\": null,\n      \"dosage_form\": \"inhaler\",\n      \"route\": \"inhalation\",\n      \"frequency\": null,\n      \"timing\": null,\n      \"food_instruction\": null,\n      \"duration\": null,\n      \"as_needed\": true,\n      \"indication\": \"wheeze\",\n      \"notes\": null,\n      \"doctor_confirmed\": false,\n      \"suggestions\": []\n    },\n    {\n      \"name\": \"prednisolone\",\n      \"name_as_heard\": \"prednisolone\",\n      \"dose\": null,\n      \"strength\": \"40 mg\",\n      \"dose_unit\": null,\n      \"dosage_form\": null,\n      \"route\": \"oral\",\n      \"frequency\": \"once daily\",\n      \"timing\": null,\n      \"food_instruction\": null,\n      \"duration\": \"5 days\",\n      \"as_needed\": false,\n      \"indication\": null,\n      \"notes\": null,\n      \"doctor_confirmed\": false,\n      \"suggestions\": []\n    }\n  ],\n  \"tests\": [],\n  \"advice\": [],\n  \"follow_up\": \"return for review in 5 days\",\n  \"warning_signs\": [\"severe difficulty breathing\"],\n  \"glossary\": []\n}",
+  "patient_summary": "Here is the patient explanation:\n\nYou have wheezing. To help with this, you need to use a salbutamol inhaler. Take 2 puffs by inhalation whenever you feel wheezy.\n\nYou also need to take prednisolone. Take 40 mg by mouth every day for 5 days.\n\nIf your breathing gets very hard, you need to go to the hospital right away.\n\nYou need to come back to see the doctor in 5 days.",
+  "clinical_seconds": 331.311,
+  "patient_seconds": 87.482,
+  "total_generation_seconds": 418.792,
+  "clinical_empty": false,
+  "patient_empty": false,
+  "error": ""
+}

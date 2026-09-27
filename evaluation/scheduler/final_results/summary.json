@@ -1,0 +1,8 @@
+{
+  "evaluation": "MediExplain+ Evaluation 10 Medication Scheduler",
+  "cases": 10,
+  "overall_accuracy_percent": 100.0,
+  "frequency_kind_accuracy_percent": 100.0,
+  "event_count_accuracy_percent": 100.0,
+  "safe_error_handling_percent": 100.0
+}

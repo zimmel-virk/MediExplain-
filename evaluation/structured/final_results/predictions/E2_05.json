@@ -1,0 +1,48 @@
+{
+  "case_id": "E2_05",
+  "category": "frequency_duration_safety_trap",
+  "transcript": "For dental pain, take ibuprofen 400 mg every 8 hours for 3 days after food as needed for pain. The medicine is not to be taken every 3 days. Follow up with the dentist if the pain continues.",
+  "prediction": {
+    "chief_complaint": "dental pain",
+    "symptoms": [
+      "dental pain"
+    ],
+    "relevant_history": [],
+    "diagnosis_discussed": [
+      "dental pain"
+    ],
+    "diagnosis_status": "discussed",
+    "medications": [
+      {
+        "name": "ibuprofen",
+        "name_as_heard": "ibuprofen",
+        "confidence": 1.0,
+        "dose": "400 mg",
+        "strength": "400 mg",
+        "dose_unit": "mg",
+        "dosage_form": null,
+        "route": null,
+        "frequency": "every 8 hours",
+        "timing": "after food",
+        "food_instruction": "after food",
+        "duration": "3 days",
+        "as_needed": true,
+        "indication": "pain",
+        "notes": "not to be taken every 3 days",
+        "doctor_confirmed": false,
+        "suggestions": []
+      }
+    ],
+    "tests": [],
+    "advice": [
+      "Follow up with the dentist if the pain continues."
+    ],
+    "follow_up": "dentist",
+    "warning_signs": [],
+    "glossary": []
+  },
+  "processing_seconds": 163.084,
+  "fallback_empty_output": false,
+  "schema_valid": true,
+  "error": ""
+}

@@ -1,0 +1,18 @@
+phase,evaluation,type,status,passed,total,accuracy,evidence,notes
+Software verification,Backend unit tests,Automated,PASS,16,16,100.0,software_unit_tests.json,"Anonymisation, medication matching, scheduler, secure storage and translation-safety unit tests."
+16E,Medication terminology regression,Automated regression,PASS,,,100.0,medication_matcher_final.json,"Development/regression dataset only. Top-1, Top-3 and Top-5 matching reached 100%; strength preservation 100%; hard-negative false-positive rate 0%. Not presented as an unbiased held-out final result."
+16G,Medication scheduler,Automated,PASS,28,28,100.0,scheduler.json,"English, Urdu, Punjabi Shahmukhi, mixed-language, clinical abbreviations, PRN and unsupported/missing instruction cases."
+16H,Privacy and access-control audit,Automated integration,PASS,20,20,100.0,privacy_audit_final.json,"Authentication, consent, RBAC, patient isolation, cross-check authorization, deletion, audit retention, password hashing and share-token protection."
+16H,Cross-check workflow,Automated integration,PASS,22,22,100.0,cross_check.json,"Reviewer assignment, authorization, pending/completed workflow, persisted verdict/comments and audit trail."
+17,Full end-to-end workflow,Integrated + manual evidence,PASS,30,30,100.0,e2e.json,Consultation 40: consent → audio → multilingual STT → clinical explanation → safety review → medication → doctor approval → Urdu translation → TTS → release → scheduler → patient portal → cross-check → audit.
+17,Patient portal display,Manual functional,PASS,1,1,100.0,e2e.json,Released Urdu summary and medication schedule visible; internal clinical/model information not exposed.
+17,Urdu summary audio playback,Manual functional,PASS,1,1,100.0,e2e.json,Patient-side Urdu summary audio played successfully.
+17,Medication alarm sound,Manual functional,PASS,1,1,100.0,e2e.json,Alarm test worked in the patient reminder interface.
+17,Medication voice reminder,Manual functional,PASS,1,1,100.0,e2e.json,Spoken medication reminder test worked.
+16A,Speech-to-text accuracy,Clinical/data evaluation,PENDING,,,,,"Requires 40 reference-labelled recordings: English, Urdu, Punjabi Shahmukhi, Pashto, Sindhi, Arabic, Urdu-English and Punjabi-English. Planned metrics: WER, CER, medication, number/dose and mixed-language Latin-token retention."
+16B,PDQI-9 clinical summary quality,Doctor-rated,PENDING,,,,,Requires completed practising-doctor PDQI-9 ratings.
+16C,NLI grounding accuracy,Clinician-labelled,PENDING,,,,,Requires clinician-labelled supported/unsupported summary statements.
+16D,Translation quality,Reference + automatic,PENDING,,,,,"50-case multilingual template prepared for Urdu, Punjabi Shahmukhi, Pashto, Sindhi and Arabic. Requires bilingual reference translations before BLEU/chrF and preservation results can be reported."
+16F,Prescription OCR,Document evaluation,PENDING,,,,,Requires 5 printed and 5 handwritten real prescription samples with ground truth.
+16G,Alarm manual checklist,Manual functional,PENDING,,16,,,"Individual live alarm/voice functions were demonstrated, but the full formal 16-case manual checklist remains to be completed."
+16I,User accessibility/usability study,Participant-rated,PENDING,,,,,Requires real participant ratings; prepared evaluation form should be used rather than inferred scores.

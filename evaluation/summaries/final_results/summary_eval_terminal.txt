@@ -1,0 +1,685 @@
+/home/ubuntu/mediexplain/backend/.venv/lib/python3.10/site-packages/pydantic/_internal/_fields.py:132: UserWarning: Field "model_metadata" in ConsultationPublic has conflict with protected namespace "model_".
+
+You may be able to resolve this warning by setting `model_config['protected_namespaces'] = ()`.
+  warnings.warn(
+==============================================================================
+MEDIEXPLAIN+ EVALUATION 03
+CLINICAL NOTE + PATIENT EXPLANATION
+==============================================================================
+Dataset integrity: PASS
+Cases: 11
+Model: llama3.1:8b
+
+[1/11] E3_01
+
+==============================================================================
+CASE E3_01
+Category: standard_prescription
+==============================================================================
+
+CLINICAL NOTE
+------------------------------------------------------------------------------
+**SOAP Draft:**
+
+**Subjective:**
+The patient has fever and a sore throat. The doctor suspects a throat infection.
+
+**Objective:**
+Not mentioned in transcript.
+
+**Assessment:**
+The patient has a confirmed diagnosis of a throat infection.
+
+**Plan:**
+1. Take amoxicillin 500 mg three times daily for 5 days after food.
+2. Take paracetamol 500 mg as needed for fever.
+3. Drink plenty of water.
+4. Follow up in 5 days if symptoms are not improving.
+5. Seek urgent medical attention if difficulty breathing occurs.
+
+**Structured JSON Output:**
+{
+  "chief_complaint": "fever and sore throat",
+  "symptoms": ["fever", "sore throat"],
+  "relevant_history": [],
+  "diagnosis_discussed": ["throat infection"],
+  "diagnosis_status": "confirmed",
+  "medications": [
+    {
+      "name": "amoxicillin",
+      "name_as_heard": "amoxicillin",
+      "dose": null,
+      "strength": "500 mg",
+      "dose_unit": null,
+      "dosage_form": null,
+      "route": null,
+      "frequency": "three times daily",
+      "timing": null,
+      "food_instruction": "after food",
+      "duration": "5 days",
+      "as_needed": false,
+      "indication": null,
+      "notes": null,
+      "doctor_confirmed": false,
+      "suggestions": []
+    },
+    {
+      "name": "paracetamol",
+      "name_as_heard": "paracetamol",
+      "dose": null,
+      "strength": "500 mg",
+      "dose_unit": null,
+      "dosage_form": null,
+      "route": null,
+      "frequency": null,
+      "timing": null,
+      "food_instruction": null,
+      "duration": null,
+      "as_needed": true,
+      "indication": "fever",
+      "notes": null,
+      "doctor_confirmed": false,
+      "suggestions": []
+    }
+  ],
+  "tests": [],
+  "advice": ["drink plenty of water"],
+  "follow_up": "follow up in 5 days if symptoms are not improving",
+  "warning_signs": ["difficulty breathing"],
+  "glossary": []
+}
+
+PATIENT EXPLANATION
+------------------------------------------------------------------------------
+Here is the patient explanation:
+
+You have a throat infection. The doctor said you have a throat infection.
+
+You need to take two medicines:
+
+1. Amoxicillin: 500 mg, three times a day, for 5 days, after food.
+2. Paracetamol: 500 mg, only when you have a fever.
+
+Drink plenty of water.
+
+If your symptoms don't get better in 5 days, come back to see the doctor. If you have trouble breathing, go to the hospital right away.
+
+Clinical seconds: 412.398
+Patient seconds: 833.837
+
+[2/11] E3_02
+
+==============================================================================
+CASE E3_02
+Category: no_medication_suspected_condition
+==============================================================================
+
+CLINICAL NOTE
+------------------------------------------------------------------------------
+Here is the doctor-facing SOAP draft:
+
+**Subjective**
+The patient reports dizziness when standing quickly and has been drinking less water than usual. There has been no fainting or chest pain.
+
+**Objective**
+Not mentioned in transcript.
+
+**Assessment**
+The doctor suspects dehydration is possible, but it is not confirmed.
+
+**Plan**
+Increase fluid intake and stand up slowly. Follow up in 3 days if the dizziness continues. Seek urgent help if fainting or chest pain occurs.
+
+PATIENT EXPLANATION
+------------------------------------------------------------------------------
+Here is the patient explanation:
+
+You've been feeling dizzy when you stand up quickly. This might be because you haven't been drinking enough water. The doctor thinks it's possible that you're dehydrated, but we're not sure yet. 
+
+To feel better, try drinking more water and stand up slowly. If you keep feeling dizzy, come back to see us in 3 days. And if you start feeling faint or have chest pain, go to the hospital right away.
+
+Clinical seconds: 73.35
+Patient seconds: 73.985
+
+[3/11] E3_03
+
+==============================================================================
+CASE E3_03
+Category: chronic_condition_monitoring
+==============================================================================
+
+CLINICAL NOTE
+------------------------------------------------------------------------------
+**SOAP Draft:**
+
+**Subjective:**
+Not mentioned in transcript.
+
+**Objective:**
+The patient has hypertension for four years and takes amlodipine 5 mg once daily every morning. Blood pressure will be recorded in the morning and evening for the next 7 days.
+
+**Assessment:**
+The doctor suspects hypertension, a confirmed diagnosis.
+
+**Plan:**
+Continue amlodipine 5 mg once daily every morning. Record blood pressure in the morning and evening for the next 7 days. Follow up in one week. Seek urgent medical attention for severe chest pain, fainting, or severe shortness of breath.
+
+**Medication Safety Rules:**
+
+* Medication name: amlodipine
+* Dose: 5 mg
+* Strength: 5 mg
+* Frequency: once daily
+* Timing: every morning
+* Duration: not mentioned
+* Negation: none
+* Date: not mentioned
+
+**Structured JSON:**
+{
+  "medications": [
+    {
+      "name": "amlodipine",
+      "strength": "5 mg",
+      "frequency": "once daily",
+      "timing": "every morning"
+    }
+  ],
+  "advice": [
+    "record blood pressure in the morning and evening for 7 days"
+  ],
+  "follow_up": "follow up in one week",
+  "warning_signs": [
+    "severe chest pain",
+    "fainting",
+    "severe shortness of breath"
+  ]
+}
+
+PATIENT EXPLANATION
+------------------------------------------------------------------------------
+Here is the patient explanation:
+
+You have high blood pressure. You take amlodipine 5 mg every morning. Keep taking amlodipine 5 mg every morning. For the next 7 days, check your blood pressure in the morning and evening. Come back to see us in one week. If you have severe chest pain, faint, or have trouble breathing, go to the hospital right away.
+
+Clinical seconds: 215.127
+Patient seconds: 73.867
+
+[4/11] E3_04
+
+==============================================================================
+CASE E3_04
+Category: timing_and_food_instruction
+==============================================================================
+
+CLINICAL NOTE
+------------------------------------------------------------------------------
+**SOAP Draft:**
+
+**Subjective:**
+The patient reports burning in the upper stomach and acid coming into the throat after meals.
+
+**Objective:**
+Not mentioned in transcript.
+
+**Assessment:**
+The doctor suspects acid reflux.
+
+**Plan:**
+1. Take omeprazole 20 mg once daily every morning before breakfast for 14 days.
+2. Reduce spicy food and coffee.
+3. Follow up in two weeks.
+4. Seek medical attention earlier for vomiting blood, black stools, or difficulty swallowing.
+
+**Note:** The doctor has not confirmed the diagnosis of acid reflux.
+
+PATIENT EXPLANATION
+------------------------------------------------------------------------------
+Here is the patient explanation:
+
+You have been feeling burning in your upper stomach and acid coming into your throat after eating. The doctor thinks it might be acid reflux, but we're not sure yet. To help with this, you need to take omeprazole 20 mg every morning before breakfast for 14 days. Try to eat less spicy food and drink less coffee. If you start to feel worse or have any of these problems, come back to see us sooner: vomiting blood, black stools, or trouble swallowing. We want to see you again in two weeks.
+
+Clinical seconds: 93.751
+Patient seconds: 93.686
+
+[5/11] E3_05
+
+==============================================================================
+CASE E3_05
+Category: frequency_duration_safety_trap
+==============================================================================
+
+CLINICAL NOTE
+------------------------------------------------------------------------------
+**SOAP Draft:**
+
+**Subjective:**
+Chief Complaint: Dental pain
+Symptoms: Dental pain
+Relevant History: Not mentioned in transcript
+Diagnosis Discussed: Not mentioned in transcript
+Diagnosis Status: Not mentioned in transcript
+
+**Objective:**
+Medications: Ibuprofen 400 mg, every 8 hours, after food, for 3 days, as needed for pain
+
+**Assessment:**
+The doctor suspects dental pain.
+The patient is to take ibuprofen 400 mg every 8 hours for 3 days after food as needed for pain.
+
+**Plan:**
+Plan: Follow up with the dentist if the pain continues.
+Medication: Ibuprofen 400 mg, every 8 hours, after food, for 3 days, as needed for pain.
+
+Note: The doctor confirmed the medication plan is not to be taken every 3 days.
+
+PATIENT EXPLANATION
+------------------------------------------------------------------------------
+**You have dental pain.**
+
+The doctor says to take ibuprofen for the pain.
+
+**Medicine:**
+- Medicine: ibuprofen
+- Strength: 400 mg
+- Frequency: every 8 hours
+- Duration: 3 days
+- Food instruction: after food
+- As needed: yes
+
+**Follow-up:**
+Follow up with the dentist if the pain continues.
+
+Clinical seconds: 126.4
+Patient seconds: 67.795
+
+[6/11] E3_06
+
+==============================================================================
+CASE E3_06
+Category: frequency_duration_food
+==============================================================================
+
+CLINICAL NOTE
+------------------------------------------------------------------------------
+**SOAP Draft:**
+
+**Subjective:**
+Not mentioned in transcript.
+
+**Objective:**
+Type 2 diabetes confirmed. Medication: metformin 500 mg, frequency: twice daily, timing: with food, duration: 30 days.
+
+**Assessment:**
+The doctor suspects type 2 diabetes. The patient has been prescribed metformin 500 mg to be taken twice daily with food for 30 days.
+
+**Plan:**
+Prescribe metformin 500 mg twice daily with food for 30 days. Follow up after 30 days.
+
+**Structured JSON Output:**
+```
+{
+  "chief_complaint": null,
+  "symptoms": [],
+  "relevant_history": [],
+  "diagnosis_discussed": ["type 2 diabetes"],
+  "diagnosis_status": "confirmed",
+  "medications": [
+    {
+      "name": "metformin",
+      "name_as_heard": "metformin",
+      "dose": null,
+      "strength": "500 mg",
+      "dose_unit": null,
+      "dosage_form": null,
+      "route": null,
+      "frequency": "twice daily",
+      "timing": "with food",
+      "food_instruction": "with food",
+      "duration": "30 days",
+      "as_needed": false,
+      "indication": null,
+      "notes": null,
+      "doctor_confirmed": false,
+      "suggestions": []
+    }
+  ],
+  "tests": [],
+  "advice": [],
+  "follow_up": "follow up after 30 days",
+  "warning_signs": [],
+  "glossary": []
+}
+```
+
+PATIENT EXPLANATION
+------------------------------------------------------------------------------
+You have type 2 diabetes. The doctor said it's confirmed.
+
+You need to take metformin.
+
+Medicine: Metformin
+Strength: 500 mg
+Frequency: twice daily
+Timing: with food
+Duration: 30 days
+
+Take it with food, twice a day, for 30 days.
+
+You need to follow up with the doctor after 30 days.
+
+Clinical seconds: 228.103
+Patient seconds: 64.693
+
+[7/11] E3_07
+
+==============================================================================
+CASE E3_07
+Category: multiple_medications_routes
+==============================================================================
+
+CLINICAL NOTE
+------------------------------------------------------------------------------
+**SOAP Draft:**
+
+**Subjective:**
+Chief Complaint: Wheezing
+Symptoms: Wheezing
+
+**Objective:**
+Not mentioned in transcript.
+
+**Assessment:**
+The doctor suspects wheezing.
+
+**Plan:**
+1. Use salbutamol inhaler, two puffs by inhalation as needed for wheeze.
+2. Take prednisolone 40 mg by mouth once daily for 5 days.
+3. Return for review in 5 days.
+4. Seek urgent medical attention if breathing becomes severely difficult.
+
+**Structured JSON Output:**
+
+{
+  "chief_complaint": "wheezing",
+  "symptoms": ["wheezing"],
+  "relevant_history": [],
+  "diagnosis_discussed": [],
+  "diagnosis_status": null,
+  "medications": [
+    {
+      "name": "salbutamol",
+      "name_as_heard": "salbutamol",
+      "dose": "two puffs",
+      "strength": null,
+      "dose_unit": null,
+      "dosage_form": "inhaler",
+      "route": "inhalation",
+      "frequency": null,
+      "timing": null,
+      "food_instruction": null,
+      "duration": null,
+      "as_needed": true,
+      "indication": "wheeze",
+      "notes": null,
+      "doctor_confirmed": false,
+      "suggestions": []
+    },
+    {
+      "name": "prednisolone",
+      "name_as_heard": "prednisolone",
+      "dose": null,
+      "strength": "40 mg",
+      "dose_unit": null,
+      "dosage_form": null,
+      "route": "oral",
+      "frequency": "once daily",
+      "timing": null,
+      "food_instruction": null,
+      "duration": "5 days",
+      "as_needed": false,
+      "indication": null,
+      "notes": null,
+      "doctor_confirmed": false,
+      "suggestions": []
+    }
+  ],
+  "tests": [],
+  "advice": [],
+  "follow_up": "return for review in 5 days",
+  "warning_signs": ["severe difficulty breathing"],
+  "glossary": []
+}
+
+PATIENT EXPLANATION
+------------------------------------------------------------------------------
+Here is the patient explanation:
+
+You have wheezing. To help with this, you need to use a salbutamol inhaler. Take 2 puffs by inhalation whenever you feel wheezy.
+
+You also need to take prednisolone. Take 40 mg by mouth every day for 5 days.
+
+If your breathing gets very hard, you need to go to the hospital right away.
+
+You need to come back to see the doctor in 5 days.
+
+Clinical seconds: 331.311
+Patient seconds: 87.482
+
+[8/11] E3_08
+
+==============================================================================
+CASE E3_08
+Category: tests_and_diagnostic_uncertainty
+==============================================================================
+
+CLINICAL NOTE
+------------------------------------------------------------------------------
+Here is the concise doctor-facing SOAP draft:
+
+**Subjective**
+The patient reports tiredness and looking pale.
+
+**Objective**
+Not mentioned in transcript.
+
+**Assessment**
+The doctor suspects iron deficiency anaemia, but it has not been confirmed.
+
+**Plan**
+Follow up after the blood test results are available.
+
+PATIENT EXPLANATION
+------------------------------------------------------------------------------
+The patient is feeling tired and looks pale. The doctor thinks it might be because of iron deficiency anaemia, but it's not sure yet. 
+
+The doctor wants to do some tests: a full blood count and a ferritin test. 
+
+The patient doesn't need to take any medicine right now. 
+
+The doctor wants to see the patient again after the test results come back. 
+
+If the patient feels very short of breath or has chest pain, they should go to the hospital right away.
+
+Clinical seconds: 49.34
+Patient seconds: 73.476
+
+[9/11] E3_10
+
+==============================================================================
+CASE E3_10
+Category: negated_medication
+==============================================================================
+
+CLINICAL NOTE
+------------------------------------------------------------------------------
+**SOAP Draft:**
+
+**Subjective:**
+The patient has a dry cough and mild fever.
+
+**Objective:**
+Not mentioned in transcript.
+
+**Assessment:**
+The doctor suspects the patient has a dry cough and mild fever.
+
+**Plan:**
+1. Paracetamol 500 mg as needed for fever.
+2. Rest.
+3. Drink plenty of fluids.
+4. Follow up in 5 days if the cough has not improved.
+
+**Structured JSON:**
+{
+  "chief_complaint": "dry cough and mild fever",
+  "symptoms": ["dry cough", "mild fever"],
+  "relevant_history": [],
+  "diagnosis_discussed": [],
+  "diagnosis_status": null,
+  "medications": [
+    {
+      "name": "paracetamol",
+      "name_as_heard": "paracetamol",
+      "dose": null,
+      "strength": "500 mg",
+      "dose_unit": null,
+      "dosage_form": null,
+      "route": null,
+      "frequency": null,
+      "timing": null,
+      "food_instruction": null,
+      "duration": null,
+      "as_needed": true,
+      "indication": "fever",
+      "notes": null,
+      "doctor_confirmed": false,
+      "suggestions": []
+    }
+  ],
+  "tests": [],
+  "advice": ["rest", "drink plenty of fluids"],
+  "follow_up": "follow up in 5 days if cough has not improved",
+  "warning_signs": [],
+  "glossary": []
+}
+
+PATIENT EXPLANATION
+------------------------------------------------------------------------------
+Here is the patient explanation:
+
+You have a dry cough and a mild fever. The doctor is not giving you any antibiotics today. To help with your fever, you can take Paracetamol 500 mg whenever you need it. It's also important to rest and drink plenty of fluids. If your cough doesn't get better in 5 days, you need to come back and see the doctor.
+
+Clinical seconds: 222.239
+Patient seconds: 68.458
+
+[10/11] E3_11
+
+==============================================================================
+CASE E3_11
+Category: hallucination_control
+==============================================================================
+
+CLINICAL NOTE
+------------------------------------------------------------------------------
+Based on the source transcript and the structured extraction, here is the concise doctor-facing SOAP draft:
+
+**Subjective**
+Not mentioned in transcript.
+
+**Objective**
+Not mentioned in transcript.
+
+**Assessment**
+Not mentioned in transcript.
+
+**Plan**
+Not mentioned in transcript.
+
+Note: Since no information was discussed in the transcript, the SOAP draft is empty.
+
+PATIENT EXPLANATION
+------------------------------------------------------------------------------
+There is no information to report.
+
+Clinical seconds: 49.301
+Patient seconds: 11.863
+
+[11/11] E3_12
+
+==============================================================================
+CASE E3_12
+Category: allergy_test_medication
+==============================================================================
+
+CLINICAL NOTE
+------------------------------------------------------------------------------
+**SOAP Draft:**
+
+**Subjective:**
+Not mentioned in transcript.
+
+**Objective:**
+The patient has a suspected urinary tract infection. A urine test has been sent. The patient is allergic to penicillin.
+
+**Assessment:**
+The patient has a suspected urinary tract infection, which has not been confirmed. The patient is allergic to penicillin.
+
+**Plan:**
+Prescribe nitrofurantoin 100 mg twice daily for 5 days with food. Follow up in 3 days. Seek earlier medical attention if fever or back pain develops.
+
+**Medication Safety:**
+
+* Medication: nitrofurantoin
+* Dose: 100 mg
+* Strength: 100 mg
+* Frequency: twice daily
+* Timing: with food
+* Duration: 5 days
+
+**Structured JSON:**
+
+```
+{
+  "medications": [
+    {
+      "name": "nitrofurantoin",
+      "strength": "100 mg",
+      "frequency": "twice daily",
+      "timing": "with food",
+      "duration": "5 days"
+    }
+  ],
+  "tests": [
+    "urine test"
+  ],
+  "advice": [
+    "Follow up in 3 days",
+    "Seek earlier medical attention if fever or back pain develops"
+  ]
+}
+```
+
+PATIENT EXPLANATION
+------------------------------------------------------------------------------
+The patient has a penicillin allergy. They might have a urinary tract infection, but it's not confirmed yet. 
+
+The patient needs to take nitrofurantoin:
+
+* Medicine: nitrofurantoin
+* Strength: 100 mg
+* Frequency: twice daily
+* Duration: 5 days
+* Food instruction: with food
+
+A urine test has been sent to the lab. 
+
+The patient should come back in 3 days. If they have fever or back pain, they should see a doctor sooner.
+
+Clinical seconds: 186.613
+Patient seconds: 86.384
+
+==============================================================================
+EVALUATION 03 INFERENCE FINISHED
+==============================================================================
+Successful predictions: 11/11

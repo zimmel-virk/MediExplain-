@@ -1,0 +1,81 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: MediExplain+ academic edge-security layer for an existing HTTPS origin.
+Parameters:
+  OriginDomainName:
+    Type: String
+    Description: DNS name of the HTTPS origin (for example an ALB or protected EC2 origin).
+  CertificateArn:
+    Type: String
+    Description: ACM certificate ARN in us-east-1 for the CloudFront alias.
+  DomainName:
+    Type: String
+    Description: Public application hostname, e.g. mediexplain.example.org
+Resources:
+  WebACL:
+    Type: AWS::WAFv2::WebACL
+    Properties:
+      Scope: CLOUDFRONT
+      DefaultAction: { Allow: {} }
+      VisibilityConfig:
+        CloudWatchMetricsEnabled: true
+        MetricName: MediExplainWebACL
+        SampledRequestsEnabled: true
+      Rules:
+        - Name: AWSManagedCommon
+          Priority: 0
+          OverrideAction: { None: {} }
+          Statement:
+            ManagedRuleGroupStatement:
+              VendorName: AWS
+              Name: AWSManagedRulesCommonRuleSet
+          VisibilityConfig: { CloudWatchMetricsEnabled: true, MetricName: CommonRules, SampledRequestsEnabled: true }
+        - Name: AWSManagedKnownBadInputs
+          Priority: 1
+          OverrideAction: { None: {} }
+          Statement:
+            ManagedRuleGroupStatement:
+              VendorName: AWS
+              Name: AWSManagedRulesKnownBadInputsRuleSet
+          VisibilityConfig: { CloudWatchMetricsEnabled: true, MetricName: BadInputs, SampledRequestsEnabled: true }
+        - Name: BasicRateLimit
+          Priority: 2
+          Action: { Block: {} }
+          Statement:
+            RateBasedStatement:
+              Limit: 1200
+              AggregateKeyType: IP
+          VisibilityConfig: { CloudWatchMetricsEnabled: true, MetricName: RateLimit, SampledRequestsEnabled: true }
+  Distribution:
+    Type: AWS::CloudFront::Distribution
+    Properties:
+      DistributionConfig:
+        Enabled: true
+        Aliases: [ !Ref DomainName ]
+        WebACLId: !GetAtt WebACL.Arn
+        HttpVersion: http2and3
+        PriceClass: PriceClass_100
+        ViewerCertificate:
+          AcmCertificateArn: !Ref CertificateArn
+          SslSupportMethod: sni-only
+          MinimumProtocolVersion: TLSv1.2_2021
+        Origins:
+          - Id: app-origin
+            DomainName: !Ref OriginDomainName
+            CustomOriginConfig:
+              OriginProtocolPolicy: https-only
+              OriginSSLProtocols: [ TLSv1.2 ]
+        DefaultCacheBehavior:
+          TargetOriginId: app-origin
+          ViewerProtocolPolicy: redirect-to-https
+          AllowedMethods: [ GET, HEAD, OPTIONS, PUT, POST, PATCH, DELETE ]
+          CachedMethods: [ GET, HEAD ]
+          Compress: true
+          ForwardedValues:
+            QueryString: true
+            Cookies: { Forward: all }
+            Headers: [ Authorization, Origin, Content-Type ]
+Outputs:
+  DistributionDomain:
+    Value: !GetAtt Distribution.DomainName
+  WebACLArn:
+    Value: !GetAtt WebACL.Arn

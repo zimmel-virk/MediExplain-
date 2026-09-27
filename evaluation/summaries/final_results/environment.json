@@ -1,0 +1,16 @@
+{
+  "evaluation": "MediExplain+ Clinical Note and Patient Explanation Quality",
+  "dataset_sha256": "57bbab39d4168c348ca47b22cf6248f2e296872a8e9001aa7325753c95ee8e7e",
+  "model": "llama3.1:8b",
+  "ollama_num_ctx": 4096,
+  "ollama_timeout_seconds": 900,
+  "temperature": 0.1,
+  "clinical_function": "(transcript: 'str', structured: 'dict | None' = None) -> 'str'",
+  "patient_function": "(transcript: 'str', structured: 'dict | None' = None) -> 'str'",
+  "python_version": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "platform": "Linux-6.8.0-1063-aws-x86_64-with-glibc2.35",
+  "machine": "x86_64",
+  "llm_module": "/home/ubuntu/mediexplain/backend/app/services/llm.py",
+  "llm_module_sha256": "af771f25e75e63a819c167f49d24d79945b1ccdeba14c67291da460f9b14ce7c",
+  "design": "Clean transcript plus frozen gold structured data supplied to isolate free-text generation quality from upstream extraction errors."
+}

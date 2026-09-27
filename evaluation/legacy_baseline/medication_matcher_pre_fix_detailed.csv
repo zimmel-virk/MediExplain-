@@ -1,0 +1,19 @@
+query,category,case_type,expected,candidate_count,rank,top1,top3,top5,false_positive,query_strength,matched_strength_compatible,matched_score,top_score,top_display_name,top_generic_name,top_brand_name,top_source,top_matched_via,top_strength_compatible
+metfornin 500 mg,misspelling,positive,metformin,3,1,True,True,True,,500mg,True,0.929,0.929,metformin,metformin,,rxnorm,metformin,True
+paracitamol 500mg,misspelling,positive,paracetamol,0,0,False,False,False,,500mg,,,,,,,,,
+amoxycillin 500 mg capsule,misspelling,positive,amoxicillin,0,0,False,False,False,,500mg,,,,,,,,,
+azithromicin 500mg,misspelling,positive,azithromycin,5,1,True,True,True,,500mg,True,0.957,0.957,azithromycin,azithromycin,,rxnorm,azithromycin,True
+omeprazol 20 mg,misspelling,positive,omeprazole,5,1,True,True,True,,20mg,True,0.987,0.987,omeprazole,omeprazole,,rxnorm,omeprazole,True
+atorvastin 20 mg,misspelling,positive,atorvastatin,5,1,True,True,True,,20mg,True,0.949,0.949,atorvastatin,atorvastatin,,rxnorm,atorvastatin,True
+amlodipin 5 mg,misspelling,positive,amlodipine,5,1,True,True,True,,5mg,True,0.987,0.987,amlodipine,amlodipine,,rxnorm,amlodipine,True
+ciprofloxasin 500mg,misspelling,positive,ciprofloxacin,5,2,False,True,True,,500mg,True,0.963,0.97,Cipro,,Cipro,rxnorm,Cipro,True
+doxycyclin 100 mg,misspelling,positive,doxycycline,5,1,True,True,True,,100mg,True,0.992,0.992,doxycycline,doxycycline,,rxnorm,doxycycline,True
+clopidogel 75mg,misspelling,positive,clopidogrel,5,1,True,True,True,,75mg,True,0.992,0.992,clopidogrel,clopidogrel,,rxnorm,clopidogrel,True
+tablet,hard_negative,hard_negative,,0,,,,,False,,,,,,,,,,
+after food,hard_negative,hard_negative,,0,,,,,False,,,,,,,,,,
+twice daily,hard_negative,hard_negative,,5,,,,,True,,,,0.93,Twice-Daily clindamycin 0.01 MG/MG Topical Gel [Clindamax],,Twice-Daily clindamycin 0.01 MG/MG Topical Gel [Clindamax],rxnorm,Twice-Daily clindamycin 0.01 MG/MG Topical Gel [Clindamax],True
+breakfast,hard_negative,hard_negative,,0,,,,,False,,,,,,,,,,
+fever,hard_negative,hard_negative,,5,,,,,True,,,,0.93,feverfew extract,feverfew extract,,rxnorm,feverfew extract,True
+water,hard_negative,hard_negative,,0,,,,,False,,,,,,,,,,
+doctor,hard_negative,hard_negative,,0,,,,,False,,,,,,,,,,
+500 mg,hard_negative,hard_negative,,0,,,,,False,500mg,,,,,,,,,

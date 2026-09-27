@@ -1,0 +1,567 @@
+/home/ubuntu/mediexplain/backend/.venv/lib/python3.10/site-packages/pydantic/_internal/_fields.py:132: UserWarning: Field "model_metadata" in ConsultationPublic has conflict with protected namespace "model_".
+
+You may be able to resolve this warning by setting `model_config['protected_namespaces'] = ()`.
+  warnings.warn(
+==============================================================================
+MEDIEXPLAIN+ STRUCTURED EXTRACTION EVALUATION
+==============================================================================
+Dataset integrity: PASS
+Cases: 12
+Model: llama3.1:8b
+
+[1/12] E2_01
+
+==============================================================================
+CASE E2_01
+Category: standard_prescription
+{
+  "chief_complaint": "fever and a sore throat",
+  "symptoms": [
+    "fever",
+    "sore throat"
+  ],
+  "relevant_history": [],
+  "diagnosis_discussed": [
+    "throat infection"
+  ],
+  "diagnosis_status": "discussed",
+  "medications": [
+    {
+      "name": "amoxicillin",
+      "name_as_heard": "amoxicillin",
+      "confidence": 1.0,
+      "dose": "500 mg",
+      "strength": "500 mg",
+      "dose_unit": "mg",
+      "dosage_form": null,
+      "route": null,
+      "frequency": "three times daily",
+      "timing": "after food",
+      "food_instruction": "after food",
+      "duration": "5 days",
+      "as_needed": false,
+      "indication": null,
+      "notes": null,
+      "doctor_confirmed": false,
+      "suggestions": []
+    },
+    {
+      "name": "paracetamol",
+      "name_as_heard": "paracetamol",
+      "confidence": 1.0,
+      "dose": "500 mg",
+      "strength": "500 mg",
+      "dose_unit": "mg",
+      "dosage_form": null,
+      "route": null,
+      "frequency": "as needed",
+      "timing": null,
+      "food_instruction": null,
+      "duration": null,
+      "as_needed": true,
+      "indication": "fever",
+      "notes": null,
+      "doctor_confirmed": false,
+      "suggestions": []
+    }
+  ],
+  "tests": [],
+  "advice": [
+    "Drink plenty of water"
+  ],
+  "follow_up": "5 days",
+  "warning_signs": [
+    "breathing becomes difficult"
+  ],
+  "glossary": []
+}
+Processing seconds: 336.441
+Fallback empty output: False
+
+[2/12] E2_02
+
+==============================================================================
+CASE E2_02
+Category: no_medication_suspected_condition
+{
+  "chief_complaint": "dizziness when standing quickly",
+  "symptoms": [
+    "dizziness",
+    "decreased water intake"
+  ],
+  "relevant_history": [
+    "no fainting",
+    "no chest pain"
+  ],
+  "diagnosis_discussed": [
+    "dehydration"
+  ],
+  "diagnosis_status": "suspected",
+  "medications": [],
+  "tests": [],
+  "advice": [
+    "increase fluid intake",
+    "stand up slowly"
+  ],
+  "follow_up": "3 days",
+  "warning_signs": [
+    "fainting",
+    "chest pain"
+  ],
+  "glossary": []
+}
+Processing seconds: 83.923
+Fallback empty output: False
+
+[3/12] E2_03
+
+==============================================================================
+CASE E2_03
+Category: chronic_condition_monitoring
+{
+  "chief_complaint": null,
+  "symptoms": [],
+  "relevant_history": [
+    "hypertension for four years"
+  ],
+  "diagnosis_discussed": [
+    "hypertension"
+  ],
+  "diagnosis_status": "discussed",
+  "medications": [
+    {
+      "name": "amlodipine",
+      "name_as_heard": "amlodipine",
+      "confidence": 1.0,
+      "dose": "5 mg",
+      "strength": null,
+      "dose_unit": null,
+      "dosage_form": null,
+      "route": null,
+      "frequency": "once daily",
+      "timing": "morning",
+      "food_instruction": null,
+      "duration": null,
+      "as_needed": false,
+      "indication": null,
+      "notes": null,
+      "doctor_confirmed": true,
+      "suggestions": []
+    }
+  ],
+  "tests": [
+    "blood pressure"
+  ],
+  "advice": [
+    "record blood pressure in the morning and evening for the next 7 days",
+    "follow up in one week"
+  ],
+  "follow_up": "one week",
+  "warning_signs": [
+    "severe chest pain",
+    "fainting",
+    "severe shortness of breath"
+  ],
+  "glossary": []
+}
+Processing seconds: 173.821
+Fallback empty output: False
+
+[4/12] E2_04
+
+==============================================================================
+CASE E2_04
+Category: timing_and_food_instruction
+{
+  "chief_complaint": "burning in the upper stomach and acid coming into the throat after meals",
+  "symptoms": [
+    "burning in the upper stomach",
+    "acid coming into the throat after meals"
+  ],
+  "relevant_history": [],
+  "diagnosis_discussed": [
+    "acid reflux"
+  ],
+  "diagnosis_status": "discussed",
+  "medications": [
+    {
+      "name": "omeprazole",
+      "name_as_heard": "omeprazole",
+      "confidence": 1.0,
+      "dose": "20 mg",
+      "strength": "20 mg",
+      "dose_unit": "mg",
+      "dosage_form": null,
+      "route": null,
+      "frequency": "once daily",
+      "timing": "morning before breakfast",
+      "food_instruction": "before food",
+      "duration": "14 days",
+      "as_needed": false,
+      "indication": null,
+      "notes": null,
+      "doctor_confirmed": false,
+      "suggestions": []
+    }
+  ],
+  "tests": [],
+  "advice": [
+    "reduce spicy food",
+    "reduce coffee"
+  ],
+  "follow_up": "two weeks",
+  "warning_signs": [
+    "vomiting blood",
+    "black stools",
+    "difficulty swallowing"
+  ],
+  "glossary": []
+}
+Processing seconds: 178.303
+Fallback empty output: False
+
+[5/12] E2_05
+
+==============================================================================
+CASE E2_05
+Category: frequency_duration_safety_trap
+{
+  "chief_complaint": "dental pain",
+  "symptoms": [
+    "dental pain"
+  ],
+  "relevant_history": [],
+  "diagnosis_discussed": [
+    "dental pain"
+  ],
+  "diagnosis_status": "discussed",
+  "medications": [
+    {
+      "name": "ibuprofen",
+      "name_as_heard": "ibuprofen",
+      "confidence": 1.0,
+      "dose": "400 mg",
+      "strength": "400 mg",
+      "dose_unit": "mg",
+      "dosage_form": null,
+      "route": null,
+      "frequency": "every 8 hours",
+      "timing": "after food",
+      "food_instruction": "after food",
+      "duration": "3 days",
+      "as_needed": true,
+      "indication": "pain",
+      "notes": "not to be taken every 3 days",
+      "doctor_confirmed": false,
+      "suggestions": []
+    }
+  ],
+  "tests": [],
+  "advice": [
+    "Follow up with the dentist if the pain continues."
+  ],
+  "follow_up": "dentist",
+  "warning_signs": [],
+  "glossary": []
+}
+Processing seconds: 163.084
+Fallback empty output: False
+
+[6/12] E2_06
+
+==============================================================================
+CASE E2_06
+Category: frequency_duration_food
+{
+  "chief_complaint": null,
+  "symptoms": [],
+  "relevant_history": [],
+  "diagnosis_discussed": [
+    "type 2 diabetes"
+  ],
+  "diagnosis_status": "confirmed",
+  "medications": [
+    {
+      "name": "metformin",
+      "name_as_heard": "metformin",
+      "confidence": 1.0,
+      "dose": "500 mg",
+      "strength": null,
+      "dose_unit": null,
+      "dosage_form": null,
+      "route": null,
+      "frequency": "twice daily",
+      "timing": "with food",
+      "food_instruction": "with food",
+      "duration": "30 days",
+      "as_needed": false,
+      "indication": null,
+      "notes": null,
+      "doctor_confirmed": true,
+      "suggestions": []
+    }
+  ],
+  "tests": [],
+  "advice": [
+    "Follow up after 30 days"
+  ],
+  "follow_up": "after 30 days",
+  "warning_signs": [],
+  "glossary": []
+}
+Processing seconds: 149.375
+Fallback empty output: False
+
+[7/12] E2_07
+
+==============================================================================
+CASE E2_07
+Category: multiple_medications_routes
+{
+  "chief_complaint": "wheezing",
+  "symptoms": [
+    "wheezing"
+  ],
+  "relevant_history": [],
+  "diagnosis_discussed": [
+    "wheeze"
+  ],
+  "diagnosis_status": "discussed",
+  "medications": [
+    {
+      "name": "salbutamol",
+      "name_as_heard": "salbutamol",
+      "confidence": 1.0,
+      "dose": "2 puffs",
+      "strength": null,
+      "dose_unit": null,
+      "dosage_form": null,
+      "route": "inhalation",
+      "frequency": "as needed",
+      "timing": null,
+      "food_instruction": null,
+      "duration": null,
+      "as_needed": false,
+      "indication": "wheeze",
+      "notes": null,
+      "doctor_confirmed": false,
+      "suggestions": []
+    },
+    {
+      "name": "prednisolone",
+      "name_as_heard": "prednisolone",
+      "confidence": 1.0,
+      "dose": "40 mg",
+      "strength": "40 mg",
+      "dose_unit": "mg",
+      "dosage_form": null,
+      "route": "by mouth",
+      "frequency": "once daily",
+      "timing": null,
+      "food_instruction": null,
+      "duration": "5 days",
+      "as_needed": false,
+      "indication": null,
+      "notes": null,
+      "doctor_confirmed": false,
+      "suggestions": []
+    }
+  ],
+  "tests": [],
+  "advice": [
+    "seek urgent medical attention if breathing becomes severely difficult"
+  ],
+  "follow_up": "5 days",
+  "warning_signs": [
+    "severely difficult breathing"
+  ],
+  "glossary": []
+}
+Processing seconds: 171.296
+Fallback empty output: False
+
+[8/12] E2_08
+
+==============================================================================
+CASE E2_08
+Category: tests_and_diagnostic_uncertainty
+{
+  "chief_complaint": "tiredness and looking pale",
+  "symptoms": [
+    "tiredness",
+    "looking pale"
+  ],
+  "relevant_history": [],
+  "diagnosis_discussed": [
+    "iron deficiency anaemia"
+  ],
+  "diagnosis_status": "suspected",
+  "medications": [],
+  "tests": [
+    "full blood count",
+    "ferritin test"
+  ],
+  "advice": [
+    "follow up after the blood test results are available",
+    "seek urgent help for severe shortness of breath or chest pain"
+  ],
+  "follow_up": "after the blood test results are available",
+  "warning_signs": [
+    "severe shortness of breath",
+    "chest pain"
+  ],
+  "glossary": []
+}
+Processing seconds: 97.609
+Fallback empty output: False
+
+[9/12] E2_09
+
+==============================================================================
+CASE E2_09
+Category: uncertain_medication_name
+Structured extraction parse failure: 1 validation error for StructuredData
+medications.0.as_needed
+  Input should be a valid boolean [type=bool_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/bool_type
+{
+  "chief_complaint": null,
+  "symptoms": [],
+  "relevant_history": [],
+  "diagnosis_discussed": [],
+  "diagnosis_status": null,
+  "medications": [],
+  "tests": [],
+  "advice": [],
+  "follow_up": null,
+  "warning_signs": [],
+  "glossary": []
+}
+Processing seconds: 66.624
+Fallback empty output: True
+
+[10/12] E2_10
+
+==============================================================================
+CASE E2_10
+Category: negated_medication
+{
+  "chief_complaint": "dry cough and mild fever",
+  "symptoms": [
+    "dry cough",
+    "mild fever"
+  ],
+  "relevant_history": [],
+  "diagnosis_discussed": [],
+  "diagnosis_status": "discussed",
+  "medications": [
+    {
+      "name": "paracetamol",
+      "name_as_heard": "paracetamol",
+      "confidence": 1.0,
+      "dose": "500 mg",
+      "strength": "500 mg",
+      "dose_unit": "mg",
+      "dosage_form": null,
+      "route": null,
+      "frequency": "as needed",
+      "timing": null,
+      "food_instruction": null,
+      "duration": null,
+      "as_needed": true,
+      "indication": "fever",
+      "notes": null,
+      "doctor_confirmed": false,
+      "suggestions": []
+    }
+  ],
+  "tests": [],
+  "advice": [
+    "rest",
+    "drink plenty of fluids"
+  ],
+  "follow_up": "in 5 days if the cough has not improved",
+  "warning_signs": [],
+  "glossary": []
+}
+Processing seconds: 159.811
+Fallback empty output: False
+
+[11/12] E2_11
+
+==============================================================================
+CASE E2_11
+Category: hallucination_control
+{
+  "chief_complaint": null,
+  "symptoms": [],
+  "relevant_history": [],
+  "diagnosis_discussed": [],
+  "diagnosis_status": null,
+  "medications": [],
+  "tests": [],
+  "advice": [],
+  "follow_up": null,
+  "warning_signs": [],
+  "glossary": []
+}
+Processing seconds: 51.074
+Fallback empty output: True
+
+[12/12] E2_12
+
+==============================================================================
+CASE E2_12
+Category: allergy_test_medication
+{
+  "chief_complaint": null,
+  "symptoms": [
+    "urinary tract infection suspected"
+  ],
+  "relevant_history": [
+    "allergic to penicillin"
+  ],
+  "diagnosis_discussed": [
+    "urinary tract infection"
+  ],
+  "diagnosis_status": "suspected",
+  "medications": [
+    {
+      "name": "nitrofurantoin",
+      "name_as_heard": "nitrofurantoin",
+      "confidence": 1.0,
+      "dose": "100 mg",
+      "strength": null,
+      "dose_unit": null,
+      "dosage_form": null,
+      "route": null,
+      "frequency": "twice daily",
+      "timing": "with food",
+      "food_instruction": "with food",
+      "duration": "5 days",
+      "as_needed": false,
+      "indication": null,
+      "notes": null,
+      "doctor_confirmed": false,
+      "suggestions": []
+    }
+  ],
+  "tests": [
+    "urine test"
+  ],
+  "advice": [
+    "seek earlier medical attention if fever or back pain develops"
+  ],
+  "follow_up": "3 days",
+  "warning_signs": [
+    "fever",
+    "back pain"
+  ],
+  "glossary": []
+}
+Processing seconds: 169.149
+Fallback empty output: False
+
+==============================================================================
+STRUCTURED EXTRACTION INFERENCE COMPLETE
+==============================================================================

@@ -1,0 +1,234 @@
+[
+  {
+    "case_id": "E2_01",
+    "category": "standard_prescription",
+    "gold_medications": 2,
+    "predicted_medications": 2,
+    "semantic_components": [
+      {
+        "medication": "amoxicillin",
+        "component": "amount_or_strength",
+        "correct": true
+      },
+      {
+        "medication": "amoxicillin",
+        "component": "frequency_or_prn",
+        "correct": true
+      },
+      {
+        "medication": "amoxicillin",
+        "component": "duration",
+        "correct": true
+      },
+      {
+        "medication": "paracetamol",
+        "component": "amount_or_strength",
+        "correct": true
+      },
+      {
+        "medication": "paracetamol",
+        "component": "frequency_or_prn",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "case_id": "E2_02",
+    "category": "no_medication_suspected_condition",
+    "gold_medications": 0,
+    "predicted_medications": 0,
+    "semantic_components": []
+  },
+  {
+    "case_id": "E2_03",
+    "category": "chronic_condition_monitoring",
+    "gold_medications": 1,
+    "predicted_medications": 1,
+    "semantic_components": [
+      {
+        "medication": "amlodipine",
+        "component": "amount_or_strength",
+        "correct": true
+      },
+      {
+        "medication": "amlodipine",
+        "component": "frequency_or_prn",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "case_id": "E2_04",
+    "category": "timing_and_food_instruction",
+    "gold_medications": 1,
+    "predicted_medications": 1,
+    "semantic_components": [
+      {
+        "medication": "omeprazole",
+        "component": "amount_or_strength",
+        "correct": true
+      },
+      {
+        "medication": "omeprazole",
+        "component": "frequency_or_prn",
+        "correct": true
+      },
+      {
+        "medication": "omeprazole",
+        "component": "duration",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "case_id": "E2_05",
+    "category": "frequency_duration_safety_trap",
+    "gold_medications": 1,
+    "predicted_medications": 1,
+    "semantic_components": [
+      {
+        "medication": "ibuprofen",
+        "component": "amount_or_strength",
+        "correct": true
+      },
+      {
+        "medication": "ibuprofen",
+        "component": "frequency_or_prn",
+        "correct": true
+      },
+      {
+        "medication": "ibuprofen",
+        "component": "duration",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "case_id": "E2_06",
+    "category": "frequency_duration_food",
+    "gold_medications": 1,
+    "predicted_medications": 1,
+    "semantic_components": [
+      {
+        "medication": "metformin",
+        "component": "amount_or_strength",
+        "correct": true
+      },
+      {
+        "medication": "metformin",
+        "component": "frequency_or_prn",
+        "correct": true
+      },
+      {
+        "medication": "metformin",
+        "component": "duration",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "case_id": "E2_07",
+    "category": "multiple_medications_routes",
+    "gold_medications": 2,
+    "predicted_medications": 2,
+    "semantic_components": [
+      {
+        "medication": "salbutamol",
+        "component": "amount_or_strength",
+        "correct": true
+      },
+      {
+        "medication": "salbutamol",
+        "component": "frequency_or_prn",
+        "correct": true
+      },
+      {
+        "medication": "salbutamol",
+        "component": "route",
+        "correct": true
+      },
+      {
+        "medication": "prednisolone",
+        "component": "amount_or_strength",
+        "correct": true
+      },
+      {
+        "medication": "prednisolone",
+        "component": "frequency_or_prn",
+        "correct": true
+      },
+      {
+        "medication": "prednisolone",
+        "component": "duration",
+        "correct": true
+      },
+      {
+        "medication": "prednisolone",
+        "component": "route",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "case_id": "E2_08",
+    "category": "tests_and_diagnostic_uncertainty",
+    "gold_medications": 0,
+    "predicted_medications": 0,
+    "semantic_components": []
+  },
+  {
+    "case_id": "E2_09",
+    "category": "uncertain_medication_name",
+    "gold_medications": 1,
+    "predicted_medications": 0,
+    "semantic_components": []
+  },
+  {
+    "case_id": "E2_10",
+    "category": "negated_medication",
+    "gold_medications": 1,
+    "predicted_medications": 1,
+    "semantic_components": [
+      {
+        "medication": "paracetamol",
+        "component": "amount_or_strength",
+        "correct": true
+      },
+      {
+        "medication": "paracetamol",
+        "component": "frequency_or_prn",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "case_id": "E2_11",
+    "category": "hallucination_control",
+    "gold_medications": 0,
+    "predicted_medications": 0,
+    "semantic_components": []
+  },
+  {
+    "case_id": "E2_12",
+    "category": "allergy_test_medication",
+    "gold_medications": 1,
+    "predicted_medications": 1,
+    "semantic_components": [
+      {
+        "medication": "nitrofurantoin",
+        "component": "amount_or_strength",
+        "correct": true
+      },
+      {
+        "medication": "nitrofurantoin",
+        "component": "frequency_or_prn",
+        "correct": true
+      },
+      {
+        "medication": "nitrofurantoin",
+        "component": "duration",
+        "correct": true
+      }
+    ]
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "case_id": "E3_02",
+  "category": "no_medication_suspected_condition",
+  "clinical_note": "Here is the doctor-facing SOAP draft:\n\n**Subjective**\nThe patient reports dizziness when standing quickly and has been drinking less water than usual. There has been no fainting or chest pain.\n\n**Objective**\nNot mentioned in transcript.\n\n**Assessment**\nThe doctor suspects dehydration is possible, but it is not confirmed.\n\n**Plan**\nIncrease fluid intake and stand up slowly. Follow up in 3 days if the dizziness continues. Seek urgent help if fainting or chest pain occurs.",
+  "patient_summary": "Here is the patient explanation:\n\nYou've been feeling dizzy when you stand up quickly. This might be because you haven't been drinking enough water. The doctor thinks it's possible that you're dehydrated, but we're not sure yet. \n\nTo feel better, try drinking more water and stand up slowly. If you keep feeling dizzy, come back to see us in 3 days. And if you start feeling faint or have chest pain, go to the hospital right away.",
+  "clinical_seconds": 73.35,
+  "patient_seconds": 73.985,
+  "total_generation_seconds": 147.335,
+  "clinical_empty": false,
+  "patient_empty": false,
+  "error": ""
+}

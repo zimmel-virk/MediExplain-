@@ -1,0 +1,72 @@
+{
+  "evaluation": "MediExplain+ Script Safety",
+  "cases": 25,
+  "overall_accuracy_percent": 100.0,
+  "unsafe_block_sensitivity_percent": 100.0,
+  "unsafe_false_negative_rate_percent": 0.0,
+  "safe_output_specificity_percent": 100.0,
+  "false_block_rate_percent": 0.0,
+  "authoritative_secondary_disagreement_count": 4,
+  "per_category": {
+    "devanagari_leak": {
+      "n": 2,
+      "accuracy_percent": 100.0,
+      "unsafe_false_negatives": 0,
+      "false_blocks": 0
+    },
+    "digits_only_wrong_script": {
+      "n": 2,
+      "accuracy_percent": 100.0,
+      "unsafe_false_negatives": 0,
+      "false_blocks": 0
+    },
+    "gurmukhi_leak": {
+      "n": 2,
+      "accuracy_percent": 100.0,
+      "unsafe_false_negatives": 0,
+      "false_blocks": 0
+    },
+    "latin_only_wrong_script": {
+      "n": 5,
+      "accuracy_percent": 100.0,
+      "unsafe_false_negatives": 0,
+      "false_blocks": 0
+    },
+    "unexpected_cjk": {
+      "n": 1,
+      "accuracy_percent": 100.0,
+      "unsafe_false_negatives": 0,
+      "false_blocks": 0
+    },
+    "unexpected_cyrillic": {
+      "n": 1,
+      "accuracy_percent": 100.0,
+      "unsafe_false_negatives": 0,
+      "false_blocks": 0
+    },
+    "unexpected_greek": {
+      "n": 1,
+      "accuracy_percent": 100.0,
+      "unsafe_false_negatives": 0,
+      "false_blocks": 0
+    },
+    "unexpected_hebrew": {
+      "n": 1,
+      "accuracy_percent": 100.0,
+      "unsafe_false_negatives": 0,
+      "false_blocks": 0
+    },
+    "valid_mixed_medication_latin": {
+      "n": 5,
+      "accuracy_percent": 100.0,
+      "unsafe_false_negatives": 0,
+      "false_blocks": 0
+    },
+    "valid_native_script": {
+      "n": 5,
+      "accuracy_percent": 100.0,
+      "unsafe_false_negatives": 0,
+      "false_blocks": 0
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "case_id": "E2_08",
+  "category": "tests_and_diagnostic_uncertainty",
+  "transcript": "The patient reports tiredness and looking pale. The doctor said iron deficiency anaemia is suspected but not confirmed. A full blood count and ferritin test were ordered. No medication was prescribed today. Follow up after the blood test results are available. Seek urgent help for severe shortness of breath or chest pain.",
+  "prediction": {
+    "chief_complaint": "tiredness and looking pale",
+    "symptoms": [
+      "tiredness",
+      "looking pale"
+    ],
+    "relevant_history": [],
+    "diagnosis_discussed": [
+      "iron deficiency anaemia"
+    ],
+    "diagnosis_status": "suspected",
+    "medications": [],
+    "tests": [
+      "full blood count",
+      "ferritin test"
+    ],
+    "advice": [
+      "follow up after the blood test results are available",
+      "seek urgent help for severe shortness of breath or chest pain"
+    ],
+    "follow_up": "after the blood test results are available",
+    "warning_signs": [
+      "severe shortness of breath",
+      "chest pain"
+    ],
+    "glossary": []
+  },
+  "processing_seconds": 97.609,
+  "fallback_empty_output": false,
+  "schema_valid": true,
+  "error": ""
+}

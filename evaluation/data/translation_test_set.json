@@ -1,0 +1,610 @@
+{
+  "_comment": "Reference translations must be checked by a bilingual clinician or competent bilingual reviewer. Do not enter AI-generated text as the gold reference.",
+  "language_pairs": [
+    {
+      "source_lang": "en",
+      "target_lang": "ur",
+      "pairs": [
+        {
+          "id": "tx_01",
+          "category": "diagnosis",
+          "source": "You have a viral throat infection.",
+          "structured": {},
+          "reference": "",
+          "reference_reviewed_by": ""
+        },
+        {
+          "id": "tx_02",
+          "category": "medicine_dose_frequency_duration",
+          "source": "Take Panadol 500 mg, one tablet twice daily after food for 5 days.",
+          "structured": {
+            "medications": [
+              {
+                "name": "Panadol",
+                "strength": "500 mg",
+                "dose": "one tablet",
+                "frequency": "twice daily",
+                "duration": "5 days"
+              }
+            ]
+          },
+          "reference": "",
+          "reference_reviewed_by": ""
+        },
+        {
+          "id": "tx_03",
+          "category": "medicine_interval",
+          "source": "Take Augmentin 625 mg every 8 hours for 7 days.",
+          "structured": {
+            "medications": [
+              {
+                "name": "Augmentin",
+                "strength": "625 mg",
+                "frequency": "every 8 hours",
+                "duration": "7 days"
+              }
+            ]
+          },
+          "reference": "",
+          "reference_reviewed_by": ""
+        },
+        {
+          "id": "tx_04",
+          "category": "negation_warning",
+          "source": "Do not take Ibuprofen if you develop stomach bleeding.",
+          "structured": {
+            "medications": [
+              {
+                "name": "Ibuprofen"
+              }
+            ]
+          },
+          "reference": "",
+          "reference_reviewed_by": ""
+        },
+        {
+          "id": "tx_05",
+          "category": "symptom_negation",
+          "source": "You do not have chest pain or shortness of breath.",
+          "structured": {},
+          "reference": "",
+          "reference_reviewed_by": ""
+        },
+        {
+          "id": "tx_06",
+          "category": "follow_up",
+          "source": "Return to the clinic in 7 days for follow-up.",
+          "structured": {},
+          "reference": "",
+          "reference_reviewed_by": ""
+        },
+        {
+          "id": "tx_07",
+          "category": "warning_sign",
+          "source": "If your fever rises above 39 degrees, seek urgent medical review.",
+          "structured": {},
+          "reference": "",
+          "reference_reviewed_by": ""
+        },
+        {
+          "id": "tx_08",
+          "category": "medicine_timing",
+          "source": "Take Omeprazole 20 mg once daily before breakfast for 14 days.",
+          "structured": {
+            "medications": [
+              {
+                "name": "Omeprazole",
+                "strength": "20 mg",
+                "frequency": "once daily",
+                "timing": "before breakfast",
+                "duration": "14 days"
+              }
+            ]
+          },
+          "reference": "",
+          "reference_reviewed_by": ""
+        },
+        {
+          "id": "tx_09",
+          "category": "emergency_warning",
+          "source": "Stop the medicine and seek help if you develop swelling or difficulty breathing.",
+          "structured": {},
+          "reference": "",
+          "reference_reviewed_by": ""
+        },
+        {
+          "id": "tx_10",
+          "category": "food_instruction",
+          "source": "Do not take this medicine on an empty stomach.",
+          "structured": {},
+          "reference": "",
+          "reference_reviewed_by": ""
+        }
+      ]
+    },
+    {
+      "source_lang": "en",
+      "target_lang": "pa_shah",
+      "pairs": [
+        {
+          "id": "tx_01",
+          "category": "diagnosis",
+          "source": "You have a viral throat infection.",
+          "structured": {},
+          "reference": "",
+          "reference_reviewed_by": ""
+        },
+        {
+          "id": "tx_02",
+          "category": "medicine_dose_frequency_duration",
+          "source": "Take Panadol 500 mg, one tablet twice daily after food for 5 days.",
+          "structured": {
+            "medications": [
+              {
+                "name": "Panadol",
+                "strength": "500 mg",
+                "dose": "one tablet",
+                "frequency": "twice daily",
+                "duration": "5 days"
+              }
+            ]
+          },
+          "reference": "",
+          "reference_reviewed_by": ""
+        },
+        {
+          "id": "tx_03",
+          "category": "medicine_interval",
+          "source": "Take Augmentin 625 mg every 8 hours for 7 days.",
+          "structured": {
+            "medications": [
+              {
+                "name": "Augmentin",
+                "strength": "625 mg",
+                "frequency": "every 8 hours",
+                "duration": "7 days"
+              }
+            ]
+          },
+          "reference": "",
+          "reference_reviewed_by": ""
+        },
+        {
+          "id": "tx_04",
+          "category": "negation_warning",
+          "source": "Do not take Ibuprofen if you develop stomach bleeding.",
+          "structured": {
+            "medications": [
+              {
+                "name": "Ibuprofen"
+              }
+            ]
+          },
+          "reference": "",
+          "reference_reviewed_by": ""
+        },
+        {
+          "id": "tx_05",
+          "category": "symptom_negation",
+          "source": "You do not have chest pain or shortness of breath.",
+          "structured": {},
+          "reference": "",
+          "reference_reviewed_by": ""
+        },
+        {
+          "id": "tx_06",
+          "category": "follow_up",
+          "source": "Return to the clinic in 7 days for follow-up.",
+          "structured": {},
+          "reference": "",
+          "reference_reviewed_by": ""
+        },
+        {
+          "id": "tx_07",
+          "category": "warning_sign",
+          "source": "If your fever rises above 39 degrees, seek urgent medical review.",
+          "structured": {},
+          "reference": "",
+          "reference_reviewed_by": ""
+        },
+        {
+          "id": "tx_08",
+          "category": "medicine_timing",
+          "source": "Take Omeprazole 20 mg once daily before breakfast for 14 days.",
+          "structured": {
+            "medications": [
+              {
+                "name": "Omeprazole",
+                "strength": "20 mg",
+                "frequency": "once daily",
+                "timing": "before breakfast",
+                "duration": "14 days"
+              }
+            ]
+          },
+          "reference": "",
+          "reference_reviewed_by": ""
+        },
+        {
+          "id": "tx_09",
+          "category": "emergency_warning",
+          "source": "Stop the medicine and seek help if you develop swelling or difficulty breathing.",
+          "structured": {},
+          "reference": "",
+          "reference_reviewed_by": ""
+        },
+        {
+          "id": "tx_10",
+          "category": "food_instruction",
+          "source": "Do not take this medicine on an empty stomach.",
+          "structured": {},
+          "reference": "",
+          "reference_reviewed_by": ""
+        }
+      ]
+    },
+    {
+      "source_lang": "en",
+      "target_lang": "ps",
+      "pairs": [
+        {
+          "id": "tx_01",
+          "category": "diagnosis",
+          "source": "You have a viral throat infection.",
+          "structured": {},
+          "reference": "",
+          "reference_reviewed_by": ""
+        },
+        {
+          "id": "tx_02",
+          "category": "medicine_dose_frequency_duration",
+          "source": "Take Panadol 500 mg, one tablet twice daily after food for 5 days.",
+          "structured": {
+            "medications": [
+              {
+                "name": "Panadol",
+                "strength": "500 mg",
+                "dose": "one tablet",
+                "frequency": "twice daily",
+                "duration": "5 days"
+              }
+            ]
+          },
+          "reference": "",
+          "reference_reviewed_by": ""
+        },
+        {
+          "id": "tx_03",
+          "category": "medicine_interval",
+          "source": "Take Augmentin 625 mg every 8 hours for 7 days.",
+          "structured": {
+            "medications": [
+              {
+                "name": "Augmentin",
+                "strength": "625 mg",
+                "frequency": "every 8 hours",
+                "duration": "7 days"
+              }
+            ]
+          },
+          "reference": "",
+          "reference_reviewed_by": ""
+        },
+        {
+          "id": "tx_04",
+          "category": "negation_warning",
+          "source": "Do not take Ibuprofen if you develop stomach bleeding.",
+          "structured": {
+            "medications": [
+              {
+                "name": "Ibuprofen"
+              }
+            ]
+          },
+          "reference": "",
+          "reference_reviewed_by": ""
+        },
+        {
+          "id": "tx_05",
+          "category": "symptom_negation",
+          "source": "You do not have chest pain or shortness of breath.",
+          "structured": {},
+          "reference": "",
+          "reference_reviewed_by": ""
+        },
+        {
+          "id": "tx_06",
+          "category": "follow_up",
+          "source": "Return to the clinic in 7 days for follow-up.",
+          "structured": {},
+          "reference": "",
+          "reference_reviewed_by": ""
+        },
+        {
+          "id": "tx_07",
+          "category": "warning_sign",
+          "source": "If your fever rises above 39 degrees, seek urgent medical review.",
+          "structured": {},
+          "reference": "",
+          "reference_reviewed_by": ""
+        },
+        {
+          "id": "tx_08",
+          "category": "medicine_timing",
+          "source": "Take Omeprazole 20 mg once daily before breakfast for 14 days.",
+          "structured": {
+            "medications": [
+              {
+                "name": "Omeprazole",
+                "strength": "20 mg",
+                "frequency": "once daily",
+                "timing": "before breakfast",
+                "duration": "14 days"
+              }
+            ]
+          },
+          "reference": "",
+          "reference_reviewed_by": ""
+        },
+        {
+          "id": "tx_09",
+          "category": "emergency_warning",
+          "source": "Stop the medicine and seek help if you develop swelling or difficulty breathing.",
+          "structured": {},
+          "reference": "",
+          "reference_reviewed_by": ""
+        },
+        {
+          "id": "tx_10",
+          "category": "food_instruction",
+          "source": "Do not take this medicine on an empty stomach.",
+          "structured": {},
+          "reference": "",
+          "reference_reviewed_by": ""
+        }
+      ]
+    },
+    {
+      "source_lang": "en",
+      "target_lang": "sd",
+      "pairs": [
+        {
+          "id": "tx_01",
+          "category": "diagnosis",
+          "source": "You have a viral throat infection.",
+          "structured": {},
+          "reference": "",
+          "reference_reviewed_by": ""
+        },
+        {
+          "id": "tx_02",
+          "category": "medicine_dose_frequency_duration",
+          "source": "Take Panadol 500 mg, one tablet twice daily after food for 5 days.",
+          "structured": {
+            "medications": [
+              {
+                "name": "Panadol",
+                "strength": "500 mg",
+                "dose": "one tablet",
+                "frequency": "twice daily",
+                "duration": "5 days"
+              }
+            ]
+          },
+          "reference": "",
+          "reference_reviewed_by": ""
+        },
+        {
+          "id": "tx_03",
+          "category": "medicine_interval",
+          "source": "Take Augmentin 625 mg every 8 hours for 7 days.",
+          "structured": {
+            "medications": [
+              {
+                "name": "Augmentin",
+                "strength": "625 mg",
+                "frequency": "every 8 hours",
+                "duration": "7 days"
+              }
+            ]
+          },
+          "reference": "",
+          "reference_reviewed_by": ""
+        },
+        {
+          "id": "tx_04",
+          "category": "negation_warning",
+          "source": "Do not take Ibuprofen if you develop stomach bleeding.",
+          "structured": {
+            "medications": [
+              {
+                "name": "Ibuprofen"
+              }
+            ]
+          },
+          "reference": "",
+          "reference_reviewed_by": ""
+        },
+        {
+          "id": "tx_05",
+          "category": "symptom_negation",
+          "source": "You do not have chest pain or shortness of breath.",
+          "structured": {},
+          "reference": "",
+          "reference_reviewed_by": ""
+        },
+        {
+          "id": "tx_06",
+          "category": "follow_up",
+          "source": "Return to the clinic in 7 days for follow-up.",
+          "structured": {},
+          "reference": "",
+          "reference_reviewed_by": ""
+        },
+        {
+          "id": "tx_07",
+          "category": "warning_sign",
+          "source": "If your fever rises above 39 degrees, seek urgent medical review.",
+          "structured": {},
+          "reference": "",
+          "reference_reviewed_by": ""
+        },
+        {
+          "id": "tx_08",
+          "category": "medicine_timing",
+          "source": "Take Omeprazole 20 mg once daily before breakfast for 14 days.",
+          "structured": {
+            "medications": [
+              {
+                "name": "Omeprazole",
+                "strength": "20 mg",
+                "frequency": "once daily",
+                "timing": "before breakfast",
+                "duration": "14 days"
+              }
+            ]
+          },
+          "reference": "",
+          "reference_reviewed_by": ""
+        },
+        {
+          "id": "tx_09",
+          "category": "emergency_warning",
+          "source": "Stop the medicine and seek help if you develop swelling or difficulty breathing.",
+          "structured": {},
+          "reference": "",
+          "reference_reviewed_by": ""
+        },
+        {
+          "id": "tx_10",
+          "category": "food_instruction",
+          "source": "Do not take this medicine on an empty stomach.",
+          "structured": {},
+          "reference": "",
+          "reference_reviewed_by": ""
+        }
+      ]
+    },
+    {
+      "source_lang": "en",
+      "target_lang": "ar",
+      "pairs": [
+        {
+          "id": "tx_01",
+          "category": "diagnosis",
+          "source": "You have a viral throat infection.",
+          "structured": {},
+          "reference": "",
+          "reference_reviewed_by": ""
+        },
+        {
+          "id": "tx_02",
+          "category": "medicine_dose_frequency_duration",
+          "source": "Take Panadol 500 mg, one tablet twice daily after food for 5 days.",
+          "structured": {
+            "medications": [
+              {
+                "name": "Panadol",
+                "strength": "500 mg",
+                "dose": "one tablet",
+                "frequency": "twice daily",
+                "duration": "5 days"
+              }
+            ]
+          },
+          "reference": "",
+          "reference_reviewed_by": ""
+        },
+        {
+          "id": "tx_03",
+          "category": "medicine_interval",
+          "source": "Take Augmentin 625 mg every 8 hours for 7 days.",
+          "structured": {
+            "medications": [
+              {
+                "name": "Augmentin",
+                "strength": "625 mg",
+                "frequency": "every 8 hours",
+                "duration": "7 days"
+              }
+            ]
+          },
+          "reference": "",
+          "reference_reviewed_by": ""
+        },
+        {
+          "id": "tx_04",
+          "category": "negation_warning",
+          "source": "Do not take Ibuprofen if you develop stomach bleeding.",
+          "structured": {
+            "medications": [
+              {
+                "name": "Ibuprofen"
+              }
+            ]
+          },
+          "reference": "",
+          "reference_reviewed_by": ""
+        },
+        {
+          "id": "tx_05",
+          "category": "symptom_negation",
+          "source": "You do not have chest pain or shortness of breath.",
+          "structured": {},
+          "reference": "",
+          "reference_reviewed_by": ""
+        },
+        {
+          "id": "tx_06",
+          "category": "follow_up",
+          "source": "Return to the clinic in 7 days for follow-up.",
+          "structured": {},
+          "reference": "",
+          "reference_reviewed_by": ""
+        },
+        {
+          "id": "tx_07",
+          "category": "warning_sign",
+          "source": "If your fever rises above 39 degrees, seek urgent medical review.",
+          "structured": {},
+          "reference": "",
+          "reference_reviewed_by": ""
+        },
+        {
+          "id": "tx_08",
+          "category": "medicine_timing",
+          "source": "Take Omeprazole 20 mg once daily before breakfast for 14 days.",
+          "structured": {
+            "medications": [
+              {
+                "name": "Omeprazole",
+                "strength": "20 mg",
+                "frequency": "once daily",
+                "timing": "before breakfast",
+                "duration": "14 days"
+              }
+            ]
+          },
+          "reference": "",
+          "reference_reviewed_by": ""
+        },
+        {
+          "id": "tx_09",
+          "category": "emergency_warning",
+          "source": "Stop the medicine and seek help if you develop swelling or difficulty breathing.",
+          "structured": {},
+          "reference": "",
+          "reference_reviewed_by": ""
+        },
+        {
+          "id": "tx_10",
+          "category": "food_instruction",
+          "source": "Do not take this medicine on an empty stomach.",
+          "structured": {},
+          "reference": "",
+          "reference_reviewed_by": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "n_consultations": 9,
+  "target_grade_level": 6,
+  "summaries_at_or_below_grade_6": 1,
+  "target_pass_rate": 0.111,
+  "aggregate": {
+    "flesch_kincaid_grade": {
+      "mean": 7.74,
+      "median": 8.4,
+      "min": 0.8,
+      "max": 9.9,
+      "n": 9
+    },
+    "flesch_reading_ease": {
+      "mean": 64.88,
+      "median": 56.61,
+      "min": 49.65,
+      "max": 103.54,
+      "n": 9
+    },
+    "gunning_fog": {
+      "mean": 10.18,
+      "median": 11.16,
+      "min": 3.2,
+      "max": 12.94,
+      "n": 9
+    },
+    "smog": {
+      "mean": 10.04,
+      "median": 10.32,
+      "min": 3.13,
+      "max": 12.6,
+      "n": 9
+    },
+    "word_count": {
+      "mean": 105.11,
+      "median": 132,
+      "min": 8,
+      "max": 172,
+      "n": 9
+    }
+  },
+  "per_summary": [
+    {
+      "consultation_id": 1,
+      "status": "RELEASED",
+      "word_count": 8,
+      "sentence_count": 1,
+      "flesch_kincaid_grade": 0.8,
+      "flesch_reading_ease": 103.54,
+      "gunning_fog": 3.2,
+      "smog": 3.13,
+      "text_preview": "i have belly ache and my head hurts."
+    },
+    {
+      "consultation_id": 2,
+      "status": "RELEASED",
+      "word_count": 172,
+      "sentence_count": 12,
+      "flesch_kincaid_grade": 9.9,
+      "flesch_reading_ease": 49.65,
+      "gunning_fog": 12.94,
+      "smog": 12.6,
+      "text_preview": "CLINICAL NOTE:\n\nSubjective:\nPatient reports experiencing abdominal pain and discomfort. They mention that their father, \u2026"
+    },
+    {
+      "consultation_id": 3,
+      "status": "RELEASED",
+      "word_count": 150,
+      "sentence_count": 12,
+      "flesch_kincaid_grade": 8.17,
+      "flesch_reading_ease": 58.79,
+      "gunning_fog": 9.27,
+      "smog": 10.32,
+      "text_preview": "CLINICAL NOTE:\n\nSubjective:\nPatient reports severe abdominal pain and dizziness since yesterday. Requests advice on whet\u2026"
+    },
+    {
+      "consultation_id": 4,
+      "status": "UNDER_CROSS_CHECK",
+      "word_count": 138,
+      "sentence_count": 12,
+      "flesch_kincaid_grade": 8.22,
+      "flesch_reading_ease": 56.61,
+      "gunning_fog": 9.82,
+      "smog": 10.32,
+      "text_preview": "CLINICAL NOTE:\n\nSubjective:\nPatient reports experiencing fever and vomitting for the past day. They also mention feeling\u2026"
+    },
+    {
+      "consultation_id": 5,
+      "status": "RELEASED",
+      "word_count": 91,
+      "sentence_count": 6,
+      "flesch_kincaid_grade": 9.26,
+      "flesch_reading_ease": 55.71,
+      "gunning_fog": 11.78,
+      "smog": 11.86,
+      "text_preview": "**\n\nPATIENT SUMMARY\n\nYou've been feeling dizzy and vomiting. To help you feel better, your doctor recommends taking two \u2026"
+    },
+    {
+      "consultation_id": 6,
+      "status": "RELEASED",
+      "word_count": 27,
+      "sentence_count": 1,
+      "flesch_kincaid_grade": 8.93,
+      "flesch_reading_ease": 79.16,
+      "gunning_fog": 12.28,
+      "smog": 8.84,
+      "text_preview": "take panadol and flagyl, both twice a day and 1 tablet each for 5 days, if you need any other assistance feel free to re\u2026"
+    },
+    {
+      "consultation_id": 7,
+      "status": "RELEASED",
+      "word_count": 142,
+      "sentence_count": 11,
+      "flesch_kincaid_grade": 9.22,
+      "flesch_reading_ease": 51.94,
+      "gunning_fog": 12.21,
+      "smog": 11.91,
+      "text_preview": "**CLINICAL NOTE**\n\nSubjective:\nPatient reports experiencing weakness, fever, and palpitations. They mention having under\u2026"
+    },
+    {
+      "consultation_id": 8,
+      "status": "RELEASED",
+      "word_count": 132,
+      "sentence_count": 11,
+      "flesch_kincaid_grade": 8.4,
+      "flesch_reading_ease": 56.22,
+      "gunning_fog": 11.16,
+      "smog": 11.21,
+      "text_preview": "**CLINICAL NOTE**\n\nSubjective: Patient reports experiencing pain in the left arm (batt) and dizziness (chakra).\n\nObjecti\u2026"
+    },
+    {
+      "consultation_id": 9,
+      "status": "RELEASED",
+      "word_count": 86,
+      "sentence_count": 6,
+      "flesch_kincaid_grade": 6.74,
+      "flesch_reading_ease": 72.27,
+      "gunning_fog": 8.99,
+      "smog": 10.13,
+      "text_preview": "**PATIENT SUMMARY**\n\nYou've had a fever and sore throat for the past few days. The doctor thinks it's probably just a vi\u2026"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+case_id,language,language_name,category,evidence_audio,source_text,correct_language_yes_no,intelligible_yes_no,medication_correct_yes_no_na,dose_correct_yes_no_na,frequency_or_prn_correct_yes_no_na,negation_correct_yes_no_na,followup_correct_yes_no_na,naturalness_1_to_5,reviewer_code,comment
+TTS_AR_01,ar,Arabic,medication_dose_prn,/home/ubuntu/mediexplain/backend/evaluation/tts/audio/TTS_AR_01.mp3,خذ باراسيتامول 500 ملغ حسب الحاجة للحمى.,,,,,,,,,,
+TTS_AR_02,ar,Arabic,negation_followup,/home/ubuntu/mediexplain/backend/evaluation/tts/audio/TTS_AR_02.mp3,لا تأخذ جرعة إضافية. راجع الطبيب بعد 3 أيام.,,,,,,,,,,
+TTS_EN_01,en,English,medication_dose_prn,/home/ubuntu/mediexplain/backend/evaluation/tts/audio/TTS_EN_01.mp3,Take paracetamol 500 mg as needed for fever.,,,,,,,,,,
+TTS_EN_02,en,English,negation_followup,/home/ubuntu/mediexplain/backend/evaluation/tts/audio/TTS_EN_02.mp3,Do not take an extra dose. Follow up in 3 days.,,,,,,,,,,
+TTS_PA_01,pa_shah,Punjabi Shahmukhi,medication_dose_prn,/home/ubuntu/mediexplain/backend/evaluation/tts/audio/TTS_PA_01.mp3,بخار لئی لوڑ پے تے پیراسیٹامول 500 ملی گرام لو۔,,,,,,,,,,
+TTS_PA_02,pa_shah,Punjabi Shahmukhi,negation_followup,/home/ubuntu/mediexplain/backend/evaluation/tts/audio/TTS_PA_02.mp3,وادھو خوراک نہ لو۔ 3 دناں وچ دوبارہ ڈاکٹر نوں وکھاؤ۔,,,,,,,,,,
+TTS_PS_01,ps,Pashto,medication_dose_prn,/home/ubuntu/mediexplain/backend/evaluation/tts/audio/TTS_PS_01.mp3,د تبې لپاره د اړتیا په صورت کې پاراسټامول 500 mg واخلئ.,,,,,,,,,,
+TTS_PS_02,ps,Pashto,negation_followup,/home/ubuntu/mediexplain/backend/evaluation/tts/audio/TTS_PS_02.mp3,اضافي خوراک مه اخلئ. په 3 ورځو کې بیا له ډاکټر سره اړیکه ونیسئ.,,,,,,,,,,
+TTS_SD_01,sd,Sindhi,medication_dose_prn,/home/ubuntu/mediexplain/backend/evaluation/tts/audio/TTS_SD_01.wav,بخار لاءِ ضرورت مطابق پيراسيٽامول 500 mg وٺو.,,,,,,,,,,
+TTS_SD_02,sd,Sindhi,negation_followup,/home/ubuntu/mediexplain/backend/evaluation/tts/audio/TTS_SD_02.wav,اضافي خوراک نه وٺو. 3 ڏينهن ۾ ٻيهر ڊاڪٽر سان رابطو ڪريو.,,,,,,,,,,
+TTS_UR_01,ur,Urdu,medication_dose_prn,/home/ubuntu/mediexplain/backend/evaluation/tts/audio/TTS_UR_01.mp3,بخار کے لیے ضرورت کے مطابق پیراسیٹامول 500 ملی گرام لیں۔,,,,,,,,,,
+TTS_UR_02,ur,Urdu,negation_followup,/home/ubuntu/mediexplain/backend/evaluation/tts/audio/TTS_UR_02.mp3,اضافی خوراک نہ لیں۔ 3 دن میں دوبارہ ڈاکٹر سے رابطہ کریں۔,,,,,,,,,,

@@ -1,0 +1,486 @@
+[
+  {
+    "case_id": "TX01_ur",
+    "target_language": "ur",
+    "numeric_preserved_normalized": true,
+    "number_checks": {
+      "500": true,
+      "5": true
+    },
+    "medication_roundtrip_available": true,
+    "medication_roundtrip_preserved": true,
+    "medication_checks": {
+      "amoxicillin": true
+    },
+    "script_valid": true,
+    "semantic_status": "pass",
+    "critical_bundle_pass": true
+  },
+  {
+    "case_id": "TX01_pa_shah",
+    "target_language": "pa_shah",
+    "numeric_preserved_normalized": true,
+    "number_checks": {
+      "500": true,
+      "5": true
+    },
+    "medication_roundtrip_available": false,
+    "medication_roundtrip_preserved": null,
+    "medication_checks": {},
+    "script_valid": true,
+    "semantic_status": "unavailable",
+    "critical_bundle_pass": null
+  },
+  {
+    "case_id": "TX01_ar",
+    "target_language": "ar",
+    "numeric_preserved_normalized": true,
+    "number_checks": {
+      "500": true,
+      "5": true
+    },
+    "medication_roundtrip_available": true,
+    "medication_roundtrip_preserved": true,
+    "medication_checks": {
+      "amoxicillin": true
+    },
+    "script_valid": true,
+    "semantic_status": "pass",
+    "critical_bundle_pass": true
+  },
+  {
+    "case_id": "TX01_ps",
+    "target_language": "ps",
+    "numeric_preserved_normalized": true,
+    "number_checks": {
+      "500": true,
+      "5": true
+    },
+    "medication_roundtrip_available": true,
+    "medication_roundtrip_preserved": true,
+    "medication_checks": {
+      "amoxicillin": true
+    },
+    "script_valid": true,
+    "semantic_status": "pass",
+    "critical_bundle_pass": true
+  },
+  {
+    "case_id": "TX01_sd",
+    "target_language": "sd",
+    "numeric_preserved_normalized": true,
+    "number_checks": {
+      "500": true,
+      "5": true
+    },
+    "medication_roundtrip_available": true,
+    "medication_roundtrip_preserved": true,
+    "medication_checks": {
+      "amoxicillin": true
+    },
+    "script_valid": true,
+    "semantic_status": "pass",
+    "critical_bundle_pass": true
+  },
+  {
+    "case_id": "TX02_ur",
+    "target_language": "ur",
+    "numeric_preserved_normalized": true,
+    "number_checks": {
+      "5": true,
+      "7": true
+    },
+    "medication_roundtrip_available": true,
+    "medication_roundtrip_preserved": true,
+    "medication_checks": {
+      "amlodipine": true
+    },
+    "script_valid": true,
+    "semantic_status": "pass",
+    "critical_bundle_pass": true
+  },
+  {
+    "case_id": "TX02_pa_shah",
+    "target_language": "pa_shah",
+    "numeric_preserved_normalized": true,
+    "number_checks": {
+      "5": true,
+      "7": true
+    },
+    "medication_roundtrip_available": false,
+    "medication_roundtrip_preserved": null,
+    "medication_checks": {},
+    "script_valid": true,
+    "semantic_status": "unavailable",
+    "critical_bundle_pass": null
+  },
+  {
+    "case_id": "TX02_ar",
+    "target_language": "ar",
+    "numeric_preserved_normalized": true,
+    "number_checks": {
+      "5": true,
+      "7": true
+    },
+    "medication_roundtrip_available": true,
+    "medication_roundtrip_preserved": true,
+    "medication_checks": {
+      "amlodipine": true
+    },
+    "script_valid": true,
+    "semantic_status": "pass",
+    "critical_bundle_pass": true
+  },
+  {
+    "case_id": "TX02_ps",
+    "target_language": "ps",
+    "numeric_preserved_normalized": true,
+    "number_checks": {
+      "5": true,
+      "7": true
+    },
+    "medication_roundtrip_available": true,
+    "medication_roundtrip_preserved": true,
+    "medication_checks": {
+      "amlodipine": true
+    },
+    "script_valid": true,
+    "semantic_status": "pass",
+    "critical_bundle_pass": true
+  },
+  {
+    "case_id": "TX02_sd",
+    "target_language": "sd",
+    "numeric_preserved_normalized": true,
+    "number_checks": {
+      "5": true,
+      "7": true
+    },
+    "medication_roundtrip_available": true,
+    "medication_roundtrip_preserved": true,
+    "medication_checks": {
+      "amlodipine": true
+    },
+    "script_valid": true,
+    "semantic_status": "pass",
+    "critical_bundle_pass": true
+  },
+  {
+    "case_id": "TX03_ur",
+    "target_language": "ur",
+    "numeric_preserved_normalized": true,
+    "number_checks": {
+      "20": true,
+      "14": true
+    },
+    "medication_roundtrip_available": true,
+    "medication_roundtrip_preserved": true,
+    "medication_checks": {
+      "omeprazole": true
+    },
+    "script_valid": true,
+    "semantic_status": "pass",
+    "critical_bundle_pass": true
+  },
+  {
+    "case_id": "TX03_pa_shah",
+    "target_language": "pa_shah",
+    "numeric_preserved_normalized": true,
+    "number_checks": {
+      "20": true,
+      "14": true
+    },
+    "medication_roundtrip_available": false,
+    "medication_roundtrip_preserved": null,
+    "medication_checks": {},
+    "script_valid": true,
+    "semantic_status": "unavailable",
+    "critical_bundle_pass": null
+  },
+  {
+    "case_id": "TX03_ar",
+    "target_language": "ar",
+    "numeric_preserved_normalized": true,
+    "number_checks": {
+      "20": true,
+      "14": true
+    },
+    "medication_roundtrip_available": true,
+    "medication_roundtrip_preserved": true,
+    "medication_checks": {
+      "omeprazole": true
+    },
+    "script_valid": true,
+    "semantic_status": "pass",
+    "critical_bundle_pass": true
+  },
+  {
+    "case_id": "TX03_ps",
+    "target_language": "ps",
+    "numeric_preserved_normalized": true,
+    "number_checks": {
+      "20": true,
+      "14": true
+    },
+    "medication_roundtrip_available": true,
+    "medication_roundtrip_preserved": true,
+    "medication_checks": {
+      "omeprazole": true
+    },
+    "script_valid": true,
+    "semantic_status": "pass",
+    "critical_bundle_pass": true
+  },
+  {
+    "case_id": "TX03_sd",
+    "target_language": "sd",
+    "numeric_preserved_normalized": true,
+    "number_checks": {
+      "20": true,
+      "14": true
+    },
+    "medication_roundtrip_available": true,
+    "medication_roundtrip_preserved": true,
+    "medication_checks": {
+      "omeprazole": true
+    },
+    "script_valid": true,
+    "semantic_status": "pass",
+    "critical_bundle_pass": true
+  },
+  {
+    "case_id": "TX04_ur",
+    "target_language": "ur",
+    "numeric_preserved_normalized": true,
+    "number_checks": {},
+    "medication_roundtrip_available": false,
+    "medication_roundtrip_preserved": null,
+    "medication_checks": {},
+    "script_valid": true,
+    "semantic_status": "pass",
+    "critical_bundle_pass": null
+  },
+  {
+    "case_id": "TX04_pa_shah",
+    "target_language": "pa_shah",
+    "numeric_preserved_normalized": true,
+    "number_checks": {},
+    "medication_roundtrip_available": false,
+    "medication_roundtrip_preserved": null,
+    "medication_checks": {},
+    "script_valid": true,
+    "semantic_status": "unavailable",
+    "critical_bundle_pass": null
+  },
+  {
+    "case_id": "TX04_ar",
+    "target_language": "ar",
+    "numeric_preserved_normalized": true,
+    "number_checks": {},
+    "medication_roundtrip_available": false,
+    "medication_roundtrip_preserved": null,
+    "medication_checks": {},
+    "script_valid": true,
+    "semantic_status": "pass",
+    "critical_bundle_pass": null
+  },
+  {
+    "case_id": "TX04_ps",
+    "target_language": "ps",
+    "numeric_preserved_normalized": true,
+    "number_checks": {},
+    "medication_roundtrip_available": false,
+    "medication_roundtrip_preserved": null,
+    "medication_checks": {},
+    "script_valid": true,
+    "semantic_status": "pass",
+    "critical_bundle_pass": null
+  },
+  {
+    "case_id": "TX04_sd",
+    "target_language": "sd",
+    "numeric_preserved_normalized": true,
+    "number_checks": {},
+    "medication_roundtrip_available": false,
+    "medication_roundtrip_preserved": null,
+    "medication_checks": {},
+    "script_valid": true,
+    "semantic_status": "pass",
+    "critical_bundle_pass": null
+  },
+  {
+    "case_id": "TX05_ur",
+    "target_language": "ur",
+    "numeric_preserved_normalized": true,
+    "number_checks": {
+      "500": true,
+      "3": true
+    },
+    "medication_roundtrip_available": true,
+    "medication_roundtrip_preserved": true,
+    "medication_checks": {
+      "paracetamol": true
+    },
+    "script_valid": true,
+    "semantic_status": "pass",
+    "critical_bundle_pass": true
+  },
+  {
+    "case_id": "TX05_pa_shah",
+    "target_language": "pa_shah",
+    "numeric_preserved_normalized": true,
+    "number_checks": {
+      "500": true,
+      "3": true
+    },
+    "medication_roundtrip_available": false,
+    "medication_roundtrip_preserved": null,
+    "medication_checks": {},
+    "script_valid": true,
+    "semantic_status": "unavailable",
+    "critical_bundle_pass": null
+  },
+  {
+    "case_id": "TX05_ar",
+    "target_language": "ar",
+    "numeric_preserved_normalized": true,
+    "number_checks": {
+      "500": true,
+      "3": true
+    },
+    "medication_roundtrip_available": true,
+    "medication_roundtrip_preserved": true,
+    "medication_checks": {
+      "paracetamol": true
+    },
+    "script_valid": true,
+    "semantic_status": "pass",
+    "critical_bundle_pass": true
+  },
+  {
+    "case_id": "TX05_ps",
+    "target_language": "ps",
+    "numeric_preserved_normalized": true,
+    "number_checks": {
+      "500": true,
+      "3": true
+    },
+    "medication_roundtrip_available": true,
+    "medication_roundtrip_preserved": true,
+    "medication_checks": {
+      "paracetamol": true
+    },
+    "script_valid": true,
+    "semantic_status": "pass",
+    "critical_bundle_pass": true
+  },
+  {
+    "case_id": "TX05_sd",
+    "target_language": "sd",
+    "numeric_preserved_normalized": true,
+    "number_checks": {
+      "500": true,
+      "3": true
+    },
+    "medication_roundtrip_available": true,
+    "medication_roundtrip_preserved": true,
+    "medication_checks": {
+      "paracetamol": true
+    },
+    "script_valid": true,
+    "semantic_status": "review",
+    "critical_bundle_pass": false
+  },
+  {
+    "case_id": "TX06_ur",
+    "target_language": "ur",
+    "numeric_preserved_normalized": true,
+    "number_checks": {
+      "2": true,
+      "40": true,
+      "5": true
+    },
+    "medication_roundtrip_available": true,
+    "medication_roundtrip_preserved": true,
+    "medication_checks": {
+      "salbutamol": true,
+      "prednisolone": true
+    },
+    "script_valid": true,
+    "semantic_status": "pass",
+    "critical_bundle_pass": true
+  },
+  {
+    "case_id": "TX06_pa_shah",
+    "target_language": "pa_shah",
+    "numeric_preserved_normalized": true,
+    "number_checks": {
+      "2": true,
+      "40": true,
+      "5": true
+    },
+    "medication_roundtrip_available": false,
+    "medication_roundtrip_preserved": null,
+    "medication_checks": {},
+    "script_valid": true,
+    "semantic_status": "unavailable",
+    "critical_bundle_pass": null
+  },
+  {
+    "case_id": "TX06_ar",
+    "target_language": "ar",
+    "numeric_preserved_normalized": true,
+    "number_checks": {
+      "2": true,
+      "40": true,
+      "5": true
+    },
+    "medication_roundtrip_available": true,
+    "medication_roundtrip_preserved": true,
+    "medication_checks": {
+      "salbutamol": true,
+      "prednisolone": true
+    },
+    "script_valid": true,
+    "semantic_status": "pass",
+    "critical_bundle_pass": true
+  },
+  {
+    "case_id": "TX06_ps",
+    "target_language": "ps",
+    "numeric_preserved_normalized": true,
+    "number_checks": {
+      "2": true,
+      "40": true,
+      "5": true
+    },
+    "medication_roundtrip_available": true,
+    "medication_roundtrip_preserved": true,
+    "medication_checks": {
+      "salbutamol": true,
+      "prednisolone": true
+    },
+    "script_valid": true,
+    "semantic_status": "pass",
+    "critical_bundle_pass": true
+  },
+  {
+    "case_id": "TX06_sd",
+    "target_language": "sd",
+    "numeric_preserved_normalized": true,
+    "number_checks": {
+      "2": true,
+      "40": true,
+      "5": true
+    },
+    "medication_roundtrip_available": true,
+    "medication_roundtrip_preserved": true,
+    "medication_checks": {
+      "salbutamol": true,
+      "prednisolone": true
+    },
+    "script_valid": true,
+    "semantic_status": "pass",
+    "critical_bundle_pass": true
+  }
+]

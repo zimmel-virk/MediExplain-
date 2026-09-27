@@ -1,0 +1,12 @@
+test_id,description,method,path,expected_status,actual_status,pass,response_preview
+SEC01,Unauthenticated users/me denied,GET,/users/me,401,401,True,"{""detail"":""Not authenticated""}"
+SEC02,Doctor users/me allowed,GET,/users/me,200,200,True,"{""id"":2,""email"":""doctor@demo.com"",""full_name"":""Dr. Ihtsham"",""role"":""doctor"",""preferred_language"":""en"",""specialty"":""Internal Medicine"",""clinic"":""Sharif Medical City"",""is_verified"":true}"
+SEC03,Patient users/me allowed,GET,/users/me,200,200,True,"{""id"":6,""email"":""patient.en@demo.com"",""full_name"":""John Smith"",""role"":""patient"",""preferred_language"":""en"",""specialty"":null,""clinic"":null,""is_verified"":true}"
+SEC04,Admin users/me allowed,GET,/users/me,200,200,True,"{""id"":1,""email"":""admin@demo.com"",""full_name"":""MediExplain Admin"",""role"":""admin"",""preferred_language"":""en"",""specialty"":null,""clinic"":null,""is_verified"":true}"
+SEC05,Invalid token rejected,GET,/users/me,401,401,True,"{""detail"":""Invalid token: Not enough segments""}"
+SEC06,Wrong password rejected,POST,/auth/login,401,401,True,
+SEC07,Unauthenticated personal support tickets denied,GET,/support/mine,401,401,True,"{""detail"":""Not authenticated""}"
+SEC08,Patient can read own support tickets,GET,/support/mine,200,200,True,[]
+SEC09,Patient denied admin ticket listing,GET,/support/all,403,403,True,"{""detail"":""Requires one of roles: ['admin']""}"
+SEC10,Doctor denied admin ticket listing,GET,/support/all,403,403,True,"{""detail"":""Requires one of roles: ['admin']""}"
+SEC11,Admin allowed full ticket listing,GET,/support/all,200,200,True,[]

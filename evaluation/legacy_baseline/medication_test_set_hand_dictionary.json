@@ -1,0 +1,62 @@
+{
+  "_comment": "Test set for evaluating the medication fuzzy matcher. Each entry has a noisy `query` and the `expected` generic name from the reference DB.",
+  "cases": [
+    {"category": "common_misspelling", "query": "paracitamol",  "expected": "paracetamol"},
+    {"category": "common_misspelling", "query": "paracetomol",  "expected": "paracetamol"},
+    {"category": "common_misspelling", "query": "paracetamole", "expected": "paracetamol"},
+    {"category": "common_misspelling", "query": "azithromicin", "expected": "azithromycin"},
+    {"category": "common_misspelling", "query": "metformine",   "expected": "metformin"},
+    {"category": "common_misspelling", "query": "ibubrofen",    "expected": "ibuprofen"},
+    {"category": "common_misspelling", "query": "asprin",       "expected": "aspirin"},
+    {"category": "common_misspelling", "query": "omiprazole",   "expected": "omeprazole"},
+    {"category": "common_misspelling", "query": "atorvastatine","expected": "atorvastatin"},
+    {"category": "common_misspelling", "query": "siprofloxacin","expected": "ciprofloxacin"},
+    {"category": "common_misspelling", "query": "amlodipin",    "expected": "amlodipine"},
+    {"category": "common_misspelling", "query": "diclofenak",   "expected": "diclofenac"},
+
+    {"category": "phonetic", "query": "panadole",      "expected": "paracetamol"},
+    {"category": "phonetic", "query": "panadol",       "expected": "paracetamol"},
+    {"category": "phonetic", "query": "brufeen",       "expected": "ibuprofen"},
+    {"category": "phonetic", "query": "augmentine",    "expected": "co-amoxiclav"},
+    {"category": "phonetic", "query": "augmentin",     "expected": "co-amoxiclav"},
+    {"category": "phonetic", "query": "alprozolm",     "expected": "alprazolam"},
+    {"category": "phonetic", "query": "flagyl",        "expected": "metronidazole"},
+    {"category": "phonetic", "query": "frusemide",     "expected": "furosemide"},
+    {"category": "phonetic", "query": "voltaren",      "expected": "diclofenac"},
+
+    {"category": "brand_name", "query": "Norvasc",     "expected": "amlodipine"},
+    {"category": "brand_name", "query": "Lipitor",     "expected": "atorvastatin"},
+    {"category": "brand_name", "query": "Glucophage",  "expected": "metformin"},
+    {"category": "brand_name", "query": "Zoloft",      "expected": "sertraline"},
+    {"category": "brand_name", "query": "Ventolin",    "expected": "salbutamol"},
+    {"category": "brand_name", "query": "Plavix",      "expected": "clopidogrel"},
+    {"category": "brand_name", "query": "Zantac",      "expected": "ranitidine"},
+    {"category": "brand_name", "query": "Lasix",       "expected": "furosemide"},
+    {"category": "brand_name", "query": "Imodium",     "expected": "loperamide"},
+    {"category": "brand_name", "query": "Risek",       "expected": "omeprazole"},
+
+    {"category": "urdu_script", "query": "پیناڈول",        "expected": "paracetamol"},
+    {"category": "urdu_script", "query": "بروفین",         "expected": "ibuprofen"},
+    {"category": "urdu_script", "query": "پیراسیٹامول",    "expected": "paracetamol"},
+    {"category": "urdu_script", "query": "ایزتھرومائسن", "expected": "azithromycin"},
+
+    {"category": "short_form", "query": "cipro",        "expected": "ciprofloxacin"},
+    {"category": "short_form", "query": "metro",        "expected": "metronidazole"},
+    {"category": "short_form", "query": "amox",         "expected": "amoxicillin"},
+    {"category": "short_form", "query": "doxy",         "expected": "doxycycline"},
+
+    {"category": "exact_generic", "query": "paracetamol",  "expected": "paracetamol"},
+    {"category": "exact_generic", "query": "amoxicillin",  "expected": "amoxicillin"},
+    {"category": "exact_generic", "query": "insulin",      "expected": "insulin"},
+    {"category": "exact_generic", "query": "warfarin",     "expected": "warfarin"},
+
+    {"_comment_hard_negatives": "These should return NO high-confidence match. The evaluator measures false-positive rate.", "category": "hard_negative", "query": "headache",     "expected": null},
+    {"category": "hard_negative", "query": "painkiller",   "expected": null},
+    {"category": "hard_negative", "query": "tablet",       "expected": null},
+    {"category": "hard_negative", "query": "antibiotic",   "expected": null},
+    {"category": "hard_negative", "query": "fever",        "expected": null},
+    {"category": "hard_negative", "query": "syrup",        "expected": null},
+    {"category": "hard_negative", "query": "vitamin",      "expected": null},
+    {"category": "hard_negative", "query": "asdfghjkl",    "expected": null}
+  ]
+}

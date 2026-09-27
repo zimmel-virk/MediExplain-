@@ -1,0 +1,12 @@
+{
+  "case_id": "E3_08",
+  "category": "tests_and_diagnostic_uncertainty",
+  "clinical_note": "Here is the concise doctor-facing SOAP draft:\n\n**Subjective**\nThe patient reports tiredness and looking pale.\n\n**Objective**\nNot mentioned in transcript.\n\n**Assessment**\nThe doctor suspects iron deficiency anaemia, but it has not been confirmed.\n\n**Plan**\nFollow up after the blood test results are available.",
+  "patient_summary": "The patient is feeling tired and looks pale. The doctor thinks it might be because of iron deficiency anaemia, but it's not sure yet. \n\nThe doctor wants to do some tests: a full blood count and a ferritin test. \n\nThe patient doesn't need to take any medicine right now. \n\nThe doctor wants to see the patient again after the test results come back. \n\nIf the patient feels very short of breath or has chest pain, they should go to the hospital right away.",
+  "clinical_seconds": 49.34,
+  "patient_seconds": 73.476,
+  "total_generation_seconds": 122.816,
+  "clinical_empty": false,
+  "patient_empty": false,
+  "error": ""
+}

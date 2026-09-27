@@ -1,0 +1,12 @@
+{
+  "evaluation": "MediExplain+ Evaluation 09 OCR",
+  "cases": 6,
+  "available_percent": 100.0,
+  "mean_case_wer_percent": 0.0,
+  "mean_case_cer_percent": 0.0,
+  "medication_name_preservation_percent": 100.0,
+  "numeric_preservation_percent": 100.0,
+  "mean_confidence": 0.954,
+  "mean_processing_seconds": 0.64,
+  "limitation": "Printed synthetic prescriptions only; handwritten performance is not established."
+}

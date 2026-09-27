@@ -1,0 +1,43 @@
+[1/6] OCR01
+Engine: tesseract
+Confidence: 0.957
+Available: True
+Text: 'Metformin 500 mg\nTake one tablet twice daily\n\nFor 30 days'
+Seconds: 0.7042
+
+[2/6] OCR02
+Engine: tesseract
+Confidence: 0.956
+Available: True
+Text: 'Amoxicillin 500 mg\nTake one capsule three times daily\n\nFor 5 days'
+Seconds: 0.6683
+
+[3/6] OCR03
+Engine: tesseract
+Confidence: 0.955
+Available: True
+Text: 'Omeprazole 20 mg\nTake once daily before breakfast\n\nFor 14 days'
+Seconds: 0.5894
+
+[4/6] OCR04
+Engine: tesseract
+Confidence: 0.952
+Available: True
+Text: 'Amlodipine 5 mg\nTake once daily\n\nReview in 7 days'
+Seconds: 0.5374
+
+[5/6] OCR05
+Engine: tesseract
+Confidence: 0.957
+Available: True
+Text: 'Paracetamol 500 mg\nTake as needed for fever\n\nMaximum 4 doses daily'
+Seconds: 0.6216
+
+[6/6] OCR06
+Engine: tesseract
+Confidence: 0.948
+Available: True
+Text: 'Salbutamol inhaler 2 puffs as needed\nPrednisolone 40 mg once daily\n\nFor 5 days'
+Seconds: 0.7192
+
+OCR INFERENCE COMPLETE

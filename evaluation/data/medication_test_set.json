@@ -1,0 +1,98 @@
+{
+  "_note": "Independent synthetic robustness set. These misspellings are evaluation inputs only and are NOT inserted into the medication index.",
+  "cases": [
+    {
+      "query": "metfornin 500 mg",
+      "expected_contains": "metformin",
+      "category": "misspelling"
+    },
+    {
+      "query": "paracitamol 500mg",
+      "category": "misspelling",
+      "expected_any": [
+        "paracetamol",
+        "acetaminophen"
+      ]
+    },
+    {
+      "query": "amoxycillin 500 mg capsule",
+      "expected_contains": "amoxicillin",
+      "category": "misspelling"
+    },
+    {
+      "query": "azithromicin 500mg",
+      "expected_contains": "azithromycin",
+      "category": "misspelling"
+    },
+    {
+      "query": "omeprazol 20 mg",
+      "expected_contains": "omeprazole",
+      "category": "misspelling"
+    },
+    {
+      "query": "atorvastin 20 mg",
+      "expected_contains": "atorvastatin",
+      "category": "misspelling"
+    },
+    {
+      "query": "amlodipin 5 mg",
+      "expected_contains": "amlodipine",
+      "category": "misspelling"
+    },
+    {
+      "query": "ciprofloxasin 500mg",
+      "expected_contains": "ciprofloxacin",
+      "category": "misspelling"
+    },
+    {
+      "query": "doxycyclin 100 mg",
+      "expected_contains": "doxycycline",
+      "category": "misspelling"
+    },
+    {
+      "query": "clopidogel 75mg",
+      "expected_contains": "clopidogrel",
+      "category": "misspelling"
+    },
+    {
+      "query": "tablet",
+      "expected_contains": null,
+      "category": "hard_negative"
+    },
+    {
+      "query": "after food",
+      "expected_contains": null,
+      "category": "hard_negative"
+    },
+    {
+      "query": "twice daily",
+      "expected_contains": null,
+      "category": "hard_negative"
+    },
+    {
+      "query": "breakfast",
+      "expected_contains": null,
+      "category": "hard_negative"
+    },
+    {
+      "query": "fever",
+      "expected_contains": null,
+      "category": "hard_negative"
+    },
+    {
+      "query": "water",
+      "expected_contains": null,
+      "category": "hard_negative"
+    },
+    {
+      "query": "doctor",
+      "expected_contains": null,
+      "category": "hard_negative"
+    },
+    {
+      "query": "500 mg",
+      "expected_contains": null,
+      "category": "hard_negative"
+    }
+  ]
+}

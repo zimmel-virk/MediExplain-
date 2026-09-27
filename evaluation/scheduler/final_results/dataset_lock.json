@@ -1,0 +1,10 @@
+{
+  "status": "FROZEN_BEFORE_INFERENCE",
+  "files": {
+    "evaluation/scheduler/gold_cases.json": "9e49f44856e0ac71776e9abeed8b28e2274e930f92d276bd9e670473484ccc41",
+    "evaluation/scheduler/evaluation_protocol.json": "246460f4305a7b4039f8b08299426d11c3d7ea86ee1b1d6609fdb2aa0b18e386",
+    "evaluation/scheduler/run_scheduler_eval.py": "5fef60a0f1677cdf430678651e289f9e267efddc1870231b5c3d5e67b3b2a124",
+    "evaluation/scheduler/score_scheduler_eval.py": "2a7309124a53aaa2a5e85733f993913382bf60a6c8e4dbace298db48ffe3c77e",
+    "app/services/scheduler.py": "6c40f195b6919e7688d2deefe16ea789d321cd92c219573b54b306818f97eea3"
+  }
+}

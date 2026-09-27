@@ -1,0 +1,9 @@
+{
+  "consultation_id": 40,
+  "patient_portal_summary_visible": true,
+  "patient_internal_clinical_data_hidden": true,
+  "summary_audio_played": true,
+  "alarm_test_worked": true,
+  "voice_test_worked": true,
+  "notes": "Patient portal, Urdu summary audio, alarm sound and spoken reminder were manually validated in the running application."
+}

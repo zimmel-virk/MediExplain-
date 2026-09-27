@@ -1,0 +1,8 @@
+{
+  "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "platform": "Linux-6.8.0-1063-aws-x86_64-with-glibc2.35",
+  "audio_cache_dir": "/home/ubuntu/mediexplain/backend/audio_cache",
+  "tts_source_sha256": "301c936c843058dca873e4e0857d10f22d2001c70a10704af91448fab1d0bdff",
+  "neural_voice_source_sha256": "5aa660b1d039cc1399ff7a97ee7682e5852d23438697002baa6242e541554d05",
+  "ffprobe_available": true
+}

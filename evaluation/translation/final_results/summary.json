@@ -1,0 +1,98 @@
+{
+  "evaluation": "MediExplain+ Multilingual Translation Safety",
+  "dataset_sha256": "f9fdaca1504e8a46b55cc65d64d3610ce9b68653c0319e52bca1119135af59e9",
+  "total_cases": 30,
+  "successful_cases": 30,
+  "completion_percent": 100.0,
+  "numeric_preservation_percent": 83.333,
+  "medication_exact_preservation_percent": 30.0,
+  "script_valid_percent": 100.0,
+  "semantic_verification_available_percent": 80.0,
+  "semantic_pass_percent_when_available": 95.833,
+  "metadata_quality_verified_percent": 60.0,
+  "production_integrity_pass_percent": 26.667,
+  "production_warning_expected_percent": 73.333,
+  "blocked_script_count": 0,
+  "per_language": {
+    "ar": {
+      "n": 6,
+      "completion_percent": 100.0,
+      "numeric_preservation_percent": 83.333,
+      "medication_exact_preservation_percent": 16.667,
+      "script_valid_percent": 100.0,
+      "semantic_verification_available_percent": 100.0,
+      "semantic_pass_percent_when_available": 100.0,
+      "metadata_quality_verified_percent": 83.333,
+      "production_integrity_pass_percent": 16.667,
+      "production_review_warning_percent": 83.333,
+      "blocked_script_count": 0,
+      "mean_processing_seconds": 20.887
+    },
+    "pa_shah": {
+      "n": 6,
+      "completion_percent": 100.0,
+      "numeric_preservation_percent": 100.0,
+      "medication_exact_preservation_percent": 16.667,
+      "script_valid_percent": 100.0,
+      "semantic_verification_available_percent": 0.0,
+      "semantic_pass_percent_when_available": null,
+      "metadata_quality_verified_percent": 0.0,
+      "production_integrity_pass_percent": 0.0,
+      "production_review_warning_percent": 100.0,
+      "blocked_script_count": 0,
+      "mean_processing_seconds": 12.489
+    },
+    "ps": {
+      "n": 6,
+      "completion_percent": 100.0,
+      "numeric_preservation_percent": 66.667,
+      "medication_exact_preservation_percent": 50.0,
+      "script_valid_percent": 100.0,
+      "semantic_verification_available_percent": 100.0,
+      "semantic_pass_percent_when_available": 100.0,
+      "metadata_quality_verified_percent": 66.667,
+      "production_integrity_pass_percent": 50.0,
+      "production_review_warning_percent": 50.0,
+      "blocked_script_count": 0,
+      "mean_processing_seconds": 22.045
+    },
+    "sd": {
+      "n": 6,
+      "completion_percent": 100.0,
+      "numeric_preservation_percent": 83.333,
+      "medication_exact_preservation_percent": 50.0,
+      "script_valid_percent": 100.0,
+      "semantic_verification_available_percent": 100.0,
+      "semantic_pass_percent_when_available": 83.333,
+      "metadata_quality_verified_percent": 66.667,
+      "production_integrity_pass_percent": 50.0,
+      "production_review_warning_percent": 50.0,
+      "blocked_script_count": 0,
+      "mean_processing_seconds": 20.696
+    },
+    "ur": {
+      "n": 6,
+      "completion_percent": 100.0,
+      "numeric_preservation_percent": 83.333,
+      "medication_exact_preservation_percent": 16.667,
+      "script_valid_percent": 100.0,
+      "semantic_verification_available_percent": 100.0,
+      "semantic_pass_percent_when_available": 100.0,
+      "metadata_quality_verified_percent": 83.333,
+      "production_integrity_pass_percent": 16.667,
+      "production_review_warning_percent": 83.333,
+      "blocked_script_count": 0,
+      "mean_processing_seconds": 22.916
+    }
+  },
+  "latency": {
+    "mean_seconds": 19.807,
+    "median_seconds": 19.31,
+    "max_seconds": 36.714
+  },
+  "interpretation_notes": [
+    "medication_exact_preservation is a conservative deterministic check and may flag correct Arabic-script transliterations for review.",
+    "pa_shah does not currently receive automatic NLLB back-translation semantic verification, so semantic unavailable is not by itself proof of translation failure.",
+    "production_integrity_pass mirrors the deployed orchestrator safety gate."
+  ]
+}

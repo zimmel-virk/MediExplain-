@@ -1,0 +1,13 @@
+{
+  "evaluation": "MediExplain+ Evaluation 07B Script Safety Post-Fix",
+  "design": "controlled_before_after_same_frozen_dataset",
+  "baseline_source_sha256": "1b1cda25d6fc2f0a54ec2d1350f8290ec27277e5abe6a0b5cc3a26a3ae686c71",
+  "patched_source_sha256": "1dcc8b18b33051784c3d6edf097b30c04ddc4d7c4f7dcd503fe517db859e59c6",
+  "gold_cases_sha256": "d2784748bf918b5a09c394b2479fa66b5cde04591c9fdf18a8f159747bf7e5cb",
+  "protocol_sha256": "9d0d7a024bc31fdedf34b9b4097d7c3f3909c3e43908bbcf24bc2369e086b138",
+  "runner_sha256": "4ff812b4d3cbc38e7ab7d105f8353d6112444df40d236cd0d492f9cdec4f2db8",
+  "scorer_sha256": "95c1cc65f03b1643588fc8ab2363c2ac3a183742e03ff7dae987337c63299b13",
+  "case_scores_sha256": "2e84a9a178715cdf225598bfa064d6416127403ab9ef975d6a53a90ff27f95d4",
+  "summary_sha256": "aa1dd797c6c52fd6600b4d03a75b76502250d288888d98f4e98a8d9e0e9409ed",
+  "error_analysis_sha256": "9be68a1c1b83a6960184b86afc70fa3bb4af71c7e9d811db886bd85513800c4a"
+}

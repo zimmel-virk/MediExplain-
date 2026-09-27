@@ -1,0 +1,33 @@
+{
+  "dataset_version": "1.0",
+  "sha256": "17c54270de7b078fee1562965c80ad21bcee649b2ac1c210160aca40c2fe59c4",
+  "total_cases": 19,
+  "case_ids": [
+    "MED01",
+    "MED02",
+    "MED03",
+    "MED04",
+    "MED05",
+    "MED06",
+    "MED07",
+    "MED08",
+    "MED09",
+    "MED10",
+    "MED11",
+    "MED12",
+    "MEDB1",
+    "MEDB2",
+    "MEDB3",
+    "MEDN01",
+    "MEDN02",
+    "MEDN03",
+    "MEDN04"
+  ],
+  "database_stats": {
+    "concepts": 81380,
+    "aliases": 119451,
+    "sources": [
+      "rxnorm"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+[
+  {
+    "case_id": "MEDN04",
+    "category": "strength_mismatch",
+    "query": "ibuprofen 999 mg",
+    "expected_negative": true,
+    "candidate_count": 10,
+    "top_score": 1.0,
+    "high_confidence": true,
+    "top1_correct": null,
+    "top5_correct": null,
+    "top10_correct": null,
+    "negative_safely_rejected": false,
+    "false_reassurance": true,
+    "warning_expected": true,
+    "processing_seconds": 0.061737,
+    "error": ""
+  }
+]

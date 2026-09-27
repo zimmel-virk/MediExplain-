@@ -1,0 +1,256 @@
+{
+  "evaluation": "MediExplain+ Speech Recognition Evaluation",
+  "dataset_version": "1.0",
+  "expected_cases": 36,
+  "successful_cases": 36,
+  "failed_cases": 0,
+  "primary_metric": "normalized_wer_micro_percent",
+  "normalization_policy": {
+    "unicode": "NFKC",
+    "case": "casefold",
+    "punctuation": "removed",
+    "combining_marks": "removed",
+    "arabic_script_variants": "normalized",
+    "arabic_indic_digits": "converted to ASCII",
+    "clinical_words": "not semantically replaced",
+    "medication_names": "not replaced",
+    "negation": "preserved"
+  },
+  "overall": {
+    "n": 36,
+    "normalized_wer_micro_percent": 43.533,
+    "normalized_wer_case_mean_percent": 54.978,
+    "normalized_wer_case_median_percent": 53.697,
+    "normalized_wer_sd_percent": 35.108,
+    "normalized_wer_mean_95ci_percent": [
+      43.776,
+      66.524
+    ],
+    "normalized_cer_micro_percent": 29.668,
+    "normalized_cer_case_mean_percent": 39.45,
+    "normalized_cer_mean_95ci_percent": [
+      28.965,
+      50.189
+    ],
+    "processing_mean_seconds": 109.727,
+    "processing_median_seconds": 35.525,
+    "processing_min_seconds": 14.614,
+    "processing_max_seconds": 591.325,
+    "rtf_mean": 5.7387,
+    "rtf_median": 1.2681,
+    "language_exact_match_percent": 69.444,
+    "expected_languages_detected_percent": 88.889,
+    "code_switch_classification_accuracy_percent": 69.444
+  },
+  "per_language_group": {
+    "ar": {
+      "n": 5,
+      "normalized_wer_micro_percent": 43.373,
+      "normalized_wer_case_mean_percent": 42.266,
+      "normalized_wer_case_median_percent": 48.387,
+      "normalized_wer_sd_percent": 12.971,
+      "normalized_wer_mean_95ci_percent": [
+        32.344,
+        52.188
+      ],
+      "normalized_cer_micro_percent": 26.092,
+      "normalized_cer_case_mean_percent": 24.625,
+      "normalized_cer_mean_95ci_percent": [
+        15.691,
+        34.993
+      ],
+      "processing_mean_seconds": 14.999,
+      "processing_median_seconds": 14.996,
+      "processing_min_seconds": 14.614,
+      "processing_max_seconds": 15.366,
+      "rtf_mean": 0.8099,
+      "rtf_median": 0.8113,
+      "language_exact_match_percent": 100.0,
+      "expected_languages_detected_percent": 100.0,
+      "code_switch_classification_accuracy_percent": 100.0
+    },
+    "code_switch_pa_en": {
+      "n": 2,
+      "normalized_wer_micro_percent": 83.333,
+      "normalized_wer_case_mean_percent": 84.524,
+      "normalized_wer_case_median_percent": 84.524,
+      "normalized_wer_sd_percent": 11.539,
+      "normalized_wer_mean_95ci_percent": [
+        76.364,
+        92.683
+      ],
+      "normalized_cer_micro_percent": 57.083,
+      "normalized_cer_case_mean_percent": 58.1,
+      "normalized_cer_mean_95ci_percent": [
+        49.064,
+        67.136
+      ],
+      "processing_mean_seconds": 323.979,
+      "processing_median_seconds": 323.979,
+      "processing_min_seconds": 319.218,
+      "processing_max_seconds": 328.74,
+      "rtf_mean": 19.8058,
+      "rtf_median": 19.8058,
+      "language_exact_match_percent": 50.0,
+      "expected_languages_detected_percent": 50.0,
+      "code_switch_classification_accuracy_percent": 50.0
+    },
+    "code_switch_ur_en": {
+      "n": 3,
+      "normalized_wer_micro_percent": 44.531,
+      "normalized_wer_case_mean_percent": 44.948,
+      "normalized_wer_case_median_percent": 41.304,
+      "normalized_wer_sd_percent": 6.657,
+      "normalized_wer_mean_95ci_percent": [
+        40.909,
+        52.632
+      ],
+      "normalized_cer_micro_percent": 43.827,
+      "normalized_cer_case_mean_percent": 43.799,
+      "normalized_cer_mean_95ci_percent": [
+        32.243,
+        52.336
+      ],
+      "processing_mean_seconds": 20.008,
+      "processing_median_seconds": 20.104,
+      "processing_min_seconds": 19.718,
+      "processing_max_seconds": 20.202,
+      "rtf_mean": 0.9803,
+      "rtf_median": 0.9462,
+      "language_exact_match_percent": 0.0,
+      "expected_languages_detected_percent": 0.0,
+      "code_switch_classification_accuracy_percent": 0.0
+    },
+    "en": {
+      "n": 6,
+      "normalized_wer_micro_percent": 9.198,
+      "normalized_wer_case_mean_percent": 8.628,
+      "normalized_wer_case_median_percent": 7.811,
+      "normalized_wer_sd_percent": 4.078,
+      "normalized_wer_mean_95ci_percent": [
+        5.768,
+        11.793
+      ],
+      "normalized_cer_micro_percent": 7.907,
+      "normalized_cer_case_mean_percent": 7.59,
+      "normalized_cer_mean_95ci_percent": [
+        5.623,
+        9.607
+      ],
+      "processing_mean_seconds": 50.643,
+      "processing_median_seconds": 49.654,
+      "processing_min_seconds": 37.685,
+      "processing_max_seconds": 64.837,
+      "rtf_mean": 1.2394,
+      "rtf_median": 1.1094,
+      "language_exact_match_percent": 100.0,
+      "expected_languages_detected_percent": 100.0,
+      "code_switch_classification_accuracy_percent": 100.0
+    },
+    "pa": {
+      "n": 5,
+      "normalized_wer_micro_percent": 65.438,
+      "normalized_wer_case_mean_percent": 65.763,
+      "normalized_wer_case_median_percent": 65.854,
+      "normalized_wer_sd_percent": 7.315,
+      "normalized_wer_mean_95ci_percent": [
+        60.023,
+        71.504
+      ],
+      "normalized_cer_micro_percent": 28.86,
+      "normalized_cer_case_mean_percent": 29.631,
+      "normalized_cer_mean_95ci_percent": [
+        22.69,
+        37.37
+      ],
+      "processing_mean_seconds": 331.539,
+      "processing_median_seconds": 324.03,
+      "processing_min_seconds": 112.97,
+      "processing_max_seconds": 591.325,
+      "rtf_mean": 19.9152,
+      "rtf_median": 18.1556,
+      "language_exact_match_percent": 60.0,
+      "expected_languages_detected_percent": 100.0,
+      "code_switch_classification_accuracy_percent": 60.0
+    },
+    "ps": {
+      "n": 5,
+      "normalized_wer_micro_percent": 95.161,
+      "normalized_wer_case_mean_percent": 95.318,
+      "normalized_wer_case_median_percent": 100.0,
+      "normalized_wer_sd_percent": 10.889,
+      "normalized_wer_mean_95ci_percent": [
+        86.379,
+        103.333
+      ],
+      "normalized_cer_micro_percent": 68.661,
+      "normalized_cer_case_mean_percent": 69.768,
+      "normalized_cer_mean_95ci_percent": [
+        42.515,
+        97.021
+      ],
+      "processing_mean_seconds": 22.623,
+      "processing_median_seconds": 21.57,
+      "processing_min_seconds": 16.566,
+      "processing_max_seconds": 33.365,
+      "rtf_mean": 0.8075,
+      "rtf_median": 0.8042,
+      "language_exact_match_percent": 40.0,
+      "expected_languages_detected_percent": 100.0,
+      "code_switch_classification_accuracy_percent": 40.0
+    },
+    "sd": {
+      "n": 5,
+      "normalized_wer_micro_percent": 101.333,
+      "normalized_wer_case_mean_percent": 101.132,
+      "normalized_wer_case_median_percent": 100.0,
+      "normalized_wer_sd_percent": 2.531,
+      "normalized_wer_mean_95ci_percent": [
+        100.0,
+        103.396
+      ],
+      "normalized_cer_micro_percent": 93.056,
+      "normalized_cer_case_mean_percent": 92.407,
+      "normalized_cer_mean_95ci_percent": [
+        86.554,
+        99.898
+      ],
+      "processing_mean_seconds": 195.985,
+      "processing_median_seconds": 236.055,
+      "processing_min_seconds": 40.863,
+      "processing_max_seconds": 248.615,
+      "rtf_mean": 8.3431,
+      "rtf_median": 9.8849,
+      "language_exact_match_percent": 60.0,
+      "expected_languages_detected_percent": 100.0,
+      "code_switch_classification_accuracy_percent": 60.0
+    },
+    "ur": {
+      "n": 5,
+      "normalized_wer_micro_percent": 20.087,
+      "normalized_wer_case_mean_percent": 20.233,
+      "normalized_wer_case_median_percent": 20.37,
+      "normalized_wer_sd_percent": 8.63,
+      "normalized_wer_mean_95ci_percent": [
+        13.729,
+        27.603
+      ],
+      "normalized_cer_micro_percent": 9.136,
+      "normalized_cer_case_mean_percent": 8.983,
+      "normalized_cer_mean_95ci_percent": [
+        4.715,
+        13.925
+      ],
+      "processing_mean_seconds": 22.522,
+      "processing_median_seconds": 22.261,
+      "processing_min_seconds": 16.412,
+      "processing_max_seconds": 31.191,
+      "rtf_mean": 1.4449,
+      "rtf_median": 1.2845,
+      "language_exact_match_percent": 100.0,
+      "expected_languages_detected_percent": 100.0,
+      "code_switch_classification_accuracy_percent": 100.0
+    }
+  },
+  "failed_case_ids": []
+}

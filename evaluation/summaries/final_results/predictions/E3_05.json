@@ -1,0 +1,12 @@
+{
+  "case_id": "E3_05",
+  "category": "frequency_duration_safety_trap",
+  "clinical_note": "**SOAP Draft:**\n\n**Subjective:**\nChief Complaint: Dental pain\nSymptoms: Dental pain\nRelevant History: Not mentioned in transcript\nDiagnosis Discussed: Not mentioned in transcript\nDiagnosis Status: Not mentioned in transcript\n\n**Objective:**\nMedications: Ibuprofen 400 mg, every 8 hours, after food, for 3 days, as needed for pain\n\n**Assessment:**\nThe doctor suspects dental pain.\nThe patient is to take ibuprofen 400 mg every 8 hours for 3 days after food as needed for pain.\n\n**Plan:**\nPlan: Follow up with the dentist if the pain continues.\nMedication: Ibuprofen 400 mg, every 8 hours, after food, for 3 days, as needed for pain.\n\nNote: The doctor confirmed the medication plan is not to be taken every 3 days.",
+  "patient_summary": "**You have dental pain.**\n\nThe doctor says to take ibuprofen for the pain.\n\n**Medicine:**\n- Medicine: ibuprofen\n- Strength: 400 mg\n- Frequency: every 8 hours\n- Duration: 3 days\n- Food instruction: after food\n- As needed: yes\n\n**Follow-up:**\nFollow up with the dentist if the pain continues.",
+  "clinical_seconds": 126.4,
+  "patient_seconds": 67.795,
+  "total_generation_seconds": 194.195,
+  "clinical_empty": false,
+  "patient_empty": false,
+  "error": ""
+}
