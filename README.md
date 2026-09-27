@@ -38,7 +38,7 @@ The original React/FastAPI workflow has been retained and upgraded rather than r
 - translation number/medicine/script checks and optional NLI back-translation check;
 - local-first MMS-TTS audio; cloud gTTS fallback is disabled by default;
 - true Punjabi audio path for Shahmukhi display via Punjabi/Gurmukhi TTS input;
-- doctor approval -> translation/audio -> safety review -> release boundary;
+- final translation/audio generation and safety review before doctor approval; unresolved warnings block approval and release;
 - deterministic medication schedules from doctor-confirmed instructions;
 - Taken / Snooze / Skip medication events and multilingual voice reminders;
 - patient PDF summaries;
@@ -148,7 +148,7 @@ patient.sd@demo.com   Sindhi patient
 admin@demo.com        Admin (created by the final seed script)
 ```
 
-The original database included in the project is migrated in place. Existing saved consultations and audio remain accessible because file references have been converted from machine-specific absolute paths to portable project-relative references.
+Local development databases, consultation recordings, generated patient files and runtime audio are intentionally excluded from the public repository. The setup and seed scripts create the required local database structure and demo data, while Alembic manages schema migrations.
 
 ## Final AI/model flow
 
@@ -181,7 +181,7 @@ Prescription image → OCR → editable OCR → medication reconciliation
   ↓
 Safety dashboard
   ↓
-Treating-doctor medication confirmation + summary approval
+Treating-doctor medication confirmation
   ↓
 NLLB translation
   ├─ number preservation
@@ -191,7 +191,9 @@ NLLB translation
   ↓
 Local MMS-TTS
   ↓
-Final safety resolution
+Final safety review and clinician resolution
+  ↓
+Treating-doctor final approval
   ↓
 RELEASED
   ├─ patient text/audio/PDF
